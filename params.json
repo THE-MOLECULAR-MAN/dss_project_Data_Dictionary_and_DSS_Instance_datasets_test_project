@@ -38,8 +38,8 @@
       "defaultRecipeHashPropagationBehavior": "ENABLED"
     },
     "sharingRequestsEnabled": "INHERIT",
-    "limitedVisibilityEnabled": "INHERIT",
-    "accessRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "DISABLED",
+    "accessRequestsEnabled": "DISABLED",
     "limitsSettings": {
       "memSampleBytes": {
         "soft": -1,
