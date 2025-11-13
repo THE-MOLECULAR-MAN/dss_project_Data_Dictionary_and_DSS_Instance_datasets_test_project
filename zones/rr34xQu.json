@@ -37,6 +37,78 @@
     {
       "objectId": "xzibit_users",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_xzibit_users_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_recipes_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_projects_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_plugins_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_datasets_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_connections_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_codeenvs_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_clusters_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_xzibit_apps_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "xzibit_apps_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_clusters_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_codeenvs_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_connections_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_datasets_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_plugins_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_projects_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_recipes_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_users_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
