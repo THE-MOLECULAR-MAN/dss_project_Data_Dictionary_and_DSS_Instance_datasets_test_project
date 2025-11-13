@@ -61,7 +61,7 @@
     "sorting": [
       {
         "column": "disk_size_megabytes",
-        "ascending": true
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
