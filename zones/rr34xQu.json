@@ -1,7 +1,44 @@
 {
   "name": "Run Test",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "xzibit_apps",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_clusters",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_codeenvs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_connections",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_plugins",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_datasets",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_projects",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_recipes",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_users",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
