@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027xzibit_apps_copy\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata and usage details. This dataset is particularly useful for managing and analyzing application deployment and usage within a project environment. It includes information on application visibility, versioning, and descriptive labels, which can help in identifying and categorizing different applications. The dataset also tracks the origin of each application, providing insights into project-specific applications and their instances. Additionally, it includes boolean indicators for limited visibility and image usage, which are crucial for understanding application accessibility and presentation. The dataset\u0027s structure allows for easy filtering and analysis, making it a valuable resource for project managers, developers, and analysts who need to monitor application usage and manage application lifecycles effectively. The inclusion of tags and free text descriptions further enriches the dataset, offering detailed context and facilitating better decision-making processes.",
+  "shortDesc": "Dataset of application metadata with visibility and usage details.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -87,17 +89,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"onlyLimitedVisibility","type":"string","comment":"Indicates if app has limited visibility; boolean value.","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for each application; text value.","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application; text value.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application; text value.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Free text description of the application; includes creation details.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"JSONArray of tags associated with the application.","isColumnEdited":true},
+      {"name":"isAppImg","type":"string","comment":"Indicates if the app has an image; boolean value.","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source or origin of the application; text value.","isColumnEdited":true},
+      {"name":"originProjectKey","type":"string","comment":"Key identifying the origin project; text value.","isColumnEdited":true},
+      {"name":"instanceCount","type":"string","comment":"Number of instances of the application; integer value.","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"string","comment":"Indicates if app can be used as a recipe; boolean value.","isColumnEdited":true}
     ],
     "userModified": true
   },
