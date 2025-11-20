@@ -11,7 +11,21 @@
       "shortDesc",
       "description"
     ],
-    "returnedColumns": []
+    "returnedColumns": [
+      "name",
+      "projectKey",
+      "type",
+      "formatType",
+      "params.connection",
+      "creationTag.lastModifiedBy.login",
+      "creationTag.lastModifiedOn",
+      "versionTag.lastModifiedBy.login",
+      "versionTag.lastModifiedOn",
+      "shortDesc",
+      "description",
+      "tags",
+      "column_names"
+    ]
   },
   "quickTestQuery": {
     "input": {
