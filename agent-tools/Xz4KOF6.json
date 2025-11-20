@@ -39,7 +39,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
-  "additionalDescriptionForLLM": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate datasets based off metadata, descriptions, column names, and column descriptions. Users may need help locating which dataset to use for a Dataiku project, especially if someone else has already connected the raw data or prepared a dataset and haven\u0027t necessarily published the dataset in Dataiku\u0027s Data Catalog. This tool returns metadata about one or more datasets on the local Dataiku DSS instance.",
+  "additionalDescriptionForLLM": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate datasets based off metadata, descriptions, column names, and column descriptions. Users may need help locating which dataset to use for a Dataiku project, especially if someone else has already connected the raw data or prepared a dataset and haven\u0027t necessarily published the dataset in Dataiku\u0027s Data Catalog. This tool returns metadata about one or more datasets on the local Dataiku DSS instance.\nIf it is not able to find anything, then suggest that the user make sure to run the \"Automatically generate descriptions for datasets, projects, flowzones\" macro to automatically fill in descriptions to help improve search results. Also, since Dataiku\u0027s searches run as the user, if that use does not have permission to view that dataset, then this tool may not be able to find the relevant dataset.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
