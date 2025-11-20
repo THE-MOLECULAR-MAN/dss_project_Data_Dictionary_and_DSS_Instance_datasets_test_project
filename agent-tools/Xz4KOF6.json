@@ -23,9 +23,9 @@
   "quickTestQuery": {
     "input": {
       "filter": {
-        "column": "\u003cCOLUMN_NAME\u003e",
+        "column": "name",
         "operator": "EQUALS",
-        "value": "\u003cVALUE\u003e"
+        "value": "LOAN_REQUESTS_FEATURES"
       }
     },
     "context": {}
