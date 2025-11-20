@@ -1,0 +1,25 @@
+{
+  "name": "Calculator",
+  "type": "GRELCalculator",
+  "params": {},
+  "quickTestQuery": {
+    "input": {
+      "formula": "sqrt(441) * 2"
+    },
+    "context": {}
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tim.honker"
+    },
+    "lastModifiedOn": 1763668239695
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
