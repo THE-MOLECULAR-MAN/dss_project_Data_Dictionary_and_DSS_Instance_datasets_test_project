@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027xzibit_projects_copy\u0027 dataset provides a comprehensive overview of various software projects, capturing essential details such as project identifiers, ownership, and status. This dataset is particularly useful for project management and tracking purposes, as it includes information on who owns each project, whether the project is a tutorial, and its current status. Additionally, it records the last modification date, which is crucial for understanding the project\u0027s timeline and updates. The dataset also includes descriptive fields like \u0027shortDesc\u0027 and \u0027tags\u0027, which offer insights into the project\u0027s purpose and categorization. The \u0027contributors\u0027 field, although currently empty, is intended to list individuals who have contributed to the project, providing a collaborative aspect to the dataset. This dataset is valuable for organizations looking to manage and analyze their project portfolios, ensuring that all relevant information is easily accessible and up-to-date. It can be used to track project progress, allocate resources efficiently, and identify areas that require attention or improvement.",
+  "shortDesc": "Dataset of software projects with details on ownership and status.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -87,15 +89,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"ownerLogin","type":"string"},
-      {"name":"tutorialProject","type":"string"},
-      {"name":"name","type":"string"},
-      {"name":"projectStatus","type":"string"},
-      {"name":"contributors","type":"string"},
-      {"name":"lastModifiedOn","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Username of the project owner, identifies responsibility.","isColumnEdited":true},
+      {"name":"tutorialProject","type":"string","comment":"Indicates if the project is a tutorial, boolean value.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Descriptive name of the project, provides context.","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, indicates progress.","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of project contributors, collaboration details.","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"string","comment":"Date and time of last modification, tracks updates.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the project, summarizes purpose.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords associated with the project, aids categorization.","isColumnEdited":true}
     ],
     "userModified": true
   },
