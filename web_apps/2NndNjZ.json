@@ -62,7 +62,7 @@
     ],
     "augmented_llms_configurations": [],
     "enable_agents_as_tools": true,
-    "visualization_generation_mode": "AUTO",
+    "visualization_generation_mode": "NONE",
     "max_artifacts_size_mb": 2,
     "enable_quick_agents": true,
     "enable_prompt_library": true,
@@ -85,7 +85,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:/AsNTbFj3V79VUe+paeuYWtNhwFh/XAbBNZ0oaPY+ofszURIyNb+TJFmnRaEqiEWBHnvZ9bRCD5UrVEEy1KcIP9FGSrrHK4Ar08puTy+RsZWK3CGKwh4",
+  "apiKey": "e:AES:X2:XJcWPO9RiWjDUPnBAcdVKIbfpOo1uebmYITcNElavZMJj/gckSIj0e0qmfifESPFIkftbV/2OeRL9zQDAu7Fx0rNLtjtT8mbgbVnXORUJTtVJB1XXz8v",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
