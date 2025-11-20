@@ -10,6 +10,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
+  "additionalDescriptionForLLM": "This tool extends the capabilities of the agent with arithmetic operators, arithmetic functions, trigonometry functions, boolean operators, date functions, and geometry functions.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
