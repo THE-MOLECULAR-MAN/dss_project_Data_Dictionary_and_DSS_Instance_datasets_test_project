@@ -2,8 +2,8 @@
   "name": "Lookup within DSS\u0027s Datasets Dataset",
   "type": "DatasetRowLookup",
   "params": {
-    "retrievalMode": "SINGLE_RECORD",
-    "maxRecords": 5,
+    "retrievalMode": "MULTIPLE_RECORDS",
+    "maxRecords": 8,
     "datasetRef": "xzibit_datasets_copy",
     "usableLookupColumns": [
       "name",
@@ -30,7 +30,7 @@
   "quickTestQuery": {
     "input": {
       "filter": {
-        "column": "name",
+        "column": "column",
         "operator": "EQUALS",
         "value": "LOAN_REQUESTS_FEATURES"
       }
@@ -39,7 +39,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
-  "additionalDescriptionForLLM": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
+  "additionalDescriptionForLLM": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate datasets based off metadata, descriptions, column names, and column descriptions. Users may need help locating which dataset to use for a Dataiku project, especially if someone else has already connected the raw data or prepared a dataset and haven\u0027t necessarily published the dataset in Dataiku\u0027s Data Catalog.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
