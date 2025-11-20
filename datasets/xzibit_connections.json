@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_connections",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_connections dataset provides detailed information about various system connections, including their types, access permissions, and credential management. This dataset is particularly useful for IT administrators and data engineers who need to manage and audit system connections within an organization. Each entry in the dataset represents a connection, identified by a unique name, and includes information about the type of connection, such as BigQuery or PostgreSQL. The dataset also specifies whether writing to the connection is allowed, the mode of credentials used (either per user or global), and the groups that are permitted to use the connection. Additionally, it includes details about which groups can read the connection details and the mode of credentials used in parameters. This dataset is essential for ensuring secure and efficient management of system connections, allowing for controlled access and compliance with organizational policies.",
+  "shortDesc": "Dataset of system connections with access and credential details.",
   "checklists": {
     "checklists": []
   },
@@ -44,14 +46,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string"},
-      {"name":"type","type":"string"},
-      {"name":"allowWrite","type":"string"},
-      {"name":"credentialsMode","type":"string"},
-      {"name":"usableBy","type":"string"},
-      {"name":"allowedGroups","type":"string"},
-      {"name":"detailsReadability.allowedGroups","type":"string"},
-      {"name":"params.credentialsMode","type":"string"}
+      {"name":"name","type":"string","comment":"Unique identifier for each connection, includes keywords: connection, identifier, name.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of connection, such as BigQuery or PostgreSQL, includes keywords: connection, type, system.","isColumnEdited":true},
+      {"name":"allowWrite","type":"string","comment":"Indicates if writing is permitted, includes keywords: write, permission, access.","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credentials used, either per user or global, includes keywords: credentials, mode, access.","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"Specifies who can use the connection, includes keywords: access, permission, user.","isColumnEdited":true},
+      {"name":"allowedGroups","type":"string","comment":"Groups allowed to use the connection, includes keywords: groups, permission, access.","isColumnEdited":true},
+      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Groups allowed to read connection details, includes keywords: groups, readability, access.","isColumnEdited":true},
+      {"name":"params.credentialsMode","type":"string","comment":"Mode of credentials in parameters, includes keywords: credentials, parameters, mode.","isColumnEdited":true}
     ],
     "userModified": true
   },
