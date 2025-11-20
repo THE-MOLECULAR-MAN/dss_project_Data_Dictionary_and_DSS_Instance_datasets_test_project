@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_recipes",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_recipes dataset is designed to manage and analyze project recipes within a data processing environment. Each entry in the dataset represents a specific recipe associated with a project, identified by a unique project key. The dataset includes columns that provide detailed information about each recipe, such as its unique identifier, type, and name. Additionally, it captures the input and output datasets associated with each recipe, which are crucial for understanding data flow and dependencies within projects. The tags column allows for categorization and easy retrieval of recipes based on specific attributes. This dataset is particularly useful for data engineers and analysts who need to track and manage complex data processing workflows, ensuring that all components are correctly linked and executed. It can also be used for auditing purposes, to verify that data transformations are performed as expected, and for optimizing data processing pipelines by analyzing the types and frequency of recipes used.",
+  "shortDesc": "Dataset of project recipes with project keys, IDs, and dataset details.",
   "checklists": {
     "checklists": []
   },
@@ -44,13 +46,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"id","type":"string"},
-      {"name":"type","type":"string"},
-      {"name":"name","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"input_datasets","type":"string"},
-      {"name":"output_datasets","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project recipe.","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each recipe instance.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of recipe, indicating its function.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the recipe, often descriptive.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags for categorizing and retrieving recipes.","isColumnEdited":true},
+      {"name":"input_datasets","type":"string","comment":"List of datasets used as inputs for the recipe.","isColumnEdited":true},
+      {"name":"output_datasets","type":"string","comment":"List of datasets generated as outputs by the recipe.","isColumnEdited":true}
     ],
     "userModified": true
   },
