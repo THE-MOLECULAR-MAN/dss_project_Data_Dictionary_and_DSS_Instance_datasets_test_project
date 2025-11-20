@@ -101,7 +101,7 @@
       {"name":"params.table","type":"string","comment":"Table name pattern for data storage.","isColumnEdited":true},
       {"name":"params.schema","type":"string","comment":"Schema name for database organization.","isColumnEdited":true},
       {"name":"params.path","type":"string","comment":"File path for data storage and access.","isColumnEdited":true},
-      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"User who last modified the creation tag.","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"User who last modified the creation tag.","meaning":"Text","isColumnEdited":true},
       {"name":"creationTag.lastModifiedOn","type":"string","comment":"Timestamp of last modification of creation tag.","isColumnEdited":true},
       {"name":"versionTag.lastModifiedBy.login","type":"string","comment":"User who last modified the version tag.","isColumnEdited":true},
       {"name":"versionTag.lastModifiedOn","type":"string","comment":"Timestamp of last modification of version tag.","isColumnEdited":true},
