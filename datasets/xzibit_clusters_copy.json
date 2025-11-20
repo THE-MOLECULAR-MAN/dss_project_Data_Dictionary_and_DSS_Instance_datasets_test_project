@@ -89,14 +89,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each cluster, essential for tracking.","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Name of the cluster, used for identification.","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each cluster, key for identification.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the cluster, often matches the ID, for reference.","isColumnEdited":true},
       {"name":"owner","type":"string","comment":"Person responsible for the cluster, ensures accountability.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of cluster, helps in categorization.","isColumnEdited":true},
-      {"name":"architecture","type":"string","comment":"System architecture, such as Kubernetes, for operational context.","isColumnEdited":true},
-      {"name":"state","type":"string","comment":"Current operational status of the cluster, like RUNNING.","isColumnEdited":true},
-      {"name":"usedInScenarios","type":"string","comment":"Number of scenarios using the cluster, indicates usage.","isColumnEdited":true},
-      {"name":"usedInProjects","type":"string","comment":"Number of projects using the cluster, shows demand.","isColumnEdited":true}
+      {"name":"type","type":"string","comment":"Cluster configuration or creation method, indicates setup.","isColumnEdited":true},
+      {"name":"architecture","type":"string","comment":"System architecture, typically \u0027KUBERNETES\u0027, platform used.","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current operational status, such as \u0027RUNNING\u0027 or \u0027NONE\u0027.","isColumnEdited":true},
+      {"name":"usedInScenarios","type":"string","comment":"Number of scenarios using the cluster, measures usage.","isColumnEdited":true},
+      {"name":"usedInProjects","type":"string","comment":"Number of projects using the cluster, indicates importance.","isColumnEdited":true}
     ],
     "userModified": true
   },
