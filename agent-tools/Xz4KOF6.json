@@ -3,7 +3,22 @@
   "type": "DatasetRowLookup",
   "params": {
     "retrievalMode": "SINGLE_RECORD",
-    "maxRecords": 5
+    "maxRecords": 5,
+    "datasetRef": "xzibit_datasets_copy",
+    "usableLookupColumns": [
+      "id",
+      "name",
+      "column_names",
+      "shortDesc",
+      "description"
+    ],
+    "returnedColumns": [
+      "id",
+      "name",
+      "shortDesc",
+      "description",
+      "column_names"
+    ]
   },
   "quickTestQuery": {
     "input": {
@@ -17,6 +32,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
+  "additionalDescriptionForLLM": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
