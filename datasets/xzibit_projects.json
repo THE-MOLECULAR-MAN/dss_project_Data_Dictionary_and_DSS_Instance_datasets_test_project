@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_projects",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_projects dataset provides a comprehensive overview of various software projects, capturing essential details such as project identifiers, ownership, status, and metadata. This dataset is particularly useful for project management, tracking, and analysis within software development environments. Each project is uniquely identified by a projectKey and is associated with an ownerLogin, indicating the responsible individual. The dataset also includes a boolean field, tutorialProject, to specify if a project is intended for tutorial purposes. The name column provides the project\u0027s title, while projectStatus indicates its current phase, such as \u0027Sandbox\u0027. Additional metadata includes contributors, a list of individuals involved in the project, and lastModifiedOn, which records the last update timestamp. The shortDesc column offers a brief description of the project, and tags provide categorical labels for easier classification and retrieval. This dataset is valuable for organizations looking to manage and analyze their project portfolios, offering insights into project distribution, ownership, and lifecycle status.",
+  "shortDesc": "Dataset of software projects with details on ownership, status, and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -44,15 +46,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"ownerLogin","type":"string"},
-      {"name":"tutorialProject","type":"string"},
-      {"name":"name","type":"string"},
-      {"name":"projectStatus","type":"string"},
-      {"name":"contributors","type":"string"},
-      {"name":"lastModifiedOn","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Username of the project owner, indicates responsibility.","isColumnEdited":true},
+      {"name":"tutorialProject","type":"string","comment":"Indicates if the project is a tutorial, boolean value.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Title of the project, descriptive name.","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, e.g., \u0027Sandbox\u0027.","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of project contributors, JSON array format.","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"string","comment":"Timestamp of last modification, tracks updates.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the project, free text.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Categorical labels for the project, JSON array format.","isColumnEdited":true}
     ],
     "userModified": true
   },
