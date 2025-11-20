@@ -89,14 +89,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","comment":"Connection identifier; unique name for each connection.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of connection; specifies the platform or service.","isColumnEdited":true},
-      {"name":"allowWrite","type":"string","comment":"Write permission; indicates if writing is allowed.","isColumnEdited":true},
-      {"name":"credentialsMode","type":"string","comment":"Credentials mode; defines how credentials are managed.","isColumnEdited":true},
-      {"name":"usableBy","type":"string","comment":"User access; specifies who can use the connection.","isColumnEdited":true},
-      {"name":"allowedGroups","type":"string","comment":"Access groups; lists groups allowed to use the connection.","isColumnEdited":true},
-      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Readability groups; groups allowed to view connection details.","isColumnEdited":true},
-      {"name":"params.credentialsMode","type":"string","comment":"Parameter credentials mode; specifies credential handling method.","isColumnEdited":true}
+      {"name":"name","type":"string","comment":"Unique identifier for each connection, includes keywords: connection, identifier, name.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of connection, such as BigQuery or PostgreSQL, includes keywords: connection, type, system.","isColumnEdited":true},
+      {"name":"allowWrite","type":"string","comment":"Indicates if writing is permitted, includes keywords: write, permission, access.","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credentials used, either per user or global, includes keywords: credentials, mode, access.","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"Specifies who can use the connection, includes keywords: access, permission, user.","isColumnEdited":true},
+      {"name":"allowedGroups","type":"string","comment":"Groups allowed to use the connection, includes keywords: groups, permission, access.","isColumnEdited":true},
+      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Groups allowed to read connection details, includes keywords: groups, readability, access.","isColumnEdited":true},
+      {"name":"params.credentialsMode","type":"string","comment":"Mode of credentials in parameters, includes keywords: credentials, parameters, mode.","isColumnEdited":true}
     ],
     "userModified": true
   },
