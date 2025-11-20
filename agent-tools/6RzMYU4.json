@@ -1,0 +1,37 @@
+{
+  "name": "Current date-time",
+  "type": "GenericStdioMCPClient",
+  "params": {
+    "codeEnvSelection": {
+      "envMode": "EXPLICIT_ENV",
+      "envName": "py321-mcp"
+    },
+    "containerExecSelection": {
+      "containerMode": "INHERIT"
+    },
+    "useCodeEnvPythonAsCommand": false,
+    "args": [],
+    "env": [],
+    "subtoolsEnabledByDefault": true,
+    "subtoolsStateOverride": {}
+  },
+  "quickTestQuery": {
+    "input": {},
+    "context": {},
+    "subtoolName": "name of the subtool to use, must be enabled"
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tim.honker"
+    },
+    "lastModifiedOn": 1763668312311
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
