@@ -4,7 +4,7 @@
   "params": {
     "codeEnvSelection": {
       "envMode": "EXPLICIT_ENV",
-      "envName": "py321-mcp"
+      "envName": "py312-mcp-2"
     },
     "containerExecSelection": {
       "containerMode": "INHERIT"
