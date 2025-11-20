@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "The xzibit_users_copy dataset is designed to manage and analyze user information within a system. It includes key details about users such as their login credentials, source of authentication, display names, and group memberships. The dataset also tracks user profiles, creation dates, and whether the user account is enabled. Additionally, it provides insights into user activity by recording the last successful login and last session activity dates. This dataset is particularly useful for system administrators and IT professionals who need to monitor user access, manage permissions, and ensure security compliance. The inclusion of email addresses allows for direct communication with users, while the detailed activity logs help in auditing and troubleshooting. The dataset\u0027s structure supports various use cases, including user behavior analysis, security audits, and system access management. Its comprehensive nature makes it a valuable resource for maintaining an organized and secure user management system.",
+  "shortDesc": "User management dataset with login, profile, and activity details.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -87,17 +89,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string"},
-      {"name":"sourceType","type":"string"},
-      {"name":"displayName","type":"string"},
-      {"name":"groups","type":"string"},
-      {"name":"userProfile","type":"string"},
-      {"name":"creationDate","type":"string"},
-      {"name":"enabled","type":"string"},
-      {"name":"resultingUserProfile","type":"string"},
-      {"name":"last_successful_login","type":"string"},
-      {"name":"last_session_activity","type":"string"},
-      {"name":"email","type":"string"}
+      {"name":"login","type":"string","comment":"User\u0027s login identifier, unique username.","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Authentication source type, e.g., LDAP or LOCAL.","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in interfaces.","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"User\u0027s group memberships, roles and permissions.","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"Assigned user profile, defines access level.","isColumnEdited":true},
+      {"name":"creationDate","type":"string","comment":"Account creation date, user registration time.","isColumnEdited":true},
+      {"name":"enabled","type":"string","comment":"Account status, whether user is active.","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile, final access level.","isColumnEdited":true},
+      {"name":"last_successful_login","type":"string","comment":"Date of last successful login, recent access.","isColumnEdited":true},
+      {"name":"last_session_activity","type":"string","comment":"Date of last session activity, user engagement.","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address, contact information.","isColumnEdited":true}
     ],
     "userModified": true
   },
