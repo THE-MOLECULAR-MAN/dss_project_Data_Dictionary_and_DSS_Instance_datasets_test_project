@@ -33,7 +33,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
-  "additionalDescriptionForLLM": "Use this tool to get the current date and time in the following format:  \"YYYY-MM-DD HH:mm:ss\" for both UTC and America/New_York.",
+  "additionalDescriptionForLLM": "Use this tool to get the current date and time in the following format:  \"YYYY-MM-DD HH:mm:ss\" for both UTC and America/New_York. This tool is useful for determining the how much time has passed since a dataset was created or modified.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
