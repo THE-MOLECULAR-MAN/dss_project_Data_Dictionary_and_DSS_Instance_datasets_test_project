@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763668105640
+        "lastModifiedOn": 1763668149416
       },
       "creationTag": {
         "versionNumber": 0,
@@ -46,6 +46,8 @@
       },
       "toolsUsingAgentSettings": {
         "tools": [],
+        "llmId": "huggingfacelocal:doc-local-hugging-face:HuggingFaceH4/zephyr-7b-beta",
+        "systemPromptAppend": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": true
