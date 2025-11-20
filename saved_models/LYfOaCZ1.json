@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 2,
+        "versionNumber": 3,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763668155228
+        "lastModifiedOn": 1763668162659
       },
       "creationTag": {
         "versionNumber": 0,
@@ -47,7 +47,8 @@
       "toolsUsingAgentSettings": {
         "tools": [
           {
-            "toolRef": "HONKER_TEST.Xz4KOF6"
+            "toolRef": "HONKER_TEST.Xz4KOF6",
+            "additionalDescription": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions."
           }
         ],
         "llmId": "huggingfacelocal:doc-local-hugging-face:HuggingFaceH4/zephyr-7b-beta",
