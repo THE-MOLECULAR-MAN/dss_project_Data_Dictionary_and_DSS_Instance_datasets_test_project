@@ -2,6 +2,8 @@
   "type": "Filesystem",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027xzibit_connections_copy\u0027 dataset provides a comprehensive overview of various connection configurations, primarily used in data integration and management systems. Each entry in the dataset represents a specific connection, detailing its name, type, and access permissions. This dataset is particularly useful for administrators and developers who need to manage and audit connection settings across different platforms and services. Key features include the ability to specify whether a connection allows write operations, the mode of credentials used, and the groups that are permitted to use or view the connection details. The dataset also includes information on the readability of connection details by different groups, which is crucial for maintaining security and compliance in data handling. By providing a structured view of connection settings, this dataset aids in ensuring that data access is properly controlled and monitored, thereby supporting secure and efficient data operations.",
+  "shortDesc": "Dataset of connection configurations with access control details.",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -87,14 +89,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string"},
-      {"name":"type","type":"string"},
-      {"name":"allowWrite","type":"string"},
-      {"name":"credentialsMode","type":"string"},
-      {"name":"usableBy","type":"string"},
-      {"name":"allowedGroups","type":"string"},
-      {"name":"detailsReadability.allowedGroups","type":"string"},
-      {"name":"params.credentialsMode","type":"string"}
+      {"name":"name","type":"string","comment":"Connection identifier; unique name for each connection.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of connection; specifies the platform or service.","isColumnEdited":true},
+      {"name":"allowWrite","type":"string","comment":"Write permission; indicates if writing is allowed.","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Credentials mode; defines how credentials are managed.","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"User access; specifies who can use the connection.","isColumnEdited":true},
+      {"name":"allowedGroups","type":"string","comment":"Access groups; lists groups allowed to use the connection.","isColumnEdited":true},
+      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Readability groups; groups allowed to view connection details.","isColumnEdited":true},
+      {"name":"params.credentialsMode","type":"string","comment":"Parameter credentials mode; specifies credential handling method.","isColumnEdited":true}
     ],
     "userModified": true
   },
