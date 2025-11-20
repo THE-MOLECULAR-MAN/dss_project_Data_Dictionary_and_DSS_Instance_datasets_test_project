@@ -109,6 +109,14 @@
     {
       "objectId": "xzibit_users_copy",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_plugins_copy_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_xzibit_plugins_copy_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
