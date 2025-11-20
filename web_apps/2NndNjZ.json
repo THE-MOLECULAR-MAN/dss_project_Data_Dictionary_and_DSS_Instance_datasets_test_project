@@ -79,11 +79,13 @@
     "augmented_llms_ids": [],
     "globalSystemPrompt": "",
     "tools": [],
+    "agents_folder": "SANDBOX",
     "embedding_llm": "openai:se-open-ai:text-embedding-3-small",
-    "default_llm_id": "openai:se-open-ai:gpt-5"
+    "default_llm_id": "openai:se-open-ai:gpt-5",
+    "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:n4JrWRudC+69WtrcCBMjhhpwTXsIffE0Ewti6dGN9Xe6c8R1ri6BiWXJBmG5i85DJu+MV9CR6j4ALO3gppt2f7R6IMCoAqCv1zXUddz6jv6KBSQFSSl1",
+  "apiKey": "e:AES:X2:/AsNTbFj3V79VUe+paeuYWtNhwFh/XAbBNZ0oaPY+ofszURIyNb+TJFmnRaEqiEWBHnvZ9bRCD5UrVEEy1KcIP9FGSrrHK4Ar08puTy+RsZWK3CGKwh4",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
