@@ -6,19 +6,12 @@
     "maxRecords": 5,
     "datasetRef": "xzibit_datasets_copy",
     "usableLookupColumns": [
-      "id",
       "name",
       "column_names",
       "shortDesc",
       "description"
     ],
-    "returnedColumns": [
-      "id",
-      "name",
-      "shortDesc",
-      "description",
-      "column_names"
-    ]
+    "returnedColumns": []
   },
   "quickTestQuery": {
     "input": {
