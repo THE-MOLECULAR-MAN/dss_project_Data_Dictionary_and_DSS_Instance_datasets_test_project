@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_users",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_users dataset is designed to manage and analyze user information within a system. It includes various attributes related to user accounts, such as login credentials, source type, display names, and group memberships. This dataset is particularly useful for system administrators and IT professionals who need to monitor user access, manage permissions, and track user activity. Key features include the ability to distinguish between local and LDAP-sourced users, track user profile types, and monitor account creation and activity dates. The dataset also provides insights into user engagement through last successful login and session activity timestamps. Additionally, it includes email addresses for communication purposes. This comprehensive dataset supports user management tasks, security audits, and compliance checks by providing detailed user information and activity logs. It is an essential tool for maintaining system security and ensuring that user access is appropriately managed and monitored.",
+  "shortDesc": "User management dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
@@ -44,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string"},
-      {"name":"sourceType","type":"string"},
-      {"name":"displayName","type":"string"},
-      {"name":"groups","type":"string"},
-      {"name":"userProfile","type":"string"},
-      {"name":"creationDate","type":"string"},
-      {"name":"enabled","type":"string"},
-      {"name":"resultingUserProfile","type":"string"},
-      {"name":"last_successful_login","type":"string"},
-      {"name":"last_session_activity","type":"string"},
-      {"name":"email","type":"string"}
+      {"name":"login","type":"string","comment":"User\u0027s login identifier, unique username.","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Origin of user account, LDAP or LOCAL.","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in interfaces.","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"User\u0027s group memberships, roles and permissions.","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"Assigned user profile, defines access level.","isColumnEdited":true},
+      {"name":"creationDate","type":"string","comment":"Date and time of account creation.","isColumnEdited":true},
+      {"name":"enabled","type":"string","comment":"Account status, active or inactive.","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile after policy application.","isColumnEdited":true},
+      {"name":"last_successful_login","type":"string","comment":"Timestamp of last successful login.","isColumnEdited":true},
+      {"name":"last_session_activity","type":"string","comment":"Timestamp of last session activity.","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address for contact.","isColumnEdited":true}
     ],
     "userModified": true
   },
