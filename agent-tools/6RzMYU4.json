@@ -10,18 +10,30 @@
       "containerMode": "INHERIT"
     },
     "useCodeEnvPythonAsCommand": false,
-    "args": [],
+    "command": "npx",
+    "args": [
+      "-y",
+      "@smithery/cli@latest",
+      "run",
+      "@yokingma/time-mcp",
+      "--key",
+      "ca1c91f8-eab0-4fc3-bdb0-0332bdaf713c"
+    ],
     "env": [],
     "subtoolsEnabledByDefault": true,
     "subtoolsStateOverride": {}
   },
   "quickTestQuery": {
-    "input": {},
-    "context": {},
-    "subtoolName": "name of the subtool to use, must be enabled"
+    "subtoolName": "current_time",
+    "input": {
+      "format": "YYYY-MM-DD HH:mm:ss",
+      "timezone": "America/New_York"
+    },
+    "context": {}
   },
   "dkuProperties": [],
   "singleInstance": false,
+  "additionalDescriptionForLLM": "Use this tool to get the current date and time in the following format:  \"YYYY-MM-DD HH:mm:ss\" for both UTC and America/New_York.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
