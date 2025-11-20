@@ -50,7 +50,16 @@
   "config": {
     "LLMs": [],
     "number_of_documents_to_retrieve": 10,
-    "tool_agent_configurations": [],
+    "tool_agent_configurations": [
+      {
+        "agent_id": "HONKER_TEST:agent:LYfOaCZ1",
+        "agent_system_instructions": "",
+        "tool_agent_description": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
+        "enable_stories": false,
+        "agent_example_queries": [],
+        "tool_agent_display_name": "Dataset search"
+      }
+    ],
     "augmented_llms_configurations": [],
     "enable_agents_as_tools": true,
     "visualization_generation_mode": "AUTO",
@@ -61,8 +70,12 @@
     "permanent_delete_messages": false,
     "logLevel": "INFO",
     "homepage_examples": [],
-    "projects_keys": [],
-    "agents_ids": [],
+    "projects_keys": [
+      "HONKER_TEST"
+    ],
+    "agents_ids": [
+      "HONKER_TEST:agent:LYfOaCZ1"
+    ],
     "augmented_llms_ids": [],
     "globalSystemPrompt": "",
     "tools": [],
@@ -70,7 +83,7 @@
     "default_llm_id": "openai:se-open-ai:gpt-5"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:dgSrPYGiDKXJoB8kVR5z1mSKABda/Ha+XnfzUO4hdmmutHkuCuLmUO8Mn9K0+4P3CCFWmLkXDl2fyDcTM3c0XS4JTOnfA3VD4IQRISV2LaS5OmexDjKZ",
+  "apiKey": "e:AES:X2:n4JrWRudC+69WtrcCBMjhhpwTXsIffE0Ewti6dGN9Xe6c8R1ri6BiWXJBmG5i85DJu+MV9CR6j4ALO3gppt2f7R6IMCoAqCv1zXUddz6jv6KBSQFSSl1",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
