@@ -30,7 +30,7 @@
   "quickTestQuery": {
     "input": {
       "filter": {
-        "column": "column",
+        "column": "name",
         "operator": "EQUALS",
         "value": "LOAN_REQUESTS_FEATURES"
       }
