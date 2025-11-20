@@ -60,10 +60,17 @@
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
     "logLevel": "INFO",
-    "homepage_examples": []
+    "homepage_examples": [],
+    "projects_keys": [],
+    "agents_ids": [],
+    "augmented_llms_ids": [],
+    "globalSystemPrompt": "",
+    "tools": [],
+    "embedding_llm": "openai:se-open-ai:text-embedding-3-small",
+    "default_llm_id": "openai:se-open-ai:gpt-5"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:KUOWy0z36hP0FnJtUMHsqeyReG/fDEoNwsVDodaXgQa6Pnv8KmYpDcMyRsEdHxfvsg7cRzjpwvlWIxyrkrTyptih9a5431W/TM+qVS1LyfDHn3tSin4Q",
+  "apiKey": "e:AES:X2:dgSrPYGiDKXJoB8kVR5z1mSKABda/Ha+XnfzUO4hdmmutHkuCuLmUO8Mn9K0+4P3CCFWmLkXDl2fyDcTM3c0XS4JTOnfA3VD4IQRISV2LaS5OmexDjKZ",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
