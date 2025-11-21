@@ -2,13 +2,6 @@
   "type": "step_based",
   "name": "Automatically fill in blank project descriptions",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "tim.honker"
-    },
-    "lastModifiedOn": 1763761331185
-  },
   "checklists": {
     "checklists": []
   },
@@ -21,7 +14,41 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_data-dictionary-agent_auto-documentation-generation",
+        "type": "runnable",
+        "name": "Step #1",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_data-dictionary-agent_auto-documentation-generation",
+          "config": {
+            "save_description": true,
+            "project_filter": "all_projects",
+            "language": "english",
+            "project_purpose": "generic",
+            "project_length": "medium",
+            "flowzone_purpose": "generic",
+            "flowzone_length": "medium",
+            "object_types_to_autofill": [
+              "projects"
+            ]
+          },
+          "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {},
