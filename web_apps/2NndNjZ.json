@@ -56,7 +56,9 @@
         "agent_system_instructions": "",
         "tool_agent_description": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
         "enable_stories": false,
-        "agent_example_queries": [],
+        "agent_example_queries": [
+          "Find datasets that have information about invoices including the invoice number, the client\u0027s name, the amount due, and more."
+        ],
         "tool_agent_display_name": "Dataset search"
       }
     ],
@@ -85,7 +87,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:XJcWPO9RiWjDUPnBAcdVKIbfpOo1uebmYITcNElavZMJj/gckSIj0e0qmfifESPFIkftbV/2OeRL9zQDAu7Fx0rNLtjtT8mbgbVnXORUJTtVJB1XXz8v",
+  "apiKey": "e:AES:X2:A9jYZZIlWJ4U6AnTd22uWR7d4vev7YIJTJiQEcerSjR9KbiSkJij/pxLUhnJ+t+mN/XU1kW1jBYjxrjajp7wPxJy3YDIHxaudHAEZr6XNW7VrqZkIDNk",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
