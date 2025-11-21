@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 5,
+        "versionNumber": 6,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763668614074
+        "lastModifiedOn": 1763761558380
       },
       "creationTag": {
         "versionNumber": 0,
@@ -63,6 +63,7 @@
           "stopSequences": [],
           "outputTrajectory": true
         },
+        "allowAgentsAsLLM": false,
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
@@ -144,7 +145,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "Find datasets that have information about invoices including the invoice number, the client\u0027s name, the amount due, and more."
           }
         ],
         "context": {}
