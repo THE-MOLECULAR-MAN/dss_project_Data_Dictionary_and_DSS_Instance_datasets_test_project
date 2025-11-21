@@ -156,6 +156,7 @@
   },
   "name": "Honker_Test",
   "projectStatus": "Sandbox",
+  "imgPattern": 1,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -223,41 +224,6 @@
   "tags": [],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1762960930330,
-            "createdBy": "tim.honker",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1762960930330,
-            "createdBy": "tim.honker",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/HONKER_TEST/datasets/new/)",
-            "createdOn": 1762960930330,
-            "createdBy": "tim.honker",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1762960930330,
-            "createdBy": "tim.honker",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }
