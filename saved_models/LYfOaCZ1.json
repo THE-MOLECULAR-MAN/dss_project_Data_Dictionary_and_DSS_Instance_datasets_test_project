@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 6,
+        "versionNumber": 7,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763761558380
+        "lastModifiedOn": 1763761611873
       },
       "creationTag": {
         "versionNumber": 0,
@@ -48,7 +48,7 @@
         "tools": [
           {
             "toolRef": "HONKER_TEST.Xz4KOF6",
-            "additionalDescription": "This tool searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions."
+            "additionalDescription": ""
           },
           {
             "toolRef": "HONKER_TEST.JfbcCw6"
@@ -58,7 +58,7 @@
           }
         ],
         "llmId": "openai:se-open-ai:gpt-5",
-        "systemPromptAppend": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
+        "systemPromptAppend": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata including descriptions, column names, and column descriptions.",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": true
