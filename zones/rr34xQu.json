@@ -97,6 +97,10 @@
     {
       "objectId": "dss_plugins_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
