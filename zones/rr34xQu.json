@@ -77,6 +77,14 @@
     {
       "objectId": "dss_users_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_clusters_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_clusters_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
