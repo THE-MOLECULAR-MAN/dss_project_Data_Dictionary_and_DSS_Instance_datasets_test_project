@@ -13,6 +13,14 @@
     {
       "objectId": "scenario_runs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_jobs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "jobs_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
