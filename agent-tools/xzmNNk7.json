@@ -11,7 +11,7 @@
       "include_column_names_in_descriptor": true,
       "include_column_descriptions_in_descriptor": true,
       "datasets": [
-        "dss_projects_live"
+        "dss_projects_cached"
       ],
       "connection": "filesystem_folders",
       "llmId": "huggingfacelocal:doc-local-hugging-face:HuggingFaceH4/zephyr-7b-beta",
