@@ -61,6 +61,14 @@
     {
       "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
