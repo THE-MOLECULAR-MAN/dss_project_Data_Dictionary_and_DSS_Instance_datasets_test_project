@@ -2,6 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027scenario_runs\u0027 dataset provides detailed information about various scenarios executed within a system, capturing essential metadata for each run. This dataset is particularly useful for analyzing the performance and outcomes of different scenarios, which can be critical for operational monitoring and optimization. Each entry in the dataset represents a single scenario run, identified by a unique \u0027scenario_run_id\u0027. The dataset includes timestamps for when each scenario started and ended, allowing for precise tracking of execution times. Additionally, it records the outcome of each run, such as \u0027SUCCESS\u0027, and counts any warnings that occurred. The dataset also includes information about the user who initiated the run and the method used to trigger the scenario. This comprehensive dataset can be used for performance analysis, troubleshooting, and improving scenario execution strategies. It is particularly valuable for IT operations, project management, and system maintenance teams who need to ensure the reliability and efficiency of automated processes.",
+  "shortDesc": "Dataset of scenario runs with timestamps and outcomes.",
   "checklists": {
     "checklists": []
   },
@@ -48,18 +50,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string"},
-      {"name":"scenario_id","type":"string"},
-      {"name":"scenario_run_id","type":"string"},
-      {"name":"time_start","type":"date"},
-      {"name":"time_end","type":"date"},
-      {"name":"outcome","type":"string"},
-      {"name":"warnings_count","type":"bigint"},
-      {"name":"scenario_name","type":"string"},
-      {"name":"trigger_name","type":"string"},
-      {"name":"scenario_run_as_user","type":"string"},
-      {"name":"run_as_user_identifier","type":"string"},
-      {"name":"run_as_user_via","type":"string"}
+      {"name":"scenario_project_key","type":"string","comment":"Unique key for the scenario project, identifies project.","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Identifier for the specific scenario, unique scenario ID.","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, tracks execution.","isColumnEdited":true},
+      {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","isColumnEdited":true},
+      {"name":"time_end","type":"date","comment":"Timestamp when the scenario run ended, end time.","isColumnEdited":true},
+      {"name":"outcome","type":"string","comment":"Result of the scenario run, indicates success or failure.","isColumnEdited":true},
+      {"name":"warnings_count","type":"bigint","comment":"Number of warnings during the scenario run, warning count.","isColumnEdited":true},
+      {"name":"scenario_name","type":"string","comment":"Name of the scenario, descriptive scenario title.","isColumnEdited":true},
+      {"name":"trigger_name","type":"string","comment":"Method used to trigger the scenario, trigger type.","isColumnEdited":true},
+      {"name":"scenario_run_as_user","type":"string","comment":"User who executed the scenario, run initiator.","isColumnEdited":true},
+      {"name":"run_as_user_identifier","type":"string","comment":"Identifier for the user who ran the scenario, user ID.","isColumnEdited":true},
+      {"name":"run_as_user_via","type":"string","comment":"Method or context through which user ran scenario, execution context.","isColumnEdited":true}
     ],
     "userModified": true
   },
