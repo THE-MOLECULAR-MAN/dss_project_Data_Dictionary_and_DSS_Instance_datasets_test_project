@@ -59,10 +59,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_clusters_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
     },
