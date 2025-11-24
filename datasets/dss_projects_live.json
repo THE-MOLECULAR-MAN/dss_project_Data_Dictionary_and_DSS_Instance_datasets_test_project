@@ -45,7 +45,18 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string"},
+      {"name":"ownerLogin","type":"string"},
+      {"name":"projectLocation","type":"string"},
+      {"name":"tutorialProject","type":"string"},
+      {"name":"name","type":"string"},
+      {"name":"projectStatus","type":"string"},
+      {"name":"contributors","type":"string"},
+      {"name":"lastModifiedOn","type":"string"},
+      {"name":"shortDesc","type":"string"},
+      {"name":"tags","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
