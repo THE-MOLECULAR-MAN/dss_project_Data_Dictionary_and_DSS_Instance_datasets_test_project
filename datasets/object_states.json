@@ -2,6 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027object_states\u0027 dataset provides a comprehensive overview of various project-related objects and their states within a system. It includes detailed information about projects, jobs, scenarios, and their respective outcomes. This dataset is particularly useful for tracking the progress and results of different computational tasks or processes within a project management or data processing environment. Each entry in the dataset captures essential details such as project identifiers, job and activity IDs, timestamps for start and end times, and the outcomes of these processes. Additionally, it includes metadata about the type of object or process, any warnings encountered, and whether the entry represents the last step in a sequence. This dataset can be used for monitoring system performance, debugging processes, and ensuring successful project execution. Its detailed structure allows for in-depth analysis of project workflows and outcomes, making it a valuable resource for project managers and data analysts.",
+  "shortDesc": "Dataset tracking project object states and job outcomes.",
   "checklists": {
     "checklists": []
   },
