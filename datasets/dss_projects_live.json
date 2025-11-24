@@ -54,7 +54,7 @@
       {"name":"projectStatus","type":"string"},
       {"name":"contributors","type":"string"},
       {"name":"lastModifiedOn","type":"string"},
-      {"name":"shortDesc","type":"string"},
+      {"name":"shortDesc","type":"string","meaning":"FreeText"},
       {"name":"tags","type":"array","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
