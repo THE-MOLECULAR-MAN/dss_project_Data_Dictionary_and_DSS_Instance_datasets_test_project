@@ -69,6 +69,14 @@
     {
       "objectId": "dss_plugins_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_users_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
