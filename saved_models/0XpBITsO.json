@@ -33,16 +33,14 @@
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        },
-        "singleInstance": false
+        }
       },
       "pluginAgentSettings": {
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        },
-        "singleInstance": false
+        }
       },
       "toolsUsingAgentSettings": {
         "tools": [
@@ -56,19 +54,17 @@
             "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.6RzMYU4"
           }
         ],
-        "llmId": "openai:se-open-ai:gpt-5",
+        "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5",
         "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": true
         },
-        "allowAgentsAsLLM": false,
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        },
-        "singleInstance": false
+        }
       },
       "ragllmSettings": {
         "printSources": true,
@@ -105,26 +101,14 @@
             "handling": "FAIL"
           }
         },
-        "guardrailsPipelineSettings": {
-          "guardrails": []
-        },
-        "completionSettings": {
-          "stopSequences": [],
-          "outputTrajectory": true
-        },
         "contextMessage": "Use the following pieces of context to answer the question at the end.\nIf you do not know the answer, just say that you do not know, do not try to make up an answer.",
         "enforceDocumentLevelSecurity": false,
         "performFiltering": false,
         "allowDynamicFiltering": false,
-        "allowAgentInferredFiltering": false,
         "filter": {
           "distinct": false,
           "enabled": false
         },
-        "columnsDescriptions": [],
-        "retrievalColumns": [
-          "DKU_TEXT_EMBEDDING_COLUMN"
-        ],
         "searchType": "SIMILARITY",
         "similarityThreshold": 0.5,
         "maxDocuments": 4,
@@ -134,7 +118,6 @@
         "rrfRankConstant": 60,
         "rrfRankWindowSize": 4,
         "includeScore": false,
-        "allowEmptyQuery": false,
         "sourcesSettings": {
           "snippetFormat": "TEXT",
           "metadataInSources": []
