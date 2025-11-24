@@ -53,7 +53,7 @@
       {"name":"enabled","type":"boolean","meaning":"Boolean"},
       {"name":"resultingUserProfile","type":"string","meaning":"Text"},
       {"name":"creationDate","type":"date","meaning":"DatetimeNoTz"},
-      {"name":"last_successful_login","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"last_successful_login","type":"date","meaning":"Date"},
       {"name":"last_session_activity","type":"date","meaning":"Datetime no tz"}
     ],
     "userModified": true
