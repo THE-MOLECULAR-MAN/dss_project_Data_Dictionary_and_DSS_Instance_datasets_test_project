@@ -228,6 +228,28 @@
   ],
   "customFields": {},
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "id": "51d14f",
+        "title": "Todo list",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "add more example agent prompts",
+            "createdOn": 1763960703641,
+            "createdBy": "tim.honker",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "add scheduled scenarios to keep certain datasets up to date",
+            "createdOn": 1763960730981,
+            "createdBy": "tim.honker",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   }
 }
