@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_users_copy",
+          "ref": "dss_users_cached",
           "appendMode": false
         }
       ]
