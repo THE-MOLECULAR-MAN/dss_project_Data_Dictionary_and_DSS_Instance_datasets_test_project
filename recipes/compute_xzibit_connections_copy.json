@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_connections_copy",
+          "ref": "dss_connections_cached",
           "appendMode": false
         }
       ]
