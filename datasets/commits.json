@@ -2,6 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027commits\u0027 dataset provides detailed information about changes made to software projects. It includes metadata about each commit, such as the project key, commit ID, author, and timestamp, as well as quantitative data on the number of files and lines added, removed, or changed. This dataset is particularly useful for software development teams and project managers who need to track changes over time, analyze the impact of specific commits, or understand the contributions of different authors. By examining this data, users can gain insights into the development process, identify trends in code changes, and assess the productivity and focus areas of the development team. The dataset\u0027s structure allows for easy integration with version control systems and can be used for generating reports, visualizations, or feeding into analytics tools to improve project management and decision-making processes.",
+  "shortDesc": "Dataset of software project commits with metadata and changes.",
   "checklists": {
     "checklists": []
   },
@@ -48,15 +50,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string"},
-      {"name":"commit_id","type":"string"},
-      {"name":"author","type":"string"},
-      {"name":"timestamp","type":"bigint"},
-      {"name":"added_files","type":"int"},
-      {"name":"added_lines","type":"int"},
-      {"name":"removed_files","type":"int"},
-      {"name":"removed_lines","type":"int"},
-      {"name":"changed_files","type":"int"}
+      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","isColumnEdited":true},
+      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
+      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
+      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
+      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
+      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
+      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
+      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
     ],
     "userModified": true
   },
