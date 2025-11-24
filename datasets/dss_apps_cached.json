@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_apps_cached\u0027 dataset provides a comprehensive overview of various applications, capturing essential details such as visibility, version, and origin. This dataset is particularly useful for managing and analyzing applications within a project environment. Each application is uniquely identified by an \u0027appId\u0027 and is described with a \u0027label\u0027 and \u0027shortDesc\u0027, providing both a brief and detailed description. The dataset also includes information on whether the application has limited visibility (\u0027onlyLimitedVisibility\u0027), an associated image (\u0027isAppImg\u0027), and if it is used as a recipe (\u0027useAsRecipe\u0027). Additionally, it tracks the number of instances (\u0027instanceCount\u0027) and the source project (\u0027origin\u0027 and \u0027originProjectKey\u0027). The \u0027tags\u0027 column allows for categorization and easy retrieval of applications based on specific attributes. This dataset is valuable for project managers and developers who need to keep track of application versions, their usage, and their origins, facilitating better project management and application lifecycle tracking.",
+  "shortDesc": "Dataset of cached applications with visibility, version, and origin details.",
   "checklists": {
     "checklists": []
   },
