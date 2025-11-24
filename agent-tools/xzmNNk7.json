@@ -11,7 +11,6 @@
       "include_column_names_in_descriptor": true,
       "include_column_descriptions_in_descriptor": true,
       "datasets": [
-        "dss_projects_cached_psql",
         "dss_apps_cached",
         "dss_clusters_cached",
         "dss_codeenvs_cached",
@@ -22,7 +21,10 @@
         "dss_users_cached",
         "commits_cached",
         "jobs_cached",
-        "scenario_run_cached"
+        "scenario_run_cached",
+        "cluster_tasks_cached",
+        "dss_projects_cached",
+        "object_states_cached"
       ],
       "connection": "techex-postgres-beta",
       "llmId": "openai:se-open-ai:gpt-5",
