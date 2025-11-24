@@ -81,6 +81,16 @@
         "homepage_example_label": "Empty projects",
         "homepage_example_query": "What percentage of all the projects have 0 datasets? list both numbers.",
         "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Reclaimable licenses",
+        "homepage_example_query": "For all users who have not had any activity in the last 90 days, list the total count of them by license type.",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Locating projects that use Hive recipes",
+        "homepage_example_query": "List the project keys and project owners for all projects that use at least one Hive recipe",
+        "selected_agents": []
       }
     ],
     "projects_keys": [
@@ -98,7 +108,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:GWI6VDYnRab0jZgGiWiLLB0mzBQ6/yidbKP4MqIdVQE07b8ERaGSIIu4VlPMjd2h7He06550usIfVQzEz73ziwNnDDjhME8z3j31A4ZCDYoFDa+1TF6B",
+  "apiKey": "e:AES:X2:QNFqmzaLS74tIE+69O1LL2rbbRTT/CBYbr7TcLv9fu9FR/LuicVgAPpJAzvrlUIo5xWE1hSQ9ktgqvclGJ4UOeVOxq4gkDBauCF2+X3VCpPzJMHosVwJ",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
