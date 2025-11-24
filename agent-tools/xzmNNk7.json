@@ -3,7 +3,7 @@
   "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
   "params": {
     "config": {
-      "hard_sql_limit": 20,
+      "hard_sql_limit": 200,
       "return_value_mode": "AUTO",
       "max_records_for_artifact": -1,
       "sample_values_strategy": "FROM_DATA",
