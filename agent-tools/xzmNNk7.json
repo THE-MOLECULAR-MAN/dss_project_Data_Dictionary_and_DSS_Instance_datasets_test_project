@@ -27,7 +27,7 @@
         "object_states_cached"
       ],
       "connection": "techex-postgres-beta",
-      "llmId": "openai:se-open-ai:gpt-5",
+      "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5",
       "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states"
     },
     "containerExecSelection": {
@@ -39,7 +39,6 @@
     "context": {}
   },
   "dkuProperties": [],
-  "singleInstance": false,
   "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states",
   "creationTag": {
     "versionNumber": 0,

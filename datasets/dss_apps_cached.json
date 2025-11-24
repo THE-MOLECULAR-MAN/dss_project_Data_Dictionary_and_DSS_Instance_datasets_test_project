@@ -41,7 +41,7 @@
   "tags": [],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "techex-postgres-beta",
+    "connection": "postgres_localhost",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",

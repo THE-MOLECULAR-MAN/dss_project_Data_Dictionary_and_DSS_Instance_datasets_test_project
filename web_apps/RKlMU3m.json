@@ -18,6 +18,7 @@
       "dataiku",
       "font_awesome"
     ],
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -53,7 +54,7 @@
     "log_level": "INFO"
   },
   "name": "Trace Explorer",
-  "apiKey": "e:AES:X2:Pqb4VSutBEUAgvLXtTzmGLhlytMV4iSeHoxm1qBka5dJns6bYrgUs+kSTsR7ZNnhzT9h0Cd+kJelP6QJVHXd8pYoAbAjlV3mM/Cc/CHYMRQASt0jXF4v",
+  "apiKey": "e:AES:X2:UZV/DKtokxOXS9YrGqbeJgUtM6Iu5nZ/WG2dwWtTivuku82w1sfhmE6FsON1C9UfFyzI9w+KiO2LhePCysquuWHDvtbwgjDbBtak5+CQkv1vLyI2/Px1",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

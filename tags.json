@@ -3,8 +3,11 @@
     "duplicated": {
       "color": "#3A85AD"
     },
+    "owner:Tim Honker": {},
+    "imported": {
+      "color": "#263238"
+    },
     "Maintenance": {},
-    "internals": {},
-    "owner:Tim Honker": {}
+    "internals": {}
   }
 }

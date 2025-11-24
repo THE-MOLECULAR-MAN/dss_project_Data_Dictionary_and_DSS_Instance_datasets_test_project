@@ -16,6 +16,7 @@
     "libraries": [
       "dataiku"
     ],
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -110,7 +111,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:T2Vt0yqKWmAvC64xtU3jbERWInMTqqA6/KHsUMvrh2i692mkihSGoafceUNs+wYtKt2fmldHeFD0fzcTT0c7KPN+QM3aEwuDunafXI9p92Wv5T6WMLex",
+  "apiKey": "e:AES:X2:EW3Zy4HkhiLdq4GrWLIdFMgaOTPiC0EvgJO0MYzSUU8gJIgd9WBXNASl3Rr3NrF338TwThRdVGzJPYClRXbk0Y9FL9/TigwnZMlpIaq3XrtnZT2aT2MW",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
