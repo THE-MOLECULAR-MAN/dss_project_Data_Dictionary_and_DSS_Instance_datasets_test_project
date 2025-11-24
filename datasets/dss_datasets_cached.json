@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_datasets_cached\u0027 dataset is designed to manage and track datasets associated with various projects. It includes a comprehensive set of columns that provide detailed information about each dataset, such as unique identifiers, names, types, and formats. This dataset is particularly useful for organizations that need to maintain a structured overview of their data assets, ensuring efficient data management and accessibility. Key features include the ability to track whether a dataset currently exists, its data source type, and format. Additionally, it provides metadata such as the last modification details, which are crucial for version control and auditing purposes. The dataset also supports categorization through tags and includes information on the number of columns and metrics checks, which can be useful for data quality assessments. Overall, this dataset serves as a valuable resource for data administrators and analysts who need to manage large volumes of datasets across different projects, ensuring data integrity and facilitating data-driven decision-making.",
+  "shortDesc": "Dataset for managing and tracking project datasets.",
   "checklists": {
     "checklists": []
   },
