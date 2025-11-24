@@ -64,15 +64,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"connection","type":"string","comment":"Type of database or service connection used.","isColumnEdited":true},
-      {"name":"task_type","type":"string","comment":"Specifies the nature of the task performed.","isColumnEdited":true},
-      {"name":"project_key","type":"string","comment":"Identifier linking tasks to specific projects.","isColumnEdited":true},
-      {"name":"task_data","type":"string","comment":"JSON metadata with job and activity identifiers.","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who executed the task.","isColumnEdited":true},
-      {"name":"start_time","type":"bigint","comment":"Epoch time when the task started.","isColumnEdited":true},
-      {"name":"end_time","type":"bigint","comment":"Epoch time when the task ended.","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
