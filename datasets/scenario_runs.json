@@ -2,6 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027scenario_runs\u0027 dataset provides detailed information about various scenarios executed within a system, capturing essential data such as project keys, scenario identifiers, and execution details. This dataset is particularly useful for tracking the performance and outcomes of different scenarios over time. Each entry in the dataset includes a unique scenario project key and scenario ID, which help in identifying and categorizing the scenarios. The dataset also records the start and end times of each scenario run, allowing for analysis of execution duration and scheduling efficiency. Additionally, it includes the outcome of each run, such as success or failure, and any warnings that may have been generated. The dataset also captures the user information related to who initiated the run, providing insights into user activity and access patterns. This dataset is valuable for system administrators and developers who need to monitor, analyze, and optimize scenario executions, ensuring efficient and successful operations.",
+  "shortDesc": "Dataset of scenario runs with timestamps and outcomes.",
   "checklists": {
     "checklists": []
   },
