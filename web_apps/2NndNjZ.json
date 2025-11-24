@@ -48,7 +48,11 @@
     "forceAuthentication": false
   },
   "config": {
-    "LLMs": [],
+    "LLMs": [
+      {
+        "llm_id": "openai:se-open-ai:gpt-5"
+      }
+    ],
     "number_of_documents_to_retrieve": 10,
     "tool_agent_configurations": [
       {
@@ -108,7 +112,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:NgRtpwc7tTEsqPeeytMgXM/GSBxa5Q8PJQXegci2vc6ZnI2BDuE1LjOC0u6934zbcqKLusosoCl7mIwoQrEF+2xhcqFmt2acOyvqSQe45OyW7gPLCAfr",
+  "apiKey": "e:AES:X2:JwTVRlV4UQZwtV1n1eUAAF0+Ffnc9pPGJ3jpVrTBKV9HLz9JVHnsapliVwugNJXoCdNXxvjsNsyKOHEUW8TcCmQj2aCkpvdL1/wadHijFylLrT0/8W9y",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
