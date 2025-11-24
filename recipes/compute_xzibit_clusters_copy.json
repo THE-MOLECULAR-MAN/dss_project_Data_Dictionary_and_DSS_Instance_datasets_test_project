@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_clusters_copy",
+          "ref": "dss_clusters_cached",
           "appendMode": false
         }
       ]

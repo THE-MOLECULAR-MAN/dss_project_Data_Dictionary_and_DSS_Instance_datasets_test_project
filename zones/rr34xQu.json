@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_clusters_copy",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_datasets_copy",
       "objectType": "DATASET"
     },
@@ -108,6 +104,10 @@
     },
     {
       "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_cached",
       "objectType": "DATASET"
     }
   ],
