@@ -37,6 +37,10 @@
     {
       "objectId": "object_states_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
