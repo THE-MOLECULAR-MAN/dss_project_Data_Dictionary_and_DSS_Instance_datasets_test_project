@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_object_states_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "object_states_cached",
       "objectType": "DATASET"
     }
