@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_clusters",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_clusters_live\u0027 dataset provides detailed information about live DSS (Data Science Studio) clusters. This dataset is crucial for managing and monitoring the performance and configuration of active clusters in a data science environment. It includes various attributes that describe the cluster\u0027s current state, configuration, and operational parameters. This information is valuable for data engineers and IT administrators who need to ensure optimal performance and resource allocation for data processing tasks. The dataset can be used to track cluster usage, identify potential issues, and plan for scaling or resource adjustments. By analyzing this dataset, organizations can improve their data infrastructure\u0027s efficiency and reliability, ensuring that data science projects run smoothly and effectively. The dataset\u0027s unique features include real-time data on cluster configurations and operational metrics, which are essential for maintaining high availability and performance in data-intensive applications.",
+  "shortDesc": "Dataset for live DSS clusters with configuration details.",
   "checklists": {
     "checklists": []
   },
