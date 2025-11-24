@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763948233434
+        "lastModifiedOn": 1763948296230
       },
       "creationTag": {
         "versionNumber": 0,
@@ -45,7 +45,13 @@
         "singleInstance": false
       },
       "toolsUsingAgentSettings": {
-        "tools": [],
+        "tools": [
+          {
+            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.xzmNNk7"
+          }
+        ],
+        "llmId": "huggingfacelocal:doc-local-hugging-face:HuggingFaceH4/zephyr-7b-beta",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its configuration, projects, datasets, etc.",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": true
@@ -132,7 +138,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "how many"
           }
         ],
         "context": {}
