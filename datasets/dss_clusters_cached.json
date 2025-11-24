@@ -47,7 +47,7 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_dss_clusters_cached",
-    "schema": "demo",
+    "schema": "",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
