@@ -93,6 +93,14 @@
     {
       "objectId": "dss_connections_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_datasets_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
