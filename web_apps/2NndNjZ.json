@@ -56,7 +56,9 @@
         "agent_system_instructions": "",
         "tool_agent_description": "This agent provides information about the local Dataiku DSS instances, including projects, datasets, and more.",
         "enable_stories": false,
-        "agent_example_queries": [],
+        "agent_example_queries": [
+          "Which users have made the most commits in the last 90 days?"
+        ],
         "tool_agent_display_name": "Dataiku DSS Internals queries"
       }
     ],
@@ -85,7 +87,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:o/oHTqKtwbE6pdazV5AGgtD2kq3cd2KHqWPXTAokwLeN21FhzsS+lG4UfDSmghQfSvrIf4aJyGDVT34eqdGkxZ6nhhiQzd5Uk88cU1p1Jxiq8dZrA4zT",
+  "apiKey": "e:AES:X2:VP+V+MCMWsZ66pUBWI+oh/nuWY3nmp49v7AMtZ8UmbCgr1YoTqcBnNXYBb6LR1E71hs7b/a4cPs2m0I12xzfa5jPqRmE5zsr8DPxb3axT6BUs/nk9pj5",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
