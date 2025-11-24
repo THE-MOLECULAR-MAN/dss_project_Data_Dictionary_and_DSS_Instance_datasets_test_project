@@ -50,17 +50,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each plugin.","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Descriptive name of the plugin.","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Categories or keywords associated with the plugin.","isColumnEdited":true},
-      {"name":"version","type":"string","comment":"Current version of the plugin.","isColumnEdited":true},
-      {"name":"project_usages","type":"string","comment":"List of projects using the plugin.","isColumnEdited":true},
-      {"name":"total_usages","type":"string","comment":"Number of times the plugin is used.","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
