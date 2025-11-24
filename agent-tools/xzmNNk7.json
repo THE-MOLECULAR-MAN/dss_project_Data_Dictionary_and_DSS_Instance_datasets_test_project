@@ -19,7 +19,10 @@
         "dss_datasets_cached",
         "dss_plugins_cached",
         "dss_recipes_cached",
-        "dss_users_cached"
+        "dss_users_cached",
+        "commits_cached",
+        "jobs_cached",
+        "scenario_run_cached"
       ],
       "connection": "techex-postgres-beta",
       "llmId": "openai:se-open-ai:gpt-5",
