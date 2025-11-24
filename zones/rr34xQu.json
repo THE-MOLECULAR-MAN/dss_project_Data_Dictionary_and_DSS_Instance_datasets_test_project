@@ -3,10 +3,6 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "compute_xzibit_users_copy",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_xzibit_recipes_copy",
       "objectType": "RECIPE"
     },
