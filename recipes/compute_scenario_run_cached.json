@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "scenario_run_cached",
+          "ref": "scenario_runs_cached",
           "appendMode": false
         }
       ]
