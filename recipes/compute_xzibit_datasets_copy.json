@@ -65,7 +65,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_datasets",
+          "ref": "dss_datasets_live",
           "deps": []
         }
       ]
