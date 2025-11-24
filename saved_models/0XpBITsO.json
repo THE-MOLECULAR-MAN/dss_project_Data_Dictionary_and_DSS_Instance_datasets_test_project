@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 3,
+        "versionNumber": 4,
         "lastModifiedBy": {
           "login": "tim.honker"
         },
-        "lastModifiedOn": 1763948384971
+        "lastModifiedOn": 1763949411094
       },
       "creationTag": {
         "versionNumber": 0,
@@ -48,6 +48,12 @@
         "tools": [
           {
             "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.xzmNNk7"
+          },
+          {
+            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.JfbcCw6"
+          },
+          {
+            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.6RzMYU4"
           }
         ],
         "llmId": "openai:se-open-ai:gpt-5",
