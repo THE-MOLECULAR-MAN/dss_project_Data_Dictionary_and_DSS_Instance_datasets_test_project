@@ -45,6 +45,10 @@
     {
       "objectId": "compute_cluster_tasks_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "object_states",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
