@@ -63,10 +63,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_apps_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
     },
