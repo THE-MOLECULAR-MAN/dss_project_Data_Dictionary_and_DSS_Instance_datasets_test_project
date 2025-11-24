@@ -11,10 +11,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "scenario_runs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_jobs_cached",
       "objectType": "RECIPE"
     },
