@@ -15,7 +15,7 @@
       ],
       "connection": "techex-postgres-beta",
       "llmId": "openai:se-open-ai:gpt-5",
-      "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s projects."
+      "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers"
     },
     "containerExecSelection": {
       "containerMode": "INHERIT"
