@@ -55,7 +55,7 @@
       {
         "agent_id": "Data_Dictionary_and_DSS_Instance_datasets_test_project:agent:0XpBITsO",
         "agent_system_instructions": "",
-        "tool_agent_description": "",
+        "tool_agent_description": "This agent provides information about the local Dataiku DSS instances, including projects, datasets, and more.",
         "enable_stories": false,
         "agent_example_queries": []
       }
@@ -91,7 +91,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:D9NhxbHFVPNYQ5Dm9vcXoaSGNcCJY1iD6fhYIdzWZIh7mbAsqTXRyXFXqFB1MSPExITF2jOjml+i/Lp+kpTT5YBULb+7Rwbd8pve30H9aLMSftMdSss0",
+  "apiKey": "e:AES:X2:vhq5TQrV/vXAjhEnY/UC/HxQSkYaQV4jHeZNMC52sOwK4ANwTR7VsyQshNalGFHgFYBgymh9VCRNDW7r+GYwIJ0MeMEL6a9OskNpojkEatNu+fpsjQuq",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
