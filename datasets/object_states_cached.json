@@ -29,12 +29,7 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "country",
-        "type": "value"
-      }
-    ]
+    "dimensions": []
   },
   "creationTag": {
     "versionNumber": 0,
