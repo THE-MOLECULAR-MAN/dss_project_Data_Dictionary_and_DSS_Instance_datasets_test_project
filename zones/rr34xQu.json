@@ -67,10 +67,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_recipes_copy",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_users_live",
       "objectType": "DATASET"
     },
@@ -108,6 +104,10 @@
     },
     {
       "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_cached",
       "objectType": "DATASET"
     }
   ],

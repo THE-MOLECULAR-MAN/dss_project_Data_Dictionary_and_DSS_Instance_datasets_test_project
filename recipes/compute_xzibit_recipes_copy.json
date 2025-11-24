@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_recipes_copy",
+          "ref": "dss_recipes_cached",
           "appendMode": false
         }
       ]
