@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "dss_projects_cached_psql",
+          "ref": "dss_projects_cached",
           "appendMode": false
         }
       ]
