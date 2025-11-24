@@ -7,10 +7,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_xzibit_codeenvs_copy",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_xzibit_clusters_copy",
       "objectType": "RECIPE"
     },
