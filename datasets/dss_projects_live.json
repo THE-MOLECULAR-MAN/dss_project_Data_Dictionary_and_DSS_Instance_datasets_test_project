@@ -45,17 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
-      {"name":"ownerLogin","type":"string","comment":"Username of the project owner, indicates responsibility.","isColumnEdited":true},
-      {"name":"tutorialProject","type":"string","comment":"Indicates if the project is a tutorial, boolean value.","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Title of the project, descriptive name.","isColumnEdited":true},
-      {"name":"projectStatus","type":"string","comment":"Current status of the project, e.g., \u0027Sandbox\u0027.","isColumnEdited":true},
-      {"name":"contributors","type":"string","comment":"List of project contributors, JSON array format.","isColumnEdited":true},
-      {"name":"lastModifiedOn","type":"string","comment":"Timestamp of last modification, tracks updates.","isColumnEdited":true},
-      {"name":"shortDesc","type":"string","comment":"Brief description of the project, free text.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Categorical labels for the project, JSON array format.","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
