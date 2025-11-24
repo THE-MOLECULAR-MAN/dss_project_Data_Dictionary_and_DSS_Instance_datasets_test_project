@@ -19,7 +19,7 @@
       {
         "id": "runmacro_pyrunnable_data-dictionary-agent_auto-documentation-generation",
         "type": "runnable",
-        "name": "Fill in empty project descriptions",
+        "name": "Fill in empty descriptions",
         "enabled": true,
         "alwaysShowComment": false,
         "runConditionType": "RUN_IF_STATUS_MATCH",
