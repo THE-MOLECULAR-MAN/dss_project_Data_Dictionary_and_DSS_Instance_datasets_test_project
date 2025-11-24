@@ -39,10 +39,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "xzibit_apps_copy",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_datasets_copy",
       "objectType": "DATASET"
     },
@@ -108,6 +104,10 @@
     },
     {
       "objectId": "dss_clusters_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_apps_cached",
       "objectType": "DATASET"
     }
   ],
