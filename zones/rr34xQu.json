@@ -93,6 +93,10 @@
     {
       "objectId": "dss_projects_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
