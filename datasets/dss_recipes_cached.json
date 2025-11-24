@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_recipes_cached\u0027 dataset is a comprehensive collection of cached recipes used in various projects. Each entry in the dataset represents a unique recipe instance, identified by a project key and an ID. The dataset provides detailed metadata about each recipe, including its type, name, and associated tags. Additionally, it includes information about the input and output datasets related to each recipe, which is crucial for understanding the data flow and dependencies within projects. This dataset is particularly useful for data engineers and analysts who need to manage and optimize data processing workflows. By examining the types and names of recipes, users can gain insights into the functions and purposes of different recipes. The tags and dataset lists further aid in categorizing and retrieving specific recipes, enhancing the efficiency of data management tasks. Overall, this dataset serves as a valuable resource for maintaining and analyzing the structure and execution of data processing recipes in a project environment.",
+  "shortDesc": "Dataset of cached project recipes with identifiers and metadata.",
   "checklists": {
     "checklists": []
   },
