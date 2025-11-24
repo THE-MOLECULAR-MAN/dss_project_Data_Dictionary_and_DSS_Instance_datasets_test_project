@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_clusters",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_xzibit_users_copy",
       "objectType": "RECIPE"
     },
@@ -108,6 +104,10 @@
     },
     {
       "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_clusters_live",
       "objectType": "DATASET"
     }
   ],
