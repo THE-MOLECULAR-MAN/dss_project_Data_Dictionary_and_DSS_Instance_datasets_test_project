@@ -75,7 +75,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_projects_copy",
+          "ref": "dss_projects_cached",
           "appendMode": false
         }
       ]
