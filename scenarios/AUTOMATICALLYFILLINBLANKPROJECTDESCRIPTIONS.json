@@ -35,13 +35,15 @@
           "runnableType": "pyrunnable_data-dictionary-agent_auto-documentation-generation",
           "config": {
             "save_description": true,
-            "project_filter": "all_projects",
+            "project_filter": "this_project_only",
             "language": "english",
             "project_purpose": "generic",
             "project_length": "medium",
             "flowzone_purpose": "generic",
             "flowzone_length": "medium",
             "object_types_to_autofill": [
+              "flowzones",
+              "datasets",
               "projects"
             ]
           },
