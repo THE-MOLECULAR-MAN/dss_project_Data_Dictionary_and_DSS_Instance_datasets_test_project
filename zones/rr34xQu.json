@@ -47,10 +47,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_codeenvs_copy",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_datasets_copy",
       "objectType": "DATASET"
     },
@@ -108,6 +104,10 @@
     },
     {
       "objectId": "dss_connections_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
     }
   ],
