@@ -2,6 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027cluster_tasks\u0027 dataset provides detailed information about various tasks executed within a cluster environment. It includes key attributes such as the connection type, task type, project key, and user information, which are essential for understanding the context and execution environment of each task. The dataset also captures the start and end times of tasks, allowing for performance analysis and optimization. The \u0027task_data\u0027 column contains JSON objects with job and activity identifiers, providing a deeper insight into the specific operations performed. This dataset is particularly useful for system administrators and data engineers who need to monitor, analyze, and optimize task execution within a cluster. It can be used for auditing purposes, performance tuning, and identifying bottlenecks in task execution. The inclusion of user information also allows for tracking and accountability of task execution across different users.",
+  "shortDesc": "Dataset of cluster tasks with connection, task type, and timing details.",
   "checklists": {
     "checklists": []
   },
@@ -48,13 +50,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection","type":"string"},
-      {"name":"task_type","type":"string"},
-      {"name":"project_key","type":"string"},
-      {"name":"task_data","type":"string"},
-      {"name":"user","type":"string"},
-      {"name":"start_time","type":"bigint"},
-      {"name":"end_time","type":"bigint"}
+      {"name":"connection","type":"string","comment":"Type of connection used, e.g., snowflake, postgres.","isColumnEdited":true},
+      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., SQL_FROM_RECIPE.","isColumnEdited":true},
+      {"name":"project_key","type":"string","comment":"Identifier for the project associated with the task.","isColumnEdited":true},
+      {"name":"task_data","type":"string","comment":"JSON object with job and activity identifiers.","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"Username of the person executing the task.","isColumnEdited":true},
+      {"name":"start_time","type":"bigint","comment":"Timestamp when the task started, in milliseconds.","isColumnEdited":true},
+      {"name":"end_time","type":"bigint","comment":"Timestamp when the task ended, in milliseconds.","isColumnEdited":true}
     ],
     "userModified": true
   },
