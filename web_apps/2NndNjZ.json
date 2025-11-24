@@ -88,7 +88,7 @@
         "selected_agents": []
       },
       {
-        "homepage_example_label": "Locating projects that use Hive recipes",
+        "homepage_example_label": "Migration planning off Hive",
         "homepage_example_query": "List the project keys and project owners for all projects that use at least one Hive recipe",
         "selected_agents": []
       }
@@ -108,7 +108,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:QNFqmzaLS74tIE+69O1LL2rbbRTT/CBYbr7TcLv9fu9FR/LuicVgAPpJAzvrlUIo5xWE1hSQ9ktgqvclGJ4UOeVOxq4gkDBauCF2+X3VCpPzJMHosVwJ",
+  "apiKey": "e:AES:X2:NgRtpwc7tTEsqPeeytMgXM/GSBxa5Q8PJQXegci2vc6ZnI2BDuE1LjOC0u6934zbcqKLusosoCl7mIwoQrEF+2xhcqFmt2acOyvqSQe45OyW7gPLCAfr",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
