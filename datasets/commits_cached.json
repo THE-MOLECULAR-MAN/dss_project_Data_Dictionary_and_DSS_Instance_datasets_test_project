@@ -65,15 +65,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Unique identifier for the project, key for project tracking.","isColumnEdited":true},
-      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit, essential for version control.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Name of the person who made the commit, tracks contributions.","isColumnEdited":true},
-      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, crucial for chronological analysis.","isColumnEdited":true},
-      {"name":"added_files","type":"int","comment":"Number of files added in the commit, indicates new additions.","isColumnEdited":true},
-      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit, measures code growth.","isColumnEdited":true},
-      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit, shows deletions.","isColumnEdited":true},
-      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit, indicates code reduction.","isColumnEdited":true},
-      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit, reflects modifications.","isColumnEdited":true}
+      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","isColumnEdited":true},
+      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
+      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
+      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
+      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
+      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
+      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
+      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
     ],
     "userModified": true
   },
