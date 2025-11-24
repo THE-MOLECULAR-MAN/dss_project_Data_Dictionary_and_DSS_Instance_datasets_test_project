@@ -55,7 +55,7 @@
       {"name":"contributors","type":"string"},
       {"name":"lastModifiedOn","type":"string"},
       {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
