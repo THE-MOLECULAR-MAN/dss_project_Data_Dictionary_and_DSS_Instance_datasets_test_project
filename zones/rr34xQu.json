@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_connections_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
     },
