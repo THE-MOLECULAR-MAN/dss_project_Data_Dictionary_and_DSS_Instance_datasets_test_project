@@ -1,0 +1,28 @@
+{
+  "name": "SQL Query",
+  "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+  "params": {
+    "config": {},
+    "containerExecSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "quickTestQuery": {
+    "input": {},
+    "context": {}
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "tim.honker"
+    },
+    "lastModifiedOn": 1763947831342
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
