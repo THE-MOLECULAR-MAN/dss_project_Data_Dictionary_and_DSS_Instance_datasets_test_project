@@ -53,14 +53,11 @@
     "number_of_documents_to_retrieve": 10,
     "tool_agent_configurations": [
       {
-        "agent_id": "HONKER_TEST:agent:LYfOaCZ1",
+        "agent_id": "Data_Dictionary_and_DSS_Instance_datasets_test_project:agent:0XpBITsO",
         "agent_system_instructions": "",
-        "tool_agent_description": "This agent searches the local Dataiku DSS instance\u0027s list of datasets and columns to help locate the appropriate dataset based off metadata, descriptions, column names, and column descriptions.",
+        "tool_agent_description": "",
         "enable_stories": false,
-        "agent_example_queries": [
-          "Find datasets that have information about invoices including the invoice number, the client\u0027s name, the amount due, and more."
-        ],
-        "tool_agent_display_name": "Dataset search"
+        "agent_example_queries": []
       }
     ],
     "augmented_llms_configurations": [],
@@ -80,10 +77,10 @@
       }
     ],
     "projects_keys": [
-      "HONKER_TEST"
+      "Data_Dictionary_and_DSS_Instance_datasets_test_project"
     ],
     "agents_ids": [
-      "HONKER_TEST:agent:LYfOaCZ1"
+      "Data_Dictionary_and_DSS_Instance_datasets_test_project:agent:0XpBITsO"
     ],
     "augmented_llms_ids": [],
     "globalSystemPrompt": "",
@@ -94,7 +91,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:EGNnFZ4LaDerBHnmV2A7iPmwpfmKueHRj1jVJWcIHWURymhBw9gfryDXtuvuL7ggBwUP7Dhem5XvnYSH2zj1EeTYImOwShzXwnwWi1qxL3we4/2bFbou",
+  "apiKey": "e:AES:X2:D9NhxbHFVPNYQ5Dm9vcXoaSGNcCJY1iD6fhYIdzWZIh7mbAsqTXRyXFXqFB1MSPExITF2jOjml+i/Lp+kpTT5YBULb+7Rwbd8pve30H9aLMSftMdSss0",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
