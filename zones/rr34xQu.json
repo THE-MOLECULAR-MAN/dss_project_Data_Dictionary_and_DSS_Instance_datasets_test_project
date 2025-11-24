@@ -47,10 +47,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_projects_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_plugin_cached",
       "objectType": "DATASET"
     },
