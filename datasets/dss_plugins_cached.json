@@ -64,17 +64,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development. Keywords: development, status, plugin.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each plugin. Keywords: identifier, unique, plugin.","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Descriptive name of the plugin. Keywords: name, descriptive, plugin.","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality. Keywords: functionality, explanation, plugin.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin. Keywords: creator, maintainer, plugin.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Categories or keywords associated with the plugin. Keywords: categories, keywords, plugin.","isColumnEdited":true},
-      {"name":"version","type":"string","comment":"Current version of the plugin. Keywords: version, current, plugin.","isColumnEdited":true},
-      {"name":"project_usages","type":"string","comment":"List of projects using the plugin. Keywords: projects, usage, plugin.","isColumnEdited":true},
-      {"name":"total_usages","type":"string","comment":"Number of times the plugin is used. Keywords: usage, count, plugin.","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
