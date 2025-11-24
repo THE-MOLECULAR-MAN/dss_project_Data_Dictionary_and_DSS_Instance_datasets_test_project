@@ -101,6 +101,10 @@
     {
       "objectId": "compute_dss_plugins_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_clusters_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
