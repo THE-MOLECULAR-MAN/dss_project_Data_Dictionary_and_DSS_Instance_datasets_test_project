@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_users_cached\u0027 dataset provides comprehensive information about user accounts within a system, focusing on login credentials, account origins, and user activity. It includes details such as unique login identifiers, the source of account creation (either LDAP or LOCAL), and display names used in interfaces. The dataset also captures user group memberships, which define roles and permissions, and user profiles that determine access levels. Additionally, it records the creation date of accounts, their current status (enabled or disabled), and the effective user profile after policy applications. To monitor user activity, the dataset logs the last successful login and the last session activity timestamps. It also includes users\u0027 email addresses for contact purposes. This dataset is particularly useful for system administrators and IT professionals who need to manage user accounts, track user activity, and ensure security compliance. By analyzing this data, organizations can optimize user management processes, enhance security protocols, and improve user experience.",
+  "shortDesc": "User account dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
