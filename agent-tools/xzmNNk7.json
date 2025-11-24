@@ -2,7 +2,16 @@
   "name": "SQL Query",
   "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
   "params": {
-    "config": {},
+    "config": {
+      "hard_sql_limit": 200,
+      "return_value_mode": "AUTO",
+      "max_records_for_artifact": -1,
+      "sample_values_strategy": "NONE",
+      "sample_values_from_data_cardinality_cutoff": 30,
+      "include_column_names_in_descriptor": true,
+      "include_column_descriptions_in_descriptor": true,
+      "datasets": []
+    },
     "containerExecSelection": {
       "containerMode": "INHERIT"
     }
