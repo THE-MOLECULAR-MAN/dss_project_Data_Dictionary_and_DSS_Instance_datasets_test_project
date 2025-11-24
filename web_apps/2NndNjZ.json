@@ -16,7 +16,6 @@
     "libraries": [
       "dataiku"
     ],
-    "runAs": "tim.honker",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -86,7 +85,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:An+zTGnbglHedintvUEdgnCXrnXrnxqjmnrNRPmTw5tRJ1kym+rlTSJIJu3AlgsQpjbAMo9vaojHNKKQcY0kXYr7NNPqJj1yg57cN70jGF/xH4EGroy6",
+  "apiKey": "e:AES:X2:VMGlpDafFC6VPjqY76zpcVtWXl1vm65iK+rElw9s/oA9Z3Yoy3hpXqrdzhp/7vbSHlHimFPNg9n2TjDFuPTlKg6chS1jy99ZzzlMZwG4ozCmZgodfDNJ",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
