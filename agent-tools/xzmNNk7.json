@@ -40,7 +40,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
-  "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers",
+  "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
