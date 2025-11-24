@@ -47,7 +47,7 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"ownerLogin","type":"string"},
+      {"name":"ownerLogin","type":"string","meaning":"Text"},
       {"name":"projectLocation","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"tutorialProject","type":"string"},
       {"name":"name","type":"string"},
