@@ -11,9 +11,9 @@
       "include_column_names_in_descriptor": true,
       "include_column_descriptions_in_descriptor": true,
       "datasets": [
-        "dss_projects_cached"
+        "dss_projects_cached_psql"
       ],
-      "connection": "filesystem_folders",
+      "connection": "techex-postgres-beta",
       "llmId": "openai:se-open-ai:gpt-5",
       "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s projects."
     },
