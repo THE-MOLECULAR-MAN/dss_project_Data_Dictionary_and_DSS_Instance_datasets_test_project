@@ -71,7 +71,18 @@
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
     "logLevel": "INFO",
-    "homepage_examples": [],
+    "homepage_examples": [
+      {
+        "homepage_example_label": "Most contributing users",
+        "homepage_example_query": "Which users have made the most commits in the last 90 days?",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Empty projects",
+        "homepage_example_query": "What percentage of all the projects have 0 datasets? list both numbers.",
+        "selected_agents": []
+      }
+    ],
     "projects_keys": [
       "Data_Dictionary_and_DSS_Instance_datasets_test_project"
     ],
@@ -87,7 +98,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:VP+V+MCMWsZ66pUBWI+oh/nuWY3nmp49v7AMtZ8UmbCgr1YoTqcBnNXYBb6LR1E71hs7b/a4cPs2m0I12xzfa5jPqRmE5zsr8DPxb3axT6BUs/nk9pj5",
+  "apiKey": "e:AES:X2:GWI6VDYnRab0jZgGiWiLLB0mzBQ6/yidbKP4MqIdVQE07b8ERaGSIIu4VlPMjd2h7He06550usIfVQzEz73ziwNnDDjhME8z3j31A4ZCDYoFDa+1TF6B",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
