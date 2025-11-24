@@ -65,7 +65,7 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_connections",
+          "ref": "dss_connections_live",
           "deps": []
         }
       ]
