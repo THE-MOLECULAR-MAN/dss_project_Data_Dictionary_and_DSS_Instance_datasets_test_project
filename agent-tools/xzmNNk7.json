@@ -3,14 +3,19 @@
   "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
   "params": {
     "config": {
-      "hard_sql_limit": 200,
+      "hard_sql_limit": 20,
       "return_value_mode": "AUTO",
       "max_records_for_artifact": -1,
-      "sample_values_strategy": "NONE",
+      "sample_values_strategy": "FROM_DATA",
       "sample_values_from_data_cardinality_cutoff": 30,
       "include_column_names_in_descriptor": true,
       "include_column_descriptions_in_descriptor": true,
-      "datasets": []
+      "datasets": [
+        "dss_projects_live"
+      ],
+      "connection": "filesystem_folders",
+      "llmId": "huggingfacelocal:doc-local-hugging-face:HuggingFaceH4/zephyr-7b-beta",
+      "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s projects."
     },
     "containerExecSelection": {
       "containerMode": "INHERIT"
@@ -22,6 +27,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
+  "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS projects.",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
