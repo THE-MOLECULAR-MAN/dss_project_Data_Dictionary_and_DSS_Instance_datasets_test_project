@@ -34,5 +34,41 @@
     "key": "sha256:vw57UN93:b624a107ca09277d95166d1d1754a89a63b18053f7e963651df4557f1d77dd49",
     "label": "Key for Web app Agent Hub(2NndNjZ)",
     "createdOn": 1763668645043
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "RKlMU3m",
+    "expiresOn": 0,
+    "id": "FqWoG5UFmeg71B5A",
+    "key": "sha256:lgP506Ro:b1f404cccd3aa962e0d2bf127b00c4e1d7a9019d3af30edf542a3583c707860a",
+    "label": "Key for Web app Trace Explorer(RKlMU3m)",
+    "createdOn": 1763959513153
   }
 ]
