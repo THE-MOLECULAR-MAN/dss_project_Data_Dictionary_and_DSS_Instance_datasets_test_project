@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_connections_cached\u0027 dataset provides a comprehensive overview of various connections used within a system, focusing on their types, access permissions, and credential modes. This dataset is particularly useful for administrators and developers who need to manage and audit connection settings across different platforms such as BigQuery, PostgreSQL, and Snowflake. Each connection is uniquely identified by a name, and its type specifies the system it connects to. The dataset includes critical information about whether writing is allowed, the mode of credentials (either per user or global), and who can use or read the connection details. Additionally, it specifies which user groups have access to use the connections or read their details, ensuring that permissions are clearly defined and managed. This dataset is essential for maintaining security and operational efficiency in environments where multiple connections and user groups are involved. It helps in ensuring that only authorized users have the necessary access, thereby safeguarding sensitive data and operations.",
+  "shortDesc": "Dataset of cached connection details with access and permission settings.",
   "checklists": {
     "checklists": []
   },
