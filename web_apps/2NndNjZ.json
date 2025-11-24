@@ -70,13 +70,7 @@
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
     "logLevel": "INFO",
-    "homepage_examples": [
-      {
-        "homepage_example_label": "Finding datasets about invoices",
-        "homepage_example_query": "Find datasets that have information about invoices including the invoice number, the client\u0027s name, the amount due, and more.",
-        "selected_agents": []
-      }
-    ],
+    "homepage_examples": [],
     "projects_keys": [
       "Data_Dictionary_and_DSS_Instance_datasets_test_project"
     ],
@@ -92,7 +86,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:xeMXsEr3acDKhUxVfN5xO6shusgt6MgxxlkDh0gAvw1seIaL5ZzJkOcnBsOK5hrd566pMhdaGb1YPg1UTjdARWX0Oxf1yPDmU2U0NmIQR/QH/TQJ+cmS",
+  "apiKey": "e:AES:X2:An+zTGnbglHedintvUEdgnCXrnXrnxqjmnrNRPmTw5tRJ1kym+rlTSJIJu3AlgsQpjbAMo9vaojHNKKQcY0kXYr7NNPqJj1yg57cN70jGF/xH4EGroy6",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
