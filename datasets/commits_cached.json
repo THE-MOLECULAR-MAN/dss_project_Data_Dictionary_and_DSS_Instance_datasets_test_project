@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027commits_cached\u0027 dataset provides a detailed record of software development activities, specifically focusing on commit data. This dataset is particularly useful for analyzing the history and evolution of a software project by examining individual commits. Each entry in the dataset represents a single commit, identified by a unique commit ID, and includes information about the project it belongs to, the author of the commit, and the timestamp of when the commit was made. Additionally, the dataset captures the number of files and lines added, removed, or changed in each commit, offering insights into the scale and impact of changes. This dataset can be used by software developers, project managers, and researchers to track project progress, identify trends in development practices, and assess the contributions of different team members. It is also valuable for automated tools that analyze code changes for quality assurance or to predict future development needs.",
+  "shortDesc": "Dataset of cached commit data with project, author, and file changes.",
   "checklists": {
     "checklists": []
   },
@@ -63,15 +65,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string"},
-      {"name":"commit_id","type":"string"},
-      {"name":"author","type":"string"},
-      {"name":"timestamp","type":"bigint"},
-      {"name":"added_files","type":"int"},
-      {"name":"added_lines","type":"int"},
-      {"name":"removed_files","type":"int"},
-      {"name":"removed_lines","type":"int"},
-      {"name":"changed_files","type":"int"}
+      {"name":"project_key","type":"string","comment":"Unique identifier for the project, key for project tracking.","isColumnEdited":true},
+      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit, essential for version control.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Name of the person who made the commit, tracks contributions.","isColumnEdited":true},
+      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, crucial for chronological analysis.","isColumnEdited":true},
+      {"name":"added_files","type":"int","comment":"Number of files added in the commit, indicates new additions.","isColumnEdited":true},
+      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit, measures code growth.","isColumnEdited":true},
+      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit, shows deletions.","isColumnEdited":true},
+      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit, indicates code reduction.","isColumnEdited":true},
+      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit, reflects modifications.","isColumnEdited":true}
     ],
     "userModified": true
   },
