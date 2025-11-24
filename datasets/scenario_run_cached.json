@@ -65,18 +65,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string","comment":"Unique key for scenario project, identifies project.","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Identifier for the scenario, categorizes scenario.","isColumnEdited":true},
-      {"name":"scenario_run_id","type":"string","comment":"Unique ID for scenario run, includes timestamp.","isColumnEdited":true},
-      {"name":"time_start","type":"date","comment":"Start time of scenario run, records execution start.","isColumnEdited":true},
-      {"name":"time_end","type":"date","comment":"End time of scenario run, records execution end.","isColumnEdited":true},
-      {"name":"outcome","type":"string","comment":"Result of scenario run, indicates success or failure.","isColumnEdited":true},
-      {"name":"warnings_count","type":"bigint","comment":"Number of warnings during run, indicates issues.","isColumnEdited":true},
-      {"name":"scenario_name","type":"string","comment":"Name of the scenario, describes scenario purpose.","isColumnEdited":true},
-      {"name":"trigger_name","type":"string","comment":"Name of trigger, indicates how scenario started.","isColumnEdited":true},
-      {"name":"scenario_run_as_user","type":"string","comment":"User who ran the scenario, for auditing.","isColumnEdited":true},
-      {"name":"run_as_user_identifier","type":"string","comment":"Identifier of user who ran scenario, for tracking.","isColumnEdited":true},
-      {"name":"run_as_user_via","type":"string","comment":"Method or system used by user to run scenario.","isColumnEdited":true}
+      {"name":"scenario_project_key","type":"string","comment":"Unique key for the scenario project, identifies project.","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Identifier for the specific scenario, unique scenario ID.","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, tracks execution.","isColumnEdited":true},
+      {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","isColumnEdited":true},
+      {"name":"time_end","type":"date","comment":"Timestamp when the scenario run ended, end time.","isColumnEdited":true},
+      {"name":"outcome","type":"string","comment":"Result of the scenario run, indicates success or failure.","isColumnEdited":true},
+      {"name":"warnings_count","type":"bigint","comment":"Number of warnings during the scenario run, warning count.","isColumnEdited":true},
+      {"name":"scenario_name","type":"string","comment":"Name of the scenario, descriptive scenario title.","isColumnEdited":true},
+      {"name":"trigger_name","type":"string","comment":"Method used to trigger the scenario, trigger type.","isColumnEdited":true},
+      {"name":"scenario_run_as_user","type":"string","comment":"User who executed the scenario, run initiator.","isColumnEdited":true},
+      {"name":"run_as_user_identifier","type":"string","comment":"Identifier for the user who ran the scenario, user ID.","isColumnEdited":true},
+      {"name":"run_as_user_via","type":"string","comment":"Method or context through which user ran scenario, execution context.","isColumnEdited":true}
     ],
     "userModified": true
   },
