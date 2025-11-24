@@ -1,5 +1,5 @@
 {
-  "name": "SQL Query",
+  "name": "SQL Query on DSS internal datasets",
   "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
   "params": {
     "config": {
