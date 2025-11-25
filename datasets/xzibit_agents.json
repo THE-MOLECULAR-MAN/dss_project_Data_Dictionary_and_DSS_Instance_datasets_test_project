@@ -50,10 +50,12 @@
       {"name":"Created By","type":"string"},
       {"name":"Active Version","type":"string"},
       {"name":"LLM Model ID","type":"string"},
+      {"name":"LLM Vendor","type":"string"},
+      {"name":"LLM Connection Name","type":"string"},
+      {"name":"LLM Model Name","type":"string"},
       {"name":"Agent Type","type":"string"},
-      {"name":"version","type":"string"},
+      {"name":"Agent Version","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"Agent is active version","type":"string"},
       {"name":"Agent URL","type":"string"}
     ],
     "userModified": true
