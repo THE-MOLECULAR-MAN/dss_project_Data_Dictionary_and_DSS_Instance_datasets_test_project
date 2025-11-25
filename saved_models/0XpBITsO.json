@@ -139,11 +139,11 @@
     {
       "versionId": "v2_inactive_test",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "demo"
         },
-        "lastModifiedOn": 1764083803916
+        "lastModifiedOn": 1764083816779
       },
       "creationTag": {
         "versionNumber": 0,
@@ -174,13 +174,7 @@
       "toolsUsingAgentSettings": {
         "tools": [
           {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.xzmNNk7"
-          },
-          {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.JfbcCw6"
-          },
-          {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.6RzMYU4"
+            "toolRef": "JfbcCw6"
           }
         ],
         "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5",
