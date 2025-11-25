@@ -1,7 +1,12 @@
 {
   "name": "xx",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "xzibit_agents2",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
