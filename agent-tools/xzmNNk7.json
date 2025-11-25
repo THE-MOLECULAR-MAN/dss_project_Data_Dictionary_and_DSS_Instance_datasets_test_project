@@ -21,10 +21,7 @@
         "dss_users_cached",
         "commits_cached",
         "jobs_cached",
-        "scenario_run_cached",
-        "cluster_tasks_cached",
-        "dss_projects_cached",
-        "object_states_cached"
+        "dss_projects_cached"
       ],
       "connection": "techex-postgres-beta",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
