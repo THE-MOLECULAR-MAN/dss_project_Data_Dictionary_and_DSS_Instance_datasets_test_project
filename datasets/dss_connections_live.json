@@ -45,13 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"usableBy","type":"string","meaning":"Text"},
-      {"name":"allowWrite","type":"string","meaning":"Text"},
-      {"name":"credentialsMode","type":"string","meaning":"Text"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
