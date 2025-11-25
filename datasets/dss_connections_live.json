@@ -50,9 +50,7 @@
       {"name":"type","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string","meaning":"Text"},
       {"name":"allowWrite","type":"string","meaning":"Text"},
-      {"name":"allowedGroups","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"credentialsMode","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string","meaning":"Text"}
     ],
     "userModified": true
