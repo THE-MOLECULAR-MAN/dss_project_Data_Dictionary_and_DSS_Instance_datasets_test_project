@@ -142,5 +142,41 @@
     "key": "sha256:YlAP4cYT:d834134e963594621a76bf235fa5ceb90fac7e52634c67549522b3fd3f19eb9c",
     "label": "Key for Web app x(TeseXSD)",
     "createdOn": 1764105324779
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "FCbCAWO",
+    "expiresOn": 0,
+    "id": "mlhcdaMgML6IfAIC",
+    "key": "sha256:2BTOCb1l:13b988951cdf498e412a1f63e2d4605072f903a3c9885f7a21f5b329e6abf601",
+    "label": "Key for Web app ans(FCbCAWO)",
+    "createdOn": 1764105336497
   }
 ]
