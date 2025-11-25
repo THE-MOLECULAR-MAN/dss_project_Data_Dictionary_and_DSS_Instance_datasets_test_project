@@ -1,7 +1,20 @@
 {
   "name": "Schema locked, verified",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_users_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
