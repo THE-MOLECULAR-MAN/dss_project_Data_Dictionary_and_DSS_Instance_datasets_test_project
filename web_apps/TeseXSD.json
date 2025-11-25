@@ -1,0 +1,70 @@
+{
+  "type": "webapp_ai-services-on-llm-mesh_ai-assistants",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": true,
+    "autoStartBackend": false,
+    "hideJSSecurityPanel": true,
+    "hideWebAppConfig": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 0,
+    "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
+    "libraries": [],
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {
+    "prepare_ai_completion_llm_id_advanced_parameters": {},
+    "ai_generate_sql_llm_id_advanced_parameters": {},
+    "ai_explanations_llm_id_advanced_parameters": {},
+    "text2story_llm_id_advanced_parameters": {},
+    "logging_level": "ERROR"
+  },
+  "name": "x",
+  "apiKey": "e:AES:X2:j07zttW3gEm0J/iEms9H0EZld3dlicAJ83jDVzgKgnp6HHQvYQBxFtl+6ntYsfQnx9EF286F5TBLFGPu7TOQGRf9dpEkQIuRvkAPE+TI50tdovQTO2u+",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1764105324781
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}
