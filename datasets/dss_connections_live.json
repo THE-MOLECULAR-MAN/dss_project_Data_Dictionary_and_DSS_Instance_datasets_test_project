@@ -45,7 +45,16 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"name","type":"string"},
+      {"name":"type","type":"string"},
+      {"name":"allowWrite","type":"string"},
+      {"name":"credentialsMode","type":"string"},
+      {"name":"usableBy","type":"string"},
+      {"name":"allowedGroups","type":"string"},
+      {"name":"detailsReadability.allowedGroups","type":"string"},
+      {"name":"params.credentialsMode","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
