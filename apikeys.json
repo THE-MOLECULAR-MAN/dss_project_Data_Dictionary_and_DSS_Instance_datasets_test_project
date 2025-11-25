@@ -70,5 +70,41 @@
     "key": "sha256:AzpxxK4I:55379a3a92abfec2b5c41843e5817d034ca102e13b881e5729413137faa22969",
     "label": "Key for Web app Trace Explorer(RKlMU3m)",
     "createdOn": 1763959513153
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "gY7nbkW",
+    "expiresOn": 0,
+    "id": "ROcGZZeaCC7oLiaY",
+    "key": "sha256:qvA0kbn5:6a0782e94405d52d8375449277c41a2c7254f174b241c26aec0f7f0a250d9044",
+    "label": "Key for Web app Connect_Name-Test1234567890-\u003d_+!@#$%^\u0026*(),.\u003c\u003e/?\u0027\"[{]}\\|(gY7nbkW)",
+    "createdOn": 1764104602442
   }
 ]
