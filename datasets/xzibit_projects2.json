@@ -50,7 +50,7 @@
       {"name":"contributors","type":"array","meaning":"JSONArrayMeaning"},
       {"name":"name","type":"string","meaning":"Text"},
       {"name":"projectLocation","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"Text"},
+      {"name":"shortDesc","type":"string","meaning":"FreeText"},
       {"name":"tags","type":"array","meaning":"JSONArrayMeaning"},
       {"name":"lastModifiedOn","type":"date","meaning":"Date"},
       {"name":"tutorialProject","type":"string","meaning":"Text"}
