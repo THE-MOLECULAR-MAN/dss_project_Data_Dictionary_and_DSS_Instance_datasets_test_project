@@ -5,6 +5,10 @@
     {
       "objectId": "xzibit_agents2",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_agenthubs",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
