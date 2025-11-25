@@ -52,7 +52,7 @@
       {"name":"shortDesc","type":"string","meaning":"Text"},
       {"name":"tags","type":"array","meaning":"JSONArrayMeaning"},
       {"name":"lastModifiedOn","type":"date","meaning":"DatetimeNoTz"},
-      {"name":"tutorialProject","type":"string","meaning":"Text"}
+      {"name":"tutorialProject","type":"boolean","meaning":"Boolean"}
     ],
     "userModified": true
   },
