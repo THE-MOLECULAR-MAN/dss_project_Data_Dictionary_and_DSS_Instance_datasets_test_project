@@ -52,7 +52,8 @@
       {"name":"LLM Model ID","type":"string"},
       {"name":"Agent Type","type":"string"},
       {"name":"version","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"tags","type":"string"},
+      {"name":"Agent is active version","type":"string"}
     ],
     "userModified": true
   },
