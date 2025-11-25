@@ -3,18 +3,6 @@
   "color": "#C82423",
   "items": [
     {
-      "objectId": "dss_recipes_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_recipes_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_recipes_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_projects_live",
       "objectType": "DATASET"
     },
