@@ -54,7 +54,8 @@
       {"name":"created_on","type":"string"},
       {"name":"lastModifiedBy","type":"string"},
       {"name":"lastModifiedOn","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"tags","type":"string"},
+      {"name":"is_code_webapp","type":"string"}
     ],
     "userModified": true
   },
