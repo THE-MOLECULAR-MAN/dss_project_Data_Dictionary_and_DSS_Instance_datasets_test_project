@@ -109,10 +109,6 @@
     {
       "objectId": "compute_dss_clusters_cached",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "xzibit_projects2",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
