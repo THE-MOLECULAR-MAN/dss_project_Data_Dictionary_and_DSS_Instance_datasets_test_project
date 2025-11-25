@@ -1,7 +1,12 @@
 {
   "name": "xx",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "222",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
