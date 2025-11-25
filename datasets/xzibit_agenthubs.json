@@ -47,13 +47,14 @@
       {"name":"projectKey","type":"string"},
       {"name":"webapp_name","type":"string"},
       {"name":"webapp_id","type":"string"},
-      {"name":"backendRunning","type":"string"},
-      {"name":"created_on","type":"string"},
-      {"name":"lastModifiedBy","type":"string"},
-      {"name":"tags","type":"string"},
       {"name":"type","type":"string"},
       {"name":"created_by_user","type":"string"},
-      {"name":"url","type":"string"}
+      {"name":"backendRunning","type":"string"},
+      {"name":"url","type":"string"},
+      {"name":"created_on","type":"string"},
+      {"name":"lastModifiedBy","type":"string"},
+      {"name":"lastModifiedOn","type":"string"},
+      {"name":"tags","type":"string"}
     ],
     "userModified": true
   },
