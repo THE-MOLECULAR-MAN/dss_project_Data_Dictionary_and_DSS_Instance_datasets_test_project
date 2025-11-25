@@ -9,6 +9,10 @@
     {
       "objectId": "xzibit_agenthubs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_webapps",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
