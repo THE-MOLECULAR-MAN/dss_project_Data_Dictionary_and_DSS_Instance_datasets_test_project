@@ -55,7 +55,7 @@
       {"name":"url","type":"string","comment":"Direct URL to access the web application, for navigation.","meaning":"URL","isColumnEdited":true},
       {"name":"created_on","type":"date","comment":"Timestamp of when the web application was created, for auditing.","isColumnEdited":true},
       {"name":"lastModifiedBy","type":"string","comment":"User who last modified the application, for tracking changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"lastModifiedOn","type":"date","comment":"Timestamp of the last modification, for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"date","comment":"Timestamp of the last modification, for version control.","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Tags associated with the web application, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the application is code-based, for development insights.","meaning":"Boolean","isColumnEdited":true}
     ],
