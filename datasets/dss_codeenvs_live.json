@@ -55,7 +55,7 @@
       {"name":"corePackagesSet","type":"string","meaning":"Text"},
       {"name":"path","type":"string","meaning":"Text"},
       {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
-      {"name":"usages","type":"string"}
+      {"name":"usages","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
