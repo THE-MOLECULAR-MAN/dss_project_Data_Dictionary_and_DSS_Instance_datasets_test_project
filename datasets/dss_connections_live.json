@@ -46,7 +46,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"params.db","type":"string"},
+      {"name":"params.db","type":"string","meaning":"Text"},
       {"name":"name","type":"string"},
       {"name":"type","type":"string"},
       {"name":"creationTag.lastModifiedBy.login","type":"string"},
