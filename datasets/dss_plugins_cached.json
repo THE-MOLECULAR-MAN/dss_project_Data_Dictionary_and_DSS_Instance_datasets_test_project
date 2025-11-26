@@ -186,6 +186,24 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "id",
+          "label",
+          "total_usages"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "O8bA3lbI",
+        "displayName": "No empty values exist in 3 columns",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
