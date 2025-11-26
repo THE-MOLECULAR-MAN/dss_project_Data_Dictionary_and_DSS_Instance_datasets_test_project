@@ -58,7 +58,7 @@
       {"name":"params.table","type":"string"},
       {"name":"params.schema","type":"string"},
       {"name":"params.path","type":"string"},
-      {"name":"creationTag.lastModifiedBy.login","type":"string"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
       {"name":"creationTag.lastModifiedOn","type":"string"},
       {"name":"versionTag.lastModifiedBy.login","type":"string"},
       {"name":"versionTag.lastModifiedOn","type":"string"},
