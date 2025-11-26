@@ -71,7 +71,7 @@
       {"name":"created_by_user","type":"string","comment":"Email of the user who created the web app, for accountability.","meaning":"Text","isColumnEdited":true},
       {"name":"backendRunning","type":"boolean","comment":"Indicates if the backend is running, showing operational status.","meaning":"Boolean","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access the web application, necessary for navigation.","meaning":"URL","isColumnEdited":true},
-      {"name":"created_on","type":"date","comment":"Date when the web app was created, for tracking.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"created_on","type":"date","comment":"Date when the web app was created, for tracking.","isColumnEdited":true},
       {"name":"lastModifiedBy","type":"string","comment":"Email of the user who last modified the app, for tracking changes.","meaning":"Text","isColumnEdited":true},
       {"name":"lastModifiedOn","type":"date","comment":"Date of the last modification, for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Tags associated with the web app, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
