@@ -82,7 +82,7 @@
       },
       {
         "homepage_example_label": "Empty projects",
-        "homepage_example_query": "What percentage of all the projects have 0 datasets? list both numbers.",
+        "homepage_example_query": "How many projects have zero datasets? List the first five alphabetically.",
         "selected_agents": []
       },
       {
@@ -111,7 +111,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:NrFnrpvC2jD1Cedio3PC/PsxE2s6uJMbN9U8PTxpWiXsw/Xe+i1/C5IZvtNYl8a+6U2je4iAqAvZLZiWaRpCzuZCW098RIpjH6INfvytqd7YAGBB8nf3",
+  "apiKey": "e:AES:X2:cLd8Vr0HOfTFL1Ym2YapFR1gyFrtBebSQb+DhMLfHieDKYE3H/FLvv+Ay1ADfGeXqBjmpNNP9QQs5zROHpy9uX2LtGZXn6+dqT0Wb6KhOZIpW9++yHLE",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
