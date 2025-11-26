@@ -61,7 +61,21 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"webapp_name","type":"string","meaning":"Text"},
+      {"name":"webapp_id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"created_by_user","type":"string","meaning":"Text"},
+      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"created_on","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
+      {"name":"lastModifiedOn","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"tags","type":"array","meaning":"JSONArrayMeaning","arrayContent":{"type":"string"}
+      },
+      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
