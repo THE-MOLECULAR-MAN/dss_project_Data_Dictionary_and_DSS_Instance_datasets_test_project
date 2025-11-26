@@ -218,7 +218,7 @@
         "id": "shtgJNyC",
         "displayName": "No empty values exist in 3 columns",
         "computeOnBuildMode": "PARTITION",
-        "autoRun": false,
+        "autoRun": true,
         "enabled": true
       }
     ],
