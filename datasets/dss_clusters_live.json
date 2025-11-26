@@ -45,7 +45,9 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"owner","type":"string","meaning":"Text"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
