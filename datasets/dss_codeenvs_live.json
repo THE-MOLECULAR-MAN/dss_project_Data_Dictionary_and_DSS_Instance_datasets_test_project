@@ -49,7 +49,7 @@
       {"name":"envName","type":"string","meaning":"Text"},
       {"name":"envLang","type":"string","meaning":"Text"},
       {"name":"deploymentMode","type":"string","meaning":"Text"},
-      {"name":"owner","type":"string"},
+      {"name":"owner","type":"string","meaning":"Text"},
       {"name":"pythonInterpreter","type":"string"},
       {"name":"codeenv_url","type":"string"},
       {"name":"corePackagesSet","type":"string"},
