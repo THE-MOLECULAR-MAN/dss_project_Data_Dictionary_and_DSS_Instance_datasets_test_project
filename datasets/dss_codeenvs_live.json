@@ -53,7 +53,7 @@
       {"name":"pythonInterpreter","type":"string","meaning":"Text"},
       {"name":"codeenv_url","type":"string","meaning":"URL"},
       {"name":"corePackagesSet","type":"string","meaning":"Text"},
-      {"name":"path","type":"string"},
+      {"name":"path","type":"string","meaning":"Text"},
       {"name":"disk_size_megabytes","type":"string"},
       {"name":"usages","type":"string"}
     ],
