@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_agents",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_agents_live\u0027 dataset provides comprehensive information about live agents within a Data Science Studio (DSS) environment. It includes details such as the project each agent is associated with, the agent\u0027s name and ID, and the users who created or last modified the agents. This dataset is particularly useful for managing and tracking the deployment of agents across various projects, ensuring that the right versions and configurations are in use. It also includes information about the large language model (LLM) vendor, connection, and model name, which is crucial for understanding the AI capabilities integrated into these agents. The dataset can be used by data scientists and project managers to monitor agent activity, update versions, and manage user access. Additionally, the inclusion of timestamps and URLs for each agent provides a clear audit trail and easy access to agent resources. This dataset is essential for organizations using DSS to maintain efficient and organized AI operations.",
+  "shortDesc": "Dataset of live DSS agents with project, user, and version details.",
   "checklists": {
     "checklists": []
   },
@@ -44,20 +46,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"Agent Name","type":"string"},
-      {"name":"Agent ID","type":"string"},
-      {"name":"Created by user","type":"string"},
-      {"name":"Last modified by user","type":"string"},
-      {"name":"Active Version","type":"string"},
-      {"name":"LLM Vendor","type":"string"},
-      {"name":"LLM Connection Name","type":"string"},
-      {"name":"LLM Model Name","type":"string"},
-      {"name":"Agent Type","type":"string"},
-      {"name":"Agent Version","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"Last Modified timestamp","type":"string"},
-      {"name":"Agent URL","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for project management.","isColumnEdited":true},
+      {"name":"Agent Name","type":"string","comment":"Name of the agent, identifies the agent\u0027s function.","isColumnEdited":true},
+      {"name":"Agent ID","type":"string","comment":"Unique identifier for each agent, key for tracking.","isColumnEdited":true},
+      {"name":"Created by user","type":"string","comment":"Username of the agent\u0027s creator, tracks user activity.","isColumnEdited":true},
+      {"name":"Last modified by user","type":"string","comment":"Username of the last user to modify the agent, tracks changes.","isColumnEdited":true},
+      {"name":"Active Version","type":"string","comment":"Current active version of the agent, tracks updates.","isColumnEdited":true},
+      {"name":"LLM Vendor","type":"string","comment":"Vendor of the large language model, identifies AI provider.","isColumnEdited":true},
+      {"name":"LLM Connection Name","type":"string","comment":"Name of the LLM connection, specifies integration details.","isColumnEdited":true},
+      {"name":"LLM Model Name","type":"string","comment":"Name of the LLM model, identifies AI model used.","isColumnEdited":true},
+      {"name":"Agent Type","type":"string","comment":"Type of agent, categorizes agent functionality.","isColumnEdited":true},
+      {"name":"Agent Version","type":"string","comment":"Version of the agent, tracks development stages.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent, aids in categorization.","isColumnEdited":true},
+      {"name":"Last Modified timestamp","type":"string","comment":"Timestamp of last modification, tracks changes over time.","isColumnEdited":true},
+      {"name":"Agent URL","type":"string","comment":"URL link to the agent, provides direct access.","isColumnEdited":true}
     ],
     "userModified": true
   },
