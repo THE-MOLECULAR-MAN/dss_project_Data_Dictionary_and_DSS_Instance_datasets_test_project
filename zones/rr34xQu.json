@@ -117,6 +117,14 @@
     {
       "objectId": "dss_agents_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_webapps_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_webapps_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
