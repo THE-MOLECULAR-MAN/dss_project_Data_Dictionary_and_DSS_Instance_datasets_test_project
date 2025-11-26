@@ -46,7 +46,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"}
+      {"name":"params.db","type":"string"},
+      {"name":"name","type":"string"},
+      {"name":"type","type":"string"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string"},
+      {"name":"allowWrite","type":"string"},
+      {"name":"credentialsMode","type":"string"},
+      {"name":"usableBy","type":"string"},
+      {"name":"params.credentialsMode","type":"string"},
+      {"name":"params.authType","type":"string"},
+      {"name":"params.scopes","type":"string"},
+      {"name":"params.scope","type":"string"},
+      {"name":"params.warehouse","type":"string"},
+      {"name":"params.role","type":"string"},
+      {"name":"params.defaultSchema","type":"string"}
     ],
     "userModified": true
   },
