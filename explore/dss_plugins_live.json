@@ -6,59 +6,59 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "projectKey",
+          "name": "id",
           "d": true
         },
         {
-          "name": "ownerLogin",
+          "name": "label",
           "d": true
         },
         {
-          "name": "projectLocation",
+          "name": "version",
           "d": true
         },
         {
-          "name": "tutorialProject",
-          "d": true
-        },
-        {
-          "name": "name",
-          "d": true
-        },
-        {
-          "name": "projectStatus",
-          "d": true
-        },
-        {
-          "name": "contributors",
-          "d": true
-        },
-        {
-          "name": "lastModifiedOn",
-          "d": true
-        },
-        {
-          "name": "shortDesc",
+          "name": "author",
           "d": true
         },
         {
           "name": "tags",
+          "d": true
+        },
+        {
+          "name": "description",
+          "d": true
+        },
+        {
+          "name": "project_usages",
+          "d": true
+        },
+        {
+          "name": "isDev",
+          "d": true
+        },
+        {
+          "name": "total_usages",
+          "d": true
+        },
+        {
+          "name": "plugin_url",
           "d": true
         }
       ]
     },
     "columnOrder": [],
     "columnWidthsByName": {
-      "projectKey": 246,
-      "ownerLogin": 127,
-      "projectLocation": 300,
-      "tutorialProject": 128,
-      "name": 300,
-      "projectStatus": 113,
-      "contributors": 105,
-      "lastModifiedOn": 148,
-      "shortDesc": 300,
-      "tags": 300
+      "id": 204,
+      "label": 232,
+      "version": 100,
+      "author": 232,
+      "tags": 300,
+      "description": 300,
+      "project_usages": 300,
+      "isDev": 100,
+      "total_usages": 105,
+      "plugin_url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -86,14 +86,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 40,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764021645765
+      "_refreshTrigger": 1764176609527
     },
     "vizSampling": {
       "selection": {

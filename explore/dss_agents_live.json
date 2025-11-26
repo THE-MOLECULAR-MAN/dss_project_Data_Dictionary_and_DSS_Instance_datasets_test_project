@@ -6,59 +6,79 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "projectKey",
+          "name": "Created by user",
           "d": true
         },
         {
-          "name": "ownerLogin",
-          "d": true
-        },
-        {
-          "name": "projectLocation",
-          "d": true
-        },
-        {
-          "name": "tutorialProject",
-          "d": true
-        },
-        {
-          "name": "name",
-          "d": true
-        },
-        {
-          "name": "projectStatus",
-          "d": true
-        },
-        {
-          "name": "contributors",
-          "d": true
-        },
-        {
-          "name": "lastModifiedOn",
-          "d": true
-        },
-        {
-          "name": "shortDesc",
+          "name": "Last modified by user",
           "d": true
         },
         {
           "name": "tags",
+          "d": true
+        },
+        {
+          "name": "Last Modified timestamp",
+          "d": true
+        },
+        {
+          "name": "projectKey",
+          "d": true
+        },
+        {
+          "name": "Agent Name",
+          "d": true
+        },
+        {
+          "name": "Agent ID",
+          "d": true
+        },
+        {
+          "name": "Active Version",
+          "d": true
+        },
+        {
+          "name": "LLM Vendor",
+          "d": true
+        },
+        {
+          "name": "LLM Connection Name",
+          "d": true
+        },
+        {
+          "name": "LLM Model Name",
+          "d": true
+        },
+        {
+          "name": "Agent Type",
+          "d": true
+        },
+        {
+          "name": "Agent Version",
+          "d": true
+        },
+        {
+          "name": "Agent URL",
           "d": true
         }
       ]
     },
     "columnOrder": [],
     "columnWidthsByName": {
-      "projectKey": 246,
-      "ownerLogin": 127,
-      "projectLocation": 300,
-      "tutorialProject": 128,
-      "name": 300,
-      "projectStatus": 113,
-      "contributors": 105,
-      "lastModifiedOn": 148,
-      "shortDesc": 300,
-      "tags": 300
+      "projectKey": 300,
+      "Agent Name": 225,
+      "Agent ID": 106,
+      "Created by user": 155,
+      "Last modified by user": 173,
+      "Active Version": 120,
+      "LLM Vendor": 120,
+      "LLM Connection Name": 183,
+      "LLM Model Name": 148,
+      "Agent Type": 134,
+      "Agent Version": 113,
+      "tags": 100,
+      "Last Modified timestamp": 211,
+      "Agent URL": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -93,7 +113,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764021645765
+      "_refreshTrigger": 1764177149665
     },
     "vizSampling": {
       "selection": {

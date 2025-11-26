@@ -10,27 +10,35 @@
           "d": true
         },
         {
-          "name": "ownerLogin",
+          "name": "webapp_name",
           "d": true
         },
         {
-          "name": "projectLocation",
+          "name": "webapp_id",
           "d": true
         },
         {
-          "name": "tutorialProject",
+          "name": "type",
           "d": true
         },
         {
-          "name": "name",
+          "name": "created_by_user",
           "d": true
         },
         {
-          "name": "projectStatus",
+          "name": "backendRunning",
           "d": true
         },
         {
-          "name": "contributors",
+          "name": "url",
+          "d": true
+        },
+        {
+          "name": "created_on",
+          "d": true
+        },
+        {
+          "name": "lastModifiedBy",
           "d": true
         },
         {
@@ -38,27 +46,29 @@
           "d": true
         },
         {
-          "name": "shortDesc",
+          "name": "tags",
           "d": true
         },
         {
-          "name": "tags",
+          "name": "is_code_webapp",
           "d": true
         }
       ]
     },
     "columnOrder": [],
     "columnWidthsByName": {
-      "projectKey": 246,
-      "ownerLogin": 127,
-      "projectLocation": 300,
-      "tutorialProject": 128,
-      "name": 300,
-      "projectStatus": 113,
-      "contributors": 105,
+      "projectKey": 300,
+      "webapp_name": 300,
+      "webapp_id": 113,
+      "type": 300,
+      "created_by_user": 162,
+      "backendRunning": 120,
+      "url": 300,
+      "created_on": 148,
+      "lastModifiedBy": 141,
       "lastModifiedOn": 148,
-      "shortDesc": 300,
-      "tags": 300
+      "tags": 100,
+      "is_code_webapp": 120
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -93,7 +103,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764021645765
+      "_refreshTrigger": 1764174688302
     },
     "vizSampling": {
       "selection": {

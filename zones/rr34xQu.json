@@ -3,27 +3,7 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_recipes_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_projects_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_datasets_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
     },
     {
@@ -31,35 +11,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_projects_cached_psql",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_dss_apps_cached",
       "objectType": "RECIPE"
     },
     {
       "objectId": "dss_apps_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_codeenvs_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_codeenvs_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_plugins_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_users_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_users_cached",
       "objectType": "DATASET"
     },
     {
@@ -75,11 +31,15 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_datasets_cached",
+      "objectId": "dss_clusters_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_clusters_cached",
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_datasets_cached",
+      "objectId": "dss_recipes_live",
       "objectType": "DATASET"
     },
     {
@@ -91,24 +51,64 @@
       "objectType": "DATASET"
     },
     {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_users_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
       "objectId": "dss_projects_cached",
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_plugins_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_plugins_cached",
+      "objectId": "compute_dss_projects_cached_psql",
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_clusters_live",
+      "objectId": "dss_projects_live",
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_clusters_cached",
+      "objectId": "dss_webapps_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_agents_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_webapps_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_webapps_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_agents_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_agents_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_meanings_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_meanings_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_meanings_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

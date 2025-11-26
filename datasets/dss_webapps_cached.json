@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027commits_cached\u0027 dataset provides a detailed record of software development activities, specifically focusing on commit data. This dataset is particularly useful for analyzing the history and evolution of a software project by examining individual commits. Each entry in the dataset represents a single commit, identified by a unique commit ID, and includes information about the project it belongs to, the author of the commit, and the timestamp of when the commit was made. Additionally, the dataset captures the number of files and lines added, removed, or changed in each commit, offering insights into the scale and impact of changes. This dataset can be used by software developers, project managers, and researchers to track project progress, identify trends in development practices, and assess the contributions of different team members. It is also valuable for automated tools that analyze code changes for quality assurance or to predict future development needs.",
-  "shortDesc": "Dataset of cached commit data with project, author, and file changes.",
+  "description": "The \u0027dss_webapps_cached\u0027 dataset provides a comprehensive overview of cached web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within a project environment, such as those developed using Dataiku. It includes details like project keys, web application names and IDs, types, and URLs, which are crucial for identifying and accessing specific applications. Additionally, it tracks the creation and modification details, including the user responsible and timestamps, which are vital for auditing and version control. The dataset also indicates whether the backend is running and if the application is a code-based web app, providing insights into the application\u0027s current operational state. This dataset is valuable for developers, project managers, and IT administrators who need to maintain an organized and efficient web application infrastructure, ensuring that applications are up-to-date and functioning correctly. The inclusion of tags allows for categorization and easier retrieval of related applications.",
+  "shortDesc": "Dataset of cached web applications with metadata and status.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1763949861886
+    "lastModifiedOn": 1764128324605
   },
   "tags": [],
   "params": {
@@ -46,8 +46,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_commits_cached",
-    "schema": "",
+    "table": "${projectKey}_dss_webapps_cached",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
@@ -65,15 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","isColumnEdited":true},
-      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
-      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
-      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
-      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
-      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
-      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
-      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"webapp_name","type":"string","meaning":"Text"},
+      {"name":"webapp_id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"created_by_user","type":"string","meaning":"Text"},
+      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
+      {"name":"created_on","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"}
     ],
     "userModified": true
   },
@@ -156,15 +158,15 @@
     "checks": [
       {
         "type": "RecordCountInRangeRule",
-        "minimum": 1.0,
+        "minimum": 0.0,
         "minimumEnabled": true,
         "maximum": 0.0,
         "maximumEnabled": false,
-        "softMinimum": 5.0,
+        "softMinimum": 1.0,
         "softMinimumEnabled": true,
         "softMaximum": 100000.0,
         "softMaximumEnabled": true,
-        "id": "EjPacazB",
+        "id": "yK0zkVED",
         "displayName": "At least 1 row",
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
@@ -180,7 +182,7 @@
         "softMinimumEnabled": false,
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
-        "id": "7rn9cgS4",
+        "id": "fY9DxiyF",
         "displayName": "3-50 columns",
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,

@@ -16,7 +16,7 @@
     "libraries": [
       "dataiku"
     ],
-    "runAs": "admin",
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -51,7 +51,7 @@
   "config": {
     "LLMs": [
       {
-        "llm_id": "openai:se-open-ai:gpt-5"
+        "llm_id": "openai:OpenAI_Shared_SE:gpt-5-mini"
       }
     ],
     "number_of_documents_to_retrieve": 10,
@@ -69,7 +69,7 @@
     "enable_agents_as_tools": true,
     "visualization_generation_mode": "NONE",
     "max_artifacts_size_mb": 2,
-    "enable_quick_agents": true,
+    "enable_quick_agents": false,
     "enable_prompt_library": true,
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
@@ -82,7 +82,7 @@
       },
       {
         "homepage_example_label": "Empty projects",
-        "homepage_example_query": "What percentage of all the projects have 0 datasets? list both numbers.",
+        "homepage_example_query": "How many projects have zero datasets? List the first five alphabetically.",
         "selected_agents": []
       },
       {
@@ -91,8 +91,18 @@
         "selected_agents": []
       },
       {
-        "homepage_example_label": "Migration planning off Hive",
-        "homepage_example_query": "List the project keys and project owners for all projects that use at least one Hive recipe",
+        "homepage_example_label": "Migration planning off PostgreSQL",
+        "homepage_example_query": "List the project keys and project owners for all projects that use at least one PostgreSQL dataset",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Locating projects overly reliant on Python",
+        "homepage_example_query": "List projects where over half of the recipes are of type either \"python\" or \"sql_query\". Also list the",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Links to agents using gpt-5",
+        "homepage_example_query": "provide a list of URLs to Agents whose LLM Agent Name is \"gpt-5\". Include each agent\u0027s Agent Name, projectKey, and Created By User.",
         "selected_agents": []
       }
     ],
@@ -106,12 +116,12 @@
     "globalSystemPrompt": "",
     "tools": [],
     "agents_folder": "SANDBOX",
-    "embedding_llm": "openai:se-open-ai:text-embedding-3-small",
-    "default_llm_id": "openai:se-open-ai:gpt-5",
+    "embedding_llm": "openai:OpenAI_Shared_SE:text-embedding-3-small",
+    "default_llm_id": "openai:OpenAI_Shared_SE:gpt-5-mini",
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:EW3Zy4HkhiLdq4GrWLIdFMgaOTPiC0EvgJO0MYzSUU8gJIgd9WBXNASl3Rr3NrF338TwThRdVGzJPYClRXbk0Y9FL9/TigwnZMlpIaq3XrtnZT2aT2MW",
+  "apiKey": "e:AES:X2:yrRI4khnrjJKUqC5aaXJrSDLxax5GcvNINlW4bFdLzqD1xydzbX5S5tTT4lKUhi/FmjC6JnxgZr1GV5NCB4TGeQ6/7LzcO9jW0UaUICwG5479GNUut+p",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

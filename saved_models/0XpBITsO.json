@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 5,
+        "versionNumber": 7,
         "lastModifiedBy": {
-          "login": "tim.honker"
+          "login": "demo"
         },
-        "lastModifiedOn": 1763950012125
+        "lastModifiedOn": 1764126824374
       },
       "creationTag": {
         "versionNumber": 0,
@@ -45,16 +45,139 @@
       "toolsUsingAgentSettings": {
         "tools": [
           {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.xzmNNk7"
+            "toolRef": "JfbcCw6"
           },
           {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.JfbcCw6"
+            "toolRef": "6RzMYU4"
           },
           {
-            "toolRef": "Data_Dictionary_and_DSS_Instance_datasets_test_project.6RzMYU4"
+            "toolRef": "xzmNNk7"
           }
         ],
-        "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5",
+        "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
+        "completionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": true
+        },
+        "dkuProperties": [],
+        "maxParallelRequestsPerProcess": 16,
+        "containerExecSelection": {
+          "containerMode": "NONE"
+        }
+      },
+      "ragllmSettings": {
+        "printSources": true,
+        "includeContentInSources": true,
+        "outputFormat": "SEPARATED",
+        "searchInputStrategySettings": {
+          "strategy": "RAW_QUERY",
+          "rewritePrompt": "When a message requires document retrieval, rewrite it to optimize retrieval from the vector store.\nFocus on clarity, disambiguation, and extracting the core intent.\nOutput only the rewritten query. Do not include comments or tips."
+        },
+        "retrievalSource": "EMBEDDING",
+        "ragSpecificGuardrails": {
+          "faithfulnessSettings": {
+            "answerOverwrite": "Could not come up with a factual enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "relevancySettings": {
+            "answerOverwrite": "Could not come up with a relevant enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "multimodalFaithfulnessSettings": {
+            "answerOverwrite": "Could not come up with a factual enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          },
+          "multimodalRelevancySettings": {
+            "answerOverwrite": "Could not come up with a relevant enough answer.",
+            "enabled": false,
+            "threshold": 0.8,
+            "handling": "FAIL"
+          }
+        },
+        "contextMessage": "Use the following pieces of context to answer the question at the end.\nIf you do not know the answer, just say that you do not know, do not try to make up an answer.",
+        "enforceDocumentLevelSecurity": false,
+        "performFiltering": false,
+        "allowDynamicFiltering": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "searchType": "SIMILARITY",
+        "similarityThreshold": 0.5,
+        "maxDocuments": 4,
+        "mmrK": 20,
+        "mmrDiversity": 0.25,
+        "useAdvancedReranking": false,
+        "rrfRankConstant": 60,
+        "rrfRankWindowSize": 4,
+        "includeScore": false,
+        "sourcesSettings": {
+          "snippetFormat": "TEXT",
+          "metadataInSources": []
+        }
+      },
+      "quickTestQuery": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "how many total Dataiku DSS Projects are on this local instance?"
+          }
+        ],
+        "context": {}
+      },
+      "guardrailsPipelineSettings": {
+        "guardrails": []
+      }
+    },
+    {
+      "versionId": "v2_inactive_test",
+      "versionTag": {
+        "versionNumber": 3,
+        "lastModifiedBy": {
+          "login": "demo"
+        },
+        "lastModifiedOn": 1764083837731
+      },
+      "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+          "login": "demo"
+        },
+        "lastModifiedOn": 1764083803916
+      },
+      "pythonAgentSettings": {
+        "codeEnvSelection": {
+          "envMode": "INHERIT"
+        },
+        "dependencies": [],
+        "supportsImageInputs": false,
+        "dkuProperties": [],
+        "maxParallelRequestsPerProcess": 16,
+        "containerExecSelection": {
+          "containerMode": "NONE"
+        }
+      },
+      "pluginAgentSettings": {
+        "dkuProperties": [],
+        "maxParallelRequestsPerProcess": 16,
+        "containerExecSelection": {
+          "containerMode": "NONE"
+        }
+      },
+      "toolsUsingAgentSettings": {
+        "tools": [
+          {
+            "toolRef": "xzmNNk7"
+          }
+        ],
+        "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
         "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
         "completionSettings": {
           "stopSequences": [],
@@ -213,9 +336,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1763948233434
+    "lastModifiedOn": 1764083803916
   },
   "tags": [],
   "customFields": {},

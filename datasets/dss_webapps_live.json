@@ -1,9 +1,9 @@
 {
-  "type": "CustomPython_xzibit_apps",
+  "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027xzibit_apps\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata and usage details. This dataset is particularly useful for managing and analyzing application deployment and usage within a project environment. It includes information on application visibility, versioning, and descriptive labels, which can help in identifying and categorizing different applications. The dataset also tracks the origin of each application, which is crucial for understanding the source and context of the application. Additionally, it includes a count of instances and whether the application is used as a recipe, providing insights into its deployment and usage patterns. The dataset is valuable for project managers, developers, and analysts who need to monitor application usage, manage application lifecycles, and ensure proper categorization and documentation. The inclusion of tags and free text descriptions allows for flexible categorization and detailed documentation, enhancing the dataset\u0027s utility in various analytical and operational contexts.",
-  "shortDesc": "Dataset of application metadata with visibility and usage details.",
+  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications within a Dataiku environment. It includes metadata such as project keys, web application names, and unique identifiers, which are essential for managing and tracking web applications. The dataset also captures the type of web application, the user who created it, and whether the backend is currently running. Additionally, it provides URLs for direct access to the web applications, along with timestamps for creation and last modification, which are crucial for auditing and version control. The dataset also includes information about the last user who modified the application and any associated tags, which can be used for categorization or filtering. This dataset is particularly useful for administrators and developers who need to monitor, manage, and maintain web applications, ensuring they are up-to-date and functioning correctly. It also aids in understanding user interactions and modifications over time, providing insights into application usage and development trends.",
+  "shortDesc": "Dataset of live web applications with project details and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1762961135691
+    "lastModifiedOn": 1764128239929
   },
   "tags": [],
   "params": {
@@ -46,17 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"webapp_name","type":"string","meaning":"Text"},
+      {"name":"webapp_id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"created_by_user","type":"string","meaning":"Text"},
+      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
+      {"name":"created_on","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"}
     ],
     "userModified": true
   },

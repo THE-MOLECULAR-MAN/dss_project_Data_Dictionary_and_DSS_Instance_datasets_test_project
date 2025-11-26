@@ -104,6 +104,10 @@
         {
           "name": "column_names",
           "d": true
+        },
+        {
+          "name": "dataset_url",
+          "d": true
         }
       ]
     },
@@ -133,7 +137,8 @@
       "featureGroup": 105,
       "num_metrics_checks": 150,
       "num_columns": 100,
-      "column_names": 300
+      "column_names": 300,
+      "dataset_url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -197,78 +202,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "projectKey",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "projectKey",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "Data_Dictionary_and_DSS_Instance_datasets_test_project": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "projectKey",
-          "selectedValues": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "projectKey",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      },
-      {
-        "column": "type",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "type",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "PostgreSQL": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "type",
-          "selectedValues": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "type",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": [],

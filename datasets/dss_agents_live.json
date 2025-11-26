@@ -1,9 +1,9 @@
 {
-  "type": "CustomPython_xzibit_apps",
+  "type": "CustomPython_xzibit_agents",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027xzibit_apps\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata and usage details. This dataset is particularly useful for managing and analyzing application deployment and usage within a project environment. It includes information on application visibility, versioning, and descriptive labels, which can help in identifying and categorizing different applications. The dataset also tracks the origin of each application, which is crucial for understanding the source and context of the application. Additionally, it includes a count of instances and whether the application is used as a recipe, providing insights into its deployment and usage patterns. The dataset is valuable for project managers, developers, and analysts who need to monitor application usage, manage application lifecycles, and ensure proper categorization and documentation. The inclusion of tags and free text descriptions allows for flexible categorization and detailed documentation, enhancing the dataset\u0027s utility in various analytical and operational contexts.",
-  "shortDesc": "Dataset of application metadata with visibility and usage details.",
+  "description": "The \u0027dss_agents_live\u0027 dataset provides comprehensive information about live agents within a Data Science Studio (DSS) environment. It includes details such as the project each agent is associated with, the agent\u0027s name and ID, and the users who created or last modified the agents. This dataset is particularly useful for managing and tracking the deployment of agents across various projects, ensuring that the right versions and configurations are in use. It also includes information about the large language model (LLM) vendor, connection, and model name, which is crucial for understanding the AI capabilities integrated into these agents. The dataset can be used by data scientists and project managers to monitor agent activity, update versions, and manage user access. Additionally, the inclusion of timestamps and URLs for each agent provides a clear audit trail and easy access to agent resources. This dataset is essential for organizations using DSS to maintain efficient and organized AI operations.",
+  "shortDesc": "Dataset of live DSS agents with project, user, and version details.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1762961135691
+    "lastModifiedOn": 1764128263842
   },
   "tags": [],
   "params": {
@@ -46,17 +46,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"Created by user","type":"string","meaning":"Text"},
+      {"name":"Last modified by user","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"Last Modified timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"Agent Name","type":"string","meaning":"Text"},
+      {"name":"Agent ID","type":"string","meaning":"Text"},
+      {"name":"Active Version","type":"string","meaning":"Text"},
+      {"name":"LLM Vendor","type":"string","meaning":"Text"},
+      {"name":"LLM Connection Name","type":"string","meaning":"Text"},
+      {"name":"LLM Model Name","type":"string","meaning":"Text"},
+      {"name":"Agent Type","type":"string","meaning":"Text"},
+      {"name":"Agent Version","type":"string","meaning":"Text"},
+      {"name":"Agent URL","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },

@@ -68,28 +68,29 @@
       {"name":"projectKey","type":"string","comment":"Unique identifier for each project, crucial for tracking.","isColumnEdited":true},
       {"name":"id","type":"string","comment":"Unique dataset identifier, essential for dataset management.","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Name of the dataset, used for identification.","isColumnEdited":true},
-      {"name":"exists","type":"string","comment":"Indicates if the dataset currently exists, boolean value.","isColumnEdited":true},
+      {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Type of data source, e.g., PostgreSQL, Snowflake.","isColumnEdited":true},
       {"name":"formatType","type":"string","comment":"Data format type, such as CSV or JSON.","isColumnEdited":true},
       {"name":"params.connection","type":"string","comment":"Connection type for data access, e.g., Snowflake.","isColumnEdited":true},
-      {"name":"managed","type":"string","comment":"Indicates if the dataset is managed, boolean value.","isColumnEdited":true},
+      {"name":"managed","type":"boolean","comment":"Indicates if the dataset is managed, boolean value.","isColumnEdited":true},
       {"name":"params.mode","type":"string","comment":"Mode of data access, typically \u0027table\u0027.","isColumnEdited":true},
       {"name":"params.table","type":"string","comment":"Table name pattern for data storage.","isColumnEdited":true},
       {"name":"params.schema","type":"string","comment":"Schema name for database organization.","isColumnEdited":true},
       {"name":"params.path","type":"string","comment":"File path for data storage and access.","isColumnEdited":true},
       {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"User who last modified the creation tag.","isColumnEdited":true},
-      {"name":"creationTag.lastModifiedOn","type":"string","comment":"Timestamp of last modification of creation tag.","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last modification of creation tag.","isColumnEdited":true},
       {"name":"versionTag.lastModifiedBy.login","type":"string","comment":"User who last modified the version tag.","isColumnEdited":true},
-      {"name":"versionTag.lastModifiedOn","type":"string","comment":"Timestamp of last modification of version tag.","isColumnEdited":true},
+      {"name":"versionTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last modification of version tag.","isColumnEdited":true},
       {"name":"shortDesc","type":"string","comment":"Brief description of the dataset\u0027s purpose.","isColumnEdited":true},
       {"name":"description","type":"string","comment":"Detailed description of the dataset\u0027s contents.","isColumnEdited":true},
       {"name":"params.metastoreDatabaseName","type":"string","comment":"Name of the metastore database for metadata.","isColumnEdited":true},
       {"name":"params.folderSmartId","type":"string","comment":"Smart ID for folder organization.","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Array of tags for categorizing datasets.","isColumnEdited":true},
-      {"name":"featureGroup","type":"string","comment":"Indicates if the dataset is a feature group, boolean.","isColumnEdited":true},
-      {"name":"num_metrics_checks","type":"string","comment":"Number of metric checks performed on the dataset.","isColumnEdited":true},
-      {"name":"num_columns","type":"string","comment":"Number of columns in the dataset.","isColumnEdited":true},
-      {"name":"column_names","type":"string","comment":"Array of column names in the dataset.","isColumnEdited":true}
+      {"name":"featureGroup","type":"boolean","comment":"Indicates if the dataset is a feature group, boolean.","isColumnEdited":true},
+      {"name":"num_metrics_checks","type":"int","comment":"Number of metric checks performed on the dataset.","isColumnEdited":true},
+      {"name":"num_columns","type":"int","comment":"Number of columns in the dataset.","isColumnEdited":true},
+      {"name":"column_names","type":"string","comment":"Array of column names in the dataset.","isColumnEdited":true},
+      {"name":"dataset_url","type":"string"}
     ],
     "userModified": true
   },
@@ -168,8 +169,59 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
-    "checks": [],
+    "monitor": true,
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "T5m6nWbM",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "g83tXG3Y",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "projectKey",
+          "id",
+          "name"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "shtgJNyC",
+        "displayName": "No empty values exist in 3 columns",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }

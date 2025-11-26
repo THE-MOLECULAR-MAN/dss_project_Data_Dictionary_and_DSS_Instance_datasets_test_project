@@ -65,14 +65,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","isColumnEdited":true},
-      {"name":"envLang","type":"string","comment":"Programming language used, primarily Python.","isColumnEdited":true},
-      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, internal or managed.","isColumnEdited":true},
-      {"name":"owner","type":"string","comment":"Owner of the environment, responsible user.","isColumnEdited":true},
-      {"name":"pythonInterpreter","type":"string","comment":"Python version used in the environment.","isColumnEdited":true},
-      {"name":"corePackagesSet","type":"string","comment":"Core package set configuration, e.g., Pandas version.","isColumnEdited":true},
-      {"name":"path","type":"string","comment":"File system path to the environment.","isColumnEdited":true},
-      {"name":"disk_size_megabytes","type":"string","comment":"Disk space used by environment, in megabytes.","isColumnEdited":true}
+      {"name":"envName","type":"string","meaning":"Text"},
+      {"name":"envLang","type":"string","meaning":"Text"},
+      {"name":"deploymentMode","type":"string","meaning":"Text"},
+      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"pythonInterpreter","type":"string","meaning":"Text"},
+      {"name":"codeenv_url","type":"string","meaning":"URL"},
+      {"name":"corePackagesSet","type":"string","meaning":"Text"},
+      {"name":"path","type":"string","meaning":"Text"},
+      {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
+      {"name":"usages","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
@@ -151,8 +153,59 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
-    "checks": [],
+    "monitor": true,
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "72PMX1wJ",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "5EdD6aHQ",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "envName",
+          "envLang",
+          "deploymentMode"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "hxZfSKV1",
+        "displayName": "No empty values exist in 3 columns",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }

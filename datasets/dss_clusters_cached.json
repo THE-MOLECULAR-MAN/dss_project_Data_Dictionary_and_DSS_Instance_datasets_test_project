@@ -64,7 +64,17 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"architecture","type":"string","meaning":"Text"},
+      {"name":"state","type":"string","meaning":"Text"},
+      {"name":"usedInScenarios","type":"int","meaning":"LongMeaning"},
+      {"name":"usedInProjects","type":"int","meaning":"LongMeaning"},
+      {"name":"cluster_url","type":"string","meaning":"URL"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
@@ -142,8 +152,41 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
-    "checks": [],
+    "monitor": true,
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 0.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 1.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "qxSexXxm",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "mE1IPnj6",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }

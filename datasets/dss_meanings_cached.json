@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027commits_cached\u0027 dataset provides a detailed record of software development activities, specifically focusing on commit data. This dataset is particularly useful for analyzing the history and evolution of a software project by examining individual commits. Each entry in the dataset represents a single commit, identified by a unique commit ID, and includes information about the project it belongs to, the author of the commit, and the timestamp of when the commit was made. Additionally, the dataset captures the number of files and lines added, removed, or changed in each commit, offering insights into the scale and impact of changes. This dataset can be used by software developers, project managers, and researchers to track project progress, identify trends in development practices, and assess the contributions of different team members. It is also valuable for automated tools that analyze code changes for quality assurance or to predict future development needs.",
-  "shortDesc": "Dataset of cached commit data with project, author, and file changes.",
+  "description": "The \u0027dss_meanings_cached\u0027 dataset is designed to store and manage cached meanings for various data elements within a Decision Support System (DSS). This dataset is particularly useful for systems that require quick access to predefined labels and their associated metadata, such as type and detectability. It includes columns for labels, descriptions, detectability status, types, unique identifiers, and normalization modes. The \u0027label\u0027 column contains identifiers for different outage-related elements, while the \u0027description\u0027 column provides textual explanations of these labels. The \u0027detectable\u0027 column indicates whether a particular label can be detected automatically, which is crucial for automated systems. The \u0027type\u0027 column categorizes the labels into patterns or value lists, aiding in data processing and analysis. The \u0027id\u0027 column serves as a unique identifier for each label, ensuring data integrity and traceability. Lastly, the \u0027normalizationMode\u0027 column specifies how the labels should be normalized, which is essential for maintaining consistency across the dataset. This dataset is valuable for developers and analysts working on DSS applications, as it facilitates efficient data management and retrieval.",
+  "shortDesc": "Dataset for caching DSS meanings with labels and types.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1763949861886
+    "lastModifiedOn": 1764128403677
   },
   "tags": [],
   "params": {
@@ -46,8 +46,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_commits_cached",
-    "schema": "",
+    "table": "${projectKey}_dss_meanings_cached",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
@@ -65,15 +64,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","isColumnEdited":true},
-      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
-      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
-      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
-      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
-      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
-      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
-      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
+      {"name":"label","type":"string","comment":"Identifier for data points, e.g., incident IDs, device IDs.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Textual explanation of the label, enhancing understanding.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if data element is automatically detectable.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Categorizes data into patterns or lists for processing.","meaning":"Text","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each data element, ensuring accuracy.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Specifies data standardization method for consistency.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
   },
@@ -156,15 +152,15 @@
     "checks": [
       {
         "type": "RecordCountInRangeRule",
-        "minimum": 1.0,
+        "minimum": 0.0,
         "minimumEnabled": true,
         "maximum": 0.0,
         "maximumEnabled": false,
-        "softMinimum": 5.0,
+        "softMinimum": 1.0,
         "softMinimumEnabled": true,
         "softMaximum": 100000.0,
         "softMaximumEnabled": true,
-        "id": "EjPacazB",
+        "id": "RikGu2Er",
         "displayName": "At least 1 row",
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
@@ -180,7 +176,7 @@
         "softMinimumEnabled": false,
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
-        "id": "7rn9cgS4",
+        "id": "VMYfNPQC",
         "displayName": "3-50 columns",
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,

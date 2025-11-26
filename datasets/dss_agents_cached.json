@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027commits_cached\u0027 dataset provides a detailed record of software development activities, specifically focusing on commit data. This dataset is particularly useful for analyzing the history and evolution of a software project by examining individual commits. Each entry in the dataset represents a single commit, identified by a unique commit ID, and includes information about the project it belongs to, the author of the commit, and the timestamp of when the commit was made. Additionally, the dataset captures the number of files and lines added, removed, or changed in each commit, offering insights into the scale and impact of changes. This dataset can be used by software developers, project managers, and researchers to track project progress, identify trends in development practices, and assess the contributions of different team members. It is also valuable for automated tools that analyze code changes for quality assurance or to predict future development needs.",
-  "shortDesc": "Dataset of cached commit data with project, author, and file changes.",
+  "description": "The \u0027dss_agents_cached\u0027 dataset provides a comprehensive overview of cached agents within a Data Science Studio (DSS) environment. It includes metadata and configuration details for each agent, such as project association, agent identification, and versioning information. This dataset is particularly useful for managing and auditing agents used in various data science projects, allowing users to track changes, identify responsible users, and understand the configuration of each agent. Key features include the ability to see which user created or last modified an agent, the active version of the agent, and the specific large language model (LLM) vendor and model used. Additionally, the dataset provides URLs for accessing each agent, facilitating easy navigation and management. This dataset is essential for teams looking to maintain a clear record of their data science agents, ensuring transparency and accountability in their data processes.",
+  "shortDesc": "Dataset of cached DSS agents with metadata and configuration details.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1763949861886
+    "lastModifiedOn": 1764128340987
   },
   "tags": [],
   "params": {
@@ -46,8 +46,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_commits_cached",
-    "schema": "",
+    "table": "${projectKey}_dss_agents_cached",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
@@ -65,15 +64,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","isColumnEdited":true},
-      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
-      {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
-      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
-      {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
-      {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
-      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
-      {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
+      {"name":"Created by user","type":"string","comment":"Username of the agent\u0027s creator, tracks user activity.","isColumnEdited":true},
+      {"name":"Last modified by user","type":"string","comment":"Username of the last user to modify the agent, tracks changes.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent, aids in categorization.","isColumnEdited":true},
+      {"name":"Last Modified timestamp","type":"datetimenotz","comment":"Timestamp of last modification, tracks changes over time.","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for project management.","isColumnEdited":true},
+      {"name":"Agent Name","type":"string","comment":"Name of the agent, identifies the agent\u0027s function.","isColumnEdited":true},
+      {"name":"Agent ID","type":"string","comment":"Unique identifier for each agent, key for tracking.","isColumnEdited":true},
+      {"name":"Active Version","type":"string","comment":"Current active version of the agent, tracks updates.","isColumnEdited":true},
+      {"name":"LLM Vendor","type":"string","comment":"Vendor of the large language model, identifies AI provider.","isColumnEdited":true},
+      {"name":"LLM Connection Name","type":"string","comment":"Name of the LLM connection, specifies integration details.","isColumnEdited":true},
+      {"name":"LLM Model Name","type":"string","comment":"Name of the LLM model, identifies AI model used.","isColumnEdited":true},
+      {"name":"Agent Type","type":"string","comment":"Type of agent, categorizes agent functionality.","isColumnEdited":true},
+      {"name":"Agent Version","type":"string","comment":"Version of the agent, tracks development stages.","isColumnEdited":true},
+      {"name":"Agent URL","type":"string","comment":"URL link to the agent, provides direct access.","isColumnEdited":true}
     ],
     "userModified": true
   },
@@ -155,22 +159,6 @@
     "monitor": true,
     "checks": [
       {
-        "type": "RecordCountInRangeRule",
-        "minimum": 1.0,
-        "minimumEnabled": true,
-        "maximum": 0.0,
-        "maximumEnabled": false,
-        "softMinimum": 5.0,
-        "softMinimumEnabled": true,
-        "softMaximum": 100000.0,
-        "softMaximumEnabled": true,
-        "id": "EjPacazB",
-        "displayName": "At least 1 row",
-        "computeOnBuildMode": "WHOLE_DATASET",
-        "autoRun": true,
-        "enabled": true
-      },
-      {
         "type": "ColumnCountInRangeRule",
         "minimum": 3.0,
         "minimumEnabled": true,
@@ -180,7 +168,7 @@
         "softMinimumEnabled": false,
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
-        "id": "7rn9cgS4",
+        "id": "vD3VrDuK",
         "displayName": "3-50 columns",
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,

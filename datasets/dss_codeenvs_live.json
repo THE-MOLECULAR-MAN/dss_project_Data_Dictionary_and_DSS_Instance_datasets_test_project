@@ -46,14 +46,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","isColumnEdited":true},
-      {"name":"envLang","type":"string","comment":"Programming language used, primarily Python.","isColumnEdited":true},
-      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, internal or managed.","isColumnEdited":true},
-      {"name":"owner","type":"string","comment":"Owner of the environment, responsible user.","isColumnEdited":true},
-      {"name":"pythonInterpreter","type":"string","comment":"Python version used in the environment.","isColumnEdited":true},
-      {"name":"corePackagesSet","type":"string","comment":"Core package set configuration, e.g., Pandas version.","isColumnEdited":true},
-      {"name":"path","type":"string","comment":"File system path to the environment.","isColumnEdited":true},
-      {"name":"disk_size_megabytes","type":"string","comment":"Disk space used by environment, in megabytes.","isColumnEdited":true}
+      {"name":"envName","type":"string","meaning":"Text"},
+      {"name":"envLang","type":"string","meaning":"Text"},
+      {"name":"deploymentMode","type":"string","meaning":"Text"},
+      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"pythonInterpreter","type":"string","meaning":"Text"},
+      {"name":"codeenv_url","type":"string","meaning":"URL"},
+      {"name":"corePackagesSet","type":"string","meaning":"Text"},
+      {"name":"path","type":"string","meaning":"Text"},
+      {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
+      {"name":"usages","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },

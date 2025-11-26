@@ -65,13 +65,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project recipe.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each recipe instance.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of recipe, indicating its function.","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Name of the recipe, often descriptive.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags for categorizing and retrieving recipes.","isColumnEdited":true},
-      {"name":"input_datasets","type":"string","comment":"List of datasets used as inputs for the recipe.","isColumnEdited":true},
-      {"name":"output_datasets","type":"string","comment":"List of datasets generated as outputs by the recipe.","isColumnEdited":true}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
@@ -150,8 +150,41 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
-    "checks": [],
+    "monitor": true,
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "OCeDnhWh",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "laUXPnDa",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }

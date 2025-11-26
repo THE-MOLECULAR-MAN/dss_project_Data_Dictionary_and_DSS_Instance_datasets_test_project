@@ -1,9 +1,9 @@
 {
-  "type": "CustomPython_xzibit_apps",
+  "type": "CustomPython_xzibit_meanings",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027xzibit_apps\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata and usage details. This dataset is particularly useful for managing and analyzing application deployment and usage within a project environment. It includes information on application visibility, versioning, and descriptive labels, which can help in identifying and categorizing different applications. The dataset also tracks the origin of each application, which is crucial for understanding the source and context of the application. Additionally, it includes a count of instances and whether the application is used as a recipe, providing insights into its deployment and usage patterns. The dataset is valuable for project managers, developers, and analysts who need to monitor application usage, manage application lifecycles, and ensure proper categorization and documentation. The inclusion of tags and free text descriptions allows for flexible categorization and detailed documentation, enhancing the dataset\u0027s utility in various analytical and operational contexts.",
-  "shortDesc": "Dataset of application metadata with visibility and usage details.",
+  "description": "The \u0027dss_meanings_live\u0027 dataset is designed to support the analysis and management of outage incidents by providing structured information about various data elements. It includes columns that define labels, descriptions, and types of data related to outage incidents, which can be crucial for understanding and categorizing different aspects of these events. The dataset is particularly useful for systems that need to detect and respond to outages by providing metadata that can be used to normalize and interpret data inputs. The \u0027label\u0027 column contains identifiers for different data points, such as incident IDs and device IDs, which are essential for tracking and managing incidents. The \u0027description\u0027 column provides textual explanations of these labels, enhancing understanding. The \u0027detectable\u0027 column indicates whether a particular data element can be automatically detected, which is important for automation and alert systems. The \u0027type\u0027 column categorizes the data into patterns or lists, aiding in data processing and analysis. The \u0027id\u0027 column serves as a unique identifier for each data element, ensuring accurate data management. Finally, the \u0027normalizationMode\u0027 column specifies how data should be standardized, which is critical for consistent data interpretation across systems.",
+  "shortDesc": "Dataset for outage incident analysis with labels, descriptions, and types.",
   "checklists": {
     "checklists": []
   },
@@ -34,9 +34,9 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1762961135691
+    "lastModifiedOn": 1764128386448
   },
   "tags": [],
   "params": {
@@ -46,17 +46,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"label","type":"string","meaning":"Text"},
+      {"name":"description","type":"string","meaning":"FreeText"},
+      {"name":"detectable","type":"boolean","meaning":"Boolean"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"normalizationMode","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },

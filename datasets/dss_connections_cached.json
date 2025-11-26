@@ -65,14 +65,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","comment":"Unique identifier for each connection, includes keywords: connection, identifier, name.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of connection, such as BigQuery or PostgreSQL, includes keywords: connection, type, system.","isColumnEdited":true},
-      {"name":"allowWrite","type":"string","comment":"Indicates if writing is permitted, includes keywords: write, permission, access.","isColumnEdited":true},
-      {"name":"credentialsMode","type":"string","comment":"Mode of credentials used, either per user or global, includes keywords: credentials, mode, access.","isColumnEdited":true},
-      {"name":"usableBy","type":"string","comment":"Specifies who can use the connection, includes keywords: access, permission, user.","isColumnEdited":true},
-      {"name":"allowedGroups","type":"string","comment":"Groups allowed to use the connection, includes keywords: groups, permission, access.","isColumnEdited":true},
-      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Groups allowed to read connection details, includes keywords: groups, readability, access.","isColumnEdited":true},
-      {"name":"params.credentialsMode","type":"string","comment":"Mode of credentials in parameters, includes keywords: credentials, parameters, mode.","isColumnEdited":true}
+      {"name":"params.db","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string"},
+      {"name":"allowWrite","type":"boolean","meaning":"Boolean"},
+      {"name":"credentialsMode","type":"string","meaning":"Text"},
+      {"name":"usableBy","type":"string","meaning":"Text"},
+      {"name":"params.credentialsMode","type":"string","meaning":"Text"},
+      {"name":"params.authType","type":"string","meaning":"Text"},
+      {"name":"params.scopes","type":"string","meaning":"Text"},
+      {"name":"params.scope","type":"string","meaning":"Text"},
+      {"name":"params.warehouse","type":"string","meaning":"Text"},
+      {"name":"params.role","type":"string","meaning":"Text"},
+      {"name":"params.defaultSchema","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },
@@ -151,8 +157,41 @@
     }
   },
   "metricsChecks": {
-    "monitor": false,
-    "checks": [],
+    "monitor": true,
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "QlzRk2dT",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "Lke8i8T2",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }

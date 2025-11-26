@@ -21,13 +21,13 @@
         "dss_users_cached",
         "commits_cached",
         "jobs_cached",
-        "scenario_run_cached",
-        "cluster_tasks_cached",
         "dss_projects_cached",
-        "object_states_cached"
+        "dss_webapps_cached",
+        "dss_agents_cached",
+        "dss_meanings_cached"
       ],
-      "connection": "techex-postgres-beta",
-      "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5",
+      "connection": "postgres_localhost",
+      "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
       "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states"
     },
     "containerExecSelection": {
