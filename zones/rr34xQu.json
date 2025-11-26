@@ -137,6 +137,14 @@
     {
       "objectId": "dss_meanings_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_meanings_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_meanings_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
