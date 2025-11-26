@@ -47,7 +47,7 @@
   "schema": {
     "columns": [
       {"name":"envName","type":"string","meaning":"Text"},
-      {"name":"envLang","type":"string"},
+      {"name":"envLang","type":"string","meaning":"Text"},
       {"name":"deploymentMode","type":"string"},
       {"name":"owner","type":"string"},
       {"name":"pythonInterpreter","type":"string"},
