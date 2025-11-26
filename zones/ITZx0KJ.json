@@ -1,44 +1,7 @@
 {
   "name": "Schema locked, verified",
   "color": "#31439C",
-  "items": [
-    {
-      "objectId": "dss_projects_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_projects_cached_psql",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_projects_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_users_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_users_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_plugins_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_plugins_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_plugins_cached",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
