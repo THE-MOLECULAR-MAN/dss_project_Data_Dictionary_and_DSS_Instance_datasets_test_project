@@ -70,7 +70,8 @@
       {"name":"featureGroup","type":"string"},
       {"name":"num_metrics_checks","type":"string"},
       {"name":"num_columns","type":"string"},
-      {"name":"column_names","type":"string"}
+      {"name":"column_names","type":"string"},
+      {"name":"dataset_url","type":"string"}
     ],
     "userModified": true
   },
