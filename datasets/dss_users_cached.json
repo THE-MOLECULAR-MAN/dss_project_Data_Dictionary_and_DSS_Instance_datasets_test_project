@@ -64,20 +64,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"login","type":"string","comment":"User\u0027s login identifier, unique username.","isColumnEdited":true},
-      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in interfaces.","isColumnEdited":true},
-      {"name":"userProfile","type":"string","comment":"Assigned user profile, defines access level.","isColumnEdited":true},
-      {"name":"groups","type":"array","comment":"User\u0027s group memberships, roles and permissions.","isColumnEdited":true,"arrayContent":{"type":"string"}
-      },
-      {"name":"sourceType","type":"string","comment":"Origin of user account, LDAP or LOCAL.","isColumnEdited":true},
-      {"name":"email","type":"string","comment":"User\u0027s email address for contact.","isColumnEdited":true},
-      {"name":"enabled","type":"boolean","comment":"Account status, active or inactive.","isColumnEdited":true},
-      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile after policy application.","isColumnEdited":true},
-      {"name":"creationDate","type":"date","comment":"Date and time of account creation.","isColumnEdited":true},
-      {"name":"last_successful_login","type":"date","comment":"Timestamp of last successful login.","isColumnEdited":true},
-      {"name":"last_session_activity","type":"date","comment":"Timestamp of last session activity.","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
