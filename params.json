@@ -1,6 +1,6 @@
 {
   "dashboardAuthorizations": {
-    "allAuthorized": false,
+    "allAuthorized": true,
     "authorizations": []
   },
   "exposedObjects": {
