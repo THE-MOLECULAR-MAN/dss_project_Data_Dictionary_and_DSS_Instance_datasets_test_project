@@ -58,7 +58,7 @@
       {"name":"Agent Type","type":"string"},
       {"name":"Agent Version","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"Last Modified timestamp","type":"string","meaning":"DatetimeNoTz"},
+      {"name":"Last Modified timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
       {"name":"Agent URL","type":"string"}
     ],
     "userModified": true
