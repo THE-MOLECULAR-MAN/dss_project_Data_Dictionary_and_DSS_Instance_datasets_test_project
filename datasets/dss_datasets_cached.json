@@ -202,6 +202,27 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "projectKey",
+          "id",
+          "name",
+          "exists",
+          "type",
+          "managed"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "shtgJNyC",
+        "displayName": "No empty values exist in 6 columns",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
