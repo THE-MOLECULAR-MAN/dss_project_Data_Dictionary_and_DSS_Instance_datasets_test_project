@@ -99,6 +99,11 @@
         "homepage_example_label": "Locating projects overly reliant on Python",
         "homepage_example_query": "List projects where over half of the recipes are of type either \"python\" or \"sql_query\". Also list the",
         "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Links to agents using gpt-5",
+        "homepage_example_query": "provide a list of URLs to Agents whose LLM Agent Name is \"gpt-5\"",
+        "selected_agents": []
       }
     ],
     "projects_keys": [
@@ -116,7 +121,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:3F2107auVbdITxh/I//KmWA+nbaOaPvtCSjC6W8M38NRu95Db48hhf4AbfDDhDcvpiaQxN9O2Lq/IWvDAAnQrjtGApcbxv4u3iiVTbstl4JFJ4e7f0Ao",
+  "apiKey": "e:AES:X2:8/xWIOJX8iz2K2chGjb7jbSjJuNHBLFYR+sm/PCor84BlumpGLW1hTc5MPUb9+GG+/o11RQVsUHAUqWrB7L7xa9kq6qlsK1l1DgTqssBHyiLMuL4HX2E",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
