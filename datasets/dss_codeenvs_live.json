@@ -46,7 +46,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string"},
+      {"name":"envName","type":"string","meaning":"Text"},
       {"name":"envLang","type":"string"},
       {"name":"deploymentMode","type":"string"},
       {"name":"owner","type":"string"},
