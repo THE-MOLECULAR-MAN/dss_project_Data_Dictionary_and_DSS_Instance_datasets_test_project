@@ -57,7 +57,7 @@
       {"name":"params.authType","type":"string","meaning":"Text"},
       {"name":"params.scopes","type":"string","meaning":"Text"},
       {"name":"params.scope","type":"string","meaning":"Text"},
-      {"name":"params.warehouse","type":"string"},
+      {"name":"params.warehouse","type":"string","meaning":"Text"},
       {"name":"params.role","type":"string"},
       {"name":"params.defaultSchema","type":"string"}
     ],
