@@ -51,7 +51,7 @@
   "config": {
     "LLMs": [
       {
-        "llm_id": "openai:se-open-ai:gpt-5"
+        "llm_id": "openai:OpenAI_Shared_SE:gpt-5-mini"
       }
     ],
     "number_of_documents_to_retrieve": 10,
@@ -106,12 +106,12 @@
     "globalSystemPrompt": "",
     "tools": [],
     "agents_folder": "SANDBOX",
-    "embedding_llm": "openai:se-open-ai:text-embedding-3-small",
-    "default_llm_id": "openai:se-open-ai:gpt-5",
+    "embedding_llm": "openai:OpenAI_Shared_SE:text-embedding-3-small",
+    "default_llm_id": "openai:OpenAI_Shared_SE:gpt-5-mini",
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:fkVhXyrefs3kH9pla01zsuCTq3pKQ1RcnWFZ3YWczS98YnttmgP++pey+C10xtETP69XDUE9ezNgTpGYUUh1EJdHtuY7PDJEV7DTyOdljf1+hzsg/C62",
+  "apiKey": "e:AES:X2:3g/StdDaK1E0AaA0WnLGBzy0i0nUpb5vXsCdu+TRWaZv657LOY3zYKoizY7eJTGlDAhm3YvRPyLVHyo28AKL8uZHaZOVKhQK8DIhqLBIDitr10OcZWsV",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
