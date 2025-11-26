@@ -52,7 +52,7 @@
       {"name":"exists","type":"boolean","meaning":"Boolean"},
       {"name":"type","type":"string","meaning":"Text"},
       {"name":"formatType","type":"string","meaning":"Text"},
-      {"name":"params.connection","type":"string"},
+      {"name":"params.connection","type":"string","meaning":"Text"},
       {"name":"managed","type":"string"},
       {"name":"params.mode","type":"string"},
       {"name":"params.table","type":"string"},
