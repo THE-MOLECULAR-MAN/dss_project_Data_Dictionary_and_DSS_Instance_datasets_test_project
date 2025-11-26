@@ -46,7 +46,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"id","type":"string"},
       {"name":"name","type":"string"},
       {"name":"exists","type":"string"},
