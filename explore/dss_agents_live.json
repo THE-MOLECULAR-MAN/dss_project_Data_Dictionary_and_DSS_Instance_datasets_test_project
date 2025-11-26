@@ -6,6 +6,22 @@
       "mode": "ALL",
       "list": [
         {
+          "name": "Created by user",
+          "d": true
+        },
+        {
+          "name": "Last modified by user",
+          "d": true
+        },
+        {
+          "name": "tags",
+          "d": true
+        },
+        {
+          "name": "Last Modified timestamp",
+          "d": true
+        },
+        {
           "name": "projectKey",
           "d": true
         },
@@ -15,14 +31,6 @@
         },
         {
           "name": "Agent ID",
-          "d": true
-        },
-        {
-          "name": "Created by user",
-          "d": true
-        },
-        {
-          "name": "Last modified by user",
           "d": true
         },
         {
@@ -47,14 +55,6 @@
         },
         {
           "name": "Agent Version",
-          "d": true
-        },
-        {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "Last Modified timestamp",
           "d": true
         },
         {
@@ -113,7 +113,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764175870879
+      "_refreshTrigger": 1764177149665
     },
     "vizSampling": {
       "selection": {
