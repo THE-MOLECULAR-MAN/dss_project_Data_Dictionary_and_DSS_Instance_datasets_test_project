@@ -37,6 +37,18 @@
     {
       "objectId": "dss_datasets_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
