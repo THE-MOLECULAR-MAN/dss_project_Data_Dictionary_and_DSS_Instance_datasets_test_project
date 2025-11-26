@@ -68,7 +68,7 @@
       {"name":"params.folderSmartId","type":"string","meaning":"Text"},
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"featureGroup","type":"boolean","meaning":"Boolean"},
-      {"name":"num_metrics_checks","type":"int","meaning":"DoubleMeaning"},
+      {"name":"num_metrics_checks","type":"int","meaning":"LongMeaning"},
       {"name":"num_columns","type":"int"},
       {"name":"column_names","type":"string"},
       {"name":"dataset_url","type":"string","meaning":"URL"}
