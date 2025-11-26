@@ -64,7 +64,7 @@
       {"name":"versionTag.lastModifiedOn","type":"datetimenotz"},
       {"name":"shortDesc","type":"string"},
       {"name":"description","type":"string"},
-      {"name":"params.metastoreDatabaseName","type":"string"},
+      {"name":"params.metastoreDatabaseName","type":"string","meaning":"Text"},
       {"name":"params.folderSmartId","type":"string"},
       {"name":"tags","type":"string"},
       {"name":"featureGroup","type":"boolean"},
