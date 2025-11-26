@@ -70,7 +70,7 @@
       {"name":"featureGroup","type":"boolean","meaning":"Boolean"},
       {"name":"num_metrics_checks","type":"int","meaning":"LongMeaning"},
       {"name":"num_columns","type":"int","meaning":"LongMeaning"},
-      {"name":"column_names","type":"string"},
+      {"name":"column_names","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"dataset_url","type":"string","meaning":"URL"}
     ],
     "userModified": true
