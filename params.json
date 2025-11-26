@@ -13,7 +13,7 @@
   "permissionsVersion": "V2",
   "permissions": [
     {
-      "group": "administrators",
+      "group": "tims_only_club",
       "admin": true,
       "editPermissions": true,
       "readProjectContent": true,
