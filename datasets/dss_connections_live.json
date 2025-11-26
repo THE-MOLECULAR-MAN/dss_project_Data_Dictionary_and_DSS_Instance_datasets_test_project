@@ -54,7 +54,7 @@
       {"name":"credentialsMode","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string","meaning":"Text"},
       {"name":"params.credentialsMode","type":"string","meaning":"Text"},
-      {"name":"params.authType","type":"string"},
+      {"name":"params.authType","type":"string","meaning":"Text"},
       {"name":"params.scopes","type":"string"},
       {"name":"params.scope","type":"string"},
       {"name":"params.warehouse","type":"string"},
