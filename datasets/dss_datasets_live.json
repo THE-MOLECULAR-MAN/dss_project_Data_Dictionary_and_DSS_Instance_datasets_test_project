@@ -67,7 +67,7 @@
       {"name":"params.metastoreDatabaseName","type":"string"},
       {"name":"params.folderSmartId","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"featureGroup","type":"string"},
+      {"name":"featureGroup","type":"boolean"},
       {"name":"num_metrics_checks","type":"string"},
       {"name":"num_columns","type":"string"},
       {"name":"column_names","type":"string"},
