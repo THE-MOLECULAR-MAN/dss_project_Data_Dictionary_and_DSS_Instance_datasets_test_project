@@ -54,7 +54,7 @@
       {"name":"codeenv_url","type":"string","meaning":"URL"},
       {"name":"corePackagesSet","type":"string","meaning":"Text"},
       {"name":"path","type":"string","meaning":"Text"},
-      {"name":"disk_size_megabytes","type":"string","meaning":"DoubleMeaning"},
+      {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
       {"name":"usages","type":"string"}
     ],
     "userModified": true
