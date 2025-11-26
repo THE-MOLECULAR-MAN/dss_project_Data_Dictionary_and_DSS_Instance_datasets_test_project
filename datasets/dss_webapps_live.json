@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications within a Dataiku environment. It includes metadata such as project keys, web application names, and unique identifiers, which are essential for managing and tracking web applications. The dataset also captures the type of web application, the user who created it, and whether the backend is currently running. Additionally, it provides URLs for direct access to the web applications, along with timestamps for creation and last modification, which are crucial for auditing and version control. The dataset also includes information about the last user who modified the application and any associated tags, which can be used for categorization or filtering. This dataset is particularly useful for administrators and developers who need to monitor, manage, and maintain web applications, ensuring they are up-to-date and functioning correctly. It also aids in understanding user interactions and modifications over time, providing insights into application usage and development trends.",
+  "shortDesc": "Dataset of live web applications with project details and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -44,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"webapp_name","type":"string","meaning":"Text"},
-      {"name":"webapp_id","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"},
-      {"name":"created_on","type":"date","meaning":"DatetimeNoTz"},
-      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
-      {"name":"lastModifiedOn","type":"date","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_name","type":"string","comment":"Name of the web application, used for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application, crucial for access.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of web application, indicating its functionality.","meaning":"Text","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the web application, for accountability.","meaning":"Text","isColumnEdited":true},
+      {"name":"backendRunning","type":"boolean","comment":"Indicates if the backend is currently running, for status checks.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to access the web application, for navigation.","meaning":"URL","isColumnEdited":true},
+      {"name":"created_on","type":"date","comment":"Timestamp of when the web application was created, for auditing.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"lastModifiedBy","type":"string","comment":"User who last modified the application, for tracking changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"date","comment":"Timestamp of the last modification, for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the web application, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the application is code-based, for development insights.","meaning":"Boolean","isColumnEdited":true}
     ],
     "userModified": true
   },
