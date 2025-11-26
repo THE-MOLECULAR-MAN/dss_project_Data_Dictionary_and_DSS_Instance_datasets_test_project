@@ -52,7 +52,7 @@
       {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
       {"name":"allowWrite","type":"string","meaning":"Boolean"},
       {"name":"credentialsMode","type":"string","meaning":"Text"},
-      {"name":"usableBy","type":"string"},
+      {"name":"usableBy","type":"string","meaning":"Text"},
       {"name":"params.credentialsMode","type":"string"},
       {"name":"params.authType","type":"string"},
       {"name":"params.scopes","type":"string"},
