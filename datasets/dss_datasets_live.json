@@ -60,7 +60,7 @@
       {"name":"params.path","type":"string"},
       {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
       {"name":"creationTag.lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"versionTag.lastModifiedBy.login","type":"string"},
+      {"name":"versionTag.lastModifiedBy.login","type":"string","meaning":"Text"},
       {"name":"versionTag.lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
       {"name":"shortDesc","type":"string","meaning":"FreeText"},
       {"name":"description","type":"string","meaning":"FreeText"},
