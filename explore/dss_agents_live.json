@@ -1,0 +1,154 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "projectKey",
+          "d": true
+        },
+        {
+          "name": "Agent Name",
+          "d": true
+        },
+        {
+          "name": "Agent ID",
+          "d": true
+        },
+        {
+          "name": "Created by user",
+          "d": true
+        },
+        {
+          "name": "Last modified by user",
+          "d": true
+        },
+        {
+          "name": "Active Version",
+          "d": true
+        },
+        {
+          "name": "LLM Vendor",
+          "d": true
+        },
+        {
+          "name": "LLM Connection Name",
+          "d": true
+        },
+        {
+          "name": "LLM Model Name",
+          "d": true
+        },
+        {
+          "name": "Agent Type",
+          "d": true
+        },
+        {
+          "name": "Agent Version",
+          "d": true
+        },
+        {
+          "name": "tags",
+          "d": true
+        },
+        {
+          "name": "Last Modified timestamp",
+          "d": true
+        },
+        {
+          "name": "Agent URL",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "projectKey": 300,
+      "Agent Name": 225,
+      "Agent ID": 106,
+      "Created by user": 155,
+      "Last modified by user": 173,
+      "Active Version": 120,
+      "LLM Vendor": 120,
+      "LLM Connection Name": 183,
+      "LLM Model Name": 148,
+      "Agent Type": 134,
+      "Agent Version": 113,
+      "tags": 100,
+      "Last Modified timestamp": 211,
+      "Agent URL": 300
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1764175870879
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": []
+}
