@@ -51,7 +51,7 @@
       {"name":"deploymentMode","type":"string","meaning":"Text"},
       {"name":"owner","type":"string","meaning":"Text"},
       {"name":"pythonInterpreter","type":"string","meaning":"Text"},
-      {"name":"codeenv_url","type":"string"},
+      {"name":"codeenv_url","type":"string","meaning":"URL"},
       {"name":"corePackagesSet","type":"string"},
       {"name":"path","type":"string"},
       {"name":"disk_size_megabytes","type":"string"},
