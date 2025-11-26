@@ -65,14 +65,20 @@
   },
   "schema": {
     "columns": [
+      {"name":"params.db","type":"string"},
       {"name":"name","type":"string","comment":"Unique identifier for each connection, includes keywords: connection, identifier, name.","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Type of connection, such as BigQuery or PostgreSQL, includes keywords: connection, type, system.","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string"},
       {"name":"allowWrite","type":"string","comment":"Indicates if writing is permitted, includes keywords: write, permission, access.","isColumnEdited":true},
       {"name":"credentialsMode","type":"string","comment":"Mode of credentials used, either per user or global, includes keywords: credentials, mode, access.","isColumnEdited":true},
       {"name":"usableBy","type":"string","comment":"Specifies who can use the connection, includes keywords: access, permission, user.","isColumnEdited":true},
-      {"name":"allowedGroups","type":"string","comment":"Groups allowed to use the connection, includes keywords: groups, permission, access.","isColumnEdited":true},
-      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Groups allowed to read connection details, includes keywords: groups, readability, access.","isColumnEdited":true},
-      {"name":"params.credentialsMode","type":"string","comment":"Mode of credentials in parameters, includes keywords: credentials, parameters, mode.","isColumnEdited":true}
+      {"name":"params.credentialsMode","type":"string","comment":"Mode of credentials in parameters, includes keywords: credentials, parameters, mode.","isColumnEdited":true},
+      {"name":"params.authType","type":"string"},
+      {"name":"params.scopes","type":"string"},
+      {"name":"params.scope","type":"string"},
+      {"name":"params.warehouse","type":"string"},
+      {"name":"params.role","type":"string"},
+      {"name":"params.defaultSchema","type":"string"}
     ],
     "userModified": true
   },
