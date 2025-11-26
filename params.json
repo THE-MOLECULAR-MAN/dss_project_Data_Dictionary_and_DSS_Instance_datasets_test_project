@@ -57,7 +57,7 @@
       "pruneBeforeSqlPipelines": true,
       "defaultRecipeHashPropagationBehavior": "ENABLED"
     },
-    "sharingRequestsEnabled": "INHERIT",
+    "sharingRequestsEnabled": "ENABLED",
     "limitedVisibilityEnabled": "INHERIT",
     "accessRequestsEnabled": "INHERIT",
     "limitsSettings": {
