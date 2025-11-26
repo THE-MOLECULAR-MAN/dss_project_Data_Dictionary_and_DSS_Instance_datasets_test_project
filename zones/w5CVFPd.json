@@ -1,7 +1,44 @@
 {
   "name": "Broken",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_users_cached",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
