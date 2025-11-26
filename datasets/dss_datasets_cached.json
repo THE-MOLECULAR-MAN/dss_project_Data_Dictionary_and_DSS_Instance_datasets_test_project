@@ -89,7 +89,8 @@
       {"name":"featureGroup","type":"string","comment":"Indicates if the dataset is a feature group, boolean.","isColumnEdited":true},
       {"name":"num_metrics_checks","type":"string","comment":"Number of metric checks performed on the dataset.","isColumnEdited":true},
       {"name":"num_columns","type":"string","comment":"Number of columns in the dataset.","isColumnEdited":true},
-      {"name":"column_names","type":"string","comment":"Array of column names in the dataset.","isColumnEdited":true}
+      {"name":"column_names","type":"string","comment":"Array of column names in the dataset.","isColumnEdited":true},
+      {"name":"dataset_url","type":"string"}
     ],
     "userModified": true
   },
