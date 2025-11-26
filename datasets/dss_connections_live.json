@@ -48,7 +48,7 @@
     "columns": [
       {"name":"params.db","type":"string","meaning":"Text"},
       {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string"},
+      {"name":"type","type":"string","meaning":"Text"},
       {"name":"creationTag.lastModifiedBy.login","type":"string"},
       {"name":"allowWrite","type":"string"},
       {"name":"credentialsMode","type":"string"},
