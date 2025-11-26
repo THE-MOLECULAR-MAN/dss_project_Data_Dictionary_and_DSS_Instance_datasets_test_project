@@ -53,7 +53,7 @@
       {"name":"type","type":"string","meaning":"Text"},
       {"name":"formatType","type":"string","meaning":"Text"},
       {"name":"params.connection","type":"string","meaning":"Text"},
-      {"name":"managed","type":"string","meaning":"Boolean"},
+      {"name":"managed","type":"boolean","meaning":"Boolean"},
       {"name":"params.mode","type":"string"},
       {"name":"params.table","type":"string"},
       {"name":"params.schema","type":"string"},
