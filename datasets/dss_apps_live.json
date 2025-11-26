@@ -46,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string","comment":"Indicates if app has limited visibility; Boolean.","isColumnEdited":true},
-      {"name":"appId","type":"string","comment":"Unique identifier for the application; Text.","isColumnEdited":true},
-      {"name":"appVersion","type":"string","comment":"Version information of the application; Text.","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Descriptive label for the application; Text.","isColumnEdited":true},
-      {"name":"shortDesc","type":"string","comment":"Detailed description of the application; FreeText.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the application; JSONArrayMeaning.","isColumnEdited":true},
-      {"name":"isAppImg","type":"string","comment":"Indicates if app has an image; Boolean.","isColumnEdited":true},
-      {"name":"origin","type":"string","comment":"Source project of the application; Text.","isColumnEdited":true},
-      {"name":"originProjectKey","type":"string","comment":"Key of the originating project; Text.","isColumnEdited":true},
-      {"name":"instanceCount","type":"string","comment":"Number of instances of the application; Integer.","isColumnEdited":true},
-      {"name":"useAsRecipe","type":"string","comment":"Indicates if app is used as a recipe; Boolean.","isColumnEdited":true}
+      {"name":"onlyLimitedVisibility","type":"string"},
+      {"name":"appId","type":"string"},
+      {"name":"appVersion","type":"string"},
+      {"name":"label","type":"string"},
+      {"name":"shortDesc","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"isAppImg","type":"string"},
+      {"name":"origin","type":"string"},
+      {"name":"originProjectKey","type":"string"},
+      {"name":"instanceCount","type":"string"},
+      {"name":"useAsRecipe","type":"string"}
     ],
     "userModified": true
   },
