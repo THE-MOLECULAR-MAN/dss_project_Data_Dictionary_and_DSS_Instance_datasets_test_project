@@ -64,18 +64,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project recipe.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each recipe instance.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of recipe, indicating its function.","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Name of the recipe, often descriptive.","isColumnEdited":true},
-      {"name":"tags","type":"array","comment":"Tags for categorizing and retrieving recipes.","isColumnEdited":true,"arrayContent":{"type":"string"}
-      },
-      {"name":"input_datasets","type":"array","comment":"List of datasets used as inputs for the recipe.","isColumnEdited":true,"arrayContent":{"type":"string"}
-      },
-      {"name":"output_datasets","type":"array","comment":"List of datasets generated as outputs by the recipe.","isColumnEdited":true,"arrayContent":{"type":"string"}
-      }
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
