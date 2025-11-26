@@ -49,7 +49,7 @@
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"id","type":"string","meaning":"Text"},
       {"name":"name","type":"string","meaning":"Text"},
-      {"name":"exists","type":"string","meaning":"Boolean"},
+      {"name":"exists","type":"boolean","meaning":"Boolean"},
       {"name":"type","type":"string"},
       {"name":"formatType","type":"string"},
       {"name":"params.connection","type":"string"},
