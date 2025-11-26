@@ -3,7 +3,65 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "params.db",
+          "d": true
+        },
+        {
+          "name": "name",
+          "d": true
+        },
+        {
+          "name": "type",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "allowWrite",
+          "d": true
+        },
+        {
+          "name": "credentialsMode",
+          "d": true
+        },
+        {
+          "name": "usableBy",
+          "d": true
+        },
+        {
+          "name": "params.credentialsMode",
+          "d": true
+        },
+        {
+          "name": "params.authType",
+          "d": true
+        },
+        {
+          "name": "params.scopes",
+          "d": true
+        },
+        {
+          "name": "params.scope",
+          "d": true
+        },
+        {
+          "name": "params.warehouse",
+          "d": true
+        },
+        {
+          "name": "params.role",
+          "d": true
+        },
+        {
+          "name": "params.defaultSchema",
+          "d": true
+        }
+      ]
     },
     "columnOrder": [],
     "columnWidthsByName": {
@@ -55,7 +113,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1764177565595
     },
     "vizSampling": {
       "selection": {
