@@ -91,8 +91,8 @@
         "selected_agents": []
       },
       {
-        "homepage_example_label": "Migration planning off Hive",
-        "homepage_example_query": "List the project keys and project owners for all projects that use at least one Hive recipe",
+        "homepage_example_label": "Migration planning off PostgreSQL",
+        "homepage_example_query": "List the project keys and project owners for all projects that use at least one PostgreSQL dataset",
         "selected_agents": []
       }
     ],
@@ -111,7 +111,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:cLd8Vr0HOfTFL1Ym2YapFR1gyFrtBebSQb+DhMLfHieDKYE3H/FLvv+Ay1ADfGeXqBjmpNNP9QQs5zROHpy9uX2LtGZXn6+dqT0Wb6KhOZIpW9++yHLE",
+  "apiKey": "e:AES:X2:7wYjv5/SZoSE+vgLupNp4UfgzWPBwNorOrSESEYftcynZJYglR1CNnAAcEhwcmRZbp5UjsrKYfTTYboLBZg+Tx4iX6ehTniEbUQ2Uls+aNwDMGb8OQxv",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
