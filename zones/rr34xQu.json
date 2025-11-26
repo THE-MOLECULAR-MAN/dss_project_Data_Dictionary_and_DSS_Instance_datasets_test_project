@@ -133,6 +133,10 @@
     {
       "objectId": "dss_agents_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_meanings_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
