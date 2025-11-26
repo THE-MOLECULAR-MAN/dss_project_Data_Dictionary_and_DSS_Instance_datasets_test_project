@@ -59,7 +59,7 @@
       {"name":"params.scope","type":"string","meaning":"Text"},
       {"name":"params.warehouse","type":"string","meaning":"Text"},
       {"name":"params.role","type":"string","meaning":"Text"},
-      {"name":"params.defaultSchema","type":"string"}
+      {"name":"params.defaultSchema","type":"string","meaning":"Text"}
     ],
     "userModified": true
   },
