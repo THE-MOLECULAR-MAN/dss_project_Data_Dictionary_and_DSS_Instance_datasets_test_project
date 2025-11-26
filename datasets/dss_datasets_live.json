@@ -63,7 +63,7 @@
       {"name":"versionTag.lastModifiedBy.login","type":"string"},
       {"name":"versionTag.lastModifiedOn","type":"datetimenotz"},
       {"name":"shortDesc","type":"string"},
-      {"name":"description","type":"string"},
+      {"name":"description","type":"string","meaning":"FreeText"},
       {"name":"params.metastoreDatabaseName","type":"string","meaning":"Text"},
       {"name":"params.folderSmartId","type":"string","meaning":"Text"},
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
