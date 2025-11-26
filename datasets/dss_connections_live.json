@@ -51,7 +51,7 @@
       {"name":"type","type":"string","meaning":"Text"},
       {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
       {"name":"allowWrite","type":"string"},
-      {"name":"credentialsMode","type":"string"},
+      {"name":"credentialsMode","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string"},
       {"name":"params.credentialsMode","type":"string"},
       {"name":"params.authType","type":"string"},
