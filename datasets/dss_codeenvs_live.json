@@ -45,17 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"envName","type":"string"},
-      {"name":"envLang","type":"string"},
-      {"name":"deploymentMode","type":"string"},
-      {"name":"owner","type":"string"},
-      {"name":"pythonInterpreter","type":"string"},
-      {"name":"corePackagesSet","type":"string"},
-      {"name":"path","type":"string"},
-      {"name":"disk_size_megabytes","type":"string"},
-      {"name":"usages","type":"string"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
