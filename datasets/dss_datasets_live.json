@@ -54,7 +54,7 @@
       {"name":"formatType","type":"string","meaning":"Text"},
       {"name":"params.connection","type":"string","meaning":"Text"},
       {"name":"managed","type":"boolean","meaning":"Boolean"},
-      {"name":"params.mode","type":"string"},
+      {"name":"params.mode","type":"string","meaning":"Text"},
       {"name":"params.table","type":"string"},
       {"name":"params.schema","type":"string"},
       {"name":"params.path","type":"string","meaning":"Text"},
