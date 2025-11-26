@@ -55,7 +55,7 @@
       {"name":"params.connection","type":"string","meaning":"Text"},
       {"name":"managed","type":"boolean","meaning":"Boolean"},
       {"name":"params.mode","type":"string","meaning":"Text"},
-      {"name":"params.table","type":"string"},
+      {"name":"params.table","type":"string","meaning":"Text"},
       {"name":"params.schema","type":"string"},
       {"name":"params.path","type":"string","meaning":"Text"},
       {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
