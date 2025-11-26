@@ -94,6 +94,11 @@
         "homepage_example_label": "Migration planning off PostgreSQL",
         "homepage_example_query": "List the project keys and project owners for all projects that use at least one PostgreSQL dataset",
         "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Locating projects overly reliant on Python",
+        "homepage_example_query": "List projects where over half of the recipes are of type either \"python\" or \"sql_query\". Also list the",
+        "selected_agents": []
       }
     ],
     "projects_keys": [
@@ -111,7 +116,7 @@
     "default_fs_connection": "filesystem_managed"
   },
   "name": "Agent Hub",
-  "apiKey": "e:AES:X2:7wYjv5/SZoSE+vgLupNp4UfgzWPBwNorOrSESEYftcynZJYglR1CNnAAcEhwcmRZbp5UjsrKYfTTYboLBZg+Tx4iX6ehTniEbUQ2Uls+aNwDMGb8OQxv",
+  "apiKey": "e:AES:X2:3F2107auVbdITxh/I//KmWA+nbaOaPvtCSjC6W8M38NRu95Db48hhf4AbfDDhDcvpiaQxN9O2Lq/IWvDAAnQrjtGApcbxv4u3iiVTbstl4JFJ4e7f0Ao",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
