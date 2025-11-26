@@ -109,6 +109,10 @@
     {
       "objectId": "dss_plugins_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "webapps_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
