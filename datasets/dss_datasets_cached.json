@@ -208,10 +208,7 @@
         "columns": [
           "projectKey",
           "id",
-          "name",
-          "exists",
-          "type",
-          "managed"
+          "name"
         ],
         "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
         "maximum": 0.0,
@@ -219,7 +216,7 @@
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
         "id": "shtgJNyC",
-        "displayName": "No empty values exist in 6 columns",
+        "displayName": "No empty values exist in 3 columns",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
