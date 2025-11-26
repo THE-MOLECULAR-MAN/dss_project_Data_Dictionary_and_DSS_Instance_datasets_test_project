@@ -46,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string","comment":"User\u0027s login identifier, unique username.","isColumnEdited":true},
-      {"name":"sourceType","type":"string","comment":"Origin of user account, LDAP or LOCAL.","isColumnEdited":true},
-      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in interfaces.","isColumnEdited":true},
-      {"name":"groups","type":"string","comment":"User\u0027s group memberships, roles and permissions.","isColumnEdited":true},
-      {"name":"userProfile","type":"string","comment":"Assigned user profile, defines access level.","isColumnEdited":true},
-      {"name":"creationDate","type":"string","comment":"Date and time of account creation.","isColumnEdited":true},
-      {"name":"enabled","type":"string","comment":"Account status, active or inactive.","isColumnEdited":true},
-      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile after policy application.","isColumnEdited":true},
-      {"name":"last_successful_login","type":"string","comment":"Timestamp of last successful login.","isColumnEdited":true},
-      {"name":"last_session_activity","type":"string","comment":"Timestamp of last session activity.","isColumnEdited":true},
-      {"name":"email","type":"string","comment":"User\u0027s email address for contact.","isColumnEdited":true}
+      {"name":"login","type":"string","meaning":"Text"},
+      {"name":"displayName","type":"string","meaning":"Text"},
+      {"name":"userProfile","type":"string","meaning":"Text"},
+      {"name":"groups","type":"string","meaning":"Text"},
+      {"name":"sourceType","type":"string","meaning":"Text"},
+      {"name":"email","type":"string","meaning":"Email"},
+      {"name":"enabled","type":"boolean","meaning":"Boolean"},
+      {"name":"resultingUserProfile","type":"string","meaning":"Text"},
+      {"name":"creationDate","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"last_successful_login","type":"date","meaning":"Date"},
+      {"name":"last_session_activity","type":"date","meaning":"Date"}
     ],
     "userModified": true
   },

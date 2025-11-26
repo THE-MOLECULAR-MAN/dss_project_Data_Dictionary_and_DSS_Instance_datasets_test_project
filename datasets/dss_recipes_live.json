@@ -46,13 +46,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project recipe.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each recipe instance.","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of recipe, indicating its function.","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Name of the recipe, often descriptive.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags for categorizing and retrieving recipes.","isColumnEdited":true},
-      {"name":"input_datasets","type":"string","comment":"List of datasets used as inputs for the recipe.","isColumnEdited":true},
-      {"name":"output_datasets","type":"string","comment":"List of datasets generated as outputs by the recipe.","isColumnEdited":true}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },

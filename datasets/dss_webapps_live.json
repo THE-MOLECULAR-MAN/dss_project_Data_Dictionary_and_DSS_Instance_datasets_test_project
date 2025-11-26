@@ -1,9 +1,7 @@
 {
-  "type": "PostgreSQL",
-  "managed": true,
+  "type": "CustomPython_xzibit_webapps",
+  "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_recipes_cached\u0027 dataset is a comprehensive collection of cached recipes used in various projects. Each entry in the dataset represents a unique recipe instance, identified by a project key and an ID. The dataset provides detailed metadata about each recipe, including its type, name, and associated tags. Additionally, it includes information about the input and output datasets related to each recipe, which is crucial for understanding the data flow and dependencies within projects. This dataset is particularly useful for data engineers and analysts who need to manage and optimize data processing workflows. By examining the types and names of recipes, users can gain insights into the functions and purposes of different recipes. The tags and dataset lists further aid in categorizing and retrieving specific recipes, enhancing the efficiency of data management tasks. Overall, this dataset serves as a valuable resource for maintaining and analyzing the structure and execution of data processing recipes in a project environment.",
-  "shortDesc": "Dataset of cached project recipes with identifiers and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -34,44 +32,30 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "tim.honker"
+      "login": "demo"
     },
-    "lastModifiedOn": 1763949306949
+    "lastModifiedOn": 1764128239929
   },
   "tags": [],
   "params": {
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "postgres_localhost",
+    "customConfig": {},
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_dss_recipes_cached",
-    "schema": "",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeDescriptionsAsSQLComment": false,
-    "noDropOnSchemaMismatch": true,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "datetimenotzReadMode": "AS_IS",
-    "dateonlyReadMode": "AS_IS",
-    "variablesExpansionLoopConfig": {
-      "enabled": false,
-      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
-      "replacements": []
-    },
-    "sparkJdbcAccess": "NONE",
-    "numPartitions": -1
+    "previewAllPartitions": false
   },
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"webapp_name","type":"string","meaning":"Text"},
+      {"name":"webapp_id","type":"string","meaning":"Text"},
       {"name":"type","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"created_by_user","type":"string","meaning":"Text"},
+      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"},
+      {"name":"created_on","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
+      {"name":"lastModifiedOn","type":"date","meaning":"DatetimeNoTz"},
+      {"name":"tags","type":"array","meaning":"JSONArrayMeaning"},
+      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"}
     ],
     "userModified": true
   },
