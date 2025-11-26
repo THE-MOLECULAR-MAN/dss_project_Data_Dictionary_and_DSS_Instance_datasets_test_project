@@ -64,7 +64,15 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
