@@ -21,7 +21,10 @@
         "dss_users_cached",
         "commits_cached",
         "jobs_cached",
-        "dss_projects_cached"
+        "dss_projects_cached",
+        "dss_webapps_cached",
+        "dss_agents_cached",
+        "dss_meanings_cached"
       ],
       "connection": "postgres_localhost",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
