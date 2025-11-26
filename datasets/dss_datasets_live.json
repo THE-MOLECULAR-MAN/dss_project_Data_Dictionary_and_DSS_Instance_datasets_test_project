@@ -69,7 +69,7 @@
       {"name":"tags","type":"string"},
       {"name":"featureGroup","type":"boolean"},
       {"name":"num_metrics_checks","type":"int"},
-      {"name":"num_columns","type":"string"},
+      {"name":"num_columns","type":"int"},
       {"name":"column_names","type":"string"},
       {"name":"dataset_url","type":"string"}
     ],
