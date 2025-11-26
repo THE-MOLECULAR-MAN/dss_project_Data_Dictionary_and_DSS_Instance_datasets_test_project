@@ -64,18 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for project management.","meaning":"Text","isColumnEdited":true},
-      {"name":"webapp_name","type":"string","comment":"Name of the web application, crucial for identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application, used for access.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_name","type":"string","comment":"Name of the web application, used for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application, crucial for access.","meaning":"Text","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Type of web application, indicating its functionality.","meaning":"Text","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"Email of the user who created the web app, for accountability.","meaning":"Text","isColumnEdited":true},
-      {"name":"backendRunning","type":"boolean","comment":"Indicates if the backend is running, showing operational status.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL to access the web application, necessary for navigation.","meaning":"URL","isColumnEdited":true},
-      {"name":"created_on","type":"date","comment":"Date when the web app was created, for tracking.","isColumnEdited":true},
-      {"name":"lastModifiedBy","type":"string","comment":"Email of the user who last modified the app, for tracking changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"lastModifiedOn","type":"date","comment":"Date of the last modification, for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the web app, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the app is code-based, showing development type.","meaning":"Boolean","isColumnEdited":true}
+      {"name":"created_by_user","type":"string","comment":"User who created the web application, for accountability.","meaning":"Text","isColumnEdited":true},
+      {"name":"backendRunning","type":"boolean","comment":"Indicates if the backend is currently running, for status checks.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to access the web application, for navigation.","meaning":"URL","isColumnEdited":true},
+      {"name":"created_on","type":"date","comment":"Timestamp of when the web application was created, for auditing.","isColumnEdited":true},
+      {"name":"lastModifiedBy","type":"string","comment":"User who last modified the application, for tracking changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"date","comment":"Timestamp of the last modification, for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the web application, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the application is code-based, for development insights.","meaning":"Boolean","isColumnEdited":true}
     ],
     "userModified": true
   },
