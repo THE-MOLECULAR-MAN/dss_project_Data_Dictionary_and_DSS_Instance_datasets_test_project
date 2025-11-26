@@ -48,7 +48,7 @@
     "columns": [
       {"name":"envName","type":"string","meaning":"Text"},
       {"name":"envLang","type":"string","meaning":"Text"},
-      {"name":"deploymentMode","type":"string"},
+      {"name":"deploymentMode","type":"string","meaning":"Text"},
       {"name":"owner","type":"string"},
       {"name":"pythonInterpreter","type":"string"},
       {"name":"codeenv_url","type":"string"},
