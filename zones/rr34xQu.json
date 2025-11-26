@@ -113,6 +113,10 @@
     {
       "objectId": "dss_webapps_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_agents_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
