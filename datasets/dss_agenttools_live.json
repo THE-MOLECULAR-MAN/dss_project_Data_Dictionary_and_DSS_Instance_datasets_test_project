@@ -57,7 +57,7 @@
       {"name":"agent_tool_params","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
       {"name":"dkuProperties","type":"string","meaning":"Text"},
-      {"name":"quickTestQuery","type":"string"}
+      {"name":"quickTestQuery","type":"string","meaning":"JSONObjectMeaning"}
     ],
     "userModified": true
   },
