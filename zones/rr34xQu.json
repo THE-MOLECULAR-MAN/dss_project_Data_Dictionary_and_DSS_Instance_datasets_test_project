@@ -101,6 +101,14 @@
     {
       "objectId": "dss_agenttools_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_agenttools_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_agenttools_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
