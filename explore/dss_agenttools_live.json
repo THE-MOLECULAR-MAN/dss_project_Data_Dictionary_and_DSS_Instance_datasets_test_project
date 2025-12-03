@@ -152,7 +152,45 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "agent_tool_type",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "agent_tool_type",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "GenericStdioMCPClient": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "agent_tool_type",
+          "selectedValues": [
+            "GenericStdioMCPClient"
+          ],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "agent_tool_type",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [],
