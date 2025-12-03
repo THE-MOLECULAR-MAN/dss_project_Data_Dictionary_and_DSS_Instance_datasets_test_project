@@ -31,7 +31,154 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": false,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": false,
+        "showCumulativeDistributionFunction": false,
+        "xColumns": [
+          {
+            "name": "projectKey",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "agent_tool_id",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "projectKey",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "projectKey",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tRmYRjL"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "projectKey",
+                  "type": "CATEGORICAL"
+                },
+                "id": "fmDFlOC"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "projectKey",
+                  "type": "CATEGORICAL"
+                },
+                "id": "3r97nSp"
+              }
+            ],
+            "id": "X1qFGXU"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "agent_tool_id",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "agent_tool_id",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Bt23Pce"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "agent_tool_id",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7JFPpzb"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "agent_tool_id",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZFeA3lE"
+              }
+            ],
+            "id": "hDzTsm4"
+          }
+        ],
+        "id": "lzgMERg"
+      }
+    ],
     "id": "lH9CcfF"
   },
   "name": "Worksheet",
