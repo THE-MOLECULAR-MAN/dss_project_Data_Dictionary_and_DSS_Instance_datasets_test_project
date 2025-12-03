@@ -46,7 +46,7 @@
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"agent_tool_id","type":"string","meaning":"Text"},
-      {"name":"agent_tool_name","type":"string"},
+      {"name":"agent_tool_name","type":"string","meaning":"Text"},
       {"name":"agent_tool_type","type":"string"},
       {"name":"agent_tool_description_for_LLM","type":"string"},
       {"name":"tags","type":"string"},
