@@ -56,7 +56,7 @@
       {"name":"Last modified by user","type":"string","meaning":"Text"},
       {"name":"agent_tool_params","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"customFields","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"dkuProperties","type":"string"},
+      {"name":"dkuProperties","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"checklists","type":"string"},
       {"name":"quickTestQuery","type":"string"}
     ],
