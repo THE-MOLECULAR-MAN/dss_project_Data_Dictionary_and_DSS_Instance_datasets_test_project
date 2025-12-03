@@ -1,49 +1,51 @@
 {
-  "name": "Current date-time",
-  "type": "GenericStdioMCPClient",
-  "params": {
-    "codeEnvSelection": {
-      "envMode": "EXPLICIT_ENV",
-      "envName": "py312-mcp-2"
+    "name": "Current date-time",
+    "type": "GenericStdioMCPClient",
+    "params": {
+        "codeEnvSelection": {
+            "envMode": "EXPLICIT_ENV",
+            "envName": "py312-mcp-2"
+        },
+        "containerExecSelection": {
+            "containerMode": "INHERIT"
+        },
+        "useCodeEnvPythonAsCommand": false,
+        "command": "npx",
+        "args": [
+            "-y",
+            "@smithery/cli@latest",
+            "run",
+            "@yokingma/time-mcp",
+            "--key",
+            "ca1c91f8-eab0-4fc3-bdb0-0332bdaf713c"
+        ],
+        "env": [],
+        "subtoolsEnabledByDefault": true,
+        "subtoolsStateOverride": {},
+        "initTimeout": 300,
+        "requestTimeout": 3600
     },
-    "containerExecSelection": {
-      "containerMode": "INHERIT"
+    "quickTestQuery": {
+        "subtoolName": "current_time",
+        "input": {
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timezone": "America/New_York"
+        },
+        "context": {}
     },
-    "useCodeEnvPythonAsCommand": false,
-    "command": "npx",
-    "args": [
-      "-y",
-      "@smithery/cli@latest",
-      "run",
-      "@yokingma/time-mcp",
-      "--key",
-      "ca1c91f8-eab0-4fc3-bdb0-0332bdaf713c"
-    ],
-    "env": [],
-    "subtoolsEnabledByDefault": true,
-    "subtoolsStateOverride": {}
-  },
-  "quickTestQuery": {
-    "subtoolName": "current_time",
-    "input": {
-      "format": "YYYY-MM-DD HH:mm:ss",
-      "timezone": "America/New_York"
+    "dkuProperties": [],
+    "singleInstance": false,
+    "additionalDescriptionForLLM": "Use this tool to get the current date and time in the following format:  \"YYYY-MM-DD HH:mm:ss\" for both UTC and America/New_York. This tool is useful for determining the how much time has passed since a dataset was created or modified.",
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "tim.honker"
+        },
+        "lastModifiedOn": 1763668312311
     },
-    "context": {}
-  },
-  "dkuProperties": [],
-  "singleInstance": false,
-  "additionalDescriptionForLLM": "Use this tool to get the current date and time in the following format:  \"YYYY-MM-DD HH:mm:ss\" for both UTC and America/New_York. This tool is useful for determining the how much time has passed since a dataset was created or modified.",
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "tim.honker"
-    },
-    "lastModifiedOn": 1763668312311
-  },
-  "tags": [],
-  "customFields": {},
-  "checklists": {
-    "checklists": []
-  }
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
 }
