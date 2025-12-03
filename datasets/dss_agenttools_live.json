@@ -44,7 +44,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"agent_tool_id","type":"string"},
       {"name":"agent_tool_name","type":"string"},
       {"name":"agent_tool_type","type":"string"},
