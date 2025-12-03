@@ -45,10 +45,12 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"Agent Tool ID","type":"string"},
-      {"name":"Agent Tool Name","type":"string"},
-      {"name":"Agent Tool Type","type":"string"},
-      {"name":"additionalDescriptionForLLM","type":"string"}
+      {"name":"agent_tool_id","type":"string"},
+      {"name":"agent_tool_name","type":"string"},
+      {"name":"agent_tool_type","type":"string"},
+      {"name":"agent_tool_description_for_LLM","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"url_dss_object","type":"string"}
     ],
     "userModified": true
   },
