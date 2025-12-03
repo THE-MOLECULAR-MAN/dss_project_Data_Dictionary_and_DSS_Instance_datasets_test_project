@@ -50,7 +50,15 @@
       {"name":"agent_tool_type","type":"string"},
       {"name":"agent_tool_description_for_LLM","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"url_dss_object","type":"string"}
+      {"name":"url","type":"string"},
+      {"name":"Created by user","type":"string"},
+      {"name":"Last Modified timestamp","type":"string"},
+      {"name":"Last modified by user","type":"string"},
+      {"name":"agent_tool_params","type":"string"},
+      {"name":"customFields","type":"string"},
+      {"name":"dkuProperties","type":"string"},
+      {"name":"checklists","type":"string"},
+      {"name":"quickTestQuery","type":"string"}
     ],
     "userModified": true
   },
