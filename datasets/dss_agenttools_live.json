@@ -55,7 +55,7 @@
       {"name":"Last Modified timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"Last modified by user","type":"string","meaning":"Text"},
       {"name":"agent_tool_params","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"customFields","type":"string"},
+      {"name":"customFields","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"dkuProperties","type":"string"},
       {"name":"checklists","type":"string"},
       {"name":"quickTestQuery","type":"string"}
