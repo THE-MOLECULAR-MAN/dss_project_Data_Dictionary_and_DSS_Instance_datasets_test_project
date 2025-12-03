@@ -153,6 +153,22 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": false,
         "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 4.0,
+        "minimumEnabled": true,
+        "maximum": 20.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "7KxkIC81",
+        "displayName": "Column count is between 4 and 20",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": false,
+        "enabled": true
       }
     ],
     "displayedState": {
