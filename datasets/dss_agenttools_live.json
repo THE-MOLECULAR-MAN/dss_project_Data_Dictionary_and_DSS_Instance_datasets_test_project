@@ -48,7 +48,7 @@
       {"name":"agent_tool_id","type":"string","meaning":"Text"},
       {"name":"agent_tool_name","type":"string","meaning":"Text"},
       {"name":"agent_tool_type","type":"string","meaning":"Text"},
-      {"name":"agent_tool_description_for_LLM","type":"string"},
+      {"name":"agent_tool_description_for_LLM","type":"string","meaning":"FreeText"},
       {"name":"tags","type":"string"},
       {"name":"url","type":"string"},
       {"name":"Created by user","type":"string"},
