@@ -58,7 +58,7 @@
       {"name":"customFields","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"dkuProperties","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"checklists","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"quickTestQuery","type":"string"}
+      {"name":"quickTestQuery","type":"string","meaning":"JSONObjectMeaning"}
     ],
     "userModified": true
   },
