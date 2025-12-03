@@ -56,7 +56,7 @@
       {"name":"Last modified by user","type":"string","meaning":"Text"},
       {"name":"agent_tool_params","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
-      {"name":"dkuProperties","type":"string"},
+      {"name":"dkuProperties","type":"string","meaning":"Text"},
       {"name":"quickTestQuery","type":"string"}
     ],
     "userModified": true
