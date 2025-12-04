@@ -62,7 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"projectKey","type":"string","comment":"column description here","meaning":"Text","isColumnEdited":true},
       {"name":"agent_tool_id","type":"string","meaning":"Text"},
       {"name":"agent_tool_name","type":"string","meaning":"Text"},
       {"name":"agent_tool_type","type":"string","meaning":"Text"},
