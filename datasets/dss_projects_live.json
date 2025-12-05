@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_projects",
   "managed": false,
   "featureGroup": false,
-  "description": "The xzibit_projects dataset provides a comprehensive overview of various software projects, capturing essential details such as project identifiers, ownership, status, and metadata. This dataset is particularly useful for project management, tracking, and analysis within software development environments. Each project is uniquely identified by a projectKey and is associated with an ownerLogin, indicating the responsible individual. The dataset also includes a boolean field, tutorialProject, to specify if a project is intended for tutorial purposes. The name column provides the project\u0027s title, while projectStatus indicates its current phase, such as \u0027Sandbox\u0027. Additional metadata includes contributors, a list of individuals involved in the project, and lastModifiedOn, which records the last update timestamp. The shortDesc column offers a brief description of the project, and tags provide categorical labels for easier classification and retrieval. This dataset is valuable for organizations looking to manage and analyze their project portfolios, offering insights into project distribution, ownership, and lifecycle status.",
+  "description": "",
   "shortDesc": "Dataset of software projects with details on ownership, status, and metadata.",
   "checklists": {
     "checklists": []
