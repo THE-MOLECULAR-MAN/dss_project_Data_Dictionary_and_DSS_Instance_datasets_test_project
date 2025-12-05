@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_apps_cached\u0027 dataset provides a comprehensive overview of cached applications within the Dataiku platform. It includes metadata and usage details for each application, such as visibility, version, and origin. This dataset is particularly useful for administrators and developers who need to manage and monitor applications within Dataiku. It contains information about the application ID, version, and descriptive labels, which help in identifying and categorizing the applications. The dataset also includes details about the application\u0027s origin, whether it is a project or a plugin, and the number of instances currently in use. Additionally, it provides URLs for accessing the applications directly, which facilitates easy navigation and management. The dataset\u0027s boolean fields, such as \u0027onlyLimitedVisibility\u0027 and \u0027isAppImg\u0027, help in understanding the application\u0027s visibility and image status. The \u0027tags\u0027 column allows for categorization and filtering based on specific keywords, enhancing the dataset\u0027s utility for organizing applications. Overall, this dataset is a valuable resource for efficiently managing Dataiku applications, ensuring they are up-to-date and properly categorized.",
+  "shortDesc": "Dataset of cached Dataiku applications with metadata and usage details.",
   "checklists": {
     "checklists": []
   },
@@ -65,18 +65,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"boolean","meaning":"Boolean"},
-      {"name":"appId","type":"string","meaning":"Text"},
-      {"name":"appVersion","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isAppImg","type":"boolean","meaning":"Boolean"},
-      {"name":"origin","type":"string","meaning":"Text"},
-      {"name":"originProjectKey","type":"string","meaning":"Text"},
-      {"name":"instanceCount","type":"int","meaning":"LongMeaning"},
-      {"name":"useAsRecipe","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"onlyLimitedVisibility","type":"boolean","comment":"Indicates if app has limited visibility.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for each application.","meaning":"Text","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the application.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords associated with the application.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"isAppImg","type":"boolean","comment":"Indicates if app has an image.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source of the application, project or plugin.","meaning":"Text","isColumnEdited":true},
+      {"name":"originProjectKey","type":"string","comment":"Key of the originating project.","meaning":"Text","isColumnEdited":true},
+      {"name":"instanceCount","type":"int","comment":"Number of instances of the application.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"boolean","comment":"Indicates if app is used as a recipe.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to access the application.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
