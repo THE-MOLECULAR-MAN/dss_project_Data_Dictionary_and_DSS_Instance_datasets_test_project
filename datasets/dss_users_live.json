@@ -3,7 +3,7 @@
   "managed": false,
   "featureGroup": false,
   "description": "LONG_RESET",
-  "shortDesc": "User management dataset with login, profile, and activity details.",
+  "shortDesc": "new_SHORT_VALUE",
   "checklists": {
     "checklists": []
   },
