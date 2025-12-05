@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about live plugins used in Dataiku\u0027s Data Science Studio (DSS). This dataset is particularly useful for developers, data scientists, and administrators who need to manage or analyze the plugins available in their DSS environment. Each entry in the dataset represents a plugin, detailing its development status, unique identifier, descriptive label, and a free-text description that explains its functionality. Additionally, the dataset includes metadata such as the author of the plugin, version information, and associated tags that categorize the plugin\u0027s purpose or functionality. The dataset also tracks usage statistics, including the total number of times a plugin has been used and specific projects where it has been applied. This information can be leveraged to understand plugin popularity, identify underutilized plugins, and manage plugin updates or deprecations. The dataset\u0027s structure, with fields like \u0027isDev\u0027 indicating development status and \u0027tags\u0027 providing categorical insights, makes it a valuable resource for maintaining an efficient and organized DSS environment.",
+  "description": "",
   "shortDesc": "Dataset of live DSS plugins with metadata and usage statistics.",
   "checklists": {
     "checklists": []
