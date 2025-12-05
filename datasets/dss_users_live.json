@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_users",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_users_live\u0027 dataset is designed to manage and analyze user information within a system, focusing on login credentials, user profiles, and activity tracking. It includes key details such as user emails, display names, and profiles, which help in identifying and categorizing users. The dataset also tracks user group memberships, source types, and whether the user accounts are enabled, providing a comprehensive view of user access and permissions. Additionally, it records timestamps for account creation, last successful login, and last session activity, which are crucial for monitoring user engagement and security. The dataset is particularly useful for administrators and analysts who need to manage user access, analyze user behavior, and ensure system security. Unique features include the ability to track user profiles and group memberships, as well as detailed activity logs, which can be used for auditing and compliance purposes. The inclusion of URLs for user management interfaces further facilitates administrative tasks.",
+  "shortDesc": "User management dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string","meaning":"Text"},
-      {"name":"displayName","type":"string","meaning":"Text"},
-      {"name":"userProfile","type":"string","meaning":"Text"},
-      {"name":"groups","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"sourceType","type":"string","meaning":"Text"},
-      {"name":"email","type":"string","meaning":"Text"},
-      {"name":"enabled","type":"boolean","meaning":"Boolean"},
-      {"name":"resultingUserProfile","type":"string","meaning":"Text"},
-      {"name":"creationDate","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"last_successful_login","type":"date","meaning":"Date"},
-      {"name":"last_session_activity","type":"date","meaning":"Date"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"login","type":"string","comment":"User\u0027s login email, identifies user account.","meaning":"Text","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in the system.","meaning":"Text","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"User\u0027s profile type, defines access level.","meaning":"Text","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"User\u0027s group memberships, JSON array format.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Origin of user account, e.g., LOCAL.","meaning":"Text","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address, contact information.","meaning":"Text","isColumnEdited":true},
+      {"name":"enabled","type":"boolean","comment":"Account status, indicates if user is active.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile, post-group adjustments.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationDate","type":"datetimenotz","comment":"Account creation date, tracks user registration.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_successful_login","type":"date","comment":"Timestamp of last successful login, tracks access.","meaning":"Date","isColumnEdited":true},
+      {"name":"last_session_activity","type":"date","comment":"Timestamp of last session activity, monitors engagement.","meaning":"Date","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for user management interface, admin access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
