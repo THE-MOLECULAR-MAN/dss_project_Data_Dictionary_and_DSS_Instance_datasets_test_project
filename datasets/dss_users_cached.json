@@ -220,7 +220,7 @@
         "softMinimum": 0.0,
         "softMinimumEnabled": false,
         "id": "9zIp2TLW",
-        "displayName": "All values of 5 columns are valid",
+        "displayName": "All values of 5 columns are valid - must be okay with empty for Dev-Design",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
