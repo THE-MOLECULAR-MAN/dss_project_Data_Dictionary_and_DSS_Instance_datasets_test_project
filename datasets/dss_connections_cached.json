@@ -191,6 +191,30 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "allowWrite",
+            "meaning": "Boolean"
+          },
+          {
+            "column": "url",
+            "meaning": "URL"
+          }
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "considerEmptyAsValid": false,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "Qe9LNpAS",
+        "displayName": "All values of 2 columns are valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
