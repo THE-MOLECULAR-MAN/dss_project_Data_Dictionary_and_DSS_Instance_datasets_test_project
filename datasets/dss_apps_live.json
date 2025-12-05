@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_apps",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_apps_live\u0027 dataset provides a comprehensive overview of live applications within the Dataiku platform. It includes metadata and descriptive information about each application, such as its unique identifier, version, and descriptive labels. This dataset is particularly useful for managing and analyzing the deployment and usage of Dataiku applications, offering insights into application visibility, origin, and usage patterns. It can be used by data engineers and platform administrators to monitor application instances, track their origins, and understand their deployment contexts. The dataset also includes URLs for direct access to applications, making it easier to navigate and manage them. Additionally, the dataset captures tags and descriptions that can help in categorizing and understanding the purpose and functionality of each application. This information is crucial for maintaining an organized and efficient data science environment, ensuring that applications are used effectively and that their deployment aligns with organizational goals.",
+  "shortDesc": "Dataset of live Dataiku applications with details and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"boolean","meaning":"Boolean"},
-      {"name":"appId","type":"string","meaning":"Text"},
-      {"name":"appVersion","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isAppImg","type":"boolean","meaning":"Boolean"},
-      {"name":"origin","type":"string","meaning":"Text"},
-      {"name":"originProjectKey","type":"string","meaning":"Text"},
-      {"name":"instanceCount","type":"int","meaning":"LongMeaning"},
-      {"name":"useAsRecipe","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"onlyLimitedVisibility","type":"boolean","comment":"Indicates if app has limited visibility, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for each application, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application, free text.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Short description of the application, free text.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the application, JSON array format.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"isAppImg","type":"boolean","comment":"Indicates if app has an image, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source of the application, either project or plugin.","meaning":"Text","isColumnEdited":true},
+      {"name":"originProjectKey","type":"string","comment":"Key of the originating project, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"instanceCount","type":"int","comment":"Number of instances of the application, integer value.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"boolean","comment":"Indicates if app is used as a recipe, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the application, string format.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
