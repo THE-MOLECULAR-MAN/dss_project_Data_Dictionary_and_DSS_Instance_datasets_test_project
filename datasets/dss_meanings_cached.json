@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_meanings_cached\u0027 dataset is designed to store and manage cached meanings for various data elements within a Decision Support System (DSS). This dataset is particularly useful for systems that require quick access to predefined meanings or labels associated with different data identifiers. It includes columns that define the unique identifier for each meaning, the label associated with it, and whether the meaning is detectable or not. Additionally, it categorizes each meaning by type and specifies the normalization mode used. This dataset can be instrumental in scenarios where data consistency and quick retrieval of meaning are critical, such as in incident management systems, alarm monitoring, and device status tracking. By caching these meanings, the system can enhance performance and ensure that the correct interpretations are applied consistently across various applications.",
+  "shortDesc": "Dataset for caching DSS meanings with labels and types.",
   "checklists": {
     "checklists": []
   },
@@ -64,12 +64,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"detectable","type":"boolean","meaning":"Boolean"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"normalizationMode","type":"string","meaning":"Text"},
-      {"name":"description","type":"string","meaning":"FreeText"}
+      {"name":"id","type":"string","comment":"Unique identifier for each meaning, key for retrieval.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Associated label for the meaning, often prefixed with \u0027OUTAGE\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if the meaning is detectable, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Category of the meaning, such as \u0027PATTERN\u0027 or \u0027VALUES_LIST\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Specifies the normalization mode, e.g., \u0027EXACT\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Textual description of the meaning, provides context.","meaning":"FreeText","isColumnEdited":true}
     ],
     "userModified": true
   },
