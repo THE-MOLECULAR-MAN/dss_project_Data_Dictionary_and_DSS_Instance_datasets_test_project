@@ -30,23 +30,23 @@
           "d": true
         },
         {
-          "name": "url",
+          "name": "creator_user",
           "d": true
         },
         {
-          "name": "Created by user",
+          "name": "last_modified_timestamp",
           "d": true
         },
         {
-          "name": "Last Modified timestamp",
-          "d": true
-        },
-        {
-          "name": "Last modified by user",
+          "name": "last_modified_user",
           "d": true
         },
         {
           "name": "agent_tool_params",
+          "d": true
+        },
+        {
+          "name": "agent_tool_LLMid",
           "d": true
         },
         {
@@ -55,6 +55,10 @@
         },
         {
           "name": "quickTestQuery",
+          "d": true
+        },
+        {
+          "name": "url",
           "d": true
         }
       ]
@@ -75,7 +79,11 @@
       "customFields": 105,
       "dkuProperties": 113,
       "checklists": 100,
-      "quickTestQuery": 300
+      "quickTestQuery": 300,
+      "creator_user": 105,
+      "last_modified_timestamp": 211,
+      "last_modified_user": 150,
+      "agent_tool_LLMid": 135
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -108,14 +116,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 10,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1764962577129
     },
     "vizSampling": {
       "selection": {
@@ -507,6 +515,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
