@@ -221,7 +221,7 @@
           }
         ],
         "thresholdType": "ENTIRE_COLUMN",
-        "considerEmptyAsValid": false,
+        "considerEmptyAsValid": true,
         "minimum": 0.0,
         "minimumEnabled": false,
         "softMinimum": 0.0,
