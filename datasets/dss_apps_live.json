@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_apps",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027xzibit_apps\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata and usage details. This dataset is particularly useful for managing and analyzing application deployment and usage within a project environment. It includes information on application visibility, versioning, and descriptive labels, which can help in identifying and categorizing different applications. The dataset also tracks the origin of each application, which is crucial for understanding the source and context of the application. Additionally, it includes a count of instances and whether the application is used as a recipe, providing insights into its deployment and usage patterns. The dataset is valuable for project managers, developers, and analysts who need to monitor application usage, manage application lifecycles, and ensure proper categorization and documentation. The inclusion of tags and free text descriptions allows for flexible categorization and detailed documentation, enhancing the dataset\u0027s utility in various analytical and operational contexts.",
+  "description": "",
   "shortDesc": "Dataset of application metadata with visibility and usage details.",
   "checklists": {
     "checklists": []
