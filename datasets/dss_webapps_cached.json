@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "LONG_RESET2",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset of cached web applications with metadata and status.",
   "checklists": {
     "checklists": []
