@@ -3,7 +3,7 @@
   "managed": true,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset of cached DSS projects with metadata and status.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
