@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_apps",
   "managed": false,
   "featureGroup": false,
-  "description": "RESET1",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset of application metadata with visibility and usage details.",
   "checklists": {
     "checklists": []
