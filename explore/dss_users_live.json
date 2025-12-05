@@ -3,10 +3,73 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "login",
+          "d": true
+        },
+        {
+          "name": "sourceType",
+          "d": true
+        },
+        {
+          "name": "displayName",
+          "d": true
+        },
+        {
+          "name": "groups",
+          "d": true
+        },
+        {
+          "name": "email",
+          "d": true
+        },
+        {
+          "name": "userProfile",
+          "d": true
+        },
+        {
+          "name": "creationDate",
+          "d": true
+        },
+        {
+          "name": "enabled",
+          "d": true
+        },
+        {
+          "name": "resultingUserProfile",
+          "d": true
+        },
+        {
+          "name": "last_successful_login",
+          "d": true
+        },
+        {
+          "name": "last_session_activity",
+          "d": true
+        },
+        {
+          "name": "url",
+          "d": true
+        }
+      ]
     },
     "columnOrder": [],
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "login": 148,
+      "sourceType": 100,
+      "displayName": 148,
+      "groups": 300,
+      "email": 204,
+      "userProfile": 204,
+      "creationDate": 197,
+      "enabled": 100,
+      "resultingUserProfile": 204,
+      "last_successful_login": 239,
+      "last_session_activity": 239,
+      "url": 300
+    },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -33,14 +96,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 10,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1764961961912
     },
     "vizSampling": {
       "selection": {
@@ -65,7 +128,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -75,6 +140,5 @@
     "savedQueries": []
   },
   "customMeasures": [],
-  "reusableDimensions": [],
-  "hierarchies": []
+  "reusableDimensions": []
 }
