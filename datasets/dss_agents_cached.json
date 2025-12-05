@@ -64,20 +64,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"Created by user","type":"string","comment":"Username of the agent\u0027s creator, tracks user activity.","isColumnEdited":true},
-      {"name":"Last modified by user","type":"string","comment":"Username of the last user to modify the agent, tracks changes.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the agent, aids in categorization.","isColumnEdited":true},
-      {"name":"Last Modified timestamp","type":"datetimenotz","comment":"Timestamp of last modification, tracks changes over time.","isColumnEdited":true},
+      {"name":"agent_name","type":"string","meaning":"Text"},
+      {"name":"agent_id","type":"string","meaning":"Text"},
       {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for project management.","isColumnEdited":true},
-      {"name":"Agent Name","type":"string","comment":"Name of the agent, identifies the agent\u0027s function.","isColumnEdited":true},
-      {"name":"Agent ID","type":"string","comment":"Unique identifier for each agent, key for tracking.","isColumnEdited":true},
-      {"name":"Active Version","type":"string","comment":"Current active version of the agent, tracks updates.","isColumnEdited":true},
-      {"name":"LLM Vendor","type":"string","comment":"Vendor of the large language model, identifies AI provider.","isColumnEdited":true},
-      {"name":"LLM Connection Name","type":"string","comment":"Name of the LLM connection, specifies integration details.","isColumnEdited":true},
-      {"name":"LLM Model Name","type":"string","comment":"Name of the LLM model, identifies AI model used.","isColumnEdited":true},
-      {"name":"Agent Type","type":"string","comment":"Type of agent, categorizes agent functionality.","isColumnEdited":true},
-      {"name":"Agent Version","type":"string","comment":"Version of the agent, tracks development stages.","isColumnEdited":true},
-      {"name":"Agent URL","type":"string","comment":"URL link to the agent, provides direct access.","isColumnEdited":true}
+      {"name":"llm_vendor","type":"string","meaning":"Text"},
+      {"name":"llm_connection_name","type":"string","meaning":"Text"},
+      {"name":"llm_model","type":"string","meaning":"Text"},
+      {"name":"agent_type","type":"string","meaning":"Text"},
+      {"name":"agent_version","type":"string","meaning":"Text"},
+      {"name":"creator_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent, aids in categorization.","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"active_agent_version","type":"string","meaning":"Text"},
+      {"name":"dss_object_url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
