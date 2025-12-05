@@ -188,6 +188,42 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "enabled",
+            "meaning": "Boolean"
+          },
+          {
+            "column": "url",
+            "meaning": "URL"
+          },
+          {
+            "column": "creationDate",
+            "meaning": "DatetimeNoTz"
+          },
+          {
+            "column": "last_successful_login",
+            "meaning": "Date"
+          },
+          {
+            "column": "last_session_activity",
+            "meaning": "Date"
+          }
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "considerEmptyAsValid": false,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "9zIp2TLW",
+        "displayName": "All values of 5 columns are valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
