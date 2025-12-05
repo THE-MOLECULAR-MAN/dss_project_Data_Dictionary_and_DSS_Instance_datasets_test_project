@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_connections_cached\u0027 dataset provides a comprehensive overview of cached connections within a Data Science Studio (DSS) environment. This dataset is crucial for managing and auditing the various connections used in data projects, including databases, cloud services, and APIs. Each entry in the dataset represents a connection, detailing its name, type, and the mode of credentials used. It also includes parameters related to authentication, such as the type of credentials and scopes required. The dataset is particularly useful for administrators and data engineers who need to ensure secure and efficient access to data resources. It includes information on who last modified the connection, which can be vital for tracking changes and maintaining security. Additionally, the dataset provides URLs for direct access to the connection settings within the DSS platform. This dataset is essential for maintaining an organized and secure data environment, allowing for easy management of connection settings and credentials.",
+  "shortDesc": "Dataset of cached DSS connections with details on type and credentials.",
   "checklists": {
     "checklists": []
   },
@@ -65,21 +65,21 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"credentialsMode","type":"string","meaning":"Text"},
-      {"name":"usableBy","type":"string","meaning":"Text"},
-      {"name":"params.credentialsMode","type":"string","meaning":"Text"},
-      {"name":"params.authType","type":"string","meaning":"Text"},
-      {"name":"params.scopes","type":"string","meaning":"Text"},
-      {"name":"params.scope","type":"string","meaning":"Text"},
-      {"name":"params.warehouse","type":"string","meaning":"Text"},
-      {"name":"params.defaultSchema","type":"string","meaning":"Text"},
-      {"name":"params.role","type":"string","meaning":"Text"},
-      {"name":"params.db","type":"string","meaning":"Text"},
-      {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
-      {"name":"allowWrite","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"name","type":"string","comment":"Connection name; identifies the connection.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Connection type; specifies the service or database.","meaning":"Text","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credentials; defines access level.","meaning":"Text","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"Usability scope; who can use the connection.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.credentialsMode","type":"string","comment":"Credentials mode parameter; specifies role assumption.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.authType","type":"string","comment":"Authentication type; method of authentication.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.scopes","type":"string","comment":"Authentication scopes; URLs for access permissions.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.scope","type":"string","comment":"Scope parameter; specific access token scope.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.warehouse","type":"string","comment":"Warehouse parameter; specifies data warehouse size.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.defaultSchema","type":"string","comment":"Default schema; database schema used by default.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.role","type":"string","comment":"Role parameter; user role for the connection.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.db","type":"string","comment":"Database parameter; specifies the database name.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Last modified by; user who last changed connection.","meaning":"Text","isColumnEdited":true},
+      {"name":"allowWrite","type":"boolean","comment":"Write permission; indicates if writing is allowed.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Connection URL; direct link to connection settings.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
