@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides detailed information about cached code environments within the Dataiku DSS platform. This dataset is crucial for managing and understanding the various code environments used in data science projects. Each environment is characterized by its name, language, deployment mode, and owner, among other attributes. The dataset includes information about the Python interpreter version and core packages set, which are essential for ensuring compatibility and performance of data science scripts. Additionally, it provides the file path and URL for accessing each environment, facilitating easy navigation and management. The \u0027usages\u0027 column lists the projects or tasks that utilize each environment, offering insights into the environment\u0027s application and importance. This dataset is particularly useful for administrators and data scientists who need to manage multiple environments, track their usage, and ensure that the correct configurations are applied for different projects. It helps in optimizing resource allocation and maintaining consistency across various data science workflows.",
+  "shortDesc": "Dataset of cached code environments in Dataiku DSS platform.",
   "checklists": {
     "checklists": []
   },
@@ -65,15 +65,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string","meaning":"Text"},
-      {"name":"envLang","type":"string","meaning":"Text"},
-      {"name":"deploymentMode","type":"string","meaning":"Text"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"pythonInterpreter","type":"string","meaning":"Text"},
-      {"name":"corePackagesSet","type":"string","meaning":"Text"},
-      {"name":"path","type":"string","meaning":"Text"},
-      {"name":"usages","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"envLang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text","isColumnEdited":true},
+      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED.","meaning":"Text","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment manager.","meaning":"Text","isColumnEdited":true},
+      {"name":"pythonInterpreter","type":"string","comment":"Python version used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
+      {"name":"corePackagesSet","type":"string","comment":"Set of core packages, e.g., PANDAS10.","meaning":"Text","isColumnEdited":true},
+      {"name":"path","type":"string","comment":"File path to environment, locates environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"usages","type":"string","comment":"List of projects using the environment.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access the environment, for navigation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
