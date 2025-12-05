@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_plugins_cached\u0027 dataset provides comprehensive information about various plugins used within a data science platform. Each entry in the dataset represents a plugin, detailing its development status, unique identifier, descriptive name, functionality, author, associated tags, version, and usage statistics. This dataset is particularly useful for developers and data scientists who need to manage and track plugins within their projects. It allows users to quickly identify whether a plugin is still in development, understand its purpose through detailed descriptions, and see which projects are utilizing it. Additionally, the dataset includes metadata such as the plugin\u0027s author and version, which can be crucial for maintenance and updates. The inclusion of tags helps in categorizing plugins, making it easier to search and filter based on specific needs or interests. Overall, this dataset serves as a valuable resource for managing plugin lifecycles, ensuring compatibility with projects, and facilitating collaboration among team members by providing clear insights into plugin usage and development status.",
+  "description": "",
   "shortDesc": "Dataset of cached plugins with details on development, usage, and authorship.",
   "checklists": {
     "checklists": []
