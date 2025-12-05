@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides detailed information about various cached code environments used within a system, primarily focusing on Python environments. This dataset is crucial for managing and understanding the configuration and usage of these environments. It includes key details such as the name of the environment, the programming language used, the deployment mode, and the owner responsible for the environment. Additionally, it provides technical specifications like the Python interpreter version, core package set configurations, and the file system path to the environment. The dataset also tracks the disk space usage of each environment, which is essential for resource management and optimization. This dataset is particularly useful for system administrators and developers who need to manage multiple environments, ensuring they are configured correctly and efficiently. It can also aid in auditing and compliance by providing a clear record of who owns each environment and how resources are allocated.",
+  "description": "",
   "shortDesc": "Dataset of cached code environments with details on language, owner, and deployment.",
   "checklists": {
     "checklists": []
