@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_webapps_cached\u0027 dataset provides a comprehensive overview of cached web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within a project environment, such as those developed using Dataiku. It includes details like project keys, web application names and IDs, types, and URLs, which are crucial for identifying and accessing specific applications. Additionally, it tracks the creation and modification details, including the user responsible and timestamps, which are vital for auditing and version control. The dataset also indicates whether the backend is running and if the application is a code-based web app, providing insights into the application\u0027s current operational state. This dataset is valuable for developers, project managers, and IT administrators who need to maintain an organized and efficient web application infrastructure, ensuring that applications are up-to-date and functioning correctly. The inclusion of tags allows for categorization and easier retrieval of related applications.",
+  "description": "",
   "shortDesc": "Dataset of cached web applications with metadata and status.",
   "checklists": {
     "checklists": []
