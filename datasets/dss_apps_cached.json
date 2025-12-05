@@ -3,7 +3,7 @@
   "managed": true,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset of cached applications with visibility, version, and origin details.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
