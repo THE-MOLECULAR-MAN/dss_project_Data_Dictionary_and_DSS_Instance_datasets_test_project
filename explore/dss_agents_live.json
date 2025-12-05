@@ -6,19 +6,11 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "Created by user",
+          "name": "agent_name",
           "d": true
         },
         {
-          "name": "Last modified by user",
-          "d": true
-        },
-        {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "Last Modified timestamp",
+          "name": "agent_id",
           "d": true
         },
         {
@@ -26,39 +18,47 @@
           "d": true
         },
         {
-          "name": "Agent Name",
+          "name": "llm_vendor",
           "d": true
         },
         {
-          "name": "Agent ID",
+          "name": "llm_connection_name",
           "d": true
         },
         {
-          "name": "Active Version",
+          "name": "llm_model",
           "d": true
         },
         {
-          "name": "LLM Vendor",
+          "name": "agent_type",
           "d": true
         },
         {
-          "name": "LLM Connection Name",
+          "name": "agent_version",
           "d": true
         },
         {
-          "name": "LLM Model Name",
+          "name": "creator_user",
           "d": true
         },
         {
-          "name": "Agent Type",
+          "name": "last_modified_user",
           "d": true
         },
         {
-          "name": "Agent Version",
+          "name": "tags",
           "d": true
         },
         {
-          "name": "Agent URL",
+          "name": "last_modified_timestamp",
+          "d": true
+        },
+        {
+          "name": "active_agent_version",
+          "d": true
+        },
+        {
+          "name": "url",
           "d": true
         }
       ]
@@ -78,7 +78,19 @@
       "Agent Version": 113,
       "tags": 100,
       "Last Modified timestamp": 211,
-      "Agent URL": 300
+      "Agent URL": 300,
+      "agent_name": 274,
+      "agent_id": 106,
+      "llm_vendor": 100,
+      "llm_connection_name": 158,
+      "llm_model": 100,
+      "agent_type": 134,
+      "agent_version": 113,
+      "creator_user": 134,
+      "last_modified_user": 150,
+      "last_modified_timestamp": 211,
+      "active_agent_version": 165,
+      "url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -106,14 +118,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 10,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 1764177149665
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1764961846332
     },
     "vizSampling": {
       "selection": {
