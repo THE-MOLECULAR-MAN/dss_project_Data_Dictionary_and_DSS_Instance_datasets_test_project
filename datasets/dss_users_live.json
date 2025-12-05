@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_users",
   "managed": false,
   "featureGroup": false,
-  "description": "LONG_RESET",
+  "description": "LONG_RESET_VIA_SETTINGS_DESCRIPTION",
   "shortDesc": "blah blah blah blah blah",
   "checklists": {
     "checklists": []
