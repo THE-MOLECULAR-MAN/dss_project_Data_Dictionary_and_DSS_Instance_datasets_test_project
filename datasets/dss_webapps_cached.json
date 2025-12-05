@@ -189,22 +189,6 @@
         "enabled": true
       },
       {
-        "type": "ColumnUniqueValuesRule",
-        "columns": [
-          "webapp_id"
-        ],
-        "thresholdType": "ENTIRE_COLUMN",
-        "minimum": 0.0,
-        "minimumEnabled": false,
-        "softMinimum": 0.0,
-        "softMinimumEnabled": false,
-        "id": "45rJTs0h",
-        "displayName": "All values of webapp_id are unique",
-        "computeOnBuildMode": "PARTITION",
-        "autoRun": true,
-        "enabled": false
-      },
-      {
         "type": "ColumnMeaningValidityRule",
         "columnSpecs": [
           {
