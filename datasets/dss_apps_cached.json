@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "RESET1",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset of cached applications with visibility, version, and origin details.",
   "checklists": {
     "checklists": []
