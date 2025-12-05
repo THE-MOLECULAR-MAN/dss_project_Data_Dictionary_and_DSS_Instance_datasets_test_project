@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_agents",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_agents_live\u0027 dataset provides comprehensive information about various live agents used in a system. Each entry in the dataset represents an agent, detailing its name, unique identifier, and the project it is associated with. The dataset includes information about the large language model (LLM) vendor, connection name, and model used by each agent, which is crucial for understanding the technical setup and capabilities of the agents. Additionally, it records the type and version of each agent, which can be useful for version control and compatibility checks. The dataset also tracks the creator and the last user who modified the agent, providing insights into user activity and agent management. Tags associated with each agent can be used for categorization or filtering purposes. The \u0027last_modified_timestamp\u0027 column is particularly useful for auditing and tracking changes over time. The \u0027url\u0027 column provides direct links to the agent\u0027s location, facilitating quick access for further inspection or deployment. This dataset is valuable for system administrators, developers, and project managers who need to monitor, manage, and optimize the use of agents within their projects.",
+  "shortDesc": "Dataset of live agents with details on type, version, and creator.",
   "checklists": {
     "checklists": []
   },
@@ -46,20 +46,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"agent_name","type":"string","meaning":"Text"},
-      {"name":"agent_id","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"llm_vendor","type":"string","meaning":"Text"},
-      {"name":"llm_connection_name","type":"string","meaning":"Text"},
-      {"name":"llm_model","type":"string","meaning":"Text"},
-      {"name":"agent_type","type":"string","meaning":"Text"},
-      {"name":"agent_version","type":"string","meaning":"Text"},
-      {"name":"creator_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"active_agent_version","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"agent_name","type":"string","comment":"Name of the agent, identifies the agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_id","type":"string","comment":"Unique identifier for each agent, ensures uniqueness.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Key of the project associated with the agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"llm_vendor","type":"string","comment":"Vendor of the large language model used.","meaning":"Text","isColumnEdited":true},
+      {"name":"llm_connection_name","type":"string","comment":"Name of the LLM connection used by the agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"llm_model","type":"string","comment":"Model of the large language model used.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_type","type":"string","comment":"Type of agent, e.g., PYTHON_AGENT.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_version","type":"string","comment":"Version of the agent, indicates updates.","meaning":"Text","isColumnEdited":true},
+      {"name":"creator_user","type":"string","comment":"User who created the agent, tracks origin.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the agent, tracks changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of last modification, tracks changes.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"active_agent_version","type":"string","comment":"Currently active version of the agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the agent\u0027s location, for access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
