@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_agenttools",
   "managed": false,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset of agent tools in Dataiku projects with metadata and configurations.",
   "checklists": {
     "checklists": []
