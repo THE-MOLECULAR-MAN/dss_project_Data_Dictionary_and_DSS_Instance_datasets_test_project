@@ -61,7 +61,22 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"agent_tool_id","type":"string","meaning":"Text"},
+      {"name":"agent_tool_name","type":"string","meaning":"Text"},
+      {"name":"agent_tool_type","type":"string","meaning":"Text"},
+      {"name":"agent_tool_description_for_LLM","type":"string","meaning":"FreeText"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"creator_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"agent_tool_params","type":"string","meaning":"Text"},
+      {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
+      {"name":"dkuProperties","type":"string","meaning":"Text"},
+      {"name":"quickTestQuery","type":"string","meaning":"Text"},
+      {"name":"url","type":"string","meaning":"URL"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
