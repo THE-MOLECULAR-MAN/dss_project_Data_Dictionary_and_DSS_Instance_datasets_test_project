@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_meanings",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_meanings_live\u0027 dataset is designed to facilitate the analysis and understanding of outage incidents by providing a structured format for various data points. It includes columns that identify unique elements such as incident IDs, device IDs, and alarm types, which are crucial for tracking and managing incidents. The dataset also includes labels that categorize these elements, such as \u0027OUTAGE_incident_ID\u0027 and \u0027OUTAGE_device_id\u0027, which help in classifying and organizing the data for better analysis. The \u0027detectable\u0027 column indicates whether a particular pattern or value is detectable, which is essential for automated systems that monitor and respond to outages. The \u0027type\u0027 column specifies whether the data is a pattern or a list of values, providing context for how the data should be interpreted. The \u0027normalizationMode\u0027 column indicates the method used for data normalization, ensuring consistency across the dataset. Finally, the \u0027description\u0027 column offers additional context or details about each entry, enhancing the dataset\u0027s usability for detailed analysis and reporting. This dataset is particularly useful for organizations looking to improve their incident response and management processes by leveraging structured data insights.",
+  "shortDesc": "Dataset for analyzing outage incidents with labels and detection status.",
   "checklists": {
     "checklists": []
   },
@@ -46,12 +46,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"detectable","type":"boolean","meaning":"Boolean"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"normalizationMode","type":"string","meaning":"Text"},
-      {"name":"description","type":"string","meaning":"FreeText"}
+      {"name":"id","type":"string","comment":"Unique identifier for elements like incident or device.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Categorizes elements, e.g., OUTAGE_incident_ID.","meaning":"Text","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if a pattern or value is detectable.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Specifies if data is a pattern or values list.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Method used for data normalization.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Additional context or details about each entry.","meaning":"FreeText","isColumnEdited":true}
     ],
     "userModified": true
   },
