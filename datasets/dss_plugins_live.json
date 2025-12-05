@@ -45,18 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"version","type":"string","meaning":"Text"},
-      {"name":"author","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"project_usages","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isDev","type":"boolean","meaning":"Boolean"},
-      {"name":"total_usages","type":"bigint","meaning":"LongMeaning"},
-      {"name":"plugin_url","type":"string","meaning":"URL"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
