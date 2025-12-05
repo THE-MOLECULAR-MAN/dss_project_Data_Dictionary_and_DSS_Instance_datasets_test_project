@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_connections",
   "managed": false,
   "featureGroup": false,
-  "description": "The xzibit_connections dataset provides detailed information about various system connections, including their types, access permissions, and credential management. This dataset is particularly useful for IT administrators and data engineers who need to manage and audit system connections within an organization. Each entry in the dataset represents a connection, identified by a unique name, and includes information about the type of connection, such as BigQuery or PostgreSQL. The dataset also specifies whether writing to the connection is allowed, the mode of credentials used (either per user or global), and the groups that are permitted to use the connection. Additionally, it includes details about which groups can read the connection details and the mode of credentials used in parameters. This dataset is essential for ensuring secure and efficient management of system connections, allowing for controlled access and compliance with organizational policies.",
+  "description": "",
   "shortDesc": "Dataset of system connections with access and credential details.",
   "checklists": {
     "checklists": []
