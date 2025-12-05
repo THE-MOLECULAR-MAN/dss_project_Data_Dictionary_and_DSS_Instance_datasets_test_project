@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_datasets",
   "managed": false,
   "featureGroup": false,
-  "description": "The xzibit_datasets is a comprehensive dataset designed to manage and analyze various project-related data. It includes metadata and configuration details for different projects, making it a valuable resource for project managers, data analysts, and IT professionals. The dataset captures essential information such as project keys, dataset identifiers, and names, which are crucial for tracking and managing projects. It also includes details about data storage types, formats, and connection parameters, providing insights into the technical setup and data management strategies. The dataset supports various data formats like CSV and JSON, and it integrates with multiple data storage solutions such as PostgreSQL, Snowflake, and HTTP. Additionally, it tracks modifications and versioning through user logins and timestamps, ensuring data integrity and traceability. The inclusion of descriptive fields like short descriptions and detailed descriptions enhances the dataset\u0027s usability by providing context and insights into the data\u0027s purpose and structure. This dataset is ideal for organizations looking to streamline their data management processes, improve project tracking, and enhance data-driven decision-making.",
+  "description": "",
   "shortDesc": "Dataset for managing project data with metadata and configurations.",
   "checklists": {
     "checklists": []
