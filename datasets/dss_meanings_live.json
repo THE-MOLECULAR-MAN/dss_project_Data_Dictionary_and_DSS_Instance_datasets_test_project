@@ -45,7 +45,14 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"label","type":"string","meaning":"Text"},
+      {"name":"detectable","type":"boolean","meaning":"Boolean"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"normalizationMode","type":"string","meaning":"Text"},
+      {"name":"description","type":"string","meaning":"FreeText"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
