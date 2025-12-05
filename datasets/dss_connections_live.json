@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_connections",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_connections_live\u0027 dataset provides detailed information about active connections within a Data Science Studio (DSS) environment. This dataset is crucial for managing and auditing the various connections used in data projects, ensuring that they are configured correctly and securely. Each entry in the dataset represents a unique connection, identified by its name and type, such as PostgreSQL, EC2, or Filesystem. The dataset includes information on how credentials are managed, whether on a per-user basis or globally, and specifies the authentication methods used, such as API keys or OAuth2. Additionally, it provides details on the connection\u0027s usability, the roles and schemas associated with it, and the last user to modify the connection. The dataset also includes URLs for accessing the connection details directly in the DSS platform. This comprehensive dataset is essential for administrators and data engineers to monitor and manage the connections efficiently, ensuring data security and compliance with organizational policies.",
+  "shortDesc": "Dataset of live DSS connections with types and credentials.",
   "checklists": {
     "checklists": []
   },
@@ -46,21 +46,21 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"credentialsMode","type":"string","meaning":"Text"},
-      {"name":"usableBy","type":"string","meaning":"Text"},
-      {"name":"params.credentialsMode","type":"string","meaning":"Text"},
-      {"name":"params.authType","type":"string","meaning":"Text"},
-      {"name":"params.scopes","type":"string","meaning":"Text"},
-      {"name":"params.scope","type":"string","meaning":"Text"},
-      {"name":"params.warehouse","type":"string","meaning":"Text"},
-      {"name":"params.defaultSchema","type":"string","meaning":"Text"},
-      {"name":"params.role","type":"string","meaning":"Text"},
-      {"name":"params.db","type":"string","meaning":"Text"},
-      {"name":"creationTag.lastModifiedBy.login","type":"string","meaning":"Text"},
-      {"name":"allowWrite","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"name","type":"string","comment":"Connection identifier; includes keywords like \u0027postgres\u0027, \u0027filesystem\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of connection; examples include \u0027EC2\u0027, \u0027PostgreSQL\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credential management; \u0027PER_USER\u0027 or \u0027GLOBAL\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"Specifies who can use the connection; \u0027ALL\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.credentialsMode","type":"string","comment":"Credential mode for parameters; \u0027STS_ASSUME_ROLE\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.authType","type":"string","comment":"Authentication type for parameters; \u0027API_KEY\u0027, \u0027OAUTH2_APP\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.scopes","type":"string","comment":"URL scopes for authentication; e.g., Microsoft Graph.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.scope","type":"string","comment":"Scope of authentication; e.g., \u0027refresh_token\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.warehouse","type":"string","comment":"Warehouse parameter; e.g., \u0027SMALL_WH\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.defaultSchema","type":"string","comment":"Default schema for connection; e.g., \u0027HONKER\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.role","type":"string","comment":"Role associated with connection; e.g., \u0027SYSADMIN\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.db","type":"string","comment":"Database name for connection; e.g., \u0027dss_proj1\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Email of last modifier; e.g., \u0027tim.honker@dataiku.com\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"allowWrite","type":"boolean","comment":"Indicates if writing is allowed; \u0027True\u0027 or \u0027False\u0027.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for connection details; includes DSS platform links.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
