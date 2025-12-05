@@ -3,7 +3,7 @@
   "managed": true,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset of cached DSS agents with metadata and configuration details.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
