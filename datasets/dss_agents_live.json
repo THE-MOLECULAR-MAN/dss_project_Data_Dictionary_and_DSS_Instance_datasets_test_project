@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_agents",
   "managed": false,
   "featureGroup": false,
-  "description": "LONG_RESET2",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset of live DSS agents with project, user, and version details.",
   "checklists": {
     "checklists": []
