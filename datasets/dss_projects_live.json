@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_projects",
   "managed": false,
   "featureGroup": false,
-  "description": "LONG_RESET",
+  "description": "LONG_RESET2",
   "shortDesc": "Dataset of software projects with details on ownership, status, and metadata.",
   "checklists": {
     "checklists": []
