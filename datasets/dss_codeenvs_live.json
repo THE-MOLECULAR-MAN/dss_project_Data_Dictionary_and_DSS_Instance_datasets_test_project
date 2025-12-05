@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_codeenvs",
   "managed": false,
   "featureGroup": false,
-  "description": "RESET1",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset of code environments with details on language, owner, and deployment mode.",
   "checklists": {
     "checklists": []
