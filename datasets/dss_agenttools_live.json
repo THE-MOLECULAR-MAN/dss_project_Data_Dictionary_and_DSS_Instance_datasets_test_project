@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_agenttools",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_agenttools_live\u0027 dataset provides a comprehensive overview of various agent tools used within Dataiku projects. It includes detailed metadata about each tool, such as its unique identifier, name, type, and a description tailored for language models. This dataset is particularly useful for managing and understanding the capabilities and configurations of agent tools across different projects. It includes information about the creator and last modification details, which can be crucial for auditing and collaboration purposes. Additionally, the dataset contains JSON objects that describe the parameters and quick test queries for each tool, offering insights into their operational configurations and testing scenarios. The inclusion of URLs allows for direct access to the tools within the Dataiku platform, facilitating easy navigation and management. This dataset is ideal for data scientists and engineers who need to track, manage, and optimize the use of agent tools in their data projects, ensuring efficient and effective data processing and analysis workflows.",
+  "description": "",
   "shortDesc": "Dataset of agent tools in Dataiku projects with metadata and configurations.",
   "checklists": {
     "checklists": []
