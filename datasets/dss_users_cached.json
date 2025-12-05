@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_users_cached\u0027 dataset is a comprehensive collection of user-related data, primarily used for managing and analyzing user accounts within a system. It includes essential information such as user login details, display names, and email addresses, which are crucial for identifying and contacting users. The dataset also contains user profile information, indicating the level of access or role a user has, such as \u0027FULL_DESIGNER\u0027 or \u0027ADVANCED_ANALYTICS_DESIGNER\u0027. Additionally, it tracks group memberships, which can be used to manage permissions and access control. The dataset records the source type of the user account, whether it is local or from another source, and whether the account is currently enabled. It also logs important timestamps, such as the account creation date, last successful login, and last session activity, providing insights into user engagement and activity patterns. The inclusion of URLs for user management pages allows for quick access to user profiles for administrative purposes. This dataset is valuable for system administrators and analysts who need to monitor user activity, manage user accounts, and ensure security compliance.",
+  "shortDesc": "User data cache with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
@@ -65,18 +65,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string","meaning":"Text"},
-      {"name":"displayName","type":"string","meaning":"Text"},
-      {"name":"userProfile","type":"string","meaning":"Text"},
-      {"name":"groups","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"sourceType","type":"string","meaning":"Text"},
-      {"name":"email","type":"string","meaning":"Text"},
-      {"name":"enabled","type":"boolean","meaning":"Boolean"},
-      {"name":"resultingUserProfile","type":"string","meaning":"Text"},
-      {"name":"creationDate","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"last_successful_login","type":"date","meaning":"Date"},
-      {"name":"last_session_activity","type":"date","meaning":"Date"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"login","type":"string","comment":"User\u0027s login identifier, typically an email.","meaning":"Text","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name or email for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"User\u0027s role or access level in the system.","meaning":"Text","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"List of groups the user belongs to.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Origin of the user account, e.g., LOCAL.","meaning":"Text","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address for contact.","meaning":"Text","isColumnEdited":true},
+      {"name":"enabled","type":"boolean","comment":"Indicates if the user account is active.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user role after group policies.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationDate","type":"datetimenotz","comment":"Timestamp of when the account was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_successful_login","type":"date","comment":"Date of the user\u0027s last successful login.","meaning":"Date","isColumnEdited":true},
+      {"name":"last_session_activity","type":"date","comment":"Date of the user\u0027s last session activity.","meaning":"Date","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to the user\u0027s management page.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
