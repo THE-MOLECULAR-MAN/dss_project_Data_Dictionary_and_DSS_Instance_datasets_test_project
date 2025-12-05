@@ -3,7 +3,7 @@
   "managed": false,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset of live DSS plugins with metadata and usage statistics.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
