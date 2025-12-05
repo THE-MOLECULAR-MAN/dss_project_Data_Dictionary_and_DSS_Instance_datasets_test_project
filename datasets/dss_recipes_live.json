@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_recipes",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_recipes_live\u0027 dataset provides a comprehensive overview of live recipes used within Dataiku projects. Each entry in the dataset represents a specific recipe, detailing its unique identifier, name, associated project, and type. The dataset is particularly useful for understanding the data processing workflows within Dataiku, as it includes information on input and output datasets, which are crucial for tracking data transformations. Additionally, the dataset includes URLs for direct access to the recipes, facilitating easy navigation and management. This dataset is valuable for data engineers and analysts who need to monitor and optimize data workflows, ensuring efficient data processing and integration. The inclusion of tags allows for categorization and filtering of recipes, enhancing the ability to manage large numbers of recipes across various projects. Overall, this dataset serves as a vital tool for maintaining and improving data processing pipelines in a collaborative data science environment.",
+  "shortDesc": "Dataset of live recipes in Dataiku projects, detailing inputs, outputs, and types.",
   "checklists": {
     "checklists": []
   },
@@ -46,14 +46,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"id","type":"string","comment":"Unique identifier for each recipe, crucial for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the recipe, used for identification and reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Key of the project associated with the recipe, indicating project context.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of recipe, indicating processing method or tool used.","meaning":"Text","isColumnEdited":true},
+      {"name":"input_datasets","type":"string","comment":"List of input datasets for the recipe, showing data sources.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"output_datasets","type":"string","comment":"List of output datasets from the recipe, showing data destinations.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags for categorizing and filtering recipes, aiding organization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the recipe, facilitating direct navigation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
