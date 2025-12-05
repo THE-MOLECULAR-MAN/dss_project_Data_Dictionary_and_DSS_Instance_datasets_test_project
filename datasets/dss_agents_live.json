@@ -155,6 +155,30 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "url",
+            "meaning": "URL"
+          },
+          {
+            "column": "last_modified_timestamp",
+            "meaning": "DatetimeNoTz"
+          }
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "considerEmptyAsValid": false,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "DcyJtKnv",
+        "displayName": "All values of 2 columns are valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": false,
+        "enabled": true
       }
     ],
     "displayedState": {
