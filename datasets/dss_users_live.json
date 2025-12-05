@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_users",
   "managed": false,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "User management dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
