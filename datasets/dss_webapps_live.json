@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications within a Dataiku environment. It includes metadata such as project keys, web application names, and unique identifiers, which are essential for managing and tracking web applications. The dataset also captures the type of web application, the user who created it, and whether the backend is currently running. Additionally, it provides URLs for direct access to the web applications, along with timestamps for creation and last modification, which are crucial for auditing and version control. The dataset also includes information about the last user who modified the application and any associated tags, which can be used for categorization or filtering. This dataset is particularly useful for administrators and developers who need to monitor, manage, and maintain web applications, ensuring they are up-to-date and functioning correctly. It also aids in understanding user interactions and modifications over time, providing insights into application usage and development trends.",
+  "description": "",
   "shortDesc": "Dataset of live web applications with project details and metadata.",
   "checklists": {
     "checklists": []
