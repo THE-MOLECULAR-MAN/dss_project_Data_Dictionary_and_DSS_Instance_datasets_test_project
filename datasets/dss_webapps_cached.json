@@ -218,6 +218,14 @@
           {
             "column": "lastModifiedOn",
             "meaning": "DatetimeNoTz"
+          },
+          {
+            "column": "is_code_webapp",
+            "meaning": "Boolean"
+          },
+          {
+            "column": "url",
+            "meaning": "URL"
           }
         ],
         "thresholdType": "ENTIRE_COLUMN",
@@ -227,7 +235,7 @@
         "softMinimum": 0.0,
         "softMinimumEnabled": false,
         "id": "XWNM1yNk",
-        "displayName": "All values of 3 columns are valid",
+        "displayName": "All values of 5 columns are valid",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
