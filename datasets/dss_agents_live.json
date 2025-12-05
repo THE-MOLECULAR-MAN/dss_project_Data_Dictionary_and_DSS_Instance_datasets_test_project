@@ -45,7 +45,22 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"agent_name","type":"string","meaning":"Text"},
+      {"name":"agent_id","type":"string","meaning":"Text"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"llm_vendor","type":"string","meaning":"Text"},
+      {"name":"llm_connection_name","type":"string","meaning":"Text"},
+      {"name":"llm_model","type":"string","meaning":"Text"},
+      {"name":"agent_type","type":"string","meaning":"Text"},
+      {"name":"agent_version","type":"string","meaning":"Text"},
+      {"name":"creator_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"active_agent_version","type":"string","meaning":"Text"},
+      {"name":"url","type":"string","meaning":"URL"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
