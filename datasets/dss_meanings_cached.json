@@ -63,14 +63,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"label","type":"string","comment":"Identifier for data points, e.g., incident IDs, device IDs.","meaning":"Text","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Textual explanation of the label, enhancing understanding.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"detectable","type":"boolean","comment":"Indicates if data element is automatically detectable.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Categorizes data into patterns or lists for processing.","meaning":"Text","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each data element, ensuring accuracy.","meaning":"Text","isColumnEdited":true},
-      {"name":"normalizationMode","type":"string","comment":"Specifies data standardization method for consistency.","meaning":"Text","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
