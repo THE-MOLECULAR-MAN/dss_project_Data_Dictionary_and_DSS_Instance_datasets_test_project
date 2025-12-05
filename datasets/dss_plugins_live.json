@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
-  "description": "LONG_RESET",
+  "description": "LONG_RESET2",
   "shortDesc": "Dataset of live DSS plugins with metadata and usage statistics.",
   "checklists": {
     "checklists": []
