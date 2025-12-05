@@ -3,7 +3,7 @@
   "managed": true,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset of cached project recipes with identifiers and metadata.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
