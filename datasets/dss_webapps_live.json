@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within an organization, offering insights into application types, creation and modification details, and operational status. Each entry in the dataset represents a unique web application, identified by a \u0027webapp_id\u0027, and includes descriptive information such as the \u0027webapp_name\u0027 and \u0027projectKey\u0027 to which it belongs. The dataset also tracks the type of application, whether it is currently running, and if it is a code-based web application. Additionally, it records the user who created and last modified the application, along with timestamps for these actions. The \u0027tags\u0027 column allows for categorization or labeling of applications, while the \u0027url\u0027 provides a direct link to the application\u0027s management interface. This dataset is valuable for IT administrators, project managers, and developers who need to keep track of application deployments, ensure they are up-to-date, and manage user access and modifications efficiently.",
+  "shortDesc": "Dataset of live web applications with metadata and status.",
   "checklists": {
     "checklists": []
   },
@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"webapp_id","type":"string","meaning":"Text"},
-      {"name":"webapp_name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
-      {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
-      {"name":"created_on","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_name","type":"string","comment":"Descriptive name of the web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for the project containing the web app.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of web application, indicating its function.","meaning":"Text","isColumnEdited":true},
+      {"name":"backendRunning","type":"boolean","comment":"Indicates if the web app\u0027s backend is running.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"Email of the user who created the app.","meaning":"Text","isColumnEdited":true},
+      {"name":"lastModifiedBy","type":"string","comment":"Email of the user who last modified the app.","meaning":"Text","isColumnEdited":true},
+      {"name":"created_on","type":"datetimenotz","comment":"Timestamp when the web app was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification of the app.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"JSON array of tags for categorizing the app.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the app is code-based.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the web application\u0027s interface.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
