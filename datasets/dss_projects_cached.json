@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_projects_cached\u0027 dataset provides a comprehensive overview of various Dataiku DSS projects, capturing essential metadata and descriptions. This dataset is particularly useful for managing and analyzing project information within a Dataiku environment. It includes details such as project keys, names, descriptions, and statuses, which are crucial for understanding the scope and purpose of each project. Additionally, it records metadata like the owner\u0027s login, last modification date, and whether the project is a tutorial, which helps in tracking project ownership and updates. The dataset also includes tags and contributor information, offering insights into project categorization and collaboration. URLs to project flows are provided, facilitating easy access to project details. This dataset is valuable for administrators and data scientists who need to monitor project statuses, manage resources, and ensure efficient project execution within a data science platform. It supports use cases such as project auditing, resource allocation, and collaborative project management, making it a vital tool for maintaining an organized and efficient data science workflow.",
+  "shortDesc": "Dataset of cached DSS projects with metadata and descriptions.",
   "checklists": {
     "checklists": []
   },
@@ -65,17 +65,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"ownerLogin","type":"string","meaning":"Text"},
-      {"name":"projectStatus","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"tutorialProject","type":"boolean","meaning":"Boolean"},
-      {"name":"contributors","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each DSS project.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Descriptive name of the DSS project.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Email or username of the project owner.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, e.g., \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the project for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification to the project.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tutorialProject","type":"boolean","comment":"Indicates if the project is a tutorial (true/false).","meaning":"Boolean","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of contributors to the project.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the project\u0027s flow in DSS.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
