@@ -6,10 +6,6 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "projectKey",
-          "d": true
-        },
-        {
           "name": "id",
           "d": true
         },
@@ -18,11 +14,23 @@
           "d": true
         },
         {
-          "name": "exists",
+          "name": "projectKey",
           "d": true
         },
         {
           "name": "type",
+          "d": true
+        },
+        {
+          "name": "shortDesc",
+          "d": true
+        },
+        {
+          "name": "description",
+          "d": true
+        },
+        {
+          "name": "exists",
           "d": true
         },
         {
@@ -70,14 +78,6 @@
           "d": true
         },
         {
-          "name": "shortDesc",
-          "d": true
-        },
-        {
-          "name": "description",
-          "d": true
-        },
-        {
           "name": "params.metastoreDatabaseName",
           "d": true
         },
@@ -106,7 +106,7 @@
           "d": true
         },
         {
-          "name": "dataset_url",
+          "name": "url",
           "d": true
         }
       ]
@@ -138,7 +138,8 @@
       "num_metrics_checks": 150,
       "num_columns": 100,
       "column_names": 300,
-      "dataset_url": 300
+      "dataset_url": 300,
+      "url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -166,14 +167,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 100,
+        "maxRecords": 40,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764176573159
+      "_refreshTrigger": 1764962673745
     },
     "vizSampling": {
       "selection": {
