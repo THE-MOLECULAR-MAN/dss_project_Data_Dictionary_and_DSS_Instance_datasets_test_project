@@ -203,6 +203,34 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "backendRunning",
+            "meaning": "Boolean"
+          },
+          {
+            "column": "created_on",
+            "meaning": "DatetimeNoTz"
+          },
+          {
+            "column": "lastModifiedOn",
+            "meaning": "DatetimeNoTz"
+          }
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "considerEmptyAsValid": false,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "XWNM1yNk",
+        "displayName": "All values of 3 columns are valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
