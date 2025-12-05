@@ -63,22 +63,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku project; project management.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool; tool tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool; tool identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_type","type":"string","comment":"Type of agent tool; tool classification.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Detailed description of the agent tool; tool functionality.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the agent tool; tool categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"creator_user","type":"string","comment":"User who created the agent tool; user tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification; tool update tracking.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool; modification tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_params","type":"string","comment":"Parameters for agent tool; tool configuration.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_LLMid","type":"string","comment":"Identifier for LLM associated with tool; LLM tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"dkuProperties","type":"string","comment":"Properties related to Dataiku; tool properties.","meaning":"Text","isColumnEdited":true},
-      {"name":"quickTestQuery","type":"string","comment":"JSON object for test queries; tool testing.","meaning":"Text","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL for accessing the agent tool; tool access.","meaning":"URL","isColumnEdited":true}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
