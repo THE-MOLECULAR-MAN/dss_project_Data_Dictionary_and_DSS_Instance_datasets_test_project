@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_projects_cached\u0027 dataset provides a comprehensive overview of various projects within a data science platform, capturing essential metadata and status information. Each project is uniquely identified by a \u0027projectKey\u0027, which serves as a primary identifier for tracking and management purposes. The dataset includes details about the project owner through the \u0027ownerLogin\u0027 column, which helps in identifying the person responsible for the project. The \u0027tutorialProject\u0027 column indicates whether a project is a tutorial, which is useful for educational or demonstration purposes. The \u0027name\u0027 and \u0027shortDesc\u0027 columns provide a descriptive title and a brief overview of the project, respectively, aiding in quick identification and understanding of the project\u0027s purpose. The \u0027projectStatus\u0027 column reflects the current state of the project, such as \u0027Sandbox\u0027, indicating its development phase. Additionally, the dataset tracks the \u0027contributors\u0027 involved in each project and the \u0027lastModifiedOn\u0027 timestamp, which is crucial for version control and collaboration. The \u0027tags\u0027 column allows for categorization and easy retrieval of projects based on specific labels. This dataset is valuable for project management, tracking progress, and facilitating collaboration among team members in a data science environment.",
+  "description": "",
   "shortDesc": "Dataset of cached DSS projects with metadata and status.",
   "checklists": {
     "checklists": []
