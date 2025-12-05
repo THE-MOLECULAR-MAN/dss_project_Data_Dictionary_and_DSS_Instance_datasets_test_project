@@ -2,7 +2,7 @@
   "type": "step_based",
   "name": "Automatically fill in blank project descriptions",
   "active": false,
-  "runAsUser": "demo",
+  "runAsUser": "admin",
   "checklists": {
     "checklists": []
   },

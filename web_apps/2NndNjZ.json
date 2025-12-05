@@ -16,7 +16,7 @@
     "libraries": [
       "dataiku"
     ],
-    "runAs": "demo",
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
