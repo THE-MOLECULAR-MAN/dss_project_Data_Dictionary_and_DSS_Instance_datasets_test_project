@@ -19,12 +19,14 @@
         "dss_plugins_cached",
         "dss_recipes_cached",
         "dss_users_cached",
-        "commits_cached",
         "jobs_cached",
         "dss_projects_cached",
         "dss_webapps_cached",
         "dss_agents_cached",
-        "dss_meanings_cached"
+        "dss_meanings_cached",
+        "commits_cached",
+        "dss_agenttools_cached",
+        "scenario_runs_cached"
       ],
       "connection": "postgres_localhost",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
@@ -39,6 +41,7 @@
     "context": {}
   },
   "dkuProperties": [],
+  "singleInstance": false,
   "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states",
   "creationTag": {
     "versionNumber": 0,
