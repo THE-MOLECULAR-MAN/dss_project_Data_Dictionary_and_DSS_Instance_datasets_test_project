@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "LONG_RESET2",
+  "description": "LONG_RESET",
   "shortDesc": "User account dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
