@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_agents",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_agents_live\u0027 dataset provides comprehensive information about live agents within a Data Science Studio (DSS) environment. It includes details such as the project each agent is associated with, the agent\u0027s name and ID, and the users who created or last modified the agents. This dataset is particularly useful for managing and tracking the deployment of agents across various projects, ensuring that the right versions and configurations are in use. It also includes information about the large language model (LLM) vendor, connection, and model name, which is crucial for understanding the AI capabilities integrated into these agents. The dataset can be used by data scientists and project managers to monitor agent activity, update versions, and manage user access. Additionally, the inclusion of timestamps and URLs for each agent provides a clear audit trail and easy access to agent resources. This dataset is essential for organizations using DSS to maintain efficient and organized AI operations.",
+  "description": "",
   "shortDesc": "Dataset of live DSS agents with project, user, and version details.",
   "checklists": {
     "checklists": []
