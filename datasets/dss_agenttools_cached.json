@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset of cached agent tools in Dataiku projects.",
   "checklists": {
     "checklists": []
