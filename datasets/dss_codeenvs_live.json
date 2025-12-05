@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_codeenvs",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_codeenvs_live\u0027 dataset provides detailed information about live code environments within the Dataiku platform. This dataset is crucial for managing and understanding the various configurations and deployments of code environments used in data projects. Each entry in the dataset represents a specific code environment, detailing its name, language, deployment mode, and owner. Additionally, it includes technical specifications such as the Python interpreter version and core package set used. The dataset also provides the file path to the environment and a list of its usages, which can be critical for tracking dependencies and project associations. Furthermore, each environment is linked to a URL for easy access and management within the Dataiku interface. This dataset is particularly useful for administrators and data engineers who need to monitor and optimize the use of computational resources, ensure compliance with software standards, and facilitate collaboration across different teams. By analyzing this dataset, users can gain insights into the operational aspects of their data science workflows and make informed decisions about environment management.",
+  "shortDesc": "Dataset of live code environments in Dataiku, detailing configurations and usage.",
   "checklists": {
     "checklists": []
   },
@@ -46,15 +46,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string","meaning":"Text"},
-      {"name":"envLang","type":"string","meaning":"Text"},
-      {"name":"deploymentMode","type":"string","meaning":"Text"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"pythonInterpreter","type":"string","meaning":"Text"},
-      {"name":"corePackagesSet","type":"string","meaning":"Text"},
-      {"name":"path","type":"string","meaning":"Text"},
-      {"name":"usages","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"envLang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text","isColumnEdited":true},
+      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, indicates management type.","meaning":"Text","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment administrator.","meaning":"Text","isColumnEdited":true},
+      {"name":"pythonInterpreter","type":"string","comment":"Python version used, specifies interpreter version.","meaning":"Text","isColumnEdited":true},
+      {"name":"corePackagesSet","type":"string","comment":"Core packages configuration, defines package set.","meaning":"Text","isColumnEdited":true},
+      {"name":"path","type":"string","comment":"File path to environment, locates environment files.","meaning":"Text","isColumnEdited":true},
+      {"name":"usages","type":"string","comment":"List of projects using the environment, tracks usage.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access environment, provides management link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
