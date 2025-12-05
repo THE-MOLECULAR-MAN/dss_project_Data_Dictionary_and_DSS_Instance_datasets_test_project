@@ -3,7 +3,7 @@
   "managed": true,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset for caching DSS meanings with labels and types.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
