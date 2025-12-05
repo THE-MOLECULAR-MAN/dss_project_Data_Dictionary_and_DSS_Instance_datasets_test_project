@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "RESET1",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset for caching DSS meanings with labels and types.",
   "checklists": {
     "checklists": []
