@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset of cached connection details with access and permission settings.",
   "checklists": {
     "checklists": []
