@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_meanings",
   "managed": false,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset for outage incident analysis with labels, descriptions, and types.",
   "checklists": {
     "checklists": []
