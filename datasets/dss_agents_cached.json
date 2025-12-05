@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "LONG_RESET",
+  "description": "LONG_RESET2",
   "shortDesc": "Dataset of cached DSS agents with metadata and configuration details.",
   "checklists": {
     "checklists": []
