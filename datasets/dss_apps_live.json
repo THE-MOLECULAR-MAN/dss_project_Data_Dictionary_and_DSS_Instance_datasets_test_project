@@ -45,19 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
