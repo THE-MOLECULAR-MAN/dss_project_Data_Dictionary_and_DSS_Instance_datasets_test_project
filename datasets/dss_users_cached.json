@@ -64,7 +64,20 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"login","type":"string","meaning":"Text"},
+      {"name":"displayName","type":"string","meaning":"Text"},
+      {"name":"userProfile","type":"string","meaning":"Text"},
+      {"name":"groups","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"sourceType","type":"string","meaning":"Text"},
+      {"name":"email","type":"string","meaning":"Text"},
+      {"name":"enabled","type":"boolean","meaning":"Boolean"},
+      {"name":"resultingUserProfile","type":"string","meaning":"Text"},
+      {"name":"creationDate","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"last_successful_login","type":"date","meaning":"Date"},
+      {"name":"last_session_activity","type":"date","meaning":"Date"},
+      {"name":"url","type":"string","meaning":"URL"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
