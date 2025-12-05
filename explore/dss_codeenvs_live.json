@@ -26,10 +26,6 @@
           "d": true
         },
         {
-          "name": "codeenv_url",
-          "d": true
-        },
-        {
           "name": "corePackagesSet",
           "d": true
         },
@@ -38,11 +34,11 @@
           "d": true
         },
         {
-          "name": "disk_size_megabytes",
+          "name": "usages",
           "d": true
         },
         {
-          "name": "usages",
+          "name": "url",
           "d": true
         }
       ]
@@ -58,7 +54,8 @@
       "corePackagesSet": 128,
       "path": 300,
       "disk_size_megabytes": 158,
-      "usages": 300
+      "usages": 300,
+      "url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -86,14 +83,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 50,
+        "maxRecords": 10,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764176691350
+      "_refreshTrigger": 1764962747695
     },
     "vizSampling": {
       "selection": {
