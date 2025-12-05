@@ -3,7 +3,7 @@
   "managed": false,
   "featureGroup": false,
   "description": "",
-  "shortDesc": "Dataset for outage incident analysis with labels, descriptions, and types.",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
