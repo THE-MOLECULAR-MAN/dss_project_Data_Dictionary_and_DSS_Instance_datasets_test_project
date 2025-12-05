@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_meanings",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_meanings_live\u0027 dataset is designed to support the analysis and management of outage incidents by providing structured information about various data elements. It includes columns that define labels, descriptions, and types of data related to outage incidents, which can be crucial for understanding and categorizing different aspects of these events. The dataset is particularly useful for systems that need to detect and respond to outages by providing metadata that can be used to normalize and interpret data inputs. The \u0027label\u0027 column contains identifiers for different data points, such as incident IDs and device IDs, which are essential for tracking and managing incidents. The \u0027description\u0027 column provides textual explanations of these labels, enhancing understanding. The \u0027detectable\u0027 column indicates whether a particular data element can be automatically detected, which is important for automation and alert systems. The \u0027type\u0027 column categorizes the data into patterns or lists, aiding in data processing and analysis. The \u0027id\u0027 column serves as a unique identifier for each data element, ensuring accurate data management. Finally, the \u0027normalizationMode\u0027 column specifies how data should be standardized, which is critical for consistent data interpretation across systems.",
+  "description": "",
   "shortDesc": "Dataset for outage incident analysis with labels, descriptions, and types.",
   "checklists": {
     "checklists": []
