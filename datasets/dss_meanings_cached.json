@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_meanings_cached\u0027 dataset is designed to store and manage cached meanings for various data elements within a Decision Support System (DSS). This dataset is particularly useful for systems that require quick access to predefined labels and their associated metadata, such as type and detectability. It includes columns for labels, descriptions, detectability status, types, unique identifiers, and normalization modes. The \u0027label\u0027 column contains identifiers for different outage-related elements, while the \u0027description\u0027 column provides textual explanations of these labels. The \u0027detectable\u0027 column indicates whether a particular label can be detected automatically, which is crucial for automated systems. The \u0027type\u0027 column categorizes the labels into patterns or value lists, aiding in data processing and analysis. The \u0027id\u0027 column serves as a unique identifier for each label, ensuring data integrity and traceability. Lastly, the \u0027normalizationMode\u0027 column specifies how the labels should be normalized, which is essential for maintaining consistency across the dataset. This dataset is valuable for developers and analysts working on DSS applications, as it facilitates efficient data management and retrieval.",
+  "description": "",
   "shortDesc": "Dataset for caching DSS meanings with labels and types.",
   "checklists": {
     "checklists": []
