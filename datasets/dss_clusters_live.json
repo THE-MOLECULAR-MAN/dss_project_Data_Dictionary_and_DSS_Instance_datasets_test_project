@@ -45,17 +45,7 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"architecture","type":"string","meaning":"Text"},
-      {"name":"state","type":"string","meaning":"Text"},
-      {"name":"usedInScenarios","type":"int","meaning":"LongMeaning"},
-      {"name":"usedInProjects","type":"int","meaning":"LongMeaning"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
