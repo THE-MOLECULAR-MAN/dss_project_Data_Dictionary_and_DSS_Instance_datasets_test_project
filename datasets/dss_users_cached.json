@@ -203,6 +203,14 @@
           {
             "column": "creationDate",
             "meaning": "DatetimeNoTz"
+          },
+          {
+            "column": "last_successful_login",
+            "meaning": "Date"
+          },
+          {
+            "column": "last_session_activity",
+            "meaning": "Date"
           }
         ],
         "thresholdType": "ENTIRE_COLUMN",
@@ -212,7 +220,7 @@
         "softMinimum": 0.0,
         "softMinimumEnabled": false,
         "id": "9zIp2TLW",
-        "displayName": "All values of 3 columns are valid",
+        "displayName": "All values of 5 columns are valid",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
