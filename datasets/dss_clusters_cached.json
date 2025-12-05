@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_clusters_cached\u0027 dataset provides a comprehensive overview of cached cluster information, primarily used in data science and IT infrastructure management. This dataset includes key details about each cluster, such as its unique identifier, name, type, and architecture. It also tracks the state of each cluster and its usage across different scenarios and projects, which is crucial for resource allocation and optimization. The dataset is particularly useful for administrators and IT professionals who need to monitor and manage clusters efficiently. Additionally, it includes information about the cluster owner and a URL for direct access, facilitating easy navigation and management. This dataset can be instrumental in analyzing cluster performance, understanding usage patterns, and making informed decisions about scaling and resource distribution. Its structured format allows for easy integration into dashboards and reporting tools, enhancing visibility and control over cluster resources.",
+  "shortDesc": "Dataset of cached cluster information with details on usage and architecture.",
   "checklists": {
     "checklists": []
   },
@@ -65,15 +65,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"architecture","type":"string","meaning":"Text"},
-      {"name":"state","type":"string","meaning":"Text"},
-      {"name":"usedInScenarios","type":"int","meaning":"LongMeaning"},
-      {"name":"usedInProjects","type":"int","meaning":"LongMeaning"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"id","type":"string","comment":"Unique identifier for each cluster, key for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the cluster, used for easy reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of cluster, indicating manual or automated setup.","meaning":"Text","isColumnEdited":true},
+      {"name":"architecture","type":"string","comment":"Cluster architecture, such as KUBERNETES, defining structure.","meaning":"Text","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current state of the cluster, indicating availability.","meaning":"Text","isColumnEdited":true},
+      {"name":"usedInScenarios","type":"int","comment":"Number of scenarios using the cluster, indicating demand.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"usedInProjects","type":"int","comment":"Number of projects using the cluster, showing utilization.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner of the cluster, responsible for management.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to cluster, for easy access and management.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
