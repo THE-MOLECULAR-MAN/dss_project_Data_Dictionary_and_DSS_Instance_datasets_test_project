@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_clusters",
   "managed": false,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset for live DSS clusters with configuration details.",
   "checklists": {
     "checklists": []
