@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_agenttools_cached\u0027 dataset provides a comprehensive overview of various agent tools used within Dataiku projects. Each entry in the dataset represents a specific agent tool, detailing its unique identifier, name, type, and description. This dataset is particularly useful for managing and analyzing the tools employed across different projects, facilitating better project management and tool optimization. The dataset includes metadata such as the creator of the tool, the last modification details, and specific parameters associated with each tool. Additionally, it provides URLs for direct access to the tools within the Dataiku platform. This dataset is essential for developers and data scientists who need to track and manage the tools used in their data projects, ensuring that they are up-to-date and functioning as intended. The inclusion of JSON objects for parameters and test queries allows for a deeper understanding of the tool configurations and their potential applications.",
+  "shortDesc": "Dataset of cached agent tools in Dataiku projects.",
   "checklists": {
     "checklists": []
   },
@@ -62,20 +64,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"agent_tool_id","type":"string","meaning":"Text"},
-      {"name":"agent_tool_name","type":"string","meaning":"Text"},
-      {"name":"agent_tool_type","type":"string","meaning":"Text"},
-      {"name":"agent_tool_description_for_LLM","type":"string","meaning":"FreeText"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"creator_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"agent_tool_params","type":"string","meaning":"Text"},
-      {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
-      {"name":"dkuProperties","type":"string","meaning":"Text"},
-      {"name":"quickTestQuery","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku project; project management.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool; tool tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool; tool identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type of agent tool; tool classification.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Detailed description of the agent tool; tool functionality.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent tool; tool categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"creator_user","type":"string","comment":"User who created the agent tool; user tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification; tool update tracking.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool; modification tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_params","type":"string","comment":"Parameters for agent tool; tool configuration.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_LLMid","type":"string","comment":"Identifier for LLM associated with tool; LLM tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"dkuProperties","type":"string","comment":"Properties related to Dataiku; tool properties.","meaning":"Text","isColumnEdited":true},
+      {"name":"quickTestQuery","type":"string","comment":"JSON object for test queries; tool testing.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the agent tool; tool access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
