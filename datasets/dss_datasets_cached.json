@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "RESET1",
+  "description": "LONG_RESET",
   "shortDesc": "Dataset for managing and tracking project datasets.",
   "checklists": {
     "checklists": []
