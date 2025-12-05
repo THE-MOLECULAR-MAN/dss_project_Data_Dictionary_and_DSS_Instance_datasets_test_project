@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_webapps_cached\u0027 dataset provides a comprehensive overview of cached web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within a Dataiku environment. It includes unique identifiers, names, and project associations for each web application, allowing for easy tracking and management. Additionally, it records the type of web application, whether it is currently running, and if it is a code-based application. The dataset also logs the creator and last modifier of each application, along with timestamps for creation and last modification, which are crucial for auditing and version control. The inclusion of URLs provides direct access to the web applications, facilitating quick navigation. This dataset is valuable for developers, project managers, and IT administrators who need to maintain oversight of web application deployments, ensure compliance with development standards, and optimize resource allocation. Its structured format supports integration with other data management tools, enhancing its utility in complex data ecosystems.",
+  "shortDesc": "Dataset of cached web applications with metadata and status.",
   "checklists": {
     "checklists": []
   },
@@ -64,18 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"webapp_id","type":"string","meaning":"Text"},
-      {"name":"webapp_name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"backendRunning","type":"boolean","meaning":"Boolean"},
-      {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"lastModifiedBy","type":"string","meaning":"Text"},
-      {"name":"created_on","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_name","type":"string","comment":"Name of the web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Project key associated with the web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of the web application.","meaning":"Text","isColumnEdited":true},
+      {"name":"backendRunning","type":"boolean","comment":"Indicates if the backend is running.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"Email of the user who created the application.","meaning":"Text","isColumnEdited":true},
+      {"name":"lastModifiedBy","type":"string","comment":"Email of the user who last modified the application.","meaning":"Text","isColumnEdited":true},
+      {"name":"created_on","type":"datetimenotz","comment":"Timestamp when the application was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the web application.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if it is a code-based web application.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access the web application.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
