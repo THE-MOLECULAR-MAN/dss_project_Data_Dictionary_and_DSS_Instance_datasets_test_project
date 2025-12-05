@@ -64,20 +64,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"onlyLimitedVisibility","type":"boolean","meaning":"Boolean"},
-      {"name":"appId","type":"string","meaning":"Text"},
-      {"name":"appVersion","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isAppImg","type":"boolean","meaning":"Boolean"},
-      {"name":"origin","type":"string","meaning":"Text"},
-      {"name":"originProjectKey","type":"string","meaning":"Text"},
-      {"name":"instanceCount","type":"int","meaning":"LongMeaning"},
-      {"name":"useAsRecipe","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
