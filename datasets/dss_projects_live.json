@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_projects",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_projects_live\u0027 dataset provides a comprehensive overview of active projects within a Data Science Studio (DSS) environment. It includes key information about each project, such as its unique identifier, name, description, and status. This dataset is particularly useful for project management and oversight, allowing users to track the progress and details of various data science initiatives. Each project entry includes metadata such as the owner\u0027s login, project status, and last modification date, which are crucial for understanding the project\u0027s lifecycle and current state. Additionally, the dataset captures tags and contributors, offering insights into the project\u0027s focus areas and collaborative efforts. The inclusion of URLs for each project facilitates easy access to project details and workflows. This dataset is valuable for administrators and team leads who need to monitor project activities, assess resource allocation, and ensure alignment with organizational goals. It also supports auditing and reporting functions by providing a structured view of ongoing projects and their attributes.",
+  "shortDesc": "Dataset of live DSS projects with details like status, owner, and description.",
   "checklists": {
     "checklists": []
   },
@@ -46,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"name","type":"string","meaning":"Text"},
-      {"name":"shortDesc","type":"string","meaning":"FreeText"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"ownerLogin","type":"string","meaning":"Text"},
-      {"name":"projectStatus","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"lastModifiedOn","type":"datetimenotz","meaning":"DatetimeNoTz"},
-      {"name":"tutorialProject","type":"boolean","meaning":"Boolean"},
-      {"name":"contributors","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Descriptive name of the project, indicating its purpose.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, such as \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Array of tags categorizing the project, indicating focus areas.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification, showing recent activity.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tutorialProject","type":"boolean","comment":"Boolean indicating if the project is a tutorial, for learning.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of project contributors, showing collaboration.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to the project, for easy access and navigation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
