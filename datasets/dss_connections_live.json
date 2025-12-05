@@ -156,6 +156,22 @@
         "computeOnBuildMode": "WHOLE_DATASET",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 2.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 3.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100.0,
+        "softMaximumEnabled": true,
+        "id": "MR3HahZk",
+        "displayName": "Record count is between 2 and 100",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": false,
+        "enabled": true
       }
     ],
     "displayedState": {
