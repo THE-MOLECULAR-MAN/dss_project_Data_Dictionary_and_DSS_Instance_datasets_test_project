@@ -6,23 +6,11 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "params.db",
-          "d": true
-        },
-        {
           "name": "name",
           "d": true
         },
         {
           "name": "type",
-          "d": true
-        },
-        {
-          "name": "creationTag.lastModifiedBy.login",
-          "d": true
-        },
-        {
-          "name": "allowWrite",
           "d": true
         },
         {
@@ -54,11 +42,27 @@
           "d": true
         },
         {
+          "name": "params.defaultSchema",
+          "d": true
+        },
+        {
           "name": "params.role",
           "d": true
         },
         {
-          "name": "params.defaultSchema",
+          "name": "params.db",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "allowWrite",
+          "d": true
+        },
+        {
+          "name": "url",
           "d": true
         }
       ]
@@ -78,7 +82,8 @@
       "params.scope": 105,
       "params.warehouse": 135,
       "params.role": 100,
-      "params.defaultSchema": 165
+      "params.defaultSchema": 165,
+      "url": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -106,14 +111,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 50,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 1764177565595
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1764962497332
     },
     "vizSampling": {
       "selection": {
