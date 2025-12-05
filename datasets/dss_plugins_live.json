@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
-  "description": "",
-  "shortDesc": "",
+  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about various plugins available in the Dataiku platform. Each entry in the dataset represents a plugin, detailing its unique identifier, label, version, author, and a description of its functionality. The dataset also includes metadata such as tags for categorization, project usages indicating where the plugin is applied, and a boolean flag to denote if the plugin is in development. Additionally, it tracks the total number of usages and provides a URL for more information. This dataset is particularly useful for developers and data scientists who are managing or utilizing plugins within Dataiku, as it offers insights into plugin deployment, popularity, and application across different projects. The inclusion of tags and project usage data allows for easy filtering and identification of plugins based on specific needs or project requirements.",
+  "shortDesc": "Dataset of live Dataiku plugins with details and usage statistics.",
   "checklists": {
     "checklists": []
   },
@@ -46,16 +46,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"version","type":"string","meaning":"Text"},
-      {"name":"author","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"project_usages","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isDev","type":"boolean","meaning":"Boolean"},
-      {"name":"total_usages","type":"bigint","meaning":"LongMeaning"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Current version of the plugin, indicating updates and changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator(s) of the plugin, providing attribution and contact.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding in search and organization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality and features.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"project_usages","type":"string","comment":"List of projects using the plugin, showing application scope.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, affecting stability.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"total_usages","type":"bigint","comment":"Number of times the plugin is used, indicating popularity.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Link to more information about the plugin, for further details.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
