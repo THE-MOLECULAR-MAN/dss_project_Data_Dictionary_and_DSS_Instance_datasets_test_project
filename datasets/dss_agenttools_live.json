@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_agenttools",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_agenttools_live\u0027 dataset provides a comprehensive overview of various agent tools used within Dataiku projects. It includes detailed metadata about each tool, such as its unique identifier, name, type, and a description tailored for language models. This dataset is particularly useful for managing and understanding the capabilities and configurations of agent tools across different projects. It includes information about the creator and last modification details, which can be crucial for auditing and collaboration purposes. Additionally, the dataset contains JSON objects that describe the parameters and quick test queries for each tool, offering insights into their operational configurations and testing scenarios. The inclusion of URLs allows for direct access to the tools within the Dataiku platform, facilitating easy navigation and management. This dataset is ideal for data scientists and engineers who need to track, manage, and optimize the use of agent tools in their data projects, ensuring efficient and effective data processing and analysis workflows.",
+  "shortDesc": "Dataset of agent tools in Dataiku projects with metadata and configurations.",
   "checklists": {
     "checklists": []
   },
@@ -44,20 +46,20 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"agent_tool_id","type":"string","meaning":"Text"},
-      {"name":"agent_tool_name","type":"string","meaning":"Text"},
-      {"name":"agent_tool_type","type":"string","meaning":"Text"},
-      {"name":"agent_tool_description_for_LLM","type":"string","meaning":"FreeText"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"creator_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"agent_tool_params","type":"string","meaning":"Text"},
-      {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
-      {"name":"dkuProperties","type":"string","meaning":"Text"},
-      {"name":"quickTestQuery","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku project, key for project management.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool, key for tool identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool, identifies tool functionality.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type of agent tool, categorizes tool functionality.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description for language models, explains tool usage.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent tool, aids in categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"creator_user","type":"string","comment":"User who created the tool, tracks tool origin.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification, tracks changes.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool, tracks changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters, configures tool behavior.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_LLMid","type":"string","comment":"Identifier for language model, links to LLM usage.","meaning":"Text","isColumnEdited":true},
+      {"name":"dkuProperties","type":"string","comment":"Properties related to Dataiku, additional tool metadata.","meaning":"Text","isColumnEdited":true},
+      {"name":"quickTestQuery","type":"string","comment":"JSON object for quick test queries, tests tool functionality.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access the agent tool, facilitates navigation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
