@@ -2,7 +2,7 @@
   "type": "CustomPython_xzibit_connections",
   "managed": false,
   "featureGroup": false,
-  "description": "",
+  "description": "RESET1",
   "shortDesc": "Dataset of system connections with access and credential details.",
   "checklists": {
     "checklists": []
