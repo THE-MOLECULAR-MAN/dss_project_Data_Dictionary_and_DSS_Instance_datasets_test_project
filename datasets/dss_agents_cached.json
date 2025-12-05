@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_agents_cached\u0027 dataset provides a comprehensive overview of cached agents within a Data Science Studio (DSS) environment. It includes metadata and configuration details for each agent, such as project association, agent identification, and versioning information. This dataset is particularly useful for managing and auditing agents used in various data science projects, allowing users to track changes, identify responsible users, and understand the configuration of each agent. Key features include the ability to see which user created or last modified an agent, the active version of the agent, and the specific large language model (LLM) vendor and model used. Additionally, the dataset provides URLs for accessing each agent, facilitating easy navigation and management. This dataset is essential for teams looking to maintain a clear record of their data science agents, ensuring transparency and accountability in their data processes.",
+  "description": "",
   "shortDesc": "Dataset of cached DSS agents with metadata and configuration details.",
   "checklists": {
     "checklists": []
