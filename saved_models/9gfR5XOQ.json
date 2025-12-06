@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 2,
+        "versionNumber": 3,
         "lastModifiedBy": {
           "login": "admin"
         },
-        "lastModifiedOn": 1765052721773
+        "lastModifiedOn": 1765052726283
       },
       "creationTag": {
         "versionNumber": 0,
@@ -51,6 +51,7 @@
           }
         ],
         "llmId": "openai:OpenAI_Shared_SE:gpt-5-mini",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": false
