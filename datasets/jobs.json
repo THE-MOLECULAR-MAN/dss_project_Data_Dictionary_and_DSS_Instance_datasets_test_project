@@ -50,7 +50,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project.","isColumnEdited":true},
+      {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project.","meaning":"Text","isColumnEdited":true},
       {"name":"job_id","type":"string","comment":"Unique identifier for each job execution.","meaning":"Text","isColumnEdited":true},
       {"name":"time_start","type":"date","comment":"Timestamp when the job started.","meaning":"Date","isColumnEdited":true},
       {"name":"time_end","type":"date","comment":"Timestamp when the job ended.","meaning":"Date","isColumnEdited":true},
