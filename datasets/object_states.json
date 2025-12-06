@@ -49,7 +49,26 @@
     "flowActions": {}
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"project_key","type":"string"},
+      {"name":"object_id","type":"string"},
+      {"name":"partition","type":"string"},
+      {"name":"job_project_key","type":"string"},
+      {"name":"job_id","type":"string"},
+      {"name":"activity_id","type":"string"},
+      {"name":"scenario_project_key","type":"string"},
+      {"name":"scenario_id","type":"string"},
+      {"name":"scenario_run_id","type":"string"},
+      {"name":"step_id","type":"string"},
+      {"name":"step_run_id","type":"string"},
+      {"name":"time_start","type":"date"},
+      {"name":"time_end","type":"date"},
+      {"name":"outcome","type":"string"},
+      {"name":"result","type":"string"},
+      {"name":"warnings_count","type":"bigint"},
+      {"name":"type","type":"string"},
+      {"name":"is_last","type":"boolean"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
