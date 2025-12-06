@@ -26,11 +26,12 @@
         "dss_meanings_cached",
         "commits_cached",
         "dss_agenttools_cached",
-        "scenario_runs_cached"
+        "scenario_runs_cached",
+        "cluster_tasks_cached"
       ],
       "connection": "postgres_localhost",
       "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
-      "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states"
+      "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs"
     },
     "containerExecSelection": {
       "containerMode": "INHERIT"
@@ -42,7 +43,7 @@
   },
   "dkuProperties": [],
   "singleInstance": false,
-  "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs\nCluster Tasks\nObject states",
+  "additionalDescriptionForLLM": "Use this tool to help locate metadata about the local Dataiku DSS instance, such as information about DSS:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
