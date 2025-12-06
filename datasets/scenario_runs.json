@@ -60,7 +60,7 @@
       {"name":"scenario_name","type":"string","meaning":"Text"},
       {"name":"trigger_name","type":"string","meaning":"Text"},
       {"name":"scenario_run_as_user","type":"string","meaning":"Text"},
-      {"name":"run_as_user_identifier","type":"string"},
+      {"name":"run_as_user_identifier","type":"string","meaning":"Text"},
       {"name":"run_as_user_via","type":"string"}
     ],
     "userModified": true
