@@ -109,6 +109,54 @@
     {
       "objectId": "dss_agenttools_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_datasets_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_datasets_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_codeenvs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
