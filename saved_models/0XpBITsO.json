@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 10,
+        "versionNumber": 11,
         "lastModifiedBy": {
           "login": "admin"
         },
-        "lastModifiedOn": 1765052512200
+        "lastModifiedOn": 1765052657898
       },
       "creationTag": {
         "versionNumber": 0,
@@ -46,9 +46,6 @@
       },
       "toolsUsingAgentSettings": {
         "tools": [
-          {
-            "toolRef": "JfbcCw6"
-          },
           {
             "toolRef": "xzmNNk7"
           }
