@@ -1,6 +1,44 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "project_key"
+      },
+      {
+        "d": true,
+        "name": "commit_id"
+      },
+      {
+        "d": true,
+        "name": "author"
+      },
+      {
+        "d": true,
+        "name": "timestamp"
+      },
+      {
+        "d": true,
+        "name": "added_files"
+      },
+      {
+        "d": true,
+        "name": "added_lines"
+      },
+      {
+        "d": true,
+        "name": "removed_files"
+      },
+      {
+        "d": true,
+        "name": "removed_lines"
+      },
+      {
+        "d": true,
+        "name": "changed_files"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +68,23 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "milliseconds": true,
+        "inCol": "timestamp"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -95,7 +148,17 @@
       "meaning": "LongMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "project_key": 300,
+    "author": 134,
+    "added_lines": 100,
+    "removed_lines": 113,
+    "changed_files": 113,
+    "removed_files": 113,
+    "added_files": 100,
+    "commit_id": 295,
+    "timestamp": 113
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
