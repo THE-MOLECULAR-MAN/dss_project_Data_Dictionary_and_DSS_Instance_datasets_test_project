@@ -71,9 +71,7 @@
       {"name":"author","type":"string","comment":"Creator of the plugin, provides authorship information.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Keywords associated with the plugin, aids in categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"project_usages","type":"string","comment":"List of projects using the plugin, tracks deployment.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, boolean flag.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"total_usages","type":"bigint","comment":"Number of times the plugin is used, tracks popularity.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"url","type":"string","comment":"Link to more information about the plugin, provides access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
