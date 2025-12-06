@@ -49,7 +49,20 @@
     "flowActions": {}
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"scenario_project_key","type":"string"},
+      {"name":"scenario_id","type":"string"},
+      {"name":"scenario_run_id","type":"string"},
+      {"name":"time_start","type":"date"},
+      {"name":"time_end","type":"date"},
+      {"name":"outcome","type":"string"},
+      {"name":"warnings_count","type":"bigint"},
+      {"name":"scenario_name","type":"string"},
+      {"name":"trigger_name","type":"string"},
+      {"name":"scenario_run_as_user","type":"string"},
+      {"name":"run_as_user_identifier","type":"string"},
+      {"name":"run_as_user_via","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
