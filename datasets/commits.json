@@ -51,7 +51,7 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","meaning":"Text","isColumnEdited":true},
-      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","isColumnEdited":true},
+      {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","meaning":"Text","isColumnEdited":true},
       {"name":"author","type":"string","comment":"Name or identifier of the commit author.","isColumnEdited":true},
       {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","isColumnEdited":true},
       {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
