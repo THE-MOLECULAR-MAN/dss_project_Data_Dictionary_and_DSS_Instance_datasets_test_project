@@ -50,7 +50,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection","type":"string"},
+      {"name":"connection","type":"string","meaning":"Text"},
       {"name":"task_type","type":"string"},
       {"name":"project_key","type":"string"},
       {"name":"task_data","type":"string"},
