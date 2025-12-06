@@ -57,10 +57,6 @@
     {
       "objectId": "compute_scenario_runs_prepared",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "object_states_prepared",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
