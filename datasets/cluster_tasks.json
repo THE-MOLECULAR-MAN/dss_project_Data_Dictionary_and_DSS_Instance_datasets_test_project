@@ -53,7 +53,7 @@
       {"name":"connection","type":"string","meaning":"Text"},
       {"name":"task_type","type":"string","meaning":"Text"},
       {"name":"project_key","type":"string","meaning":"Text"},
-      {"name":"task_data","type":"string"},
+      {"name":"task_data","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"user","type":"string"},
       {"name":"start_time","type":"bigint"},
       {"name":"end_time","type":"bigint"}
