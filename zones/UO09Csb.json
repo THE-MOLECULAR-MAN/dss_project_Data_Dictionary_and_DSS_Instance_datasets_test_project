@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_commits_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "commits_cached",
       "objectType": "DATASET"
     },
