@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "admin"
         },
-        "lastModifiedOn": 1765052677373
+        "lastModifiedOn": 1765052691548
       },
       "creationTag": {
         "versionNumber": 0,
@@ -45,7 +45,12 @@
         "singleInstance": false
       },
       "toolsUsingAgentSettings": {
-        "tools": [],
+        "tools": [
+          {
+            "toolRef": "xzmNNk7"
+          }
+        ],
+        "llmId": "openai:OpenAI_Shared_SE:gpt-5-mini",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": false
