@@ -64,12 +64,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each meaning, key for retrieval.","meaning":"Text","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Associated label for the meaning, often prefixed with \u0027OUTAGE\u0027.","meaning":"Text","isColumnEdited":true},
-      {"name":"detectable","type":"boolean","comment":"Indicates if the meaning is detectable, boolean value.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Category of the meaning, such as \u0027PATTERN\u0027 or \u0027VALUES_LIST\u0027.","meaning":"Text","isColumnEdited":true},
-      {"name":"normalizationMode","type":"string","comment":"Specifies the normalization mode, e.g., \u0027EXACT\u0027.","meaning":"Text","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Textual description of the meaning, provides context.","meaning":"FreeText","isColumnEdited":true}
+      {"name":"id","type":"string","comment":"Unique identifier for elements like incident or device.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Categorizes elements, e.g., OUTAGE_incident_ID.","meaning":"Text","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if a pattern or value is detectable.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Specifies if data is a pattern or values list.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Method used for data normalization.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Additional context or details about each entry.","meaning":"FreeText","isColumnEdited":true}
     ],
     "userModified": true
   },
