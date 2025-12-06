@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 1,
+        "versionNumber": 2,
         "lastModifiedBy": {
           "login": "admin"
         },
-        "lastModifiedOn": 1765052691548
+        "lastModifiedOn": 1765052721773
       },
       "creationTag": {
         "versionNumber": 0,
@@ -130,7 +130,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "how many total Dataiku DSS Projects are on this local instance?"
           }
         ],
         "context": {}
