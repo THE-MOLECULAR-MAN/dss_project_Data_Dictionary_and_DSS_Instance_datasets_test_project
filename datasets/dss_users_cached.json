@@ -65,18 +65,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string","comment":"User\u0027s login identifier, typically an email.","meaning":"Text","isColumnEdited":true},
-      {"name":"displayName","type":"string","comment":"User\u0027s display name or email for identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"userProfile","type":"string","comment":"User\u0027s role or access level in the system.","meaning":"Text","isColumnEdited":true},
-      {"name":"groups","type":"string","comment":"List of groups the user belongs to.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"sourceType","type":"string","comment":"Origin of the user account, e.g., LOCAL.","meaning":"Text","isColumnEdited":true},
-      {"name":"email","type":"string","comment":"User\u0027s email address for contact.","meaning":"Text","isColumnEdited":true},
-      {"name":"enabled","type":"boolean","comment":"Indicates if the user account is active.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"resultingUserProfile","type":"string","comment":"Effective user role after group policies.","meaning":"Text","isColumnEdited":true},
-      {"name":"creationDate","type":"datetimenotz","comment":"Timestamp of when the account was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_successful_login","type":"date","comment":"Date of the user\u0027s last successful login.","meaning":"Date","isColumnEdited":true},
-      {"name":"last_session_activity","type":"date","comment":"Date of the user\u0027s last session activity.","meaning":"Date","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL to the user\u0027s management page.","meaning":"URL","isColumnEdited":true}
+      {"name":"login","type":"string","comment":"User\u0027s login email, identifies user account.","meaning":"Text","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name, shown in the system.","meaning":"Text","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"User\u0027s profile type, defines access level.","meaning":"Text","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"User\u0027s group memberships, JSON array format.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Origin of user account, e.g., LOCAL.","meaning":"Text","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address, contact information.","meaning":"Text","isColumnEdited":true},
+      {"name":"enabled","type":"boolean","comment":"Account status, indicates if user is active.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user profile, post-group adjustments.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationDate","type":"datetimenotz","comment":"Account creation date, tracks user registration.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_successful_login","type":"date","comment":"Timestamp of last successful login, tracks access.","meaning":"Date","isColumnEdited":true},
+      {"name":"last_session_activity","type":"date","comment":"Timestamp of last session activity, monitors engagement.","meaning":"Date","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for user management interface, admin access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
