@@ -38,7 +38,9 @@
     }
   },
   "quickTestQuery": {
-    "input": {},
+    "input": {
+      "question": "how many total Dataiku DSS Projects are on this local instance?"
+    },
     "context": {}
   },
   "dkuProperties": [],
