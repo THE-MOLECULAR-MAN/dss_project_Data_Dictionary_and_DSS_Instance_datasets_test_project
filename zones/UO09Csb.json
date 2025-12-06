@@ -49,6 +49,14 @@
     {
       "objectId": "cluster_tasks_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_commits_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
