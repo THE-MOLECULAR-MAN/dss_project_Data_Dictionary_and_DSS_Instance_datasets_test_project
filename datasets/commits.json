@@ -54,7 +54,7 @@
       {"name":"commit_id","type":"string","comment":"Unique identifier for each commit.","meaning":"Text","isColumnEdited":true},
       {"name":"author","type":"string","comment":"Name or identifier of the commit author.","meaning":"Text","isColumnEdited":true},
       {"name":"timestamp","type":"bigint","comment":"Time when the commit was made, in milliseconds.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","isColumnEdited":true},
+      {"name":"added_files","type":"int","comment":"Number of files added in the commit.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","isColumnEdited":true},
       {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","isColumnEdited":true},
       {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
