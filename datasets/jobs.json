@@ -59,7 +59,7 @@
       {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"scenario_project_key","type":"string","comment":"Identifier for the scenario project.","meaning":"Text","isColumnEdited":true},
       {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"scenario_run_id","type":"string","comment":"Identifier for the scenario run instance.","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Identifier for the scenario run instance.","meaning":"Text","isColumnEdited":true},
       {"name":"step_id","type":"string","comment":"Identifier for the specific job step.","isColumnEdited":true},
       {"name":"step_run_id","type":"string","comment":"Identifier for the step run instance.","isColumnEdited":true},
       {"name":"job_def_type","type":"string","comment":"Type of job definition executed.","isColumnEdited":true},
