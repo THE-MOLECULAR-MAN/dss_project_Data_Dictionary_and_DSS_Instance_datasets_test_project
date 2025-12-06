@@ -56,7 +56,7 @@
       {"name":"task_data","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"user","type":"string","meaning":"Text"},
       {"name":"start_time","type":"int","meaning":"LongMeaning"},
-      {"name":"end_time","type":"bigint","meaning":"LongMeaning"}
+      {"name":"end_time","type":"int","meaning":"LongMeaning"}
     ],
     "userModified": true
   },
