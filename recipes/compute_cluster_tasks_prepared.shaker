@@ -1,6 +1,36 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "connection"
+      },
+      {
+        "d": true,
+        "name": "task_type"
+      },
+      {
+        "d": true,
+        "name": "project_key"
+      },
+      {
+        "d": true,
+        "name": "task_data"
+      },
+      {
+        "d": true,
+        "name": "user"
+      },
+      {
+        "d": true,
+        "name": "start_time"
+      },
+      {
+        "d": true,
+        "name": "end_time"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 1765042969454,
@@ -30,8 +60,34 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "milliseconds": true,
+        "inCol": "start_time"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "milliseconds": true,
+        "inCol": "end_time"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -87,7 +143,15 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "start_time": 170,
+    "task_data": 300,
+    "project_key": 281,
+    "end_time": 106,
+    "connection": 239,
+    "task_type": 120,
+    "user": 120
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
