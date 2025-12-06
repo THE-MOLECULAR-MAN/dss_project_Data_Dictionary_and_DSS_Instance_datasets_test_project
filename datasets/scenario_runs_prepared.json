@@ -62,18 +62,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string"},
-      {"name":"scenario_id","type":"string"},
-      {"name":"scenario_run_id","type":"string"},
-      {"name":"time_start","type":"date"},
-      {"name":"time_end","type":"date"},
-      {"name":"outcome","type":"string"},
-      {"name":"warnings_count","type":"bigint"},
-      {"name":"scenario_name","type":"string"},
-      {"name":"trigger_name","type":"string"},
-      {"name":"scenario_run_as_user","type":"string"},
-      {"name":"run_as_user_identifier","type":"string"},
-      {"name":"run_as_user_via","type":"string"}
+      {"name":"scenario_project_key","type":"string","meaning":"Text"},
+      {"name":"scenario_id","type":"string","meaning":"Text"},
+      {"name":"scenario_run_id","type":"string","meaning":"Text"},
+      {"name":"time_start","type":"date","meaning":"Date"},
+      {"name":"time_end","type":"date","meaning":"Date"},
+      {"name":"outcome","type":"string","meaning":"Text"},
+      {"name":"warnings_count","type":"int","meaning":"LongMeaning"},
+      {"name":"scenario_name","type":"string","meaning":"Text"},
+      {"name":"trigger_name","type":"string","meaning":"Text"},
+      {"name":"scenario_run_as_user","type":"string","meaning":"Text"},
+      {"name":"run_as_user_identifier","type":"string","meaning":"Text"},
+      {"name":"run_as_user_via","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
