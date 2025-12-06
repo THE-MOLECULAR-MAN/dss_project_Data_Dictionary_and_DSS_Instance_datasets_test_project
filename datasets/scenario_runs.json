@@ -52,7 +52,7 @@
     "columns": [
       {"name":"scenario_project_key","type":"string","meaning":"Text"},
       {"name":"scenario_id","type":"string","meaning":"Text"},
-      {"name":"scenario_run_id","type":"string"},
+      {"name":"scenario_run_id","type":"string","meaning":"Text"},
       {"name":"time_start","type":"date"},
       {"name":"time_end","type":"date"},
       {"name":"outcome","type":"string"},
