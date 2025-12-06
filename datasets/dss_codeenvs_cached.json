@@ -67,13 +67,13 @@
     "columns": [
       {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
       {"name":"envLang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text","isColumnEdited":true},
-      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED.","meaning":"Text","isColumnEdited":true},
-      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment manager.","meaning":"Text","isColumnEdited":true},
-      {"name":"pythonInterpreter","type":"string","comment":"Python version used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
-      {"name":"corePackagesSet","type":"string","comment":"Set of core packages, e.g., PANDAS10.","meaning":"Text","isColumnEdited":true},
-      {"name":"path","type":"string","comment":"File path to environment, locates environment.","meaning":"Text","isColumnEdited":true},
-      {"name":"usages","type":"string","comment":"List of projects using the environment.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL to access the environment, for navigation.","meaning":"URL","isColumnEdited":true}
+      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, indicates management type.","meaning":"Text","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment administrator.","meaning":"Text","isColumnEdited":true},
+      {"name":"pythonInterpreter","type":"string","comment":"Python version used, specifies interpreter version.","meaning":"Text","isColumnEdited":true},
+      {"name":"corePackagesSet","type":"string","comment":"Core packages configuration, defines package set.","meaning":"Text","isColumnEdited":true},
+      {"name":"path","type":"string","comment":"File path to environment, locates environment files.","meaning":"Text","isColumnEdited":true},
+      {"name":"usages","type":"string","comment":"List of projects using the environment, tracks usage.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access environment, provides management link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
