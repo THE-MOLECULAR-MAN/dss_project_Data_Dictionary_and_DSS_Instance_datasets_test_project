@@ -6,15 +6,15 @@
       "mode": "ALL",
       "list": [
         {
-          "name": "envName",
+          "name": "code_env_name",
           "d": true
         },
         {
-          "name": "envLang",
+          "name": "code_env_lang",
           "d": true
         },
         {
-          "name": "deploymentMode",
+          "name": "deployment_mode",
           "d": true
         },
         {
@@ -22,19 +22,15 @@
           "d": true
         },
         {
-          "name": "pythonInterpreter",
+          "name": "python_interpreter",
           "d": true
         },
         {
-          "name": "corePackagesSet",
+          "name": "core_packages_set",
           "d": true
         },
         {
           "name": "path",
-          "d": true
-        },
-        {
-          "name": "usages",
           "d": true
         },
         {
@@ -55,7 +51,12 @@
       "path": 300,
       "disk_size_megabytes": 158,
       "usages": 300,
-      "url": 300
+      "url": 300,
+      "code_env_name": 300,
+      "code_env_lang": 113,
+      "deployment_mode": 155,
+      "python_interpreter": 150,
+      "core_packages_set": 143
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -83,14 +84,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10,
+        "maxRecords": 100,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764962747695
+      "_refreshTrigger": 1764993710758
     },
     "vizSampling": {
       "selection": {
