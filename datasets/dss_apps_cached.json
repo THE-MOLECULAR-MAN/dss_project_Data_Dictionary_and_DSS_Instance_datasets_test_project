@@ -65,18 +65,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"boolean","comment":"Indicates if app has limited visibility.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"appId","type":"string","comment":"Unique identifier for each application.","meaning":"Text","isColumnEdited":true},
-      {"name":"appVersion","type":"string","comment":"Version information of the application.","meaning":"Text","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Descriptive label for the application.","meaning":"Text","isColumnEdited":true},
-      {"name":"shortDesc","type":"string","comment":"Brief description of the application.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Keywords associated with the application.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"isAppImg","type":"boolean","comment":"Indicates if app has an image.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"origin","type":"string","comment":"Source of the application, project or plugin.","meaning":"Text","isColumnEdited":true},
-      {"name":"originProjectKey","type":"string","comment":"Key of the originating project.","meaning":"Text","isColumnEdited":true},
-      {"name":"instanceCount","type":"int","comment":"Number of instances of the application.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"useAsRecipe","type":"boolean","comment":"Indicates if app is used as a recipe.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Direct URL to access the application.","meaning":"URL","isColumnEdited":true}
+      {"name":"onlyLimitedVisibility","type":"boolean","comment":"Indicates if app has limited visibility, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for each application, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application, free text.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Short description of the application, free text.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the application, JSON array format.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"isAppImg","type":"boolean","comment":"Indicates if app has an image, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source of the application, either project or plugin.","meaning":"Text","isColumnEdited":true},
+      {"name":"originProjectKey","type":"string","comment":"Key of the originating project, text format.","meaning":"Text","isColumnEdited":true},
+      {"name":"instanceCount","type":"int","comment":"Number of instances of the application, integer value.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"boolean","comment":"Indicates if app is used as a recipe, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the application, string format.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
