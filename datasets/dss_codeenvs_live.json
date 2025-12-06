@@ -46,15 +46,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
-      {"name":"envLang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text","isColumnEdited":true},
-      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, indicates management type.","meaning":"Text","isColumnEdited":true},
-      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment administrator.","meaning":"Text","isColumnEdited":true},
-      {"name":"pythonInterpreter","type":"string","comment":"Python version used, specifies interpreter version.","meaning":"Text","isColumnEdited":true},
-      {"name":"corePackagesSet","type":"string","comment":"Core packages configuration, defines package set.","meaning":"Text","isColumnEdited":true},
-      {"name":"path","type":"string","comment":"File path to environment, locates environment files.","meaning":"Text","isColumnEdited":true},
-      {"name":"usages","type":"string","comment":"List of projects using the environment, tracks usage.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL to access environment, provides management link.","meaning":"URL","isColumnEdited":true}
+      {"name":"code_env_name","type":"string"},
+      {"name":"code_env_lang","type":"string"},
+      {"name":"url","type":"string"},
+      {"name":"deploymentMode","type":"string"},
+      {"name":"pythonInterpreter","type":"string"},
+      {"name":"owner","type":"string"},
+      {"name":"corePackagesSet","type":"string"}
     ],
     "userModified": true
   },
