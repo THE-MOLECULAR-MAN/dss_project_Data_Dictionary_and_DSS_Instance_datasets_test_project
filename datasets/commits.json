@@ -57,7 +57,7 @@
       {"name":"added_files","type":"int","comment":"Number of files added in the commit.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"added_lines","type":"int","comment":"Number of lines added in the commit.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"removed_files","type":"int","comment":"Number of files removed in the commit.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","isColumnEdited":true},
+      {"name":"removed_lines","type":"int","comment":"Number of lines removed in the commit.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"changed_files","type":"int","comment":"Number of files changed in the commit.","isColumnEdited":true}
     ],
     "userModified": true
