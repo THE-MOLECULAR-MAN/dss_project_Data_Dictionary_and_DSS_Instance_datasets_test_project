@@ -67,8 +67,8 @@
       {"name":"project_key","type":"string","meaning":"Text"},
       {"name":"task_data","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"user","type":"string","meaning":"Text"},
-      {"name":"start_time","type":"int","meaning":"LongMeaning"},
-      {"name":"end_time","type":"int","meaning":"LongMeaning"}
+      {"name":"start_time","type":"date","meaning":"Date"},
+      {"name":"end_time","type":"date","meaning":"Date"}
     ],
     "userModified": true
   },
