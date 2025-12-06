@@ -1,6 +1,56 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "scenario_project_key"
+      },
+      {
+        "d": true,
+        "name": "scenario_id"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_id"
+      },
+      {
+        "d": true,
+        "name": "time_start"
+      },
+      {
+        "d": true,
+        "name": "time_end"
+      },
+      {
+        "d": true,
+        "name": "outcome"
+      },
+      {
+        "d": true,
+        "name": "warnings_count"
+      },
+      {
+        "d": true,
+        "name": "scenario_name"
+      },
+      {
+        "d": true,
+        "name": "trigger_name"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_as_user"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_identifier"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_via"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,7 +80,10 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -58,7 +111,21 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "time_start": 183,
+    "warnings_count": 120,
+    "scenario_name": 246,
+    "scenario_run_as_user": 165,
+    "run_as_user_identifier": 180,
+    "run_as_user_via": 190,
+    "scenario_id": 246,
+    "trigger_name": 218,
+    "scenario_run_id": 176,
+    "scenario_run_id_parsed": 180,
+    "scenario_project_key": 225,
+    "time_end": 183,
+    "outcome": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
