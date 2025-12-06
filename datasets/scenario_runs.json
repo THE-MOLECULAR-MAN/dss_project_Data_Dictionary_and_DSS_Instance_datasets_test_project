@@ -54,7 +54,7 @@
       {"name":"scenario_id","type":"string","meaning":"Text"},
       {"name":"scenario_run_id","type":"string","meaning":"Text"},
       {"name":"time_start","type":"date","meaning":"Date"},
-      {"name":"time_end","type":"date"},
+      {"name":"time_end","type":"date","meaning":"Date"},
       {"name":"outcome","type":"string"},
       {"name":"warnings_count","type":"bigint"},
       {"name":"scenario_name","type":"string"},
