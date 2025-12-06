@@ -49,6 +49,14 @@
     {
       "objectId": "scenario_runs_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_cluster_tasks_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
