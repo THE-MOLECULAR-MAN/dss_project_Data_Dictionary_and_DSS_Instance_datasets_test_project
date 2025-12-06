@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "cluster_tasks_prepared",
+          "ref": "cluster_tasks_cached",
           "appendMode": false
         }
       ]
