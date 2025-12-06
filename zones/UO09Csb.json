@@ -31,10 +31,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_cluster_tasks_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "scenario_runs",
       "objectType": "DATASET"
     },
