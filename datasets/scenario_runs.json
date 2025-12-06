@@ -56,7 +56,7 @@
       {"name":"time_start","type":"date","meaning":"Date"},
       {"name":"time_end","type":"date","meaning":"Date"},
       {"name":"outcome","type":"string","meaning":"Text"},
-      {"name":"warnings_count","type":"bigint","meaning":"LongMeaning"},
+      {"name":"warnings_count","type":"int","meaning":"LongMeaning"},
       {"name":"scenario_name","type":"string"},
       {"name":"trigger_name","type":"string"},
       {"name":"scenario_run_as_user","type":"string"},
