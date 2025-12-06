@@ -43,10 +43,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_object_states_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "scenario_runs",
       "objectType": "DATASET"
     },
