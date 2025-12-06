@@ -46,7 +46,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"code_env_name","type":"string"},
+      {"name":"code_env_name","type":"string","meaning":"Text"},
       {"name":"code_env_lang","type":"string"},
       {"name":"url","type":"string"},
       {"name":"deployment_mode","type":"string"},
