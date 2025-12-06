@@ -67,13 +67,13 @@
     "columns": [
       {"name":"id","type":"string","comment":"Unique identifier for each cluster, key for identification.","meaning":"Text","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Name of the cluster, used for easy reference.","meaning":"Text","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of cluster, indicating manual or automated setup.","meaning":"Text","isColumnEdited":true},
-      {"name":"architecture","type":"string","comment":"Cluster architecture, such as KUBERNETES, defining structure.","meaning":"Text","isColumnEdited":true},
-      {"name":"state","type":"string","comment":"Current state of the cluster, indicating availability.","meaning":"Text","isColumnEdited":true},
-      {"name":"usedInScenarios","type":"int","comment":"Number of scenarios using the cluster, indicating demand.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"usedInProjects","type":"int","comment":"Number of projects using the cluster, showing utilization.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of cluster, e.g., manual, indicating setup method.","meaning":"Text","isColumnEdited":true},
+      {"name":"architecture","type":"string","comment":"Cluster architecture, e.g., KUBERNETES, indicating system design.","meaning":"Text","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current state of the cluster, useful for monitoring.","meaning":"Text","isColumnEdited":true},
+      {"name":"usedInScenarios","type":"int","comment":"Number of scenarios using the cluster, indicates usage.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"usedInProjects","type":"int","comment":"Number of projects using the cluster, shows importance.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"owner","type":"string","comment":"Owner of the cluster, responsible for management.","meaning":"Text","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Direct URL to cluster, for easy access and management.","meaning":"URL","isColumnEdited":true}
+      {"name":"url","type":"string","comment":"URL for cluster details, facilitates access and management.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
