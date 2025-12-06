@@ -43,12 +43,12 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "scenario_runs_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_scenario_runs_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scenario_runs_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
