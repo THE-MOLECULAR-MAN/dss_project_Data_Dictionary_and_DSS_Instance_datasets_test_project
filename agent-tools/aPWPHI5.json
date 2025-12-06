@@ -1,0 +1,28 @@
+{
+  "name": "SQL Query on DSS Internals Datasets",
+  "type": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+  "params": {
+    "config": {},
+    "containerExecSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "quickTestQuery": {
+    "input": {},
+    "context": {}
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1765053832783
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
