@@ -47,13 +47,13 @@
   "schema": {
     "columns": [
       {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_lang","type":"string"},
-      {"name":"url","type":"string"},
-      {"name":"deployment_mode","type":"string"},
-      {"name":"python_interpreter","type":"string"},
-      {"name":"owner","type":"string"},
-      {"name":"core_packages_set","type":"string"},
-      {"name":"path","type":"string"}
+      {"name":"code_env_lang","type":"string","meaning":"Text"},
+      {"name":"deployment_mode","type":"string","meaning":"Text"},
+      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"python_interpreter","type":"string","meaning":"Text"},
+      {"name":"core_packages_set","type":"string","meaning":"Text"},
+      {"name":"path","type":"string","meaning":"Text"},
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
