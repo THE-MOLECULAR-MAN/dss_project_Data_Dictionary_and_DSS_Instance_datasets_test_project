@@ -67,7 +67,7 @@
       {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job.","meaning":"Text","isColumnEdited":true},
       {"name":"job_def_initiated","type":"date","comment":"Timestamp when the job was initiated.","meaning":"Date","isColumnEdited":true},
       {"name":"job_def_refresh_metastore","type":"boolean","comment":"Indicates if metastore was refreshed.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"job_def_outputs","type":"string","comment":"JSON array of job output datasets.","isColumnEdited":true}
+      {"name":"job_def_outputs","type":"string","comment":"JSON array of job output datasets.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
