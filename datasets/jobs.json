@@ -62,7 +62,7 @@
       {"name":"scenario_run_id","type":"string","comment":"Identifier for the scenario run instance.","meaning":"Text","isColumnEdited":true},
       {"name":"step_id","type":"string","comment":"Identifier for the specific job step.","meaning":"Text","isColumnEdited":true},
       {"name":"step_run_id","type":"string","comment":"Identifier for the step run instance.","isColumnEdited":true},
-      {"name":"job_def_type","type":"string","comment":"Type of job definition executed.","isColumnEdited":true},
+      {"name":"job_def_type","type":"string","comment":"Type of job definition executed.","meaning":"Text","isColumnEdited":true},
       {"name":"job_def_trigger_type","type":"string","comment":"Trigger type that initiated the job.","isColumnEdited":true},
       {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job.","meaning":"Text","isColumnEdited":true},
       {"name":"job_def_initiated","type":"date","comment":"Timestamp when the job was initiated.","meaning":"Date","isColumnEdited":true},
