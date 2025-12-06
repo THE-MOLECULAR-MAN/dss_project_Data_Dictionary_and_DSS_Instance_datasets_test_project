@@ -188,9 +188,10 @@
       {
         "type": "ColumnNotEmptyRule",
         "columns": [
-          "envName",
-          "envLang",
-          "deploymentMode"
+          "code_env_name",
+          "code_env_lang",
+          "url",
+          "path"
         ],
         "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
         "maximum": 0.0,
@@ -198,7 +199,7 @@
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
         "id": "hxZfSKV1",
-        "displayName": "No empty values exist in 3 columns",
+        "displayName": "No empty values exist in 4 columns",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
