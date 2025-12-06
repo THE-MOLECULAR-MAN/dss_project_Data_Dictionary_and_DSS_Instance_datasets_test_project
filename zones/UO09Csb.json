@@ -47,10 +47,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "scenario_runs_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "scenario_runs_prepared",
       "objectType": "DATASET"
     },
