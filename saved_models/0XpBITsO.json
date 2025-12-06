@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 7,
+        "versionNumber": 8,
         "lastModifiedBy": {
-          "login": "demo"
+          "login": "admin"
         },
-        "lastModifiedOn": 1764126824374
+        "lastModifiedOn": 1765051942059
       },
       "creationTag": {
         "versionNumber": 0,
@@ -33,14 +33,16 @@
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "pluginAgentSettings": {
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "toolsUsingAgentSettings": {
         "tools": [
@@ -55,7 +57,7 @@
           }
         ],
         "llmId": "openai:OpenAI_Dataiku_SE_Shared:gpt-5-mini",
-        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nApps\nClusters\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": true
@@ -64,7 +66,8 @@
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "ragllmSettings": {
         "printSources": true,
@@ -101,6 +104,10 @@
             "handling": "FAIL"
           }
         },
+        "completionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": false
+        },
         "contextMessage": "Use the following pieces of context to answer the question at the end.\nIf you do not know the answer, just say that you do not know, do not try to make up an answer.",
         "enforceDocumentLevelSecurity": false,
         "performFiltering": false,
@@ -109,6 +116,9 @@
           "distinct": false,
           "enabled": false
         },
+        "retrievalColumns": [
+          "DKU_TEXT_EMBEDDING_COLUMN"
+        ],
         "searchType": "SIMILARITY",
         "similarityThreshold": 0.5,
         "maxDocuments": 4,
@@ -162,14 +172,16 @@
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "pluginAgentSettings": {
         "dkuProperties": [],
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "toolsUsingAgentSettings": {
         "tools": [
@@ -187,7 +199,8 @@
         "maxParallelRequestsPerProcess": 16,
         "containerExecSelection": {
           "containerMode": "NONE"
-        }
+        },
+        "singleInstance": false
       },
       "ragllmSettings": {
         "printSources": true,
@@ -224,6 +237,10 @@
             "handling": "FAIL"
           }
         },
+        "completionSettings": {
+          "stopSequences": [],
+          "outputTrajectory": false
+        },
         "contextMessage": "Use the following pieces of context to answer the question at the end.\nIf you do not know the answer, just say that you do not know, do not try to make up an answer.",
         "enforceDocumentLevelSecurity": false,
         "performFiltering": false,
@@ -232,6 +249,9 @@
           "distinct": false,
           "enabled": false
         },
+        "retrievalColumns": [
+          "DKU_TEXT_EMBEDDING_COLUMN"
+        ],
         "searchType": "SIMILARITY",
         "similarityThreshold": 0.5,
         "maxDocuments": 4,
