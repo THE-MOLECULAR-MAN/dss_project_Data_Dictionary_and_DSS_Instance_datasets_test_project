@@ -192,10 +192,8 @@
         "columns": [
           "id",
           "label",
-          "total_usages",
           "url",
-          "isDev",
-          "project_usages"
+          "isDev"
         ],
         "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
         "maximum": 0.0,
@@ -203,7 +201,7 @@
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
         "id": "O8bA3lbI",
-        "displayName": "No empty values exist in 6 columns",
+        "displayName": "No empty values exist in 4 columns",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
