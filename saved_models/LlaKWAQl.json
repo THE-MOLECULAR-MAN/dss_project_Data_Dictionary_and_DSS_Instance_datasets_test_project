@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 1,
+        "versionNumber": 2,
         "lastModifiedBy": {
           "login": "demo"
         },
-        "lastModifiedOn": 1765067941474
+        "lastModifiedOn": 1765074818165
       },
       "creationTag": {
         "versionNumber": 0,
@@ -54,7 +54,7 @@
           }
         ],
         "llmId": "vertex:GCP_Vertex:gemini-2.5-flash",
-        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance.",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": false
