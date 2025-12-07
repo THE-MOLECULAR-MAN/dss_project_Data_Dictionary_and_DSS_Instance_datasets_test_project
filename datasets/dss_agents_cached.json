@@ -187,7 +187,7 @@
         "displayName": "Less than 20% of 3 columns is empty",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
-        "enabled": true
+        "enabled": false
       }
     ],
     "displayedState": {
