@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"agent_name","type":"string"},
-      {"name":"agent_id","type":"string"},
-      {"name":"creator_user","type":"string"},
-      {"name":"last_modified_user","type":"string"},
-      {"name":"active_agent_version","type":"string"},
-      {"name":"agent_type","type":"string"},
-      {"name":"agent_version","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"last_modified_timestamp","type":"string"},
-      {"name":"url","type":"string"},
-      {"name":"LLMs_used","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"agent_name","type":"string","meaning":"Text"},
+      {"name":"agent_id","type":"string","meaning":"Text"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"agent_type","type":"string","meaning":"Text"},
+      {"name":"agent_version","type":"string","meaning":"Text"},
+      {"name":"LLMs_used","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"creator_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"active_agent_version","type":"string","meaning":"Text"},
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
