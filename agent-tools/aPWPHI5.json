@@ -39,7 +39,7 @@
   },
   "quickTestQuery": {
     "input": {
-      "question": "how many total Dataiku DSS Projects are on this local instance?"
+      "question": "how many total Dataiku DSS Projects are there?"
     },
     "context": {}
   },
