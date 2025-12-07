@@ -30,7 +30,7 @@
         "scenario_runs_cached"
       ],
       "connection": "postgres_localhost",
-      "llmId": "openai:OpenAI_Shared_SE:gpt-4.1-mini",
+      "llmId": "vertex:GCP_Vertex:gemini-2.0-flash",
       "additionalInformation": "This SQL connection supplies datasets/tables that have information about the local Dataiku DSS instances\u0027s:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs"
     },
     "containerExecSelection": {
