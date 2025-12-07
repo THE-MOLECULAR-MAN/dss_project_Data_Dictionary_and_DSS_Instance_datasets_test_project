@@ -54,7 +54,16 @@
       }
     ],
     "number_of_documents_to_retrieve": 10,
-    "tool_agent_configurations": [],
+    "tool_agent_configurations": [
+      {
+        "agent_id": "DSS_Data_Plugin_Test:agent:LlaKWAQl",
+        "agent_system_instructions": "",
+        "tool_agent_description": "You assist with finding information about this local Dataiku DSS instance.",
+        "enable_stories": false,
+        "agent_example_queries": [],
+        "tool_agent_display_name": "DSS Bot"
+      }
+    ],
     "augmented_llms_configurations": [],
     "enable_agents_as_tools": true,
     "visualization_generation_mode": "AUTO",
@@ -66,15 +75,19 @@
     "logLevel": "INFO",
     "homepage_examples": [],
     "globalSystemPrompt": "",
-    "projects_keys": [],
-    "agents_ids": [],
+    "projects_keys": [
+      "DSS_Data_Plugin_Test"
+    ],
+    "agents_ids": [
+      "DSS_Data_Plugin_Test:agent:LlaKWAQl"
+    ],
     "augmented_llms_ids": [],
     "tools": [],
     "embedding_llm": "openai:OpenAI_Shared_SE:text-embedding-3-small",
     "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:klMp7N28vXSXmb88FQT29fzh43w3h3zhDat8SuW+OLKKRdmfvTcfMzaoryUbow/kpJN/cxLs/1J6QR8zNH1P9WOcOmO8BLoxIx0M+icuqi1grZLuJrBD",
+  "apiKey": "e:AES:X2:STjgCYSbupTgiaMzWjToUCIKDu6WQ5s4eXBw5VwgrDr+4TO5dEw0W7oIo7zQfjy+IADLbXazh0PoNjrGC8TRo6JvASgnl2rb4mPwa66cb0/8VF7rTrwh",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
