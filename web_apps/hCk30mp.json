@@ -66,7 +66,7 @@
     ],
     "augmented_llms_configurations": [],
     "enable_agents_as_tools": true,
-    "visualization_generation_mode": "AUTO",
+    "visualization_generation_mode": "NONE",
     "max_artifacts_size_mb": 2,
     "enable_quick_agents": false,
     "enable_prompt_library": true,
@@ -113,7 +113,7 @@
     "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:ZQjzrB4ErNHEdyljOFnTUiFfiJ7TmERrmoeHm+9NkHRqdtqIHTTCp1+RNdp4hZorhs1Yq4QknM0ztd/8HxTZnAU3CxJqIxbDeRfs1mVmAOWQ8d9bxmJU",
+  "apiKey": "e:AES:X2:qK/PM8W2RlBKGt3dDY9jJ+XkUt53UT/W29+5oMenC4NOcPJ2SYQNAlHWkYzf+7pqvazHk2a4rF+Jqmj/wDcQo8JfKID16DXyJ4pbig/sPQfyu7o70XCy",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
