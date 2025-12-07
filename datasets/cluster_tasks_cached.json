@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027cluster_tasks_cached\u0027 dataset provides a detailed record of tasks executed within a cluster environment, capturing essential information about each task. This dataset is particularly useful for monitoring and analyzing the performance and history of tasks in a data processing or computational environment. Key features include the connection type, which indicates the database or service used, and the task type, which specifies the nature of the task, such as SQL operations. The project key helps identify the specific project associated with each task, while the task data column contains JSON objects with detailed metadata about the task execution. User information is also recorded, allowing for tracking of task initiators. The dataset includes precise start and end times for each task, enabling detailed analysis of task duration and scheduling. This dataset is valuable for system administrators, data engineers, and analysts who need to optimize task scheduling, troubleshoot issues, or audit task execution within a cluster.",
+  "shortDesc": "Dataset of cached cluster tasks with connection, task type, and timing details.",
   "checklists": {
     "checklists": []
   },
@@ -62,13 +64,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection","type":"string","meaning":"Text"},
-      {"name":"task_type","type":"string","meaning":"Text"},
-      {"name":"project_key","type":"string","meaning":"Text"},
-      {"name":"task_data","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"user","type":"string","meaning":"Text"},
-      {"name":"start_time","type":"date","meaning":"Date"},
-      {"name":"end_time","type":"date","meaning":"Date"}
+      {"name":"connection","type":"string","comment":"Database or service connection identifier, e.g., \u0027postgres_localhost\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., \u0027SQL_FROM_RECIPE\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"project_key","type":"string","comment":"Identifier for the project associated with the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_data","type":"string","comment":"JSON object with task execution metadata, e.g., jobId, activityId.","meaning":"JSONObjectMeaning","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task, e.g., \u0027demo\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started, e.g., \u00272025-11-24T17:38:21.661Z\u0027.","meaning":"Date","isColumnEdited":true},
+      {"name":"end_time","type":"date","comment":"Timestamp when the task ended, e.g., \u00272025-11-19T20:35:44.908Z\u0027.","meaning":"Date","isColumnEdited":true}
     ],
     "userModified": true
   },
