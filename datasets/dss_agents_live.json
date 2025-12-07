@@ -57,7 +57,7 @@
       {"name":"tags","type":"string"},
       {"name":"last_modified_timestamp","type":"string"},
       {"name":"url","type":"string"},
-      {"name":"LLMs_used","type":"string"}
+      {"name":"LLMs_used","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
   },
