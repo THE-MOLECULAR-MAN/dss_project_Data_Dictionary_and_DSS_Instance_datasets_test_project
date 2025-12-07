@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "demo"
         },
-        "lastModifiedOn": 1765067892253
+        "lastModifiedOn": 1765067941474
       },
       "creationTag": {
         "versionNumber": 0,
@@ -45,7 +45,16 @@
         "singleInstance": false
       },
       "toolsUsingAgentSettings": {
-        "tools": [],
+        "tools": [
+          {
+            "toolRef": "aPWPHI5"
+          },
+          {
+            "toolRef": "JfbcCw6"
+          }
+        ],
+        "llmId": "vertex:GCP_Vertex:gemini-2.5-flash",
+        "systemPromptAppend": "You assist with finding information about this local Dataiku DSS instance. Assume all questions are about the local Dataiku DSS instance and its:\nAgents\nAgent Tools\nApps\nClusters\nCluster Tasks\nCommits\nCode Environments\nConnections\nDatasets\nMeanings\nPlugins\nProjects\nRecipes\nUsers\nCommits\nJobs\nScenario Runs",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": false
@@ -125,7 +134,7 @@
         "messages": [
           {
             "role": "user",
-            "content": "Put your query here"
+            "content": "How many total DSS Projects are there?"
           }
         ],
         "context": {}
