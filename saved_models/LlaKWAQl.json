@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 2,
+        "versionNumber": 3,
         "lastModifiedBy": {
           "login": "demo"
         },
-        "lastModifiedOn": 1765074818165
+        "lastModifiedOn": 1765083488363
       },
       "creationTag": {
         "versionNumber": 0,
@@ -51,6 +51,9 @@
           },
           {
             "toolRef": "JfbcCw6"
+          },
+          {
+            "toolRef": "aPWPHI5"
           }
         ],
         "llmId": "vertex:GCP_Vertex:gemini-2.5-flash",
