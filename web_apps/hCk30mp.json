@@ -48,7 +48,11 @@
     "forceAuthentication": false
   },
   "config": {
-    "LLMs": [],
+    "LLMs": [
+      {
+        "llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
+      }
+    ],
     "number_of_documents_to_retrieve": 10,
     "tool_agent_configurations": [],
     "augmented_llms_configurations": [],
@@ -60,10 +64,17 @@
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
     "logLevel": "INFO",
-    "homepage_examples": []
+    "homepage_examples": [],
+    "globalSystemPrompt": "",
+    "projects_keys": [],
+    "agents_ids": [],
+    "augmented_llms_ids": [],
+    "tools": [],
+    "embedding_llm": "openai:OpenAI_Shared_SE:text-embedding-3-small",
+    "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:ut/i1KWmRZ0qdtLCf+UPbur0Te8CEytpAy2ptBek9EpFTIktU/Z2GaWeKK3bb2EpZv7CONwZXe3qDqpWah8DTLHgoV+PZZLmjSWov68NsU91moGxZ1zF",
+  "apiKey": "e:AES:X2:klMp7N28vXSXmb88FQT29fzh43w3h3zhDat8SuW+OLKKRdmfvTcfMzaoryUbow/kpJN/cxLs/1J6QR8zNH1P9WOcOmO8BLoxIx0M+icuqi1grZLuJrBD",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
