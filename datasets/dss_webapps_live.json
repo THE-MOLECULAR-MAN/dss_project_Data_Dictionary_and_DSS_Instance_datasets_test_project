@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application.","meaning":"Text","isColumnEdited":true},
-      {"name":"webapp_name","type":"string","comment":"Descriptive name of the web application.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey","type":"string","comment":"Identifier for the project containing the web app.","meaning":"Text","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of web application, indicating its function.","meaning":"Text","isColumnEdited":true},
-      {"name":"backendRunning","type":"boolean","comment":"Indicates if the web app\u0027s backend is running.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"Email of the user who created the app.","meaning":"Text","isColumnEdited":true},
-      {"name":"lastModifiedBy","type":"string","comment":"Email of the user who last modified the app.","meaning":"Text","isColumnEdited":true},
-      {"name":"created_on","type":"datetimenotz","comment":"Timestamp when the web app was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification of the app.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"JSON array of tags for categorizing the app.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the app is code-based.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL link to the web application\u0027s interface.","meaning":"URL","isColumnEdited":true}
+      {"name":"webapp_id","type":"string","meaning":"Text"},
+      {"name":"webapp_name","type":"string","meaning":"Text"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"webapp_type","type":"string","meaning":"Text"},
+      {"name":"backend_running","type":"boolean","meaning":"Boolean"},
+      {"name":"created_by_user","type":"string","meaning":"Text"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
+      {"name":"created_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"is_code_webapp","type":"boolean","meaning":"Boolean"},
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
