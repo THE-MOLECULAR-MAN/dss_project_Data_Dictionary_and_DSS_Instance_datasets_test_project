@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within an organization, offering insights into application types, creation and modification details, and operational status. Each entry in the dataset represents a unique web application, identified by a \u0027webapp_id\u0027, and includes descriptive information such as the \u0027webapp_name\u0027 and \u0027projectKey\u0027 to which it belongs. The dataset also tracks the type of application, whether it is currently running, and if it is a code-based web application. Additionally, it records the user who created and last modified the application, along with timestamps for these actions. The \u0027tags\u0027 column allows for categorization or labeling of applications, while the \u0027url\u0027 provides a direct link to the application\u0027s management interface. This dataset is valuable for IT administrators, project managers, and developers who need to keep track of application deployments, ensure they are up-to-date, and manage user access and modifications efficiently.",
-  "shortDesc": "Dataset of live web applications with metadata and status.",
+  "description": "",
+  "shortDesc": "",
   "checklists": {
     "checklists": []
   },
