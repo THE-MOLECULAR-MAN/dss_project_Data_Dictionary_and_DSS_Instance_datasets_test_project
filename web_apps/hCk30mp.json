@@ -73,7 +73,33 @@
     "enable_app_smart_mode": true,
     "permanent_delete_messages": false,
     "logLevel": "INFO",
-    "homepage_examples": [],
+    "homepage_examples": [
+      {
+        "homepage_example_label": "Most contributing users",
+        "homepage_example_query": "Which users have made the most commits in the last 90 days?",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Empty projects",
+        "homepage_example_query": "How many projects have zero datasets? List the first five alphabetically.",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Reclaimable licenses",
+        "homepage_example_query": "For all users who have not had any activity in the last 90 days, list the total count of them by license type.",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Migration planning off PostgreSQL",
+        "homepage_example_query": "List the project keys and project owners for all projects that use at least one PostgreSQL dataset",
+        "selected_agents": []
+      },
+      {
+        "homepage_example_label": "Links to agents using gpt-5",
+        "homepage_example_query": "provide a list of URLs to Agents whose LLM Agent Name is \"gpt-5\". Include each agent\u0027s Agent Name, projectKey, and Created By User.",
+        "selected_agents": []
+      }
+    ],
     "globalSystemPrompt": "",
     "projects_keys": [
       "DSS_Data_Plugin_Test"
@@ -87,7 +113,7 @@
     "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:gEh530nlzUjmP/V3xddyfq11VhpWdqkhKnkmQQCSOvn4w/7O+X59+uh6m5m+56ykaN7oR6bEVHTr2gEdytEt32Jfu9+2Lv2CP/1n9sDCCJba0LeR0x4c",
+  "apiKey": "e:AES:X2:ZQjzrB4ErNHEdyljOFnTUiFfiJ7TmERrmoeHm+9NkHRqdtqIHTTCp1+RNdp4hZorhs1Yq4QknM0ztd/8HxTZnAU3CxJqIxbDeRfs1mVmAOWQ8d9bxmJU",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
