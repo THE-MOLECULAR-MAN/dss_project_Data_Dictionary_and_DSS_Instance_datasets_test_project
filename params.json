@@ -284,7 +284,7 @@
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "recipes - add more columns like owner, last modified, engine?",
             "createdOn": 1764963012633,
             "createdBy": "admin",
