@@ -69,6 +69,7 @@
       {"name":"projectKey","type":"string","comment":"Key of the project associated with the agent.","meaning":"Text","isColumnEdited":true},
       {"name":"agent_type","type":"string","comment":"Type of agent, e.g., PYTHON_AGENT.","meaning":"Text","isColumnEdited":true},
       {"name":"agent_version","type":"string","comment":"Version of the agent, indicates updates.","meaning":"Text","isColumnEdited":true},
+      {"name":"LLMs_used","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"creator_user","type":"string","comment":"User who created the agent, tracks origin.","meaning":"Text","isColumnEdited":true},
       {"name":"last_modified_user","type":"string","comment":"User who last modified the agent, tracks changes.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Tags associated with the agent, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
