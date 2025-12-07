@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027scenario_runs_cached\u0027 dataset provides detailed information about various scenario executions, capturing essential metadata for each run. This dataset is particularly useful for tracking and analyzing the performance and outcomes of automated processes or workflows. Each entry in the dataset represents a single scenario run, identified by a unique \u0027scenario_run_id\u0027. The dataset includes timestamps for when each scenario started and ended, allowing for precise duration calculations. It also records the outcome of each run, such as \u0027SUCCESS\u0027, \u0027FAILED\u0027, or \u0027ABORTED\u0027, which is crucial for monitoring system reliability and identifying issues. Additionally, the dataset captures the user who initiated the run and the method of execution, providing insights into user interactions and automation triggers. This dataset is valuable for system administrators and developers who need to audit scenario executions, optimize performance, and ensure the reliability of automated processes. The inclusion of warning counts and trigger names further enhances its utility by allowing for detailed analysis of potential issues and the conditions under which scenarios are executed.",
+  "shortDesc": "Dataset of cached scenario runs with timestamps and outcomes.",
   "checklists": {
     "checklists": []
   },
@@ -62,18 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string","meaning":"Text"},
-      {"name":"scenario_id","type":"string","meaning":"Text"},
-      {"name":"scenario_run_id","type":"string","meaning":"Text"},
-      {"name":"time_start","type":"date","meaning":"Date"},
-      {"name":"time_end","type":"date","meaning":"Date"},
-      {"name":"outcome","type":"string","meaning":"Text"},
-      {"name":"warnings_count","type":"int","meaning":"LongMeaning"},
-      {"name":"scenario_name","type":"string","meaning":"Text"},
-      {"name":"trigger_name","type":"string","meaning":"Text"},
-      {"name":"scenario_run_as_user","type":"string","meaning":"Text"},
-      {"name":"run_as_user_identifier","type":"string","meaning":"Text"},
-      {"name":"run_as_user_via","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"scenario_project_key","type":"string","comment":"Project identifier for the scenario, key for project.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, key for scenario.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, key for run.","meaning":"Text","isColumnEdited":true},
+      {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","meaning":"Date","isColumnEdited":true},
+      {"name":"time_end","type":"date","comment":"Timestamp when the scenario run ended, end time.","meaning":"Date","isColumnEdited":true},
+      {"name":"outcome","type":"string","comment":"Result of the scenario run, run outcome status.","meaning":"Text","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings during the run, warning count.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_name","type":"string","comment":"Descriptive name of the scenario, scenario title.","meaning":"Text","isColumnEdited":true},
+      {"name":"trigger_name","type":"string","comment":"Name of the trigger for the scenario, trigger identifier.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_as_user","type":"string","comment":"User who executed the scenario, executing user.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_identifier","type":"string","comment":"Identifier of the user who ran the scenario, user ID.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_via","type":"string","comment":"Method or context of user execution, execution context.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
