@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027commits_cached\u0027 dataset provides detailed information about software project commits, capturing essential data for each commit made to a project. This dataset is particularly useful for software development teams, project managers, and data analysts who need to track changes over time, analyze development patterns, or assess the impact of specific changes. Each entry in the dataset represents a unique commit, identified by a \u0027commit_id\u0027, and is associated with a specific \u0027project_key\u0027. The dataset includes information about the \u0027author\u0027 of the commit, the \u0027timestamp\u0027 indicating when the commit was made, and quantitative data on the number of \u0027added_files\u0027, \u0027added_lines\u0027, \u0027removed_files\u0027, \u0027removed_lines\u0027, and \u0027changed_files\u0027. This allows for a comprehensive analysis of the modifications introduced in each commit, facilitating insights into the development process, code quality, and team productivity. The dataset\u0027s structure supports various use cases, such as generating reports on codebase evolution, identifying trends in code contributions, and evaluating the efficiency of code reviews and testing processes.",
+  "shortDesc": "Software project commit data with author, timestamp, and file changes.",
   "checklists": {
     "checklists": []
   },
