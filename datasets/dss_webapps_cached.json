@@ -192,15 +192,11 @@
         "type": "ColumnMeaningValidityRule",
         "columnSpecs": [
           {
-            "column": "backendRunning",
+            "column": "backend_running",
             "meaning": "Boolean"
           },
           {
-            "column": "created_on",
-            "meaning": "DatetimeNoTz"
-          },
-          {
-            "column": "lastModifiedOn",
+            "column": "created_timestamp",
             "meaning": "DatetimeNoTz"
           },
           {
@@ -210,6 +206,10 @@
           {
             "column": "url",
             "meaning": "URL"
+          },
+          {
+            "column": "last_modified_timestamp",
+            "meaning": "DatetimeNoTz"
           }
         ],
         "thresholdType": "ENTIRE_COLUMN",
