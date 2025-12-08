@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027scenario_runs_cached\u0027 dataset provides detailed information about various scenario executions, capturing essential metadata for each run. This dataset is particularly useful for tracking and analyzing the performance and outcomes of automated processes or workflows. Each entry in the dataset represents a single scenario run, identified by a unique \u0027scenario_run_id\u0027. The dataset includes timestamps for when each scenario started and ended, allowing for precise duration calculations. It also records the outcome of each run, such as \u0027SUCCESS\u0027, \u0027FAILED\u0027, or \u0027ABORTED\u0027, which is crucial for monitoring system reliability and identifying issues. Additionally, the dataset captures the user who initiated the run and the method of execution, providing insights into user interactions and automation triggers. This dataset is valuable for system administrators and developers who need to audit scenario executions, optimize performance, and ensure the reliability of automated processes. The inclusion of warning counts and trigger names further enhances its utility by allowing for detailed analysis of potential issues and the conditions under which scenarios are executed.",
-  "shortDesc": "Dataset of cached scenario runs with timestamps and outcomes.",
+  "description": "The \u0027scenario_runs_cached\u0027 dataset provides detailed information about various scenario executions within a project. Each entry in the dataset represents a unique scenario run, identified by a combination of project, scenario, and run identifiers. This dataset is particularly useful for tracking the execution history of scenarios, analyzing performance, and diagnosing issues based on the outcome and warnings generated during each run. Key features include timestamps for the start and end of each run, allowing for precise duration calculations, and the outcome status, which indicates whether a run was successful, failed, or aborted. Additionally, the dataset captures the user and method of execution, providing insights into who initiated the run and under what context. This information is crucial for auditing and compliance purposes. The dataset can be used by project managers, developers, and analysts to monitor scenario performance, optimize processes, and ensure accountability in scenario execution.",
+  "shortDesc": "Dataset of scenario runs with identifiers and timestamps.",
   "checklists": {
     "checklists": []
   },
@@ -64,9 +64,9 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string","comment":"Project identifier for the scenario, key for project.","meaning":"Text","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, key for scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, key for run.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_project_key","type":"string","comment":"Project identifier for the scenario, project key.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, scenario key.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, run key.","meaning":"Text","isColumnEdited":true},
       {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","meaning":"Date","isColumnEdited":true},
       {"name":"time_end","type":"date","comment":"Timestamp when the scenario run ended, end time.","meaning":"Date","isColumnEdited":true},
       {"name":"outcome","type":"string","comment":"Result of the scenario run, run outcome status.","meaning":"Text","isColumnEdited":true},
