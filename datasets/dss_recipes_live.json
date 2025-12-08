@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_recipes",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_recipes_live\u0027 dataset provides a comprehensive overview of live recipes used within Dataiku projects. Each entry in the dataset represents a specific recipe, detailing its unique identifier, name, associated project, and type. The dataset is particularly useful for understanding the data processing workflows within Dataiku, as it includes information on input and output datasets, which are crucial for tracking data transformations. Additionally, the dataset includes URLs for direct access to the recipes, facilitating easy navigation and management. This dataset is valuable for data engineers and analysts who need to monitor and optimize data workflows, ensuring efficient data processing and integration. The inclusion of tags allows for categorization and filtering of recipes, enhancing the ability to manage large numbers of recipes across various projects. Overall, this dataset serves as a vital tool for maintaining and improving data processing pipelines in a collaborative data science environment.",
-  "shortDesc": "Dataset of live recipes in Dataiku projects, detailing inputs, outputs, and types.",
+  "description": "The \u0027dss_recipes_live\u0027 dataset provides a comprehensive overview of live recipes used within a data processing platform. Each entry in the dataset represents a unique recipe, identified by a \u0027recipe_id\u0027 and \u0027recipe_name\u0027, which are typically descriptive of the recipe\u0027s function. The \u0027projectKey\u0027 column links each recipe to a specific project, allowing users to organize and manage their data processing tasks effectively. The \u0027recipe_type\u0027 column indicates the type of processing or analysis performed, such as Python scripts or NLP models. Input and output datasets are specified in \u0027input_datasets\u0027 and \u0027output_datasets\u0027, respectively, highlighting the data flow through each recipe. The \u0027tags\u0027 column allows for categorization and easy retrieval of recipes. Detailed configuration settings are stored in \u0027engine_parameters\u0027, which include execution engines and threading options, crucial for optimizing performance. The \u0027last_modified_user\u0027 column tracks the user responsible for the most recent changes, ensuring accountability and traceability. Finally, the \u0027url\u0027 column provides direct access to the recipe\u0027s location within the platform, facilitating quick navigation. This dataset is essential for managing and optimizing data workflows, ensuring efficient data processing and analysis.",
+  "shortDesc": "Dataset of live recipes with project, type, and engine parameters.",
   "checklists": {
     "checklists": []
   },
@@ -46,16 +46,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"recipe_id","type":"string","meaning":"Text"},
-      {"name":"recipe_name","type":"string","meaning":"Text"},
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"recipe_type","type":"string","meaning":"Text"},
-      {"name":"input_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"output_datasets","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"engine_parameters","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"recipe_id","type":"string","comment":"Unique identifier for each recipe, descriptive name.","meaning":"Text","isColumnEdited":true},
+      {"name":"recipe_name","type":"string","comment":"Descriptive name of the recipe, matches ID.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for the project associated with the recipe.","meaning":"Text","isColumnEdited":true},
+      {"name":"recipe_type","type":"string","comment":"Type of recipe, e.g., Python, NLP, sampling.","meaning":"Text","isColumnEdited":true},
+      {"name":"input_datasets","type":"string","comment":"List of datasets used as input for the recipe.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"output_datasets","type":"string","comment":"List of datasets produced as output by the recipe.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags for categorizing and retrieving recipes.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"engine_parameters","type":"string","comment":"Configuration settings for recipe execution engines.","meaning":"JSONObjectMeaning","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the recipe, email or name.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to access the recipe in the platform.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
