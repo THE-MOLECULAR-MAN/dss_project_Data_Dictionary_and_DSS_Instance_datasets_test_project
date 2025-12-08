@@ -46,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"name","type":"string","comment":"Descriptive name of the project, indicating its purpose.","meaning":"Text","isColumnEdited":true},
-      {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"ownerLogin","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectStatus","type":"string","comment":"Current status of the project, such as \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Array of tags categorizing the project, indicating focus areas.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"lastModifiedOn","type":"datetimenotz","comment":"Timestamp of the last modification, showing recent activity.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"tutorialProject","type":"boolean","comment":"Boolean indicating if the project is a tutorial, for learning.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"contributors","type":"string","comment":"List of project contributors, showing collaboration.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Direct URL to the project, for easy access and navigation.","meaning":"URL","isColumnEdited":true}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"name","type":"string","meaning":"Text"},
+      {"name":"shortDesc","type":"string","meaning":"FreeText"},
+      {"name":"description","type":"string","meaning":"FreeText"},
+      {"name":"ownerLogin","type":"string","meaning":"Text"},
+      {"name":"projectStatus","type":"string","meaning":"Text"},
+      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"tutorialProject","type":"boolean","meaning":"Boolean"},
+      {"name":"contributors","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
