@@ -2,7 +2,7 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_plugins_cached\u0027 dataset provides a comprehensive overview of various plugins used within a system, capturing essential details such as unique identifiers, human-readable names, version numbers, authorship, and more. This dataset is particularly useful for managing and tracking plugins, ensuring that users can easily identify and update them as needed. Each plugin is uniquely identified by an \u0027id\u0027, and further described by a \u0027label\u0027 which provides a more user-friendly name. The \u0027version\u0027 column helps in tracking updates and ensuring compatibility. Authorship is captured in the \u0027author\u0027 column, providing credit and a point of contact for each plugin. The \u0027tags\u0027 column aids in categorization, making it easier to search and filter plugins based on keywords. A detailed \u0027description\u0027 of each plugin\u0027s functionality is provided, offering insights into its capabilities and use cases. The \u0027isDev\u0027 column indicates whether a plugin is still in development, which is crucial for users who need stable releases. Finally, the \u0027url\u0027 column provides direct access to more information about each plugin, facilitating further exploration and understanding. This dataset is invaluable for developers, system administrators, and users who need to manage and utilize plugins effectively.",
+  "description": "The \u0027dss_plugins_cached\u0027 dataset provides a comprehensive overview of various plugins, capturing essential details such as unique identifiers, human-readable names, version numbers, and authorship. This dataset is particularly useful for developers and administrators managing plugin libraries, as it facilitates easy reference and identification of plugins. Each entry includes a unique ID, a label for easy recognition, and a version number to track updates and changes. The dataset also includes the author\u0027s information, which is crucial for understanding the source and credibility of the plugin. Tags are provided to categorize plugins, aiding in efficient search and filtering. Additionally, a detailed description of each plugin\u0027s functionality and use cases is included, offering insights into its applications. The \u0027isDev\u0027 column indicates whether a plugin is still in development, which is vital for status tracking and deployment decisions. Finally, a URL is provided for each plugin, linking to a summary page for more detailed information. This dataset is an invaluable resource for managing and utilizing plugins effectively within a software environment.",
   "shortDesc": "Dataset of cached plugins with details like ID, version, and author.",
   "checklists": {
     "checklists": []
@@ -65,14 +65,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential for reference.","meaning":"Text","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful for identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates and changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Creator or contributors of the plugin, providing authorship details.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding in search and filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality and use cases.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, useful for status tracking.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Web link to the plugin\u0027s summary page, for more information.","meaning":"URL","isColumnEdited":true}
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates.","meaning":"Text","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or contributors of the plugin, authorship details.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding search filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of plugin\u0027s functionality, use cases.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, status tracking.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Web link to plugin\u0027s summary page, more information.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
