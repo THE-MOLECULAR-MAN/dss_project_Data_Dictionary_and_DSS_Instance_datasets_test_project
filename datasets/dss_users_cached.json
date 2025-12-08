@@ -73,7 +73,7 @@
       {"name":"email","type":"string","comment":"User\u0027s email address, contact information.","meaning":"Text","isColumnEdited":true},
       {"name":"enabled","type":"boolean","comment":"Account status, indicates if user is active.","meaning":"Boolean","isColumnEdited":true},
       {"name":"resultingUserProfile","type":"string","comment":"Effective user profile, post-group adjustments.","meaning":"Text","isColumnEdited":true},
-      {"name":"creationDate","type":"datetimenotz","comment":"Account creation date, tracks user registration.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"created_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
       {"name":"last_successful_login","type":"date","comment":"Timestamp of last successful login, tracks access.","meaning":"Date","isColumnEdited":true},
       {"name":"last_session_activity","type":"date","comment":"Timestamp of last session activity, monitors engagement.","meaning":"Date","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL for user management interface, admin access.","meaning":"URL","isColumnEdited":true}
