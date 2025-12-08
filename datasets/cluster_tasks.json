@@ -2,7 +2,7 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027cluster_tasks\u0027 dataset provides detailed information about various tasks executed within a cluster environment. It includes key attributes such as the connection type, task type, project key, and user information, which are essential for identifying and managing tasks. The dataset also contains JSON objects in the \u0027task_data\u0027 column, which provide specific details about each task, such as job and activity IDs. Additionally, the dataset records the start and end times of tasks in integer format, likely representing timestamps. This dataset is particularly useful for monitoring and analyzing task execution within a cluster, allowing for performance tracking, debugging, and optimization of processes. It can be used by system administrators and data engineers to ensure efficient task management and resource allocation in a clustered computing environment.",
+  "description": "The \u0027cluster_tasks\u0027 dataset provides detailed information about various tasks executed within a cluster environment. It includes key attributes such as the connection type, task type, project association, and user information. Additionally, it captures the start and end times of each task, which are crucial for performance analysis and monitoring. The dataset is particularly useful for system administrators and data engineers who need to track and optimize task execution within a cluster. The \u0027task_data\u0027 column contains JSON objects with specific job and activity identifiers, offering a deeper insight into the task\u0027s execution context. This dataset can be leveraged for auditing, performance tuning, and understanding task dependencies and execution patterns. Its structured format allows for easy integration with data analysis tools to generate reports and dashboards for operational insights.",
   "shortDesc": "Dataset of cluster tasks with connection, task type, and timing details.",
   "checklists": {
     "checklists": []
@@ -50,13 +50,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection","type":"string","meaning":"Text"},
-      {"name":"task_type","type":"string","meaning":"Text"},
-      {"name":"project_key","type":"string","meaning":"Text"},
-      {"name":"task_data","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"user","type":"string","meaning":"Text"},
-      {"name":"start_time","type":"int","meaning":"LongMeaning"},
-      {"name":"end_time","type":"int","meaning":"LongMeaning"}
+      {"name":"connection","type":"string","comment":"Type of connection used, e.g., database name.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_type","type":"string","comment":"Type of task executed, e.g., SQL operation.","meaning":"Text","isColumnEdited":true},
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"task_data","type":"string","comment":"JSON object with job and activity details.","meaning":"JSONObjectMeaning","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time","type":"int","comment":"Timestamp when the task started.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"end_time","type":"int","comment":"Timestamp when the task ended.","meaning":"LongMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
