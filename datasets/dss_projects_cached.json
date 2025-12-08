@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_projects_cached\u0027 dataset provides a comprehensive overview of various Dataiku DSS projects, capturing essential metadata and descriptions. This dataset is particularly useful for managing and analyzing project information within a Dataiku environment. It includes details such as project keys, names, descriptions, and statuses, which are crucial for understanding the scope and purpose of each project. Additionally, it records metadata like the owner\u0027s login, last modification date, and whether the project is a tutorial, which helps in tracking project ownership and updates. The dataset also includes tags and contributor information, offering insights into project categorization and collaboration. URLs to project flows are provided, facilitating easy access to project details. This dataset is valuable for administrators and data scientists who need to monitor project statuses, manage resources, and ensure efficient project execution within a data science platform. It supports use cases such as project auditing, resource allocation, and collaborative project management, making it a vital tool for maintaining an organized and efficient data science workflow.",
-  "shortDesc": "Dataset of cached DSS projects with metadata and descriptions.",
+  "description": "The \u0027dss_projects_cached\u0027 dataset provides a comprehensive overview of projects within a Dataiku Data Science Studio (DSS) environment. It includes essential information such as unique project identifiers, descriptive names, and detailed descriptions, which are crucial for understanding the purpose and scope of each project. The dataset also captures metadata like the project owner\u0027s email, current status, and tags, which help categorize and manage projects effectively. Additionally, it records the last modification timestamp, indicating the most recent updates, and whether a project is a tutorial, which is useful for educational purposes. The dataset is particularly valuable for project management, allowing users to track project progress, identify responsible parties, and access projects directly via URLs. It also supports collaboration by listing contributors and categorizing projects with tags. This dataset is ideal for administrators and data scientists who need to manage and analyze multiple projects within a DSS environment, ensuring efficient project tracking and resource allocation.",
+  "shortDesc": "Dataset of cached DSS projects with details on identifiers, descriptions, and statuses.",
   "checklists": {
     "checklists": []
   },
@@ -72,7 +72,7 @@
       {"name":"ownerLogin","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true},
       {"name":"projectStatus","type":"string","comment":"Current status of the project, such as \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Array of tags categorizing the project, indicating focus areas.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of the last modification, showing recent updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
       {"name":"tutorialProject","type":"boolean","comment":"Boolean indicating if the project is a tutorial, for learning.","meaning":"Boolean","isColumnEdited":true},
       {"name":"contributors","type":"string","comment":"List of project contributors, showing collaboration.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"url","type":"string","comment":"Direct URL to the project, for easy access and navigation.","meaning":"URL","isColumnEdited":true}
