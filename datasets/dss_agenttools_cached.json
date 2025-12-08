@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_agenttools_cached\u0027 dataset provides a comprehensive overview of various agent tools used within Dataiku projects. Each entry in the dataset represents a specific agent tool, detailing its unique identifier, name, type, and description. This dataset is particularly useful for managing and analyzing the tools employed across different projects, facilitating better project management and tool optimization. It includes metadata such as the creator of the tool, the last modification details, and specific parameters associated with each tool. Additionally, the dataset captures the URL for accessing each tool, which aids in quick navigation and usage. The dataset is valuable for developers and project managers who need to track tool usage, update tools, or integrate new functionalities into existing projects. It also supports the use of large language models (LLMs) by providing descriptions tailored for LLMs, enhancing the interaction between AI models and the tools. Overall, this dataset is a crucial resource for maintaining efficient workflows and ensuring the effective deployment of agent tools within the Dataiku environment.",
-  "shortDesc": "Dataset of cached agent tools in Dataiku projects.",
+  "description": "The \u0027dss_agenttools_cached\u0027 dataset provides comprehensive information about various agent tools used within Dataiku projects. Each entry in the dataset represents a unique agent tool, identified by a project key and a tool ID. The dataset includes metadata such as the tool\u0027s name, type, and a detailed description of its purpose and capabilities, which is particularly useful for understanding the tool\u0027s functionality and potential applications. Additionally, the dataset tracks the creator and last modifier of each tool, along with timestamps, to ensure accountability and traceability of changes. Configuration parameters and sample queries are also included, offering insights into the tool\u0027s setup and testing processes. This dataset is valuable for project management, tool tracking, and ensuring efficient use of resources within Dataiku environments. It supports categorization through tags and provides URLs for easy access to each tool. The inclusion of LLM identifiers and Dataiku properties further enriches the dataset, making it a crucial resource for managing and optimizing agent tools in Dataiku.",
+  "shortDesc": "Dataset of Dataiku agent tools with metadata and configuration details.",
   "checklists": {
     "checklists": []
   },
@@ -64,17 +64,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Identifier for the Dataiku project, key for project management.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool, essential for tool tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool, used for identification and reference.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_type","type":"string","comment":"Type of the agent tool, categorizes tool functionality.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Detailed description of the tool\u0027s purpose and capabilities.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for Dataiku project, key for management.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool, used for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type of the agent tool, categorizes functionality.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Detailed description of tool\u0027s purpose and capabilities.","meaning":"FreeText","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Tags associated with the agent tool, useful for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"creator_user","type":"string","comment":"User who created the tool, important for accountability.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification, tracks changes over time.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification, tracks changes over time.","meaning":"DatetimeNoTz","isColumnEdited":true},
       {"name":"last_modified_user","type":"string","comment":"User who last modified the tool, tracks recent changes.","meaning":"Text","isColumnEdited":true},
       {"name":"agent_tool_params","type":"string","comment":"Configuration parameters for the agent tool, essential for setup.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_LLMid","type":"string","comment":"Identifier for the tool\u0027s LLM, links to language model.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_LLMid","type":"string","comment":"Identifier for tool\u0027s LLM, links to language model.","meaning":"Text","isColumnEdited":true},
       {"name":"dkuProperties","type":"string","comment":"Properties related to Dataiku, metadata for the tool.","meaning":"Text","isColumnEdited":true},
       {"name":"quickTestQuery","type":"string","comment":"Sample queries for testing the tool, aids in validation.","meaning":"Text","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL for accessing the tool in Dataiku, facilitates navigation.","meaning":"URL","isColumnEdited":true}
