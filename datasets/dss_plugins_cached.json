@@ -65,14 +65,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential for reference.","meaning":"Text","isColumnEdited":true},
       {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful for identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"version","type":"string","comment":"Version number of the plugin, important for updates.","meaning":"Text","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Creator of the plugin, provides authorship information.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Keywords associated with the plugin, aids in categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, boolean flag.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Link to more information about the plugin, provides access.","meaning":"URL","isColumnEdited":true}
+      {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates and changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or contributors of the plugin, providing authorship details.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding in search and filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality and use cases.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, useful for status tracking.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Web link to the plugin\u0027s summary page, for more information.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
