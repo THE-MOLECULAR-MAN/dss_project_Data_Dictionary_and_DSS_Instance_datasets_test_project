@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_datasets",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_datasets_live\u0027 dataset is a comprehensive collection of employee-related data designed for HR analytics and organizational analysis. It includes various datasets that focus on employee attrition, sentiment analysis, and job role metrics. This dataset is particularly useful for HR professionals and data scientists aiming to understand and predict employee turnover, satisfaction, and engagement. The dataset provides detailed information on employee demographics, job roles, sentiment scores, and attrition status, which can be leveraged to develop predictive models and improve retention strategies. Additionally, it includes metadata about the datasets, such as their storage type, format, and connection parameters, which are essential for data management and integration. The dataset\u0027s unique features include sentiment guidance scores and probability estimates for attrition risk, offering a nuanced view of employee satisfaction and potential turnover. This dataset is ideal for organizations looking to enhance their workforce management through data-driven insights and strategic planning.",
-  "shortDesc": "Dataset for managing and analyzing employee-related data in HR analytics.",
+  "description": "The \u0027dss_datasets_live\u0027 dataset is designed to manage and describe various datasets used in HR analytics and other organizational analyses. It includes a comprehensive set of metadata that helps in identifying, categorizing, and managing datasets effectively. Each dataset is uniquely identified by an \u0027id\u0027 and \u0027name\u0027, which are crucial for dataset management and reference. The \u0027projectKey\u0027 links datasets to specific projects, facilitating organized data handling. The dataset also includes information about the storage type, file format, and connection parameters, which are essential for understanding the data source and access methods. Descriptive fields like \u0027shortDesc\u0027 and \u0027description\u0027 provide insights into the dataset\u0027s purpose and contents, aiding users in selecting the appropriate dataset for their analysis needs. Additionally, the dataset tracks modification details, such as the user and timestamp of the last modification, ensuring data integrity and version control. Boolean fields like \u0027exists\u0027, \u0027managed\u0027, and \u0027featureGroup\u0027 indicate the dataset\u0027s current status and management level. Overall, this dataset serves as a vital tool for data scientists and HR professionals, enabling efficient dataset management and facilitating data-driven decision-making processes.",
+  "shortDesc": "Dataset management with identifiers, descriptions, and metadata for HR analytics.",
   "checklists": {
     "checklists": []
   },
@@ -46,7 +46,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each dataset, crucial for dataset management.","meaning":"Text","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each dataset, crucial for management.","meaning":"Text","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
       {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Storage type of the dataset, indicates data source.","meaning":"Text","isColumnEdited":true},
