@@ -55,7 +55,7 @@
       {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"last_modified_user","type":"string","meaning":"Text"},
       {"name":"agent_tool_params","type":"string","meaning":"Text"},
-      {"name":"agent_tool_LLMid","type":"string","meaning":"Text"},
+      {"name":"LLM_id","type":"string","meaning":"Text"},
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
