@@ -2,8 +2,8 @@
   "type": "StatsDB",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027scenario_runs\u0027 dataset provides detailed information about various scenarios executed within a system, capturing essential data such as project keys, scenario identifiers, and execution details. This dataset is particularly useful for tracking the performance and outcomes of different scenarios over time. Each entry in the dataset includes a unique scenario project key and scenario ID, which help in identifying and categorizing the scenarios. The dataset also records the start and end times of each scenario run, allowing for analysis of execution duration and scheduling efficiency. Additionally, it includes the outcome of each run, such as success or failure, and any warnings that may have been generated. The dataset also captures the user information related to who initiated the run, providing insights into user activity and access patterns. This dataset is valuable for system administrators and developers who need to monitor, analyze, and optimize scenario executions, ensuring efficient and successful operations.",
-  "shortDesc": "Dataset of scenario runs with timestamps and outcomes.",
+  "description": "The \u0027scenario_runs\u0027 dataset provides comprehensive information about various scenarios executed within a system, capturing key details about each run. This dataset is particularly useful for analyzing the performance and outcomes of different scenarios, which can include automated tasks, scheduled jobs, or manual triggers. Each entry in the dataset represents a single run of a scenario, identified by a unique \u0027scenario_run_id\u0027. The dataset includes timestamps for when each scenario started and ended, allowing for the calculation of execution duration. It also records the outcome of each run, such as \u0027SUCCESS\u0027, \u0027FAILED\u0027, or \u0027ABORTED\u0027, which is crucial for performance monitoring and troubleshooting. Additionally, the dataset tracks the number of warnings generated during each run, providing insights into potential issues. The dataset also includes metadata about the scenarios, such as the project key, scenario ID, and scenario name, as well as information about the user who executed the run and the trigger that initiated it. This dataset is valuable for system administrators and developers who need to monitor, analyze, and optimize scenario executions.",
+  "shortDesc": "Dataset of scenario runs with details on execution and outcomes.",
   "checklists": {
     "checklists": []
   },
@@ -50,18 +50,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"scenario_project_key","type":"string","meaning":"Text"},
-      {"name":"scenario_id","type":"string","meaning":"Text"},
-      {"name":"scenario_run_id","type":"string","meaning":"Text"},
-      {"name":"time_start","type":"date","meaning":"Date"},
-      {"name":"time_end","type":"date","meaning":"Date"},
-      {"name":"outcome","type":"string","meaning":"Text"},
-      {"name":"warnings_count","type":"int","meaning":"LongMeaning"},
-      {"name":"scenario_name","type":"string","meaning":"Text"},
-      {"name":"trigger_name","type":"string","meaning":"Text"},
-      {"name":"scenario_run_as_user","type":"string","meaning":"Text"},
-      {"name":"run_as_user_identifier","type":"string","meaning":"Text"},
-      {"name":"run_as_user_via","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"scenario_project_key","type":"string","comment":"Project key for scenario, identifies project context.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, tracks specific tasks.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_id","type":"string","comment":"Unique ID for each scenario run, tracks execution instance.","meaning":"Text","isColumnEdited":true},
+      {"name":"time_start","type":"date","comment":"Timestamp when scenario run started, marks execution begin.","meaning":"Date","isColumnEdited":true},
+      {"name":"time_end","type":"date","comment":"Timestamp when scenario run ended, marks execution finish.","meaning":"Date","isColumnEdited":true},
+      {"name":"outcome","type":"string","comment":"Result of scenario run, indicates success or failure.","meaning":"Text","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings during run, indicates potential issues.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_name","type":"string","comment":"Descriptive name of scenario, provides context.","meaning":"Text","isColumnEdited":true},
+      {"name":"trigger_name","type":"string","comment":"Name of trigger initiating run, indicates start condition.","meaning":"Text","isColumnEdited":true},
+      {"name":"scenario_run_as_user","type":"string","comment":"User executing scenario, identifies responsible party.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_identifier","type":"string","comment":"Identifier for user executing run, tracks user.","meaning":"Text","isColumnEdited":true},
+      {"name":"run_as_user_via","type":"string","comment":"Method or context of user execution, indicates access method.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
