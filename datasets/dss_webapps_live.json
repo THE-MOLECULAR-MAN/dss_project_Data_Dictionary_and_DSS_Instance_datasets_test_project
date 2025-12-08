@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_webapps",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications, capturing essential metadata and operational status. This dataset is particularly useful for managing and monitoring web applications within an organization, offering insights into their creation, modification, and current state. Each entry in the dataset represents a unique web application, identified by a \u0027webapp_id\u0027, and includes details such as the name, type, and associated project key. The dataset also tracks the user who created and last modified the application, along with timestamps for these actions, which is crucial for auditing and accountability. Additionally, it includes a boolean field indicating whether the backend is running, and another boolean field specifying if the application is a code-based webapp. The \u0027tags\u0027 column allows for categorization and filtering of applications, while the \u0027url\u0027 column provides direct access to the web application\u0027s management interface. This dataset is valuable for IT administrators, project managers, and developers who need to oversee the deployment and maintenance of web applications, ensuring they are up-to-date and functioning correctly.",
-  "shortDesc": "Dataset of live web applications with metadata and status.",
+  "description": "The \u0027dss_webapps_live\u0027 dataset provides comprehensive information about live web applications, primarily used for tracking and managing these applications within a project environment. Each entry in the dataset represents a unique web application, identified by a \u0027webapp_id\u0027. The dataset includes descriptive details such as the \u0027webapp_name\u0027 and \u0027webapp_type\u0027, which help in categorizing and understanding the purpose of each application. It also tracks the \u0027projectKey\u0027, linking each web application to its respective project. The dataset is useful for administrators and developers to monitor the operational status of web applications, indicated by the \u0027backend_running\u0027 column, and to manage user access and modifications through \u0027created_by_user\u0027 and \u0027last_modified_user\u0027. Additionally, timestamps for creation and last modification provide insights into the application\u0027s lifecycle. The \u0027tags\u0027 column allows for categorization and filtering, while \u0027is_code_webapp\u0027 distinguishes between code-based and non-code-based applications. The \u0027url\u0027 column provides direct access to the web application, facilitating easy navigation and management. This dataset is essential for maintaining an organized and efficient web application environment, ensuring that all applications are up-to-date and properly managed.",
+  "shortDesc": "Dataset of live web applications with details on type, creator, and status.",
   "checklists": {
     "checklists": []
   },
@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application.","meaning":"Text","isColumnEdited":true},
-      {"name":"webapp_name","type":"string","comment":"Descriptive name of the web application.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
-      {"name":"webapp_type","type":"string","comment":"Type or category of the web application.","meaning":"Text","isColumnEdited":true},
-      {"name":"backend_running","type":"boolean","comment":"Indicates if the backend is currently running.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"Email of the user who created the app.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"Email of the user who last modified the app.","meaning":"Text","isColumnEdited":true},
-      {"name":"created_timestamp","type":"datetimenotz","comment":"Timestamp when the app was created.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of the last modification.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"JSON array of tags for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the app is code-based.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL for accessing the web application.","meaning":"URL","isColumnEdited":true}
+      {"name":"webapp_id","type":"string","comment":"Unique identifier for each web application. Key for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_name","type":"string","comment":"Descriptive name of the web application. Identifies purpose.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for the associated project. Links app to project.","meaning":"Text","isColumnEdited":true},
+      {"name":"webapp_type","type":"string","comment":"Type or category of the web application. Defines function.","meaning":"Text","isColumnEdited":true},
+      {"name":"backend_running","type":"boolean","comment":"Indicates if the backend is currently running. Status check.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"Email of the user who created the app. Creator identity.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"Email of the user who last modified the app. Modifier identity.","meaning":"Text","isColumnEdited":true},
+      {"name":"created_timestamp","type":"datetimenotz","comment":"Timestamp when the app was created. Tracks creation date.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of the last modification. Tracks update date.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"JSON array of tags for categorization. Organizes apps.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"is_code_webapp","type":"boolean","comment":"Indicates if the app is code-based. Differentiates app type.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the web application. Direct access link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
