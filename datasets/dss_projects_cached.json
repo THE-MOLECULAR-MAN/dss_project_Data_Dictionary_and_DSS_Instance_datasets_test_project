@@ -192,10 +192,6 @@
         "type": "ColumnMeaningValidityRule",
         "columnSpecs": [
           {
-            "column": "lastModifiedOn",
-            "meaning": "DatetimeNoTz"
-          },
-          {
             "column": "url",
             "meaning": "URL"
           },
@@ -215,7 +211,7 @@
         "softMinimum": 0.0,
         "softMinimumEnabled": false,
         "id": "2Uml0s6P",
-        "displayName": "All values of 4 columns are valid",
+        "displayName": "All values of 3 columns are valid",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
