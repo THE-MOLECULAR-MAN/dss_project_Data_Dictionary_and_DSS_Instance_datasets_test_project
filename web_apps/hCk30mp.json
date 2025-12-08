@@ -96,7 +96,7 @@
       },
       {
         "homepage_example_label": "Links to agents using gpt-5",
-        "homepage_example_query": "provide a list of URLs to Agents whose LLM Agent Name is \"gpt-5\". Include each agent\u0027s Agent Name, projectKey, and Created By User.",
+        "homepage_example_query": "provide a list of URLs to Agents who use gpt-4o as their LLM. Include each agent\u0027s Agent Name, projectKey, and Created By User.",
         "selected_agents": []
       }
     ],
@@ -113,7 +113,7 @@
     "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:qK/PM8W2RlBKGt3dDY9jJ+XkUt53UT/W29+5oMenC4NOcPJ2SYQNAlHWkYzf+7pqvazHk2a4rF+Jqmj/wDcQo8JfKID16DXyJ4pbig/sPQfyu7o70XCy",
+  "apiKey": "e:AES:X2:OS+VQ3vdqmw6sExIRsqVrIStsS7dFzuFyWp7zl7bPe6g6HXiQdxupH2LO6RIl3ZFtutT8wCTKqperMndmFU0fyErT0xwzxZ8G/5P6WMXKm7rIKaIhZJf",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
