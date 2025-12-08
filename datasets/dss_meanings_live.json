@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_meanings",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_meanings_live\u0027 dataset is designed to categorize and identify patterns in various data elements, such as incidents or devices. It serves as a tool for understanding and managing data by providing unique identifiers and labels for different elements. The dataset includes a boolean field to indicate whether a pattern or value is detectable, which is crucial for data analysis and pattern recognition tasks. Additionally, it specifies the type of data, whether it is a pattern or a list of values, and the method used for data normalization. This dataset is particularly useful for applications in data management, incident tracking, and device monitoring, where understanding the nature and detectability of data is essential. The inclusion of a description field provides additional context, making it easier to interpret and utilize the data effectively. Overall, this dataset is a valuable resource for professionals dealing with complex data systems, offering insights into data categorization and normalization processes.",
-  "shortDesc": "Dataset for categorizing and detecting data patterns and elements.",
+  "description": "The \u0027dss_meanings_live\u0027 dataset is designed to map various column names to their corresponding labels, detectability status, and other attributes. This dataset is particularly useful in data processing and analysis tasks where understanding the semantics of data columns is crucial. It includes information about whether a column is detectable, the type of data it represents, and the normalization mode applied. This can be beneficial for data scientists and engineers who need to automate data cleaning, transformation, or integration processes. The dataset\u0027s unique feature is its ability to provide a structured way to interpret column meanings, which can enhance the accuracy of data-driven decision-making. By providing a clear mapping between column names and their labels, along with detectability and type information, this dataset supports the development of robust data pipelines and analytics solutions.",
+  "shortDesc": "Dataset for mapping column meanings with labels and detectability.",
   "checklists": {
     "checklists": []
   },
@@ -46,12 +46,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"detectable","type":"boolean","meaning":"Boolean"},
-      {"name":"type","type":"string","meaning":"Text"},
-      {"name":"normalizationMode","type":"string","meaning":"Text"},
-      {"name":"description","type":"string","meaning":"FreeText"}
+      {"name":"id","type":"string","comment":"Unique identifier for column names, crucial for mapping.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Corresponding label for each column, essential for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if the column is detectable, key for data processing.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Specifies the data type, important for data interpretation.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Describes normalization applied, vital for data consistency.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Provides additional details about the column, enhancing understanding.","meaning":"FreeText","isColumnEdited":true}
     ],
     "userModified": true
   },
