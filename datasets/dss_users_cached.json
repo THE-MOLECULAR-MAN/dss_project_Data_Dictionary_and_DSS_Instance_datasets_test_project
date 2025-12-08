@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_users_cached\u0027 dataset is a comprehensive collection of user-related data, primarily used for managing and analyzing user accounts within a system. It includes essential information such as user login details, display names, and email addresses, which are crucial for identifying and contacting users. The dataset also contains user profile information, indicating the level of access or role a user has, such as \u0027FULL_DESIGNER\u0027 or \u0027ADVANCED_ANALYTICS_DESIGNER\u0027. Additionally, it tracks group memberships, which can be used to manage permissions and access control. The dataset records the source type of the user account, whether it is local or from another source, and whether the account is currently enabled. It also logs important timestamps, such as the account creation date, last successful login, and last session activity, providing insights into user engagement and activity patterns. The inclusion of URLs for user management pages allows for quick access to user profiles for administrative purposes. This dataset is valuable for system administrators and analysts who need to monitor user activity, manage user accounts, and ensure security compliance.",
-  "shortDesc": "User data cache with login, profile, and activity details.",
+  "description": "The \u0027dss_users_cached\u0027 dataset provides comprehensive information about user accounts within a system, focusing on login credentials, user profiles, and activity tracking. This dataset is crucial for managing user access and monitoring engagement within the platform. It includes key identifiers such as login emails and display names, which are essential for user identification and communication. The dataset also details user profiles and group memberships, which define the access levels and permissions for each user. Additionally, it tracks the origin of user accounts, whether local or otherwise, and includes timestamps for account creation, last successful login, and last session activity, providing insights into user engagement and system usage patterns. The \u0027enabled\u0027 column indicates whether a user account is active, which is vital for security and user management. Furthermore, the dataset includes URLs for user management interfaces, facilitating administrative tasks. This dataset is particularly useful for system administrators and security teams to ensure efficient user management, access control, and to enhance the overall security posture of the platform.",
+  "shortDesc": "User account dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
@@ -73,7 +73,7 @@
       {"name":"email","type":"string","comment":"User\u0027s email address, contact information.","meaning":"Text","isColumnEdited":true},
       {"name":"enabled","type":"boolean","comment":"Account status, indicates if user is active.","meaning":"Boolean","isColumnEdited":true},
       {"name":"resultingUserProfile","type":"string","comment":"Effective user profile, post-group adjustments.","meaning":"Text","isColumnEdited":true},
-      {"name":"created_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
+      {"name":"created_timestamp","type":"datetimenotz","comment":"Account creation timestamp, tracks user registration.","meaning":"DatetimeNoTz","isColumnEdited":true},
       {"name":"last_successful_login","type":"date","comment":"Timestamp of last successful login, tracks access.","meaning":"Date","isColumnEdited":true},
       {"name":"last_session_activity","type":"date","comment":"Timestamp of last session activity, monitors engagement.","meaning":"Date","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL for user management interface, admin access.","meaning":"URL","isColumnEdited":true}
