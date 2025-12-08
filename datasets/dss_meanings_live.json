@@ -46,12 +46,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for elements like incident or device.","meaning":"Text","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Categorizes elements, e.g., OUTAGE_incident_ID.","meaning":"Text","isColumnEdited":true},
-      {"name":"detectable","type":"boolean","comment":"Indicates if a pattern or value is detectable.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Specifies if data is a pattern or values list.","meaning":"Text","isColumnEdited":true},
-      {"name":"normalizationMode","type":"string","comment":"Method used for data normalization.","meaning":"Text","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Additional context or details about each entry.","meaning":"FreeText","isColumnEdited":true}
+      {"name":"id","type":"string","meaning":"Text"},
+      {"name":"label","type":"string","meaning":"Text"},
+      {"name":"detectable","type":"boolean","meaning":"Boolean"},
+      {"name":"type","type":"string","meaning":"Text"},
+      {"name":"normalizationMode","type":"string","meaning":"Text"},
+      {"name":"description","type":"string","meaning":"FreeText"}
     ],
     "userModified": true
   },
