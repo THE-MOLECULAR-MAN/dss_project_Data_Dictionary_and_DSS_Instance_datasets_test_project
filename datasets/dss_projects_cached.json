@@ -202,6 +202,10 @@
           {
             "column": "contributors",
             "meaning": "JSONArrayMeaning"
+          },
+          {
+            "column": "last_modified_timestamp",
+            "meaning": "DatetimeNoTz"
           }
         ],
         "thresholdType": "ENTIRE_COLUMN",
@@ -211,7 +215,7 @@
         "softMinimum": 0.0,
         "softMinimumEnabled": false,
         "id": "2Uml0s6P",
-        "displayName": "All values of 3 columns are valid",
+        "displayName": "All values of 4 columns are valid",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
