@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_agents_cached\u0027 dataset provides a comprehensive overview of various agents used within a data science platform. Each entry in the dataset represents a specific agent, identified by its unique name and ID, and includes metadata such as the project it belongs to, the type and version of the agent, and the user who created or last modified it. This dataset is particularly useful for managing and tracking the deployment of agents across different projects, ensuring that the correct versions are active and that any changes are properly documented. The inclusion of fields like \u0027llm_vendor\u0027, \u0027llm_connection_name\u0027, and \u0027llm_model\u0027 suggests that these agents may be leveraging large language models, which could be crucial for projects involving natural language processing or AI-driven tasks. The \u0027tags\u0027 and \u0027last_modified_timestamp\u0027 columns provide additional context for filtering and auditing purposes. Overall, this dataset is essential for maintaining an organized and efficient workflow in environments where multiple agents are deployed and managed simultaneously.",
-  "shortDesc": "Dataset of cached agents with metadata and versioning.",
+  "description": "The \u0027dss_agents_cached\u0027 dataset provides a comprehensive overview of various agents used within a system, capturing essential details such as their names, unique identifiers, types, and versions. This dataset is particularly useful for managing and tracking the lifecycle of agents, including their creation, modification, and deployment. Each agent is associated with a specific project, and the dataset includes information about the project key, which helps in categorizing and organizing agents according to their respective projects. Additionally, the dataset records the users who created and last modified the agents, providing a clear audit trail of changes. The inclusion of tags and URLs further aids in categorizing and accessing the agents efficiently. The dataset also tracks the use of large language models (LLMs) by the agents, which is crucial for understanding the capabilities and dependencies of each agent. Overall, this dataset is valuable for developers, project managers, and system administrators who need to monitor and manage agents effectively within their projects.",
+  "shortDesc": "Dataset of cached agents with details like name, type, and version.",
   "checklists": {
     "checklists": []
   },
@@ -69,7 +69,7 @@
       {"name":"projectKey","type":"string","comment":"Key of the project associated with the agent.","meaning":"Text","isColumnEdited":true},
       {"name":"agent_type","type":"string","comment":"Type of agent, e.g., PYTHON_AGENT.","meaning":"Text","isColumnEdited":true},
       {"name":"agent_version","type":"string","comment":"Version of the agent, indicates updates.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLMs_used","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"creator_user","type":"string","comment":"User who created the agent, tracks origin.","meaning":"Text","isColumnEdited":true},
       {"name":"last_modified_user","type":"string","comment":"User who last modified the agent, tracks changes.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Tags associated with the agent, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
