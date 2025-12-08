@@ -201,8 +201,7 @@
             "meaning": "URL"
           },
           {
-            "column": "creationDate",
-            "meaning": "DatetimeNoTz"
+            "column": "created_timestamp"
           },
           {
             "column": "last_successful_login",
