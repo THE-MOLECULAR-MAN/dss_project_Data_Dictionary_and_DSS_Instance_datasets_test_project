@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides detailed information about cached code environments within the Dataiku DSS platform. This dataset is crucial for managing and understanding the various code environments used in data science projects. Each environment is characterized by its name, language, deployment mode, and owner, among other attributes. The dataset includes information about the Python interpreter version and core packages set, which are essential for ensuring compatibility and performance of data science scripts. Additionally, it provides the file path and URL for accessing each environment, facilitating easy navigation and management. The \u0027usages\u0027 column lists the projects or tasks that utilize each environment, offering insights into the environment\u0027s application and importance. This dataset is particularly useful for administrators and data scientists who need to manage multiple environments, track their usage, and ensure that the correct configurations are applied for different projects. It helps in optimizing resource allocation and maintaining consistency across various data science workflows.",
-  "shortDesc": "Dataset of cached code environments in Dataiku DSS platform.",
+  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides a comprehensive overview of cached code environments used within a data science platform. It includes key details such as the name of the code environment, the programming language used, and the deployment mode, which indicates how the environment is managed. Additionally, it identifies the owner of each environment through an email address, which is crucial for administrative purposes. The dataset also specifies the Python interpreter version and the set of core packages used, which are essential for ensuring compatibility and performance of the code environments. Furthermore, it provides the file path to the environment, allowing users to locate environment files easily, and a URL for accessing the environment, which facilitates management and configuration. This dataset is particularly useful for administrators and developers who need to manage and optimize code environments efficiently, ensuring that they are up-to-date and properly configured for various data science tasks.",
+  "shortDesc": "Dataset of cached code environments with details on language, owner, and access paths.",
   "checklists": {
     "checklists": []
   },
@@ -65,12 +65,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_lang","type":"string","meaning":"Text"},
-      {"name":"deployment_mode","type":"string","meaning":"Text"},
+      {"name":"code_env_name","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"code_env_lang","type":"string","comment":"Programming language used in the environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"deployment_mode","type":"string","comment":"Mode of deployment, indicates management type.","meaning":"Text","isColumnEdited":true},
       {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment administrator.","meaning":"Text","isColumnEdited":true},
-      {"name":"python_interpreter","type":"string","meaning":"Text"},
-      {"name":"core_packages_set","type":"string","meaning":"Text"},
+      {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used.","meaning":"Text","isColumnEdited":true},
+      {"name":"core_packages_set","type":"string","comment":"Set of core packages, ensures compatibility.","meaning":"Text","isColumnEdited":true},
       {"name":"path","type":"string","comment":"File path to environment, locates environment files.","meaning":"Text","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access environment, provides management link.","meaning":"URL","isColumnEdited":true}
     ],
