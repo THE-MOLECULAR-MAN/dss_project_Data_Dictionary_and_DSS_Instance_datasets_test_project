@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about various plugins available in the Dataiku platform. Each entry in the dataset represents a plugin, detailing its unique identifier, label, version, author, and a description of its functionality. The dataset also includes metadata such as tags for categorization, project usages indicating where the plugin is applied, and a boolean flag to denote if the plugin is in development. Additionally, it tracks the total number of usages and provides a URL for more information. This dataset is particularly useful for developers and data scientists who are managing or utilizing plugins within Dataiku, as it offers insights into plugin deployment, popularity, and application across different projects. The inclusion of tags and project usage data allows for easy filtering and identification of plugins based on specific needs or project requirements.",
-  "shortDesc": "Dataset of live Dataiku plugins with details and usage statistics.",
+  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about various live plugins available in the Dataiku platform. Each entry in the dataset represents a plugin, detailing its unique identifier, label, version, author, and a description of its functionality. The dataset also includes metadata such as tags for categorization, a boolean indicating if the plugin is in development, and a URL for more information. This dataset is particularly useful for developers and data scientists who are looking to integrate or utilize these plugins within their Dataiku projects. It allows users to quickly identify plugins by their capabilities and authorship, and to access further documentation through provided URLs. The inclusion of tags helps in filtering and searching for plugins based on specific needs or categories, such as \u0027NLP\u0027 or \u0027Geospatial\u0027. Overall, this dataset serves as a valuable resource for managing and exploring the ecosystem of plugins in Dataiku, facilitating better project planning and execution.",
+  "shortDesc": "Dataset of live Dataiku plugins with details and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -46,14 +46,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"version","type":"string","meaning":"Text"},
-      {"name":"author","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"isDev","type":"boolean","meaning":"Boolean"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential for reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates and changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or contributors of the plugin, providing authorship details.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding in search and filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality and use cases.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, useful for status tracking.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Web link to the plugin\u0027s summary page, for more information.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
