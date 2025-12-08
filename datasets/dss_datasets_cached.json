@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_datasets_cached\u0027 dataset serves as a comprehensive cache for managing datasets within various projects. It includes metadata and access details essential for dataset management and analysis. This dataset is particularly useful for data scientists and project managers who need to track and manage datasets across different projects. It provides unique identifiers, project associations, and detailed descriptions of each dataset, facilitating easy identification and reference. The dataset also includes information about the data source type, file format, and connection parameters, which are crucial for understanding how data is stored and accessed. Additionally, it tracks modifications through timestamps and user information, aiding in version control and auditing. The inclusion of metrics checks and column details helps assess dataset quality and complexity. Overall, this dataset is a valuable tool for organizing and managing datasets, ensuring efficient data handling and analysis within projects.",
-  "shortDesc": "Dataset cache for managing datasets in projects, includes metadata and access details.",
+  "description": "The \u0027dss_datasets_cached\u0027 dataset is designed to manage and organize datasets within a data science platform. It includes a variety of metadata fields that provide detailed information about each dataset, such as unique identifiers, names, project associations, and storage types. This dataset is particularly useful for data administrators and analysts who need to track and manage datasets across different projects and storage systems. Key features include the ability to identify datasets by unique IDs and names, link them to specific projects, and describe their storage types and formats. Additionally, the dataset provides detailed descriptions and tags for categorization, as well as information on dataset management status and feature group classification. The dataset also tracks modification history, including the user and timestamp of the last modification, which is crucial for version control and auditing. Overall, this dataset serves as a comprehensive tool for dataset management, enabling efficient organization, retrieval, and analysis of datasets within a data science environment.",
+  "shortDesc": "Dataset management with identifiers, descriptions, and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -65,12 +65,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for each dataset, crucial for dataset management.","meaning":"Text","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each dataset, crucial for management.","meaning":"Text","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
       {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Storage type of the dataset, indicates data source.","meaning":"Text","isColumnEdited":true},
       {"name":"shortDesc","type":"string","comment":"Brief description of the dataset, highlights key features.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains its purpose and contents.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains purpose and contents.","meaning":"FreeText","isColumnEdited":true},
       {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
       {"name":"formatType","type":"string","comment":"File format of the dataset, such as CSV or Avro.","meaning":"Text","isColumnEdited":true},
       {"name":"params.connection","type":"string","comment":"Connection parameters for accessing the dataset, specifies data source.","meaning":"Text","isColumnEdited":true},
