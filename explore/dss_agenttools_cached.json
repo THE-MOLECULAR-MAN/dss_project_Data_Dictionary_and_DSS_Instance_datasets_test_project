@@ -26,11 +26,7 @@
           "d": true
         },
         {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "creator_user",
+          "name": "created_by_user",
           "d": true
         },
         {
@@ -46,15 +42,11 @@
           "d": true
         },
         {
-          "name": "agent_tool_LLMid",
+          "name": "LLM_id",
           "d": true
         },
         {
-          "name": "dkuProperties",
-          "d": true
-        },
-        {
-          "name": "quickTestQuery",
+          "name": "tags",
           "d": true
         },
         {
@@ -78,7 +70,9 @@
       "agent_tool_LLMid": 135,
       "dkuProperties": 113,
       "quickTestQuery": 300,
-      "url": 300
+      "url": 300,
+      "created_by_user": 128,
+      "LLM_id": 155
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -90,7 +84,7 @@
     },
     "sorting": [
       {
-        "column": "last_modified_timestamp",
+        "column": "agent_tool_type",
         "ascending": true
       }
     ],
