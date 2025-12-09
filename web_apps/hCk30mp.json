@@ -16,6 +16,7 @@
     "libraries": [
       "dataiku"
     ],
+    "runAs": "demo",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -113,7 +114,7 @@
     "default_llm_id": "vertex:GCP_Vertex:gemini-2.5-flash"
   },
   "name": "Dataiku Instance Bot",
-  "apiKey": "e:AES:X2:aX3vWXa7UNU1e7feVAqFdLuPb8dzoxl2hLzhA1jQ2iyQm5tMNbyn+NXxLQZS97bC2ilvW5bbkEbVEd+QHmALuEaKwEleclrDkpFVo0lDr4UVmRGZL+eM",
+  "apiKey": "e:AES:X2:G+qI57L+SAIs2Mn/wrD1CNMrpX4vKDMChDQQosyNlR0ggy3fRXUKHA1CQWsh3GJPG0tV01UpVeUitXTm++nbOdJtIzBDnMZnV08VBQFYUftvnf7fcB/s",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
