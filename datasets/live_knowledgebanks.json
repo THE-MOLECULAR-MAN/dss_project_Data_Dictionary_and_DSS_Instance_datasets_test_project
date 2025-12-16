@@ -47,7 +47,7 @@
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"kb_id","type":"string","meaning":"Text"},
       {"name":"kb_name","type":"string","meaning":"Text"},
-      {"name":"kb_embeddingLLMId","type":"string"},
+      {"name":"kb_embeddingLLMId","type":"string","meaning":"Text"},
       {"name":"retrieverType","type":"string"},
       {"name":"kb_vectorStoreType","type":"string"},
       {"name":"envSelection","type":"string"},
