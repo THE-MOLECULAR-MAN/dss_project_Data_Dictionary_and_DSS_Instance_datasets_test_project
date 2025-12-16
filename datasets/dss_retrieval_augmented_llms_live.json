@@ -48,7 +48,7 @@
       {"name":"rag_llm_id","type":"string","meaning":"Text"},
       {"name":"activeVersion","type":"string","meaning":"Text"},
       {"name":"llmId","type":"string","meaning":"Text"},
-      {"name":"kb_id","type":"string"},
+      {"name":"kb_id","type":"string","meaning":"Text"},
       {"name":"url","type":"string"},
       {"name":"retrievalColumns","type":"string"},
       {"name":"retrievalSource","type":"string"},
