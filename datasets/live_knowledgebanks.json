@@ -44,7 +44,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
+      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"kb_id","type":"string"},
       {"name":"kb_name","type":"string"},
       {"name":"kb_embeddingLLMId","type":"string"},
