@@ -45,9 +45,19 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"id","type":"string"},
+      {"name":"rag_llm_id","type":"string"},
       {"name":"activeVersion","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"llmId","type":"string"},
+      {"name":"kb_id","type":"string"},
+      {"name":"url","type":"string"},
+      {"name":"retrievalColumns","type":"string"},
+      {"name":"retrievalSource","type":"string"},
+      {"name":"tools","type":"string"},
+      {"name":"created_timestamp","type":"string"},
+      {"name":"last_modified_user","type":"string"},
+      {"name":"last_modified_timestamp","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"created_by_user","type":"string"}
     ],
     "userModified": true
   },
