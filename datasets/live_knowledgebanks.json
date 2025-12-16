@@ -58,7 +58,7 @@
       {"name":"created_by_user","type":"string","meaning":"Text"},
       {"name":"managedFolderId","type":"string","meaning":"Text"},
       {"name":"multimodalColumn","type":"string","meaning":"Text"},
-      {"name":"rebuildBehavior","type":"string"},
+      {"name":"rebuildBehavior","type":"string","meaning":"Text"},
       {"name":"url","type":"string"}
     ],
     "userModified": true
