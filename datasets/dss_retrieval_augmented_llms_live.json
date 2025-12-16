@@ -43,7 +43,12 @@
     "previewAllPartitions": false
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"projectKey","type":"string"},
+      {"name":"id","type":"string"},
+      {"name":"activeVersion","type":"string"},
+      {"name":"tags","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
