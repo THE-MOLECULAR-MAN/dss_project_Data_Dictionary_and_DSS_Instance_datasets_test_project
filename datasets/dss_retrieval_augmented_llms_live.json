@@ -53,7 +53,7 @@
       {"name":"retrievalColumns","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"retrievalSource","type":"string","meaning":"Text"},
       {"name":"created_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"last_modified_user","type":"string"},
+      {"name":"last_modified_user","type":"string","meaning":"Text"},
       {"name":"last_modified_timestamp","type":"string"},
       {"name":"tags","type":"string"},
       {"name":"created_by_user","type":"string"}
