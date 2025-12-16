@@ -48,7 +48,7 @@
       {"name":"dss_object_type","type":"string"},
       {"name":"dss_object_id","type":"string"},
       {"name":"dss_object_name","type":"string"},
-      {"name":"llmId","type":"string","meaning":"Text"}
+      {"name":"llmId","type":"string"}
     ],
     "userModified": true
   },
