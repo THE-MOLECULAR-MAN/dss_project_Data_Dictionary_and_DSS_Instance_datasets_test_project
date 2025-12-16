@@ -56,7 +56,7 @@
       {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"managedFolderId","type":"string"},
+      {"name":"managedFolderId","type":"string","meaning":"Text"},
       {"name":"multimodalColumn","type":"string"},
       {"name":"rebuildBehavior","type":"string"},
       {"name":"url","type":"string"}
