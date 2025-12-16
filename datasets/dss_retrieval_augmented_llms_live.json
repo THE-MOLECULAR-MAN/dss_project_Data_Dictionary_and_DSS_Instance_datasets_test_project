@@ -50,7 +50,7 @@
       {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"kb_id","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"retrievalColumns","type":"string"},
+      {"name":"retrievalColumns","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"retrievalSource","type":"string"},
       {"name":"created_timestamp","type":"string"},
       {"name":"last_modified_user","type":"string"},
