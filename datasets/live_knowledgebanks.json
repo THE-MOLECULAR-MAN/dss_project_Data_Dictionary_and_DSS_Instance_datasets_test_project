@@ -59,7 +59,7 @@
       {"name":"managedFolderId","type":"string","meaning":"Text"},
       {"name":"multimodalColumn","type":"string","meaning":"Text"},
       {"name":"rebuildBehavior","type":"string","meaning":"Text"},
-      {"name":"url","type":"string"}
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
