@@ -51,7 +51,7 @@
       {"name":"retrieverType","type":"string","meaning":"Text"},
       {"name":"kb_vectorStoreType","type":"string","meaning":"Text"},
       {"name":"envSelection","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"created_timestamp","type":"string"},
+      {"name":"created_timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"last_modified_user","type":"string"},
       {"name":"last_modified_timestamp","type":"string"},
       {"name":"tags","type":"string"},
