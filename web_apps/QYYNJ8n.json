@@ -77,7 +77,6 @@
     "pdf_as_image_resize_ratio": 1,
     "pptx_as_image_resize_ratio": 1,
     "retrieval_mode": "no_retriever",
-    "knowledge_bank_id": "None",
     "activate_knowledge_bank": true,
     "enable_smart_usage_of_kb": true,
     "show_kb_advanced_settings": false,
@@ -159,16 +158,29 @@
         "to": "Spanish"
       }
     ],
-    "default_user_language": "en",
+    "default_user_language": "English",
     "user_profile_settings": [],
     "include_user_profile_in_KB_prompt": false,
     "language": "en",
     "log_level": "INFO",
     "http_headers": [],
-    "max_thread_workers_number": 0
+    "max_thread_workers_number": 0,
+    "custom_theme_name": "Default customization",
+    "image_generation_system_prompt": "",
+    "knowledge_bank_custom_name": "",
+    "knowledge_bank_description": "",
+    "knowledge_bank_prompt": "",
+    "sql_retrieval_custom_name": "",
+    "db_prompt": "",
+    "answers_description": "",
+    "knowledge_sources_displayed_metas": [],
+    "undefined": "",
+    "knowledge_sources_context_metadata": [],
+    "sql_retrieval_table_list": [],
+    "llm_id": "openai:OpenAI_Tim_Personal:gpt-4o-mini"
   },
   "name": "Answers",
-  "apiKey": "e:AES:X2:QF820pMuA3O9Wtoqwp0373cERVReuRUOs65ieRtv6zLrVf00GZcBzEkuVer+PmmTceFxopMbmMkuofQaK0vEvLJ3ZofKEGfHBlic/Cu/mmgWr/D1d3nh",
+  "apiKey": "e:AES:X2:kp4um1snEqyvaj5On60h72d225GkBJduBRdbHSqCq8a/if/26U7XaTE5gupnaXClS3OFXE0bk2N7poh0DQiVWNpigb3mCEcC15xuqsPq1Liem7dwfl+r",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
