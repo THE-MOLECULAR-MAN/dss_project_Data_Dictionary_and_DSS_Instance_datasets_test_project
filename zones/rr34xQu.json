@@ -173,6 +173,14 @@
     {
       "objectId": "dss_retrieval_augmented_llms_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_retrieval_augmented_llms_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_retrieval_augmented_llms_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
