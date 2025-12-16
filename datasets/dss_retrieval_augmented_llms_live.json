@@ -49,7 +49,7 @@
       {"name":"activeVersion","type":"string","meaning":"Text"},
       {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"kb_id","type":"string","meaning":"Text"},
-      {"name":"url","type":"string"},
+      {"name":"url","type":"string","meaning":"URL"},
       {"name":"retrievalColumns","type":"string"},
       {"name":"retrievalSource","type":"string"},
       {"name":"created_timestamp","type":"string"},
