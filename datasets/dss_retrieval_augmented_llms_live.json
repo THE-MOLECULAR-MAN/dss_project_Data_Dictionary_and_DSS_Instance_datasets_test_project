@@ -46,7 +46,7 @@
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"rag_llm_id","type":"string","meaning":"Text"},
-      {"name":"activeVersion","type":"string"},
+      {"name":"activeVersion","type":"string","meaning":"Text"},
       {"name":"llmId","type":"string"},
       {"name":"kb_id","type":"string"},
       {"name":"url","type":"string"},
