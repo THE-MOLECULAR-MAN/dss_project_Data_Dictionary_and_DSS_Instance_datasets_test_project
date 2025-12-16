@@ -157,6 +157,10 @@
     {
       "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_knowledgebanks_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
