@@ -161,6 +161,14 @@
     {
       "objectId": "dss_knowledgebanks_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_knowledgebanks_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_knowledgebanks_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
