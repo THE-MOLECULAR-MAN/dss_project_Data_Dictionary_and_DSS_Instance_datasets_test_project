@@ -44,7 +44,22 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"}
+      {"name":"projectKey","type":"string"},
+      {"name":"kb_id","type":"string"},
+      {"name":"kb_name","type":"string"},
+      {"name":"embeddingLLMId","type":"string"},
+      {"name":"retrieverType","type":"string"},
+      {"name":"vectorStoreType","type":"string"},
+      {"name":"envSelection","type":"string"},
+      {"name":"created_timestamp","type":"string"},
+      {"name":"last_modified_user","type":"string"},
+      {"name":"last_modified_timestamp","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"created_by_user","type":"string"},
+      {"name":"managedFolderId","type":"string"},
+      {"name":"multimodalColumn","type":"string"},
+      {"name":"rebuildBehavior","type":"string"},
+      {"name":"url","type":"string"}
     ],
     "userModified": true
   },
