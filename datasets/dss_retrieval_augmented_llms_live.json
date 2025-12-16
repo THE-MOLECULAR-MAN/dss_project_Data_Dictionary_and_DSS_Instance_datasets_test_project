@@ -52,7 +52,6 @@
       {"name":"url","type":"string"},
       {"name":"retrievalColumns","type":"string"},
       {"name":"retrievalSource","type":"string"},
-      {"name":"tools","type":"string"},
       {"name":"created_timestamp","type":"string"},
       {"name":"last_modified_user","type":"string"},
       {"name":"last_modified_timestamp","type":"string"},
