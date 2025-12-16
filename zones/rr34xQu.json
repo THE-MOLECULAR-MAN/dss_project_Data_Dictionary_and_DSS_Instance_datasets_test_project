@@ -169,6 +169,10 @@
     {
       "objectId": "dss_knowledgebanks_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_retrieval_augmented_llms_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
