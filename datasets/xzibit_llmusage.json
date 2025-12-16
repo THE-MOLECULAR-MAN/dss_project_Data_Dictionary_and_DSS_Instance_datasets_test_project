@@ -47,7 +47,7 @@
       {"name":"projectKey","type":"string"},
       {"name":"dss_object_type","type":"string"},
       {"name":"dss_object_id","type":"string"},
-      {"name":"dss_object_name","type":"string"},
+      {"name":"dss_object_name","type":"string","meaning":"Text"},
       {"name":"llmId","type":"string","meaning":"JSONArrayMeaning"}
     ],
     "userModified": true
