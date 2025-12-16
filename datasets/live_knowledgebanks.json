@@ -50,7 +50,7 @@
       {"name":"kb_embeddingLLMId","type":"string","meaning":"Text"},
       {"name":"retrieverType","type":"string","meaning":"Text"},
       {"name":"kb_vectorStoreType","type":"string","meaning":"Text"},
-      {"name":"envSelection","type":"string"},
+      {"name":"envSelection","type":"string","meaning":"JSONObjectMeaning"},
       {"name":"created_timestamp","type":"string"},
       {"name":"last_modified_user","type":"string"},
       {"name":"last_modified_timestamp","type":"string"},
