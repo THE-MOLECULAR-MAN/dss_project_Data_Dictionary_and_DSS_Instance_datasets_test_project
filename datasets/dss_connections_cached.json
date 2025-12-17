@@ -68,6 +68,8 @@
       {"name":"name","type":"string","comment":"Connection identifier; includes keywords like \u0027postgres\u0027, \u0027filesystem\u0027.","meaning":"Text","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Type of connection; examples include \u0027EC2\u0027, \u0027PostgreSQL\u0027.","meaning":"Text","isColumnEdited":true},
       {"name":"credentialsMode","type":"string","comment":"Mode of credential management; \u0027PER_USER\u0027 or \u0027GLOBAL\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"connection_test_status","type":"string","meaning":"Text"},
+      {"name":"connection_error_msg","type":"string","meaning":"Text"},
       {"name":"usableBy","type":"string","comment":"Specifies who can use the connection; \u0027ALL\u0027.","meaning":"Text","isColumnEdited":true},
       {"name":"params.credentialsMode","type":"string","comment":"Credential mode for parameters; \u0027STS_ASSUME_ROLE\u0027.","meaning":"Text","isColumnEdited":true},
       {"name":"params.authType","type":"string","comment":"Authentication type for parameters; \u0027API_KEY\u0027, \u0027OAUTH2_APP\u0027.","meaning":"Text","isColumnEdited":true},
