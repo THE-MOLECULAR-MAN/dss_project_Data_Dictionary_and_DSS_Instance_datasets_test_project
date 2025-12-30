@@ -72,6 +72,7 @@
       {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
       {"name":"core_packages_set","type":"string","comment":"Set of core packages, e.g., PANDAS10, AUTO.","meaning":"Text","isColumnEdited":true},
       {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
+      {"name":"size_in_MB","type":"double","meaning":"LongMeaning"},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
