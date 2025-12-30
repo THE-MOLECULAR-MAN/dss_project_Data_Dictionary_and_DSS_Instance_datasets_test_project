@@ -41,7 +41,8 @@
   "tags": [],
   "params": {
     "customConfig": {
-      "compute_disk_util": true
+      "compute_disk_util": true,
+      "compute_plugin_usages": true
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
