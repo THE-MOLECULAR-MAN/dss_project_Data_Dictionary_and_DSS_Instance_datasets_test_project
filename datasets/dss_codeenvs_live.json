@@ -40,20 +40,23 @@
   },
   "tags": [],
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "compute_codeenv_disk_space_usage": true
+    },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
   },
   "schema": {
     "columns": [
-      {"name":"code_env_name","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
-      {"name":"code_env_lang","type":"string","comment":"Programming language used in the environment, e.g., Python, R.","meaning":"Text","isColumnEdited":true},
-      {"name":"deployment_mode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED, DSS_INTERNAL.","meaning":"Text","isColumnEdited":true},
-      {"name":"owner","type":"string","comment":"Email of the environment owner, identifies responsible person.","meaning":"Text","isColumnEdited":true},
-      {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
-      {"name":"core_packages_set","type":"string","comment":"Set of core packages, e.g., PANDAS10, AUTO.","meaning":"Text","isColumnEdited":true},
-      {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true}
+      {"name":"code_env_name","type":"string","meaning":"Text"},
+      {"name":"code_env_lang","type":"string","meaning":"Text"},
+      {"name":"deployment_mode","type":"string","meaning":"Text"},
+      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"python_interpreter","type":"string","meaning":"Text"},
+      {"name":"core_packages_set","type":"string","meaning":"Text"},
+      {"name":"path","type":"string","meaning":"Text"},
+      {"name":"size_in_MB","type":"double","meaning":"LongMeaning"},
+      {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
   },
