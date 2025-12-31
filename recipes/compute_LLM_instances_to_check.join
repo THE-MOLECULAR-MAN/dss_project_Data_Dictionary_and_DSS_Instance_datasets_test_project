@@ -33,7 +33,7 @@
       "table1": 0,
       "conditionsMode": "AND",
       "rightLimit": {},
-      "type": "LEFT",
+      "type": "INNER",
       "outerJoinOnTheLeft": true,
       "on": [
         {
