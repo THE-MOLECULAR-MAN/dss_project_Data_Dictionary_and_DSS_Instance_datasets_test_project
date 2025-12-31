@@ -63,7 +63,26 @@
   "schema": {
     "columns": [
       {"name":"connection_test_error_msg","type":"string","meaning":"Text"},
-      {"name":"connection_url","type":"string","meaning":"URL"}
+      {"name":"connection_url","type":"string","meaning":"URL"},
+      {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Storage type of the dataset, indicates data source.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the dataset, highlights key features.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains its purpose and contents.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"formatType","type":"string","comment":"File format of the dataset, such as CSV or Avro.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.connection","type":"string","comment":"Connection parameters for accessing the dataset, specifies data source.","meaning":"Text","isColumnEdited":true},
+      {"name":"managed","type":"boolean","comment":"Indicates if the dataset is managed, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"params.mode","type":"string","comment":"Mode of the dataset, specifies how data is accessed.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.table","type":"string","comment":"Table name in the database, used for data retrieval.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.schema","type":"string","comment":"Schema of the dataset, defines data structure.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.path","type":"string","comment":"File path for the dataset, indicates storage location.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"User who last modified the dataset, tracks changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last modification, tracks dataset updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"versionTag.lastModifiedBy.login","type":"string","comment":"User who last modified the dataset version, tracks version changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"versionTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last version modification, tracks version updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"params.metastoreDatabaseName","type":"string","comment":"Name of the metastore database, used for data management.","meaning":"Text","isColumnEdited":true},
+      {"name":"dataset_url","type":"string","comment":"URL for accessing the dataset, used for exploration and analysis.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
