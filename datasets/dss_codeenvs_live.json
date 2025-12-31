@@ -56,7 +56,9 @@
       {"name":"python_interpreter","type":"string","meaning":"Text"},
       {"name":"core_packages_set","type":"string","meaning":"Text"},
       {"name":"path","type":"string","meaning":"Text"},
-      {"name":"size_in_MB","type":"double","meaning":"LongMeaning"},
+      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
+      {"name":"projectKeys_where_plugin_used","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"total_instances_of_plugin","type":"bigint","meaning":"LongMeaning"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
