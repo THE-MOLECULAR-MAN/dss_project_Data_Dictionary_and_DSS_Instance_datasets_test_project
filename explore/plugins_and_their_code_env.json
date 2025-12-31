@@ -3,10 +3,63 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "code_env_name",
+          "d": true
+        },
+        {
+          "name": "deployment_mode",
+          "d": true
+        },
+        {
+          "name": "size_in_MB",
+          "d": true
+        },
+        {
+          "name": "projectKeys_where_code_env_used",
+          "d": true
+        },
+        {
+          "name": "total_instances_of_code_env",
+          "d": true
+        },
+        {
+          "name": "url",
+          "d": true
+        },
+        {
+          "name": "plugin_id",
+          "d": true
+        },
+        {
+          "name": "plugin_used_in_projectkeys",
+          "d": true
+        },
+        {
+          "name": "plugin_total_usages",
+          "d": true
+        },
+        {
+          "name": "plugin_is_built_in_plugin",
+          "d": true
+        }
+      ]
     },
     "columnOrder": [],
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "code_env_name": 300,
+      "deployment_mode": 155,
+      "size_in_MB": 134,
+      "projectKeys_where_code_env_used": 300,
+      "total_instances_of_code_env": 218,
+      "url": 300,
+      "plugin_id": 127,
+      "plugin_used_in_projectkeys": 246,
+      "plugin_total_usages": 158,
+      "plugin_is_built_in_plugin": 203
+    },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -15,7 +68,12 @@
       "valueColoringMode": "HASH",
       "coloringGroups": []
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "code_env_name",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -65,7 +123,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
