@@ -71,7 +71,7 @@
     "sorting": [
       {
         "column": "total_usages",
-        "ascending": false
+        "ascending": true
       }
     ],
     "analysisColumnData": {},
