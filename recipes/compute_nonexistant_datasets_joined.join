@@ -6,132 +6,34 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
-      "name": "id",
-      "table": 0
-    },
-    {
-      "name": "name",
-      "table": 0
-    },
-    {
-      "name": "projectKey",
-      "table": 0
-    },
-    {
-      "name": "type",
-      "table": 0
-    },
-    {
-      "name": "shortDesc",
-      "table": 0
-    },
-    {
-      "name": "description",
-      "table": 0
-    },
-    {
-      "name": "exists",
-      "table": 0
-    },
-    {
-      "name": "formatType",
-      "table": 0
-    },
-    {
-      "name": "params.connection",
-      "table": 0
-    },
-    {
-      "name": "managed",
-      "table": 0
-    },
-    {
-      "name": "params.mode",
-      "table": 0
-    },
-    {
-      "name": "params.table",
-      "table": 0
-    },
-    {
-      "name": "params.schema",
-      "table": 0
-    },
-    {
-      "name": "params.path",
-      "table": 0
-    },
-    {
-      "name": "creationTag.lastModifiedBy.login",
-      "table": 0
-    },
-    {
-      "name": "creationTag.lastModifiedOn",
-      "table": 0
-    },
-    {
-      "name": "versionTag.lastModifiedBy.login",
-      "table": 0
-    },
-    {
-      "name": "versionTag.lastModifiedOn",
-      "table": 0
-    },
-    {
-      "name": "params.metastoreDatabaseName",
-      "table": 0
-    },
-    {
-      "name": "params.folderSmartId",
-      "table": 0
-    },
-    {
-      "name": "tags",
-      "table": 0
-    },
-    {
-      "name": "featureGroup",
-      "table": 0
-    },
-    {
-      "name": "num_metrics_checks",
-      "table": 0
-    },
-    {
-      "name": "num_columns",
-      "table": 0
-    },
-    {
-      "name": "column_names",
-      "table": 0
-    },
-    {
-      "name": "url",
-      "table": 0
-    },
-    {
       "name": "ownerLogin",
-      "table": 1
-    },
-    {
-      "name": "projectStatus",
-      "table": 1
-    },
-    {
-      "name": "last_modified_timestamp",
-      "table": 1
-    },
-    {
-      "name": "tutorialProject",
-      "table": 1
-    },
-    {
-      "name": "contributors",
+      "alias": "project_owner",
+      "type": "string",
       "table": 1
     }
   ],
@@ -175,7 +77,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -185,7 +87,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -195,5 +97,22 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_owner",
+            "comment": "Email or login of the project owner, indicating responsibility.",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
