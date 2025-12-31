@@ -1,6 +1,30 @@
 {
-  "mode": "UNION",
+  "mode": "REMAP",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "name",
+    "projectKey",
+    "exists",
+    "dataset_url",
+    "project_owner",
+    "connection_test_error_msg",
+    "connection_url",
+    "type",
+    "shortDesc",
+    "description",
+    "formatType",
+    "params.connection",
+    "managed",
+    "params.mode",
+    "params.table",
+    "params.schema",
+    "params.path",
+    "creationTag.lastModifiedBy.login",
+    "creationTag.lastModifiedOn",
+    "versionTag.lastModifiedBy.login",
+    "versionTag.lastModifiedOn",
+    "params.metastoreDatabaseName"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -45,7 +69,31 @@
         "enabled": false
       },
       "originLabel": "nonexistant_datasets_joined",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "name",
+        "projectKey",
+        "exists",
+        "dataset_url",
+        "project_owner",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "preFilter": {
@@ -53,10 +101,130 @@
         "enabled": false
       },
       "originLabel": "datasets_from_errored_connections",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "name",
+        "projectKey",
+        "exists",
+        "",
+        "",
+        "connection_test_error_msg",
+        "connection_url",
+        "type",
+        "shortDesc",
+        "params.connection",
+        "formatType",
+        "params.connection",
+        "managed",
+        "params.mode",
+        "params.table",
+        "params.schema",
+        "params.path",
+        "creationTag.lastModifiedBy.login",
+        "versionTag.lastModifiedOn",
+        "versionTag.lastModifiedBy.login",
+        "versionTag.lastModifiedOn",
+        "params.metastoreDatabaseName"
+      ]
     }
   ],
+  "copySchemaFromDatasetWithName": "nonexistant_datasets_joined",
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "exists",
+            "type": "boolean"
+          },
+          {
+            "name": "dataset_url",
+            "type": "string"
+          },
+          {
+            "name": "project_owner",
+            "type": "string"
+          },
+          {
+            "name": "connection_test_error_msg",
+            "type": "string"
+          },
+          {
+            "name": "connection_url",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "formatType",
+            "type": "string"
+          },
+          {
+            "name": "params.connection",
+            "type": "string"
+          },
+          {
+            "name": "managed",
+            "type": "boolean"
+          },
+          {
+            "name": "params.mode",
+            "type": "string"
+          },
+          {
+            "name": "params.table",
+            "type": "string"
+          },
+          {
+            "name": "params.schema",
+            "type": "string"
+          },
+          {
+            "name": "params.path",
+            "type": "string"
+          },
+          {
+            "name": "creationTag.lastModifiedBy.login",
+            "type": "string"
+          },
+          {
+            "name": "creationTag.lastModifiedOn",
+            "type": "datetimenotz"
+          },
+          {
+            "name": "versionTag.lastModifiedBy.login",
+            "type": "string"
+          },
+          {
+            "name": "versionTag.lastModifiedOn",
+            "type": "datetimenotz"
+          },
+          {
+            "name": "params.metastoreDatabaseName",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
