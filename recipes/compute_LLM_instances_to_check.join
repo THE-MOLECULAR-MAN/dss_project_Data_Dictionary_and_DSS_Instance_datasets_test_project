@@ -188,6 +188,7 @@
       }
     }
   },
+  "engineType": "DSS",
   "virtualInputs": [
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
