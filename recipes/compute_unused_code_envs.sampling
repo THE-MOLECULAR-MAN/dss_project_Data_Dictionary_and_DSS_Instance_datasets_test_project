@@ -5,19 +5,18 @@
     "$filterOptions": "rules",
     "conditions": [
       {
-        "input": "total_instances_of_plugin",
-        "col": "code_env_name",
-        "$showList": false,
-        "num": 0,
-        "operator": "\u003d\u003d [number]"
-      },
-      {
         "input": "deployment_mode",
         "col": "code_env_name",
         "string": "DESIGN_MANAGED",
         "$showList": false,
         "num": 0,
         "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "total_instances_of_code_env",
+        "$showList": false,
+        "num": 0,
+        "operator": "\u003d\u003d [number]"
       }
     ]
   },
