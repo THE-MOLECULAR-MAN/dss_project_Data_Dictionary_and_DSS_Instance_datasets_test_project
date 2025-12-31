@@ -1,0 +1,199 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "id",
+      "table": 0
+    },
+    {
+      "name": "name",
+      "table": 0
+    },
+    {
+      "name": "projectKey",
+      "table": 0
+    },
+    {
+      "name": "type",
+      "table": 0
+    },
+    {
+      "name": "shortDesc",
+      "table": 0
+    },
+    {
+      "name": "description",
+      "table": 0
+    },
+    {
+      "name": "exists",
+      "table": 0
+    },
+    {
+      "name": "formatType",
+      "table": 0
+    },
+    {
+      "name": "params.connection",
+      "table": 0
+    },
+    {
+      "name": "managed",
+      "table": 0
+    },
+    {
+      "name": "params.mode",
+      "table": 0
+    },
+    {
+      "name": "params.table",
+      "table": 0
+    },
+    {
+      "name": "params.schema",
+      "table": 0
+    },
+    {
+      "name": "params.path",
+      "table": 0
+    },
+    {
+      "name": "creationTag.lastModifiedBy.login",
+      "table": 0
+    },
+    {
+      "name": "creationTag.lastModifiedOn",
+      "table": 0
+    },
+    {
+      "name": "versionTag.lastModifiedBy.login",
+      "table": 0
+    },
+    {
+      "name": "versionTag.lastModifiedOn",
+      "table": 0
+    },
+    {
+      "name": "params.metastoreDatabaseName",
+      "table": 0
+    },
+    {
+      "name": "params.folderSmartId",
+      "table": 0
+    },
+    {
+      "name": "tags",
+      "table": 0
+    },
+    {
+      "name": "featureGroup",
+      "table": 0
+    },
+    {
+      "name": "num_metrics_checks",
+      "table": 0
+    },
+    {
+      "name": "num_columns",
+      "table": 0
+    },
+    {
+      "name": "column_names",
+      "table": 0
+    },
+    {
+      "name": "url",
+      "table": 0
+    },
+    {
+      "name": "ownerLogin",
+      "table": 1
+    },
+    {
+      "name": "projectStatus",
+      "table": 1
+    },
+    {
+      "name": "last_modified_timestamp",
+      "table": 1
+    },
+    {
+      "name": "tutorialProject",
+      "table": 1
+    },
+    {
+      "name": "contributors",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "spark-k8s",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "nonexistant_datasets",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "dss_projects_cached",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

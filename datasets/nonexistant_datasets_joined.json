@@ -1,0 +1,181 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767217272069
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_localhost",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_nonexistant_datasets_joined",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeDescriptionsAsSQLComment": false,
+    "noDropOnSchemaMismatch": true,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "datetimenotzReadMode": "AS_IS",
+    "dateonlyReadMode": "AS_IS",
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    },
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"id","type":"string","comment":"Unique identifier for each dataset, crucial for management.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Storage type of the dataset, indicates data source.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the dataset, highlights key features.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains its purpose and contents.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"formatType","type":"string","comment":"File format of the dataset, such as CSV or Avro.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.connection","type":"string","comment":"Connection parameters for accessing the dataset, specifies data source.","meaning":"Text","isColumnEdited":true},
+      {"name":"managed","type":"boolean","comment":"Indicates if the dataset is managed, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"params.mode","type":"string","comment":"Mode of the dataset, specifies how data is accessed.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.table","type":"string","comment":"Table name in the database, used for data retrieval.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.schema","type":"string","comment":"Schema of the dataset, defines data structure.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.path","type":"string","comment":"File path for the dataset, indicates storage location.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"User who last modified the dataset, tracks changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last modification, tracks dataset updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"versionTag.lastModifiedBy.login","type":"string","comment":"User who last modified the dataset version, tracks version changes.","meaning":"Text","isColumnEdited":true},
+      {"name":"versionTag.lastModifiedOn","type":"datetimenotz","comment":"Timestamp of last version modification, tracks version updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"params.metastoreDatabaseName","type":"string","comment":"Name of the metastore database, used for data management.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.folderSmartId","type":"string","comment":"Smart ID for the folder, used for organizing datasets.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the dataset, used for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"featureGroup","type":"boolean","comment":"Indicates if the dataset is a feature group, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"num_metrics_checks","type":"int","comment":"Number of metric checks performed on the dataset, indicates data quality.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"num_columns","type":"int","comment":"Number of columns in the dataset, indicates data complexity.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"column_names","type":"string","comment":"Names of columns in the dataset, defines data structure.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL for accessing the dataset, used for exploration and analysis.","meaning":"URL","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, such as \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of the last modification, showing recent updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tutorialProject","type":"boolean","comment":"Boolean indicating if the project is a tutorial, for learning.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of project contributors, showing collaboration.","meaning":"JSONArrayMeaning","isColumnEdited":true}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
