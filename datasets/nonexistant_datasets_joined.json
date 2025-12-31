@@ -62,6 +62,10 @@
   },
   "schema": {
     "columns": [
+      {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
+      {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"dataset_url","type":"string","comment":"URL for accessing the dataset, used for exploration and analysis.","meaning":"URL","isColumnEdited":true},
       {"name":"project_owner","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
