@@ -70,7 +70,7 @@
       {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Storage type of the dataset, indicates data source.","meaning":"Text","isColumnEdited":true},
       {"name":"shortDesc","type":"string","comment":"Brief description of the dataset, highlights key features.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains purpose and contents.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed description of the dataset, explains its purpose and contents.","meaning":"FreeText","isColumnEdited":true},
       {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
       {"name":"formatType","type":"string","comment":"File format of the dataset, such as CSV or Avro.","meaning":"Text","isColumnEdited":true},
       {"name":"params.connection","type":"string","comment":"Connection parameters for accessing the dataset, specifies data source.","meaning":"Text","isColumnEdited":true},
