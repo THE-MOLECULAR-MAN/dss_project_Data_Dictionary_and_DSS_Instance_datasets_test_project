@@ -84,14 +84,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 100,
+        "maxRecords": 5,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1764993819571
+      "_refreshTrigger": 1767204579658
     },
     "vizSampling": {
       "selection": {
@@ -128,5 +128,6 @@
     "savedQueries": []
   },
   "customMeasures": [],
-  "reusableDimensions": []
+  "reusableDimensions": [],
+  "hierarchies": []
 }
