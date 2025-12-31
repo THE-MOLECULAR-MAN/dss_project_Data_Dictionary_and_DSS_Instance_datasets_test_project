@@ -133,6 +133,20 @@
     {
       "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "code_env_name",
+              "col": "code_env_lang",
+              "$showList": false,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
         "enabled": false
       },
@@ -143,8 +157,22 @@
     {
       "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "code_env_name",
+              "col": "label",
+              "$showList": false,
+              "operator": "not empty"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "dss_plugins_cached",
       "prefix": "plugin",
