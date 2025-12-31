@@ -17,7 +17,7 @@
         "string": "FAILED",
         "$showList": false,
         "num": 0,
-        "operator": "contains [string]i"
+        "operator": "contains"
       }
     ]
   },
