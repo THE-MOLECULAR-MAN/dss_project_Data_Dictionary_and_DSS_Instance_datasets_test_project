@@ -1,7 +1,28 @@
 {
   "name": "LLMs that need to be changed",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_dss_llmusage_analysis",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_llmusage_analysis",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_LLM_instances_to_check",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LLM_instances_to_check",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unapproved_LLMs",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],

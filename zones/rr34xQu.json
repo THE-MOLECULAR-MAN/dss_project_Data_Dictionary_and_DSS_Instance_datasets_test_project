@@ -169,22 +169,6 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_llmusage_analysis",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_llmusage_analysis",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_LLM_instances_to_check",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "LLM_instances_to_check",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
