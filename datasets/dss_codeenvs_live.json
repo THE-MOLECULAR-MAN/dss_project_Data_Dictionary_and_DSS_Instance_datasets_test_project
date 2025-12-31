@@ -41,7 +41,8 @@
   "tags": [],
   "params": {
     "customConfig": {
-      "compute_codeenv_disk_space_usage": true
+      "compute_codeenv_disk_space_usage": true,
+      "compute_codeenv_usages": true
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
