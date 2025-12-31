@@ -67,6 +67,7 @@
     "columns": [
       {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential reference.","meaning":"Text","isColumnEdited":true},
       {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"code_env_name","type":"string","meaning":"Text"},
       {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates.","meaning":"Text","isColumnEdited":true},
       {"name":"author","type":"string","comment":"Creator or contributors of the plugin, authorship details.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding search filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
