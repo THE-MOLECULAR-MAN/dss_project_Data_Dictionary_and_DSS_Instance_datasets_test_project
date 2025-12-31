@@ -64,12 +64,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","comment":"Unique identifier for elements like incident or device.","meaning":"Text","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Categorizes elements, e.g., OUTAGE_incident_ID.","meaning":"Text","isColumnEdited":true},
-      {"name":"detectable","type":"boolean","comment":"Indicates if a pattern or value is detectable.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Specifies if data is a pattern or values list.","meaning":"Text","isColumnEdited":true},
-      {"name":"normalizationMode","type":"string","comment":"Method used for data normalization.","meaning":"Text","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Additional context or details about each entry.","meaning":"FreeText","isColumnEdited":true}
+      {"name":"id","type":"string","comment":"Unique identifier for column names, crucial for mapping.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Corresponding label for each column, essential for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"detectable","type":"boolean","comment":"Indicates if the column is detectable, key for data processing.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Specifies the data type, important for data interpretation.","meaning":"Text","isColumnEdited":true},
+      {"name":"normalizationMode","type":"string","comment":"Describes normalization applied, vital for data consistency.","meaning":"Text","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Provides additional details about the column, enhancing understanding.","meaning":"FreeText","isColumnEdited":true}
     ],
     "userModified": true
   },
