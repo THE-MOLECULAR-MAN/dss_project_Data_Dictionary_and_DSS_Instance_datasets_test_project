@@ -53,7 +53,9 @@
     "importSourceType": "NONE"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"llm_model_name_version","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",

@@ -1,3 +1,19 @@
 {
-  "data": []
+  "data": [
+    [
+      "gpt-5"
+    ],
+    [
+      "se-genai-gpt-5"
+    ],
+    [
+      "openai-gpt-5"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"llm_model_name_version","type":"string"}
+    ],
+    "userModified": false
+  }
 }
