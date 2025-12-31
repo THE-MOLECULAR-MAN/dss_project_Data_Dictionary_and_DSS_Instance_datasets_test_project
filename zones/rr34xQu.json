@@ -169,6 +169,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_mcp_agent_tools",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "mcp_agent_tools",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
