@@ -169,14 +169,6 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_problem_connections",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "problem_connections",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
