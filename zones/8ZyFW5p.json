@@ -33,6 +33,14 @@
     {
       "objectId": "datasets_from_errored_connections",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_problem_datasets",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "problem_datasets",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
