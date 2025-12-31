@@ -6,80 +6,118 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "projectKey",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dss_object_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dss_object_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dss_object_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "llmId",
+      "type": "string",
       "table": 0
     },
     {
       "name": "connection_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "llm_provider",
+      "type": "string",
       "table": 0
     },
     {
       "name": "llm_model_name_version",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
+      "type": "string",
       "table": 1
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ownerLogin",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 1
     },
     {
       "name": "last_modified_timestamp",
+      "type": "datetimenotz",
       "table": 1
     },
     {
       "name": "tutorialProject",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "contributors",
+      "type": "string",
       "table": 1
     },
     {
       "name": "url",
+      "type": "string",
       "table": 1
     }
   ],
@@ -143,5 +181,122 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "dss_object_type",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "dss_object_id",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "dss_object_name",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "llmId",
+            "type": "string"
+          },
+          {
+            "name": "connection_name",
+            "type": "string"
+          },
+          {
+            "name": "llm_provider",
+            "type": "string"
+          },
+          {
+            "name": "llm_model_name_version",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "name",
+            "comment": "Descriptive name of the project, indicating its purpose.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "comment": "Brief description of the project, including creation details.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "description",
+            "comment": "Detailed project description, outlining objectives and processes.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "ownerLogin",
+            "comment": "Email or login of the project owner, indicating responsibility.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectStatus",
+            "comment": "Current status of the project, such as \u0027In production\u0027.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "comment": "Array of tags categorizing the project, indicating focus areas.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "DatetimeNoTz",
+            "name": "last_modified_timestamp",
+            "comment": "Timestamp of the last modification, showing recent updates.",
+            "type": "datetimenotz"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "comment": "Boolean indicating if the project is a tutorial, for learning.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "contributors",
+            "comment": "List of project contributors, showing collaboration.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "url",
+            "comment": "Direct URL to the project, for easy access and navigation.",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
