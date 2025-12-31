@@ -64,18 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Identifier for Dataiku project, key for management.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool, essential for tracking.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool, used for identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_type","type":"string","comment":"Type of the agent tool, categorizes functionality.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Detailed description of tool\u0027s purpose and capabilities.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"User who created the tool, tracks origin.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification, tracks changes.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool, tracks changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_params","type":"string","comment":"Configuration parameters for tool setup.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLM_id","type":"string","comment":"Identifier for the language model used.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags for categorizing the agent tool.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL for accessing the tool in Dataiku.","meaning":"URL","isColumnEdited":true}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku DSS project.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type or category of the agent tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description of the tool for LLMs.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the agent tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters.","meaning":"Text","isColumnEdited":true},
+      {"name":"LLM_id","type":"string","comment":"Identifier for the large language model.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent tool.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the agent tool.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
