@@ -25,6 +25,14 @@
     {
       "objectId": "problem_connections",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_datasets_from_errored_connections",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "datasets_from_errored_connections",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
