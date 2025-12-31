@@ -74,6 +74,7 @@
       {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, status tracking.","meaning":"Boolean","isColumnEdited":true},
       {"name":"total_usages","type":"bigint","meaning":"LongMeaning"},
+      {"name":"is_built_in_plugin","type":"boolean","meaning":"Boolean"},
       {"name":"url","type":"string","comment":"Web link to plugin\u0027s summary page, more information.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
