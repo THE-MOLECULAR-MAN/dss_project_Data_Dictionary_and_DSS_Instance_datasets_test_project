@@ -31,6 +31,27 @@
   ],
   "selectedColumns": [
     {
+      "name": "name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "projectKey",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "exists",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "url",
+      "alias": "dataset_url",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "ownerLogin",
       "alias": "project_owner",
       "type": "string",
@@ -102,6 +123,34 @@
     "$status": {
       "schema": {
         "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "name",
+            "comment": "Name of the dataset, used for identification and reference.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectKey",
+            "comment": "Project identifier, links datasets to specific projects.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "exists",
+            "comment": "Indicates if the dataset currently exists, boolean value.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "dataset_url",
+            "comment": "URL for accessing the dataset, used for exploration and analysis.",
+            "type": "string"
+          },
           {
             "isColumnEdited": true,
             "meaning": "Text",
