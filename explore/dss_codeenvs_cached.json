@@ -75,7 +75,7 @@
     },
     "sorting": [
       {
-        "column": "total_instances_of_code_env",
+        "column": "code_env_name",
         "ascending": true
       }
     ],
