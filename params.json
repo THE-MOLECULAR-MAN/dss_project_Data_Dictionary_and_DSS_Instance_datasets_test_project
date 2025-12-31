@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": true,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "dss_llmusage_analysis",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
