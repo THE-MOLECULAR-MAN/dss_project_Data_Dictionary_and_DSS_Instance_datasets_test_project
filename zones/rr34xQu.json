@@ -201,6 +201,14 @@
     {
       "objectId": "unused_code_envs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_unused_plugins",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unused_plugins",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
