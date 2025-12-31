@@ -193,6 +193,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_unused_code_envs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unused_code_envs",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
