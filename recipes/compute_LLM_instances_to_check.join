@@ -27,6 +27,35 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "llm_model_name_version",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "llm_model_name_version",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -179,6 +208,11 @@
       "originLabel": "dss_projects_cached",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 2
     }
   ],
   "computedColumns": [],
