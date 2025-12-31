@@ -1,6 +1,40 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "projectKey"
+      },
+      {
+        "d": true,
+        "name": "dss_object_type"
+      },
+      {
+        "d": true,
+        "name": "dss_object_id"
+      },
+      {
+        "d": true,
+        "name": "dss_object_name"
+      },
+      {
+        "d": true,
+        "name": "llmId"
+      },
+      {
+        "d": true,
+        "name": "connection_name"
+      },
+      {
+        "d": true,
+        "name": "llm_provider"
+      },
+      {
+        "d": true,
+        "name": "llm_model_name_version"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +64,88 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "llmId"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 3
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "llmId",
+        "startFrom": "beginning",
+        "keepEmptyChunks": false,
+        "limit": 3,
+        "separator": ":",
+        "outColPrefix": "llmId_",
+        "limitOutput": true,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "llmId_0",
+            "to": "connection_name"
+          },
+          {
+            "from": "connection_name",
+            "to": "llm_provider"
+          },
+          {
+            "from": "llmId_1",
+            "to": "connection_name"
+          },
+          {
+            "from": "llmId_2",
+            "to": "llm_model_name_version"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "llmId",
+          "llm_model_name_version",
+          "llm_provider",
+          "connection_name"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "DELETED_LLM"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -79,7 +193,16 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "dss_object_type": 176,
+    "connection_name": 183,
+    "projectKey": 300,
+    "llm_model_name_version": 204,
+    "llm_provider": 127,
+    "dss_object_name": 300,
+    "llmId": 300,
+    "dss_object_id": 218
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
