@@ -5,10 +5,11 @@
     "$filterOptions": "rules",
     "conditions": [
       {
-        "input": "projectKey",
+        "input": "agent_tool_type",
         "col": "agent_tool_id",
+        "string": "mcp",
         "$showList": false,
-        "operator": "contains"
+        "operator": "contains [string]i"
       }
     ]
   },
