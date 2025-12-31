@@ -1,0 +1,168 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "featureGroup": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767216918829
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_localhost",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_llm_instances_to_check",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeDescriptionsAsSQLComment": false,
+    "noDropOnSchemaMismatch": true,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "datetimenotzReadMode": "AS_IS",
+    "dateonlyReadMode": "AS_IS",
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    },
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"dss_object_type","type":"string","meaning":"Text"},
+      {"name":"dss_object_id","type":"string","meaning":"Text"},
+      {"name":"dss_object_name","type":"string","meaning":"Text"},
+      {"name":"llmId","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"connection_name","type":"string"},
+      {"name":"llm_provider","type":"string"},
+      {"name":"llm_model_name_version","type":"string"},
+      {"name":"name","type":"string","comment":"Descriptive name of the project, indicating its purpose.","meaning":"Text","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, such as \u0027In production\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Array of tags categorizing the project, indicating focus areas.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of the last modification, showing recent updates.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tutorialProject","type":"boolean","comment":"Boolean indicating if the project is a tutorial, for learning.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"List of project contributors, showing collaboration.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Direct URL to the project, for easy access and navigation.","meaning":"URL","isColumnEdited":true}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

@@ -177,6 +177,14 @@
     {
       "objectId": "compute_dss_llmusage_analysis",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_LLM_instances_to_check",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "LLM_instances_to_check",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
