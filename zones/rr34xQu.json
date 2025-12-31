@@ -215,7 +215,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_codeenvs_cached_joined",
+      "objectId": "plugins_and_their_code_env",
       "objectType": "DATASET"
     }
   ],

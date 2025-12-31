@@ -27,7 +27,7 @@
     "main": {
       "items": [
         {
-          "ref": "dss_codeenvs_cached_joined",
+          "ref": "plugins_and_their_code_env",
           "appendMode": false
         }
       ]
