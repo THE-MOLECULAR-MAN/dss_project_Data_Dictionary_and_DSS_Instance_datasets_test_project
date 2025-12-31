@@ -169,22 +169,6 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_nonexistant_datasets",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "nonexistant_datasets",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_nonexistant_datasets_joined",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "nonexistant_datasets_joined",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
