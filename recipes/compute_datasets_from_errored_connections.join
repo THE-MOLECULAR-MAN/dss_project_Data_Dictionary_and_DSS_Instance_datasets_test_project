@@ -6,164 +6,216 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "name",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "params.connection",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "credentialsMode",
+      "type": "string",
       "table": 0
     },
     {
       "name": "connection_test_status",
+      "type": "string",
       "table": 0
     },
     {
       "name": "connection_test_error_msg",
+      "type": "string",
       "table": 0
     },
     {
       "name": "usableBy",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.credentialsMode",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.authType",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.scopes",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.scope",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.warehouse",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.defaultSchema",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.role",
+      "type": "string",
       "table": 0
     },
     {
       "name": "params.db",
+      "type": "string",
       "table": 0
     },
     {
       "name": "creationTag.lastModifiedBy.login",
+      "type": "string",
       "table": 0
     },
     {
       "name": "allowWrite",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
+      "type": "string",
       "table": 0
     },
     {
       "name": "id",
+      "type": "string",
       "table": 1
     },
     {
       "name": "projectKey",
+      "type": "string",
       "table": 1
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 1
     },
     {
       "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "exists",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "formatType",
+      "type": "string",
       "table": 1
     },
     {
       "name": "params.connection",
+      "type": "string",
       "table": 1
     },
     {
       "name": "managed",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "params.mode",
+      "type": "string",
       "table": 1
     },
     {
       "name": "params.table",
+      "type": "string",
       "table": 1
     },
     {
       "name": "params.schema",
+      "type": "string",
       "table": 1
     },
     {
       "name": "params.path",
+      "type": "string",
       "table": 1
     },
     {
       "name": "creationTag.lastModifiedOn",
+      "type": "datetimenotz",
       "table": 1
     },
     {
       "name": "versionTag.lastModifiedBy.login",
+      "type": "string",
       "table": 1
     },
     {
       "name": "versionTag.lastModifiedOn",
+      "type": "datetimenotz",
       "table": 1
     },
     {
       "name": "params.metastoreDatabaseName",
+      "type": "string",
       "table": 1
     },
     {
       "name": "params.folderSmartId",
+      "type": "string",
       "table": 1
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 1
     },
     {
       "name": "featureGroup",
+      "type": "boolean",
       "table": 1
     },
     {
       "name": "num_metrics_checks",
+      "type": "int",
       "table": 1
     },
     {
       "name": "num_columns",
+      "type": "int",
       "table": 1
     },
     {
       "name": "column_names",
+      "type": "string",
       "table": 1
     }
   ],
@@ -227,5 +279,254 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "type",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "credentialsMode",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "connection_test_status",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "connection_test_error_msg",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "usableBy",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.credentialsMode",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.authType",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.scopes",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.scope",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.warehouse",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.defaultSchema",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.role",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "params.db",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "creationTag.lastModifiedBy.login",
+            "type": "string"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "allowWrite",
+            "type": "boolean"
+          },
+          {
+            "meaning": "URL",
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "id",
+            "comment": "Unique identifier for each dataset, crucial for management.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectKey",
+            "comment": "Project identifier, links datasets to specific projects.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "comment": "Brief description of the dataset, highlights key features.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "description",
+            "comment": "Detailed description of the dataset, explains its purpose and contents.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "exists",
+            "comment": "Indicates if the dataset currently exists, boolean value.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "formatType",
+            "comment": "File format of the dataset, such as CSV or Avro.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.connection",
+            "comment": "Connection parameters for accessing the dataset, specifies data source.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "managed",
+            "comment": "Indicates if the dataset is managed, boolean value.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.mode",
+            "comment": "Mode of the dataset, specifies how data is accessed.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.table",
+            "comment": "Table name in the database, used for data retrieval.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.schema",
+            "comment": "Schema of the dataset, defines data structure.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.path",
+            "comment": "File path for the dataset, indicates storage location.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "DatetimeNoTz",
+            "name": "creationTag.lastModifiedOn",
+            "comment": "Timestamp of last modification, tracks dataset updates.",
+            "type": "datetimenotz"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "versionTag.lastModifiedBy.login",
+            "comment": "User who last modified the dataset version, tracks version changes.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "DatetimeNoTz",
+            "name": "versionTag.lastModifiedOn",
+            "comment": "Timestamp of last version modification, tracks version updates.",
+            "type": "datetimenotz"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.metastoreDatabaseName",
+            "comment": "Name of the metastore database, used for data management.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "params.folderSmartId",
+            "comment": "Smart ID for the folder, used for organizing datasets.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "comment": "Tags associated with the dataset, used for categorization.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "featureGroup",
+            "comment": "Indicates if the dataset is a feature group, boolean value.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "num_metrics_checks",
+            "comment": "Number of metric checks performed on the dataset, indicates data quality.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "num_columns",
+            "comment": "Number of columns in the dataset, indicates data complexity.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "column_names",
+            "comment": "Names of columns in the dataset, defines data structure.",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
