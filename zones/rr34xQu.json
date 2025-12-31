@@ -127,27 +127,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_plugins_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_plugins_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_datasets_cached",
       "objectType": "RECIPE"
     },
     {
       "objectId": "dss_datasets_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_codeenvs_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
     },
     {
@@ -184,30 +168,6 @@
     },
     {
       "objectId": "dss_llmusage_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_unused_code_envs",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "unused_code_envs",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_unused_plugins",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "unused_plugins",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_codeenvs_cached_joined",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "plugins_and_their_code_env",
       "objectType": "DATASET"
     }
   ],
