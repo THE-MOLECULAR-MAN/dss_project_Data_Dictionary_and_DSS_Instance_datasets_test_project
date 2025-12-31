@@ -115,15 +115,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_plugins_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_datasets_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
     },
     {

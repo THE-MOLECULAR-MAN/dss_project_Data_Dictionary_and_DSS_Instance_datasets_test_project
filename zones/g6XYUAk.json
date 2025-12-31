@@ -1,7 +1,16 @@
 {
   "name": "Plugins and Code Env",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
