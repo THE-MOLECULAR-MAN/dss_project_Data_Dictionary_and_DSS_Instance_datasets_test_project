@@ -66,7 +66,7 @@
       {"name":"dss_object_type","type":"string","meaning":"Text"},
       {"name":"dss_object_id","type":"string","meaning":"Text"},
       {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"connection_name","type":"string"},
       {"name":"llm_provider","type":"string"},
       {"name":"llm_model_name_version","type":"string"},
