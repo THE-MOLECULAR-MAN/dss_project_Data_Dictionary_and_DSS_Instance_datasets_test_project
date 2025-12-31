@@ -126,18 +126,23 @@
       "preFilter": {
         "uiData": {
           "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
           "conditions": [
             {
               "input": "code_env_name",
               "col": "code_env_lang",
+              "string": "plugin",
+              "$showList": false,
               "num": 0,
               "operator": "contains",
               "num2": 0
             }
           ]
         },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "dss_codeenvs_cached",
       "name": "DSS_Data_Plugin_Test.dss_codeenvs_cached",
