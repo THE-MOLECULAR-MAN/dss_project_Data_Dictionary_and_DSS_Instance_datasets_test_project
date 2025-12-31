@@ -4,94 +4,90 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "LEFT",
+      "type": "FULL",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "code_env_name",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "code_env_name",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "code_env_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "code_env_lang",
+      "type": "string",
       "table": 0
     },
     {
       "name": "deployment_mode",
-      "table": 0
-    },
-    {
-      "name": "owner",
-      "table": 0
-    },
-    {
-      "name": "python_interpreter",
-      "table": 0
-    },
-    {
-      "name": "core_packages_set",
+      "type": "string",
       "table": 0
     },
     {
       "name": "path",
+      "type": "string",
       "table": 0
     },
     {
       "name": "size_in_MB",
+      "type": "double",
       "table": 0
     },
     {
       "name": "projectKeys_where_plugin_used",
+      "type": "string",
       "table": 0
     },
     {
       "name": "total_instances_of_plugin",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "url",
+      "type": "string",
       "table": 0
     },
     {
       "name": "id",
-      "table": 1
-    },
-    {
-      "name": "label",
-      "table": 1
-    },
-    {
-      "name": "version",
-      "table": 1
-    },
-    {
-      "name": "author",
-      "table": 1
-    },
-    {
-      "name": "tags",
-      "table": 1
-    },
-    {
-      "name": "description",
+      "type": "string",
       "table": 1
     },
     {
       "name": "plugin_used_in_projectkeys",
-      "table": 1
-    },
-    {
-      "name": "isDev",
+      "type": "string",
       "table": 1
     },
     {
       "name": "total_usages",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "is_built_in_plugin",
+      "type": "boolean",
       "table": 1
     }
   ],
@@ -135,7 +131,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -145,15 +141,98 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
       },
       "originLabel": "dss_plugins_cached",
+      "prefix": "plugin",
       "index": 1,
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "code_env_name",
+            "comment": "Name of the code environment, identifies environment.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "code_env_lang",
+            "comment": "Programming language used in the environment, e.g., Python, R.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "deployment_mode",
+            "comment": "Mode of deployment, e.g., DESIGN_MANAGED, DSS_INTERNAL.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "path",
+            "comment": "File path to the code environment, storage location.",
+            "type": "string"
+          },
+          {
+            "meaning": "DoubleMeaning",
+            "name": "size_in_MB",
+            "type": "double"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "projectKeys_where_plugin_used",
+            "type": "string"
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "total_instances_of_plugin",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "url",
+            "comment": "URL to access the code environment, direct link.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "plugin_id",
+            "comment": "Unique identifier for each plugin, essential reference.",
+            "type": "string"
+          },
+          {
+            "meaning": "JSONArrayMeaning",
+            "name": "plugin_plugin_used_in_projectkeys",
+            "type": "string"
+          },
+          {
+            "meaning": "LongMeaning",
+            "name": "plugin_total_usages",
+            "type": "bigint"
+          },
+          {
+            "meaning": "Boolean",
+            "name": "plugin_is_built_in_plugin",
+            "type": "boolean"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
