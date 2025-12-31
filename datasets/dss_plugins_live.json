@@ -42,7 +42,7 @@
   "params": {
     "customConfig": {
       "compute_disk_util": true,
-      "compute_plugin_usages": true
+      "compute_plugin_usages": false
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
