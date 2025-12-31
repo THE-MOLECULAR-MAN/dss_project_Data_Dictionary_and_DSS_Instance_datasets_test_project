@@ -209,6 +209,14 @@
     {
       "objectId": "unused_plugins",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_cached_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
