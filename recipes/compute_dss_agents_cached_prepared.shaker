@@ -1,0 +1,120 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 1767323570436,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 100,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "exploreUIParams": {},
+  "steps": [],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "agent_type": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "agent_version": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "projectKey": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "last_modified_user": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "active_agent_version": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "agent_name": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "agent_id": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "creator_user": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "last_modified_timestamp": {
+      "isColumnEdited": true,
+      "meaning": "DatetimeNoTz"
+    },
+    "url": {
+      "isColumnEdited": true,
+      "meaning": "URL"
+    },
+    "LLMs_used": {
+      "isColumnEdited": true,
+      "meaning": "JSONArrayMeaning"
+    },
+    "tags": {
+      "isColumnEdited": true,
+      "meaning": "JSONArrayMeaning"
+    }
+  },
+  "columnWidthsByName": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}
