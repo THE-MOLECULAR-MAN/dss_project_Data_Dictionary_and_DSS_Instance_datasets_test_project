@@ -1,0 +1,32 @@
+{
+  "name": "dummy1",
+  "type": "DatasetRowLookup",
+  "params": {
+    "retrievalMode": "SINGLE_RECORD",
+    "maxRecords": 5
+  },
+  "quickTestQuery": {
+    "input": {
+      "filter": {
+        "column": "\u003cCOLUMN_NAME\u003e",
+        "operator": "EQUALS",
+        "value": "\u003cVALUE\u003e"
+      }
+    },
+    "context": {}
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767381894309
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
