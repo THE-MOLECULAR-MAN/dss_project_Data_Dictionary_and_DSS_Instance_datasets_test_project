@@ -3,10 +3,53 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "projectKey",
+          "d": true
+        },
+        {
+          "name": "dss_object_type",
+          "d": true
+        },
+        {
+          "name": "dss_object_id",
+          "d": true
+        },
+        {
+          "name": "dss_object_name",
+          "d": true
+        },
+        {
+          "name": "llmId",
+          "d": true
+        },
+        {
+          "name": "connection_name",
+          "d": true
+        },
+        {
+          "name": "llm_provider",
+          "d": true
+        },
+        {
+          "name": "llm_model_name_version",
+          "d": true
+        }
+      ]
     },
     "columnOrder": [],
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "projectKey": 300,
+      "dss_object_type": 134,
+      "dss_object_id": 232,
+      "dss_object_name": 300,
+      "llmId": 300,
+      "connection_name": 183,
+      "llm_provider": 127,
+      "llm_model_name_version": 204
+    },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -15,7 +58,12 @@
       "valueColoringMode": "HASH",
       "coloringGroups": []
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "llmId",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -65,7 +113,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
