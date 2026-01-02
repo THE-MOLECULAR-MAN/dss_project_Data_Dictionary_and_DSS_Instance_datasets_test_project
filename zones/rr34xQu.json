@@ -177,6 +177,22 @@
     {
       "objectId": "dss_codeenvs_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_codeenvs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
