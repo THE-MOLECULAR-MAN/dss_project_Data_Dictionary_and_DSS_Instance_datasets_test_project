@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_agents_cached_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_agents_cached_prepared",
       "objectType": "DATASET"
     }
