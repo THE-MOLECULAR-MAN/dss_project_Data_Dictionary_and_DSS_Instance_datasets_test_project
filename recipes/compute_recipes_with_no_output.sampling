@@ -1,13 +1,20 @@
 {
   "uiData": {
-    "mode": "\u0026\u0026",
-    "$latestOperator": "\u0026\u0026",
+    "mode": "||",
+    "$latestOperator": "||",
     "$filterOptions": "rules",
     "conditions": [
       {
         "input": "output_datasets",
         "col": "recipe_name",
         "$showList": false,
+        "operator": "is empty"
+      },
+      {
+        "input": "input_datasets",
+        "col": "recipe_id",
+        "$showList": false,
+        "num": 0,
         "operator": "is empty"
       }
     ]
