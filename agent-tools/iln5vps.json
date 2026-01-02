@@ -6,7 +6,8 @@
       "stopSequences": [],
       "outputTrajectory": true
     },
-    "forwardContext": false
+    "forwardContext": false,
+    "llmId": "snowflakecortex:Dummy_Snowflake_Cortex:mistral-large2"
   },
   "quickTestQuery": {
     "input": {
