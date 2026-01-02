@@ -1,0 +1,31 @@
+{
+  "name": "dummy_LLM_4",
+  "type": "LLMMeshLLMQuery",
+  "params": {
+    "completionSettings": {
+      "stopSequences": [],
+      "outputTrajectory": true
+    },
+    "forwardContext": false
+  },
+  "quickTestQuery": {
+    "input": {
+      "question": "Ask your question here"
+    },
+    "context": {}
+  },
+  "dkuProperties": [],
+  "singleInstance": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767381980859
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
