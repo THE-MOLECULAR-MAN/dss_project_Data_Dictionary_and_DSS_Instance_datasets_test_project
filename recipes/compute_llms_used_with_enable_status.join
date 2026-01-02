@@ -4,6 +4,7 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -69,6 +70,21 @@
       "name": "llm_model_name_version",
       "type": "string",
       "table": 0
+    },
+    {
+      "name": "connection_type",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "llm_name",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "llm_enabled",
+      "type": "boolean",
+      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -122,13 +138,8 @@
     },
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "dss_llmusage_analysis",
-      "index": 0,
-      "computedColumns": []
+      "preFilter": {},
+      "index": 1
     }
   ],
   "computedColumns": [],
@@ -172,6 +183,18 @@
           {
             "name": "llm_model_name_version",
             "type": "string"
+          },
+          {
+            "name": "connection_type",
+            "type": "string"
+          },
+          {
+            "name": "llm_name",
+            "type": "string"
+          },
+          {
+            "name": "llm_enabled",
+            "type": "boolean"
           }
         ],
         "userModified": false
