@@ -7,7 +7,8 @@
     "last_modified_user",
     "last_modified_timestamp",
     "created_by_user",
-    "LLMs_used"
+    "LLMs_used",
+    "agent_type"
   ],
   "engineParams": {
     "hive": {
@@ -60,7 +61,8 @@
         "last_modified_user",
         "last_modified_timestamp",
         "created_by_user",
-        "llmId"
+        "llmId",
+        ""
       ]
     },
     {
@@ -76,7 +78,8 @@
         "last_modified_user",
         "last_modified_timestamp",
         "creator_user",
-        "LLMs_used"
+        "LLMs_used",
+        "agent_type"
       ]
     },
     {
@@ -89,7 +92,8 @@
         "last_modified_user",
         "last_modified_timestamp",
         "created_by_user",
-        "LLM_id"
+        "LLM_id",
+        "agent_tool_type"
       ]
     }
   ],
@@ -120,6 +124,10 @@
           },
           {
             "name": "LLMs_used",
+            "type": "string"
+          },
+          {
+            "name": "agent_type",
             "type": "string"
           },
           {
