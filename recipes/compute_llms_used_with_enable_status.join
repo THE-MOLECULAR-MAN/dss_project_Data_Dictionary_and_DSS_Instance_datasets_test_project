@@ -32,7 +32,17 @@
   ],
   "selectedColumns": [
     {
+      "name": "projectKey",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "dss_object_type",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "dss_object_id",
       "type": "string",
       "table": 0
     },
@@ -142,7 +152,17 @@
         "columns": [
           {
             "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
             "name": "dss_object_type",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "dss_object_id",
             "type": "string"
           },
           {
