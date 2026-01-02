@@ -4,51 +4,7 @@
     "list": [
       {
         "d": true,
-        "name": "agent_name"
-      },
-      {
-        "d": true,
-        "name": "agent_id"
-      },
-      {
-        "d": true,
-        "name": "projectKey"
-      },
-      {
-        "d": true,
-        "name": "agent_type"
-      },
-      {
-        "d": true,
-        "name": "agent_version"
-      },
-      {
-        "d": true,
         "name": "LLMs_used"
-      },
-      {
-        "d": true,
-        "name": "creator_user"
-      },
-      {
-        "d": true,
-        "name": "last_modified_user"
-      },
-      {
-        "d": true,
-        "name": "tags"
-      },
-      {
-        "d": true,
-        "name": "last_modified_timestamp"
-      },
-      {
-        "d": true,
-        "name": "active_agent_version"
-      },
-      {
-        "d": true,
-        "name": "url"
       }
     ]
   },
@@ -119,7 +75,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
@@ -128,6 +84,20 @@
           "LLMs_used"
         ],
         "keep": true,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "LLMs_used"
+        ],
+        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
