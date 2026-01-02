@@ -157,6 +157,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Potential_problem_RAG_LLMs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Potential_problem_RAG_LLMs",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
