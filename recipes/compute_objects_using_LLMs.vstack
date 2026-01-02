@@ -108,6 +108,10 @@
           {
             "name": "LLMs_used",
             "type": "string"
+          },
+          {
+            "name": "original_dataset",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -116,5 +120,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
