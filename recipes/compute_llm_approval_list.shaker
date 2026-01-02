@@ -137,6 +137,10 @@
           {
             "from": "^ge-",
             "to": "gemini-"
+          },
+          {
+            "from": "^claude-",
+            "to": "anthropic.claude-"
           }
         ],
         "normalization": "EXACT",
