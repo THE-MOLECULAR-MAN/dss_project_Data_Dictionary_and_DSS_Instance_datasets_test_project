@@ -19,6 +19,10 @@
         {
           "ref": "dss_agents_cached",
           "deps": []
+        },
+        {
+          "ref": "dss_agenttools_cached",
+          "deps": []
         }
       ]
     }

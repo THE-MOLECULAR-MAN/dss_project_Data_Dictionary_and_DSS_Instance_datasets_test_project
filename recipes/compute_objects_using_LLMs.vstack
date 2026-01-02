@@ -78,6 +78,19 @@
         "creator_user",
         "LLMs_used"
       ]
+    },
+    {
+      "preFilter": {},
+      "originLabel": "dss_agenttools_cached",
+      "index": 2,
+      "columnsMatch": [
+        "projectKey",
+        "url",
+        "last_modified_user",
+        "last_modified_timestamp",
+        "created_by_user",
+        "LLM_id"
+      ]
     }
   ],
   "copySchemaFromDatasetWithName": "dss_retrieval_augmented_llms_cached",
