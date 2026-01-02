@@ -157,6 +157,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_connections_with_failures",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "connections_with_failures",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
