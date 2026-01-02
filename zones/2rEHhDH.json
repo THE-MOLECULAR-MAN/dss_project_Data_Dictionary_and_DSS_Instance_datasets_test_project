@@ -21,6 +21,14 @@
     {
       "objectId": "llm_approval_list",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_llms_used_with_enable_status",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "llms_used_with_enable_status",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
