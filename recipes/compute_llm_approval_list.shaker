@@ -135,6 +135,30 @@
         "useDatasetForMapping": false,
         "mapping": [
           {
+            "from": "^ge-",
+            "to": "gemini-"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "llm_name"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
             "from": "gpt",
             "to": "gpt-"
           },
