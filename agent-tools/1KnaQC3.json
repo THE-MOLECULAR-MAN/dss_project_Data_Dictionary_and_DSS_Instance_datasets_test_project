@@ -6,7 +6,8 @@
       "stopSequences": [],
       "outputTrajectory": true
     },
-    "forwardContext": false
+    "forwardContext": false,
+    "llmId": "bedrock:Dummy_Bedrock:anthropic.claude-sonnet-4-5-20250929-v1:0"
   },
   "quickTestQuery": {
     "input": {
