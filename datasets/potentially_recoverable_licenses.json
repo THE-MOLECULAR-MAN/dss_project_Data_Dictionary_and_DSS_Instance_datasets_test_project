@@ -73,6 +73,7 @@
       {"name":"created_timestamp","type":"datetimenotz","meaning":"DatetimeNoTz"},
       {"name":"last_successful_login","type":"date","meaning":"Date"},
       {"name":"last_session_activity","type":"date","meaning":"Date"},
+      {"name":"days_since_last_activity_or_login","type":"string"},
       {"name":"url","type":"string","meaning":"URL"},
       {"name":"creationDate","type":"date"}
     ],
