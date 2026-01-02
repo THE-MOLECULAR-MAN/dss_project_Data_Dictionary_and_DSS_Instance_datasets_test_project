@@ -33,6 +33,14 @@
     {
       "objectId": "compute_deprecated_code_envs",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_code_envs_to_investigate",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "code_envs_to_investigate",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
