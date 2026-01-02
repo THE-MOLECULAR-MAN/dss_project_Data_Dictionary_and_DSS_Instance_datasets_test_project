@@ -1,6 +1,6 @@
 {
   "mode": "UNION",
-  "originColumnName": "original_dataset",
+  "originColumnName": "reason_to_investigate",
   "selectedColumns": [
     "code_env_name",
     "code_env_lang",
@@ -57,7 +57,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "unused_code_envs",
+      "originLabel": "potentially unused",
       "index": 0
     },
     {
@@ -65,7 +65,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "deprecated_code_envs",
+      "originLabel": "deprecated Python version",
       "index": 1
     }
   ],
@@ -143,6 +143,10 @@
             "name": "url",
             "comment": "URL to access the code environment, direct link.",
             "type": "string"
+          },
+          {
+            "name": "reason_to_investigate",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -151,5 +155,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
