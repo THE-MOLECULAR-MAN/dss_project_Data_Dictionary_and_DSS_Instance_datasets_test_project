@@ -136,7 +136,7 @@
         "mapping": [
           {
             "from": "^ge-",
-            "to": "gemini-"
+            "to": "geminiXXX"
           },
           {
             "from": "^claude-",
@@ -148,7 +148,7 @@
           "llm_name"
         ],
         "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
+        "stopAfterFirstMatch": true,
         "matching": "PATTERN"
       },
       "alwaysShowComment": false
@@ -217,6 +217,18 @@
           {
             "from": "embedding",
             "to": "text-embedding-"
+          },
+          {
+            "from": "flash",
+            "to": "-flash"
+          },
+          {
+            "from": "micro",
+            "to": "-micro"
+          },
+          {
+            "from": "lite",
+            "to": "-lite"
           }
         ],
         "normalization": "EXACT",
