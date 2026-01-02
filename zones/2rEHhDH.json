@@ -1,16 +1,7 @@
 {
   "name": "Dev",
   "color": "#0F786B",
-  "items": [
-    {
-      "objectId": "dss_connections_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_connections_cached",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
