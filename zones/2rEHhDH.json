@@ -33,6 +33,14 @@
     {
       "objectId": "unmatched_LLMs_used",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_connections_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_connections_cached",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
