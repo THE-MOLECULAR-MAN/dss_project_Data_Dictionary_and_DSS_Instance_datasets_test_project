@@ -25,14 +25,6 @@
     {
       "objectId": "recipes_missing_either_input_or_output",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_Potential_problem_RAG_LLMs",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Potential_problem_RAG_LLMs",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

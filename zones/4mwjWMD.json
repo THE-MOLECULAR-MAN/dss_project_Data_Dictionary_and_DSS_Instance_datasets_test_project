@@ -37,6 +37,14 @@
     {
       "objectId": "compute_agents_missing_LLM_config",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Potential_problem_RAG_LLMs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Potential_problem_RAG_LLMs",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
