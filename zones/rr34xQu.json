@@ -157,6 +157,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipes_with_no_output",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipes_with_no_output",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
