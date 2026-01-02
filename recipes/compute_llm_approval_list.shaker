@@ -4,11 +4,11 @@
     "list": [
       {
         "d": true,
-        "name": "connection_name"
+        "name": "connection_type"
       },
       {
         "d": true,
-        "name": "connection_type"
+        "name": "connection_name"
       },
       {
         "d": true,
@@ -57,6 +57,20 @@
     "autoRefresh": true
   },
   "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "connection_type"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
     {
       "preview": false,
       "metaType": "PROCESSOR",
@@ -125,10 +139,6 @@
             "to": "gpt-"
           },
           {
-            "from": "vertexaillm",
-            "to": "vertex"
-          },
-          {
             "from": "mini",
             "to": "-mini"
           },
@@ -192,7 +202,31 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "vertexaillm",
+            "to": "vertex"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "connection_type"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsConcat",
@@ -245,7 +279,7 @@
   },
   "sorting": [
     {
-      "column": "llmId",
+      "column": "connection_type",
       "ascending": true
     }
   ],
