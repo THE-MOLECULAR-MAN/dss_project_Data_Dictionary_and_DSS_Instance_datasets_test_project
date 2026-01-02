@@ -47,16 +47,6 @@
       "table": 0
     },
     {
-      "name": "connection_type",
-      "type": "string",
-      "table": 1
-    },
-    {
-      "name": "llm_name",
-      "type": "string",
-      "table": 1
-    },
-    {
       "name": "llm_enabled",
       "type": "boolean",
       "table": 1
@@ -112,7 +102,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {},
       "index": 1
     }
@@ -135,18 +125,6 @@
           {
             "meaning": "Text",
             "name": "llmId",
-            "type": "string"
-          },
-          {
-            "name": "connection_type",
-            "type": "string"
-          },
-          {
-            "name": "connection_name",
-            "type": "string"
-          },
-          {
-            "name": "llm_name",
             "type": "string"
           },
           {
