@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "objects_using_LLMs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "agents_missing_LLM_config",
       "objectType": "DATASET"
     },
