@@ -1,7 +1,28 @@
 {
   "name": "Dev",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "llmmodelsbyconnection_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_llmmodelsbyconnection_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_llmmodelsbyconnection_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_llm_approval_list",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "llm_approval_list",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],

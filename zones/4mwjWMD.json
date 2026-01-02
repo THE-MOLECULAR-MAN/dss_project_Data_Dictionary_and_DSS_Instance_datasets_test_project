@@ -45,26 +45,6 @@
     {
       "objectId": "compute_Potential_problem_RAG_LLMs",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "llmmodelsbyconnection_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_llmmodelsbyconnection_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_llmmodelsbyconnection_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "llm_approval_list",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_llm_approval_list",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
