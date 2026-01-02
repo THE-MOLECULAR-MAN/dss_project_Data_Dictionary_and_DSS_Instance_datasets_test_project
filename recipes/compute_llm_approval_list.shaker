@@ -16,6 +16,10 @@
       },
       {
         "d": true,
+        "name": "llmId"
+      },
+      {
+        "d": true,
         "name": "llm_enabled"
       }
     ]
@@ -178,6 +182,22 @@
         "matching": "SUBSTRING"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "llmId",
+        "columns": [
+          "connection_type",
+          "connection_name",
+          "llm_name"
+        ],
+        "join": ":"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -208,10 +228,12 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "connection_name": 183,
+    "": 100,
     "llm_name": 134,
     "connection_type": 128,
     "llm_enabled": 100,
-    "llm_name_simplified": 158
+    "llm_name_simplified": 158,
+    "llmId": 197
   },
   "sorting": [],
   "globalSearchQuery": "",
