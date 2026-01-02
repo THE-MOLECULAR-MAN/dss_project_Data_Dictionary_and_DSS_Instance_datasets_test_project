@@ -110,6 +110,14 @@
               "string": "DELETED_LLM",
               "$showList": false,
               "operator": "!\u003d [string]"
+            },
+            {
+              "input": "llm_provider",
+              "col": "projectKey",
+              "string": "DELETED_LLM",
+              "$showList": false,
+              "num": 0,
+              "operator": "!\u003d [string]"
             }
           ]
         },
