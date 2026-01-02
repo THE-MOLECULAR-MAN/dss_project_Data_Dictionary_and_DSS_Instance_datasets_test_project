@@ -25,6 +25,14 @@
     {
       "objectId": "recipes_missing_either_input_or_output",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_agents_missing_LLM_config",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "agents_missing_LLM_config",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
