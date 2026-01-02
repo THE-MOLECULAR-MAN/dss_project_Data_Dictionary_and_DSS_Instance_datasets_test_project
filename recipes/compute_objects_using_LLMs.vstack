@@ -83,7 +83,29 @@
       ]
     },
     {
-      "preFilter": {},
+      "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "agent_tool_type",
+              "col": "agent_tool_id",
+              "$showList": false,
+              "items": [
+                {
+                  "string": "Custom_agent_tool_sql-question-answering-tool_sql-question-answering",
+                  "num": 0
+                }
+              ],
+              "operator": "in [string]"
+            }
+          ]
+        },
+        "$status": {},
+        "enabled": true
+      },
       "originLabel": "dss_agenttools_cached",
       "index": 2,
       "columnsMatch": [
