@@ -171,6 +171,10 @@
           {
             "from": "claude",
             "to": "claude-"
+          },
+          {
+            "from": "embedding",
+            "to": "text-embedding-"
           }
         ],
         "normalization": "EXACT",
