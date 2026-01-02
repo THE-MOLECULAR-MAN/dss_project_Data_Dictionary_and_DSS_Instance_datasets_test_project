@@ -33,9 +33,12 @@
       ]
     },
     "unmatchedRight": {
+      "items": []
+    },
+    "unmatchedLeft": {
       "items": [
         {
-          "ref": "unmatched_LLMs_used",
+          "ref": "unmatched_LLMs",
           "appendMode": false
         }
       ]
