@@ -125,6 +125,10 @@
             "to": "gpt-"
           },
           {
+            "from": "vertexaillm",
+            "to": "vertex"
+          },
+          {
             "from": "mini",
             "to": "-mini"
           },
@@ -239,7 +243,12 @@
     "llm_name_simplified": 158,
     "llmId": 410
   },
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "llmId",
+      "ascending": true
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
