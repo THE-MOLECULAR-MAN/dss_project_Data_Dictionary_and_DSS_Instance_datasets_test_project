@@ -1,6 +1,14 @@
 {
-  "mode": "UNION",
+  "mode": "REMAP",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "projectKey",
+    "url",
+    "last_modified_user",
+    "last_modified_timestamp",
+    "created_by_user",
+    "LLMs_used"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -45,7 +53,15 @@
         "enabled": false
       },
       "originLabel": "dss_retrieval_augmented_llms_cached",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "projectKey",
+        "url",
+        "last_modified_user",
+        "last_modified_timestamp",
+        "created_by_user",
+        "llmId"
+      ]
     },
     {
       "preFilter": {
@@ -53,10 +69,50 @@
         "enabled": false
       },
       "originLabel": "dss_agents_cached",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "projectKey",
+        "url",
+        "last_modified_user",
+        "last_modified_timestamp",
+        "creator_user",
+        "LLMs_used"
+      ]
     }
   ],
+  "copySchemaFromDatasetWithName": "dss_retrieval_augmented_llms_cached",
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "last_modified_user",
+            "type": "string"
+          },
+          {
+            "name": "last_modified_timestamp",
+            "type": "string"
+          },
+          {
+            "name": "created_by_user",
+            "type": "string"
+          },
+          {
+            "name": "LLMs_used",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
