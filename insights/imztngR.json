@@ -756,7 +756,7 @@
     "customMeasures": [],
     "reusableDimensions": [],
     "hierarchies": [],
-    "datasetSmartName": "problem_datasets"
+    "datasetSmartName": "potentially_problem_datasets"
   },
   "owner": "demo",
   "listed": false,
