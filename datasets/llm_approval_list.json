@@ -65,7 +65,6 @@
       {"name":"connection_name","type":"string"},
       {"name":"connection_type","type":"string"},
       {"name":"llm_name","type":"string"},
-      {"name":"llm_name_simplified","type":"string"},
       {"name":"llm_enabled","type":"boolean"}
     ],
     "userModified": true
