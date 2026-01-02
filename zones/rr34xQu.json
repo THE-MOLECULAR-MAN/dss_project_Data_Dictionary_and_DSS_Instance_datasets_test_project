@@ -165,6 +165,14 @@
     {
       "objectId": "connections_with_failures",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_apps_with_no_instances",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "apps_with_no_instances",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
