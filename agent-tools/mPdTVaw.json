@@ -6,7 +6,8 @@
       "stopSequences": [],
       "outputTrajectory": true
     },
-    "forwardContext": false
+    "forwardContext": false,
+    "llmId": "nvidia-nim:Dummy_NVIDIA_NIM:id"
   },
   "quickTestQuery": {
     "input": {
