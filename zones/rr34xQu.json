@@ -157,6 +157,14 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_agents_missing_LLM_config",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "agents_missing_LLM_config",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
