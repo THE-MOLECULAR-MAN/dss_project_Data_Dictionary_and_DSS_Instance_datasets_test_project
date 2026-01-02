@@ -65,7 +65,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "deprecated Python version",
+      "originLabel": "Python version not supported in DSS",
       "index": 1
     }
   ],
