@@ -132,6 +132,20 @@
         "LLM_id",
         "agent_tool_type"
       ]
+    },
+    {
+      "preFilter": {},
+      "originLabel": "dss_knowledgebanks_cached",
+      "index": 3,
+      "columnsMatch": [
+        "projectKey",
+        "url",
+        "last_modified_user",
+        "last_modified_timestamp",
+        "created_by_user",
+        "kb_embeddingLLMId",
+        "kb_vectorStoreType"
+      ]
     }
   ],
   "copySchemaFromDatasetWithName": "dss_retrieval_augmented_llms_cached",
