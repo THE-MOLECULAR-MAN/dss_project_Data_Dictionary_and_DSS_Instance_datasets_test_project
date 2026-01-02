@@ -57,6 +57,14 @@
     {
       "objectId": "dss_llmmodelsbyconnection_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "llm_approval_list",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_llm_approval_list",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
