@@ -144,7 +144,7 @@
         "last_modified_timestamp",
         "created_by_user",
         "kb_embeddingLLMId",
-        "kb_vectorStoreType"
+        ""
       ]
     }
   ],
