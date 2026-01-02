@@ -41,10 +41,6 @@
     {
       "objectId": "Potential_problem_RAG_LLMs",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_agents_cached_prepared",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
