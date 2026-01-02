@@ -29,6 +29,14 @@
     {
       "objectId": "objects_using_LLMs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "agents_missing_LLM_config",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_agents_missing_LLM_config",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
