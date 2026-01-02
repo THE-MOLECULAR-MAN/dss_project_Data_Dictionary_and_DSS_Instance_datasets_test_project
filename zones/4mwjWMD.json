@@ -37,6 +37,38 @@
     {
       "objectId": "compute_Potential_problem_RAG_LLMs",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "llmmodelsbyconnection_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_llmmodelsbyconnection_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_llmmodelsbyconnection_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_llm_approval_list",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "llm_approval_list",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_llms_used_with_enable_status",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unmatched_LLMs_used",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "llms_used_with_enable_status",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
