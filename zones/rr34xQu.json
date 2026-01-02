@@ -157,6 +157,10 @@
     {
       "objectId": "dss_llmusage_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "llmmodelsbyconnection_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
