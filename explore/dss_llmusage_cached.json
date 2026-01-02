@@ -33,7 +33,7 @@
       "dss_object_type": 176,
       "dss_object_id": 218,
       "dss_object_name": 300,
-      "llmId": 300
+      "llmId": 699
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -43,7 +43,12 @@
       "valueColoringMode": "HASH",
       "coloringGroups": []
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "dss_object_type",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
