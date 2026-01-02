@@ -68,6 +68,7 @@
       {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"created_by_user","type":"string","meaning":"Text"},
       {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_type","type":"string"},
       {"name":"original_dataset","type":"string"}
     ],
     "userModified": true
