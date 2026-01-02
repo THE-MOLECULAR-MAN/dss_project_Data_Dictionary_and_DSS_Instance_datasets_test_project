@@ -21,6 +21,14 @@
     {
       "objectId": "unapproved_LLMs",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_objects_using_LLMs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "objects_using_LLMs",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
