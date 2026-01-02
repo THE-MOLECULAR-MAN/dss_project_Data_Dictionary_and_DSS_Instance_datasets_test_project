@@ -63,25 +63,11 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"rag_llm_id","type":"string","meaning":"Text"},
-      {"name":"activeVersion","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"Text"},
-      {"name":"kb_id","type":"string","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"retrievalColumns","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"retrievalSource","type":"string","meaning":"Text"},
-      {"name":"created_timestamp","type":"string","meaning":"DatetimeNoTz"},
       {"name":"last_modified_user","type":"string","meaning":"Text"},
       {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"agent_name","type":"string","comment":"Name of the agent, identifies the agent.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_id","type":"string","comment":"Unique identifier for each agent, ensures uniqueness.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_type","type":"string","comment":"Type of agent, e.g., PYTHON_AGENT.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_version","type":"string","comment":"Version of the agent, indicates updates.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"creator_user","type":"string","comment":"User who created the agent, tracks origin.","meaning":"Text","isColumnEdited":true},
-      {"name":"active_agent_version","type":"string","comment":"Currently active version of the agent.","meaning":"Text","isColumnEdited":true}
+      {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
