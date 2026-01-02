@@ -43,14 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_users_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_users_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_projects_cached",
       "objectType": "DATASET"
     },
