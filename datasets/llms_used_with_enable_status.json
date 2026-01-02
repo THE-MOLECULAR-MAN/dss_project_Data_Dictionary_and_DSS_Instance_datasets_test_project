@@ -62,7 +62,9 @@
   },
   "schema": {
     "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"dss_object_type","type":"string","meaning":"Text"},
+      {"name":"dss_object_id","type":"string","meaning":"Text"},
       {"name":"dss_object_name","type":"string","meaning":"Text"},
       {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"connection_type","type":"string"},
