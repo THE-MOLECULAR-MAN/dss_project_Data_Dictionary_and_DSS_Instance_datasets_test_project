@@ -47,6 +47,11 @@
       "table": 0
     },
     {
+      "name": "connection_type",
+      "type": "string",
+      "table": 1
+    },
+    {
       "name": "llm_enabled",
       "type": "boolean",
       "table": 1
@@ -125,6 +130,10 @@
           {
             "meaning": "Text",
             "name": "llmId",
+            "type": "string"
+          },
+          {
+            "name": "connection_type",
             "type": "string"
           },
           {
