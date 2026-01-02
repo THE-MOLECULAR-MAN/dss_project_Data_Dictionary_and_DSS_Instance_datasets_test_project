@@ -112,7 +112,7 @@
               "operator": "!\u003d [string]"
             },
             {
-              "input": "llm_provider",
+              "input": "llm_model_name_version",
               "col": "projectKey",
               "string": "DELETED_LLM",
               "$showList": false,
