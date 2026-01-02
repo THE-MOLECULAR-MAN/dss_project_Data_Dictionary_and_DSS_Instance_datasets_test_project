@@ -62,18 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"agent_name","type":"string","comment":"Name of the agent, identifies the agent.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_id","type":"string","comment":"Unique identifier for each agent, ensures uniqueness.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey","type":"string","comment":"Key of the project associated with the agent.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_type","type":"string","comment":"Type of agent, e.g., PYTHON_AGENT.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_version","type":"string","comment":"Version of the agent, indicates updates.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"Text","isColumnEdited":true},
-      {"name":"creator_user","type":"string","comment":"User who created the agent, tracks origin.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the agent, tracks changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the agent, for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"datetimenotz","comment":"Timestamp of last modification, tracks changes.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"active_agent_version","type":"string","comment":"Currently active version of the agent.","meaning":"Text","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL link to the agent\u0027s location, for access.","meaning":"URL","isColumnEdited":true}
+      {"name":"LLMs_used","type":"string","comment":"List of LLMs used by the agent.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
   },
