@@ -32,17 +32,7 @@
   ],
   "selectedColumns": [
     {
-      "name": "projectKey",
-      "type": "string",
-      "table": 0
-    },
-    {
       "name": "dss_object_type",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "dss_object_id",
       "type": "string",
       "table": 0
     },
@@ -53,21 +43,6 @@
     },
     {
       "name": "llmId",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "connection_name",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "llm_provider",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "llm_model_name_version",
       "type": "string",
       "table": 0
     },
@@ -127,7 +102,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -149,17 +124,7 @@
         "columns": [
           {
             "meaning": "Text",
-            "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
             "name": "dss_object_type",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "dss_object_id",
             "type": "string"
           },
           {
@@ -173,19 +138,11 @@
             "type": "string"
           },
           {
-            "name": "connection_name",
-            "type": "string"
-          },
-          {
-            "name": "llm_provider",
-            "type": "string"
-          },
-          {
-            "name": "llm_model_name_version",
-            "type": "string"
-          },
-          {
             "name": "connection_type",
+            "type": "string"
+          },
+          {
+            "name": "connection_name",
             "type": "string"
           },
           {
