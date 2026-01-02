@@ -99,8 +99,23 @@
     {
       "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "llmId",
+              "col": "dss_object_type",
+              "string": "DELETED_LLM",
+              "$showList": false,
+              "operator": "!\u003d [string]"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "dss_llmusage_analysis",
       "index": 0,
