@@ -7,9 +7,9 @@
       {
         "input": "connection_test_status",
         "col": "type",
-        "string": "fail",
+        "string": "FAILED",
         "$showList": false,
-        "operator": "\u003d\u003d [string]i"
+        "operator": "\u003d\u003d [string]"
       }
     ]
   },
