@@ -163,10 +163,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_users_cached2",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_users_cached2",
       "objectType": "RECIPE"
     },
@@ -177,6 +173,10 @@
     {
       "objectId": "compute_potentially_recoverable_licenses",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
