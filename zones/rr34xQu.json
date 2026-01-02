@@ -39,10 +39,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_users_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_projects_cached",
       "objectType": "DATASET"
     },
@@ -160,22 +156,6 @@
     },
     {
       "objectId": "dss_llmusage_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_users_cached2",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "potentially_recoverable_licenses",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_potentially_recoverable_licenses",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_users_cached",
       "objectType": "DATASET"
     }
   ],

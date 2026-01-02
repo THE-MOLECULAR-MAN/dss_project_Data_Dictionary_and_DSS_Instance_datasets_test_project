@@ -1,7 +1,28 @@
 {
   "name": "Users",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_users_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "potentially_recoverable_licenses",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_users_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_potentially_recoverable_licenses",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_users_cached2",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
