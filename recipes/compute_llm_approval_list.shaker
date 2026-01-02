@@ -274,10 +274,9 @@
         "outputColumn": "llmId",
         "columns": [
           "connection_type",
-          "connection_name",
           "llm_name"
         ],
-        "join": ":"
+        "join": "|"
       },
       "alwaysShowComment": false
     }
