@@ -16,10 +16,6 @@
       },
       {
         "d": true,
-        "name": "llm_name_simplified"
-      },
-      {
-        "d": true,
         "name": "llm_enabled"
       }
     ]
@@ -64,7 +60,23 @@
       "type": "TextSimplifierProcessor",
       "params": {
         "inCol": "llm_name",
-        "outCol": "llm_name_simplified",
+        "outCol": "",
+        "sortAlphabetically": false,
+        "normalize": true,
+        "language": "english_2021",
+        "clearStopWords": false,
+        "stem": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "TextSimplifierProcessor",
+      "params": {
+        "inCol": "connection_type",
+        "outCol": "",
         "sortAlphabetically": false,
         "normalize": true,
         "language": "english_2021",
@@ -85,7 +97,7 @@
           "llm_name"
         ],
         "values": [
-          "Finetuning"
+          "finetuning"
         ],
         "matchingMode": "SUBSTRING",
         "action": "REMOVE_ROW",
@@ -159,7 +171,7 @@
         ],
         "normalization": "EXACT",
         "columns": [
-          "llm_name_simplified"
+          "llm_name"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
