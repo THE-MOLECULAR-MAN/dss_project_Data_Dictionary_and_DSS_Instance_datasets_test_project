@@ -3,10 +3,6 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_apps_live",
       "objectType": "DATASET"
     },
