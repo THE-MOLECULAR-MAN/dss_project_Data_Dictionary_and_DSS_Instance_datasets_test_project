@@ -1,6 +1,56 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "agent_name"
+      },
+      {
+        "d": true,
+        "name": "agent_id"
+      },
+      {
+        "d": true,
+        "name": "projectKey"
+      },
+      {
+        "d": true,
+        "name": "agent_type"
+      },
+      {
+        "d": true,
+        "name": "agent_version"
+      },
+      {
+        "d": true,
+        "name": "LLMs_used"
+      },
+      {
+        "d": true,
+        "name": "creator_user"
+      },
+      {
+        "d": true,
+        "name": "last_modified_user"
+      },
+      {
+        "d": true,
+        "name": "tags"
+      },
+      {
+        "d": true,
+        "name": "last_modified_timestamp"
+      },
+      {
+        "d": true,
+        "name": "active_agent_version"
+      },
+      {
+        "d": true,
+        "name": "url"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 1767323570436,
@@ -30,8 +80,45 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "(?\u003c\u003d:)[^:]+(?\u003d:)"
+          },
+          {
+            "from": "\\[\\\u0027"
+          },
+          {
+            "from": "\\\u0027\\]"
+          },
+          {
+            "from": "\\:\\:",
+            "to": ":"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "LLMs_used"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -107,7 +194,20 @@
       "meaning": "JSONArrayMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "agent_type": 134,
+    "agent_version": 113,
+    "projectKey": 281,
+    "last_modified_user": 150,
+    "active_agent_version": 165,
+    "agent_name": 274,
+    "agent_id": 106,
+    "creator_user": 105,
+    "last_modified_timestamp": 211,
+    "url": 300,
+    "LLMs_used": 300,
+    "tags": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
