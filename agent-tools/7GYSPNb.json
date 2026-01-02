@@ -6,7 +6,8 @@
       "stopSequences": [],
       "outputTrajectory": true
     },
-    "forwardContext": false
+    "forwardContext": false,
+    "llmId": "databricksllm:Dummy_Databricks_Mosaic_AI:databricks-claude-3-7-sonnet"
   },
   "quickTestQuery": {
     "input": {
