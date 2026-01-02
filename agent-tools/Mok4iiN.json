@@ -6,7 +6,8 @@
       "stopSequences": [],
       "outputTrajectory": true
     },
-    "forwardContext": false
+    "forwardContext": false,
+    "llmId": "anthropic:Anthropic_Dummy:claude-opus-4-20250514"
   },
   "quickTestQuery": {
     "input": {
