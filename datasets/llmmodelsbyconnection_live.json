@@ -44,10 +44,10 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection_name","type":"string","meaning":"Text"},
-      {"name":"connection_type","type":"string","meaning":"Text"},
-      {"name":"llm_name","type":"string","meaning":"Text"},
-      {"name":"llm_enabled","type":"boolean","meaning":"Boolean"}
+      {"name":"connection_name","type":"string"},
+      {"name":"connection_type","type":"string"},
+      {"name":"llm_name","type":"string"},
+      {"name":"llm_enabled","type":"string"}
     ],
     "userModified": true
   },
