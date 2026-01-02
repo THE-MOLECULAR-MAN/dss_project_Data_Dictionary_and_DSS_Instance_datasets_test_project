@@ -152,7 +152,10 @@
             "from": "sonnet",
             "to": "-sonnet"
           },
-          {}
+          {
+            "from": "claude",
+            "to": "claude-"
+          }
         ],
         "normalization": "EXACT",
         "columns": [
