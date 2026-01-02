@@ -163,7 +163,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recipes_with_no_output",
+      "objectId": "recipes_missing_either_input_or_output",
       "objectType": "DATASET"
     }
   ],

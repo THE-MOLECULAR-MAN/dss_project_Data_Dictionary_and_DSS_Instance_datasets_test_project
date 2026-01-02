@@ -82,7 +82,7 @@
     "main": {
       "items": [
         {
-          "ref": "recipes_with_no_output",
+          "ref": "recipes_missing_either_input_or_output",
           "appendMode": false
         }
       ]
