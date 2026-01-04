@@ -63,6 +63,15 @@
   "schema": {
     "columns": [
       {"name":"author","type":"string","comment":"Name or identifier of the commit author.","meaning":"Text","isColumnEdited":true},
+      {"name":"project_key_distinct","type":"bigint"},
+      {"name":"commit_id_distinct","type":"bigint"},
+      {"name":"timestamp_min","type":"date"},
+      {"name":"timestamp_max","type":"date"},
+      {"name":"added_files_sum","type":"bigint"},
+      {"name":"added_lines_sum","type":"bigint"},
+      {"name":"removed_files_sum","type":"bigint"},
+      {"name":"removed_lines_sum","type":"bigint"},
+      {"name":"changed_files_sum","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
