@@ -17,15 +17,15 @@
           "deps": []
         },
         {
-          "ref": "commits",
-          "deps": []
-        },
-        {
           "ref": "jobs",
           "deps": []
         },
         {
           "ref": "scenario_runs",
+          "deps": []
+        },
+        {
+          "ref": "commits_cached",
           "deps": []
         }
       ]

@@ -1,6 +1,47 @@
 {
   "mode": "UNION",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "connection",
+    "task_type",
+    "project_key",
+    "task_data",
+    "user",
+    "start_time",
+    "end_time",
+    "job_project_key",
+    "job_id",
+    "time_start",
+    "time_end",
+    "stable_state",
+    "state",
+    "warnings_count",
+    "scenario_project_key",
+    "scenario_id",
+    "scenario_run_id",
+    "step_id",
+    "step_run_id",
+    "job_def_type",
+    "job_def_trigger_type",
+    "job_def_initiator",
+    "job_def_initiated",
+    "job_def_refresh_metastore",
+    "job_def_outputs",
+    "outcome",
+    "scenario_name",
+    "trigger_name",
+    "scenario_run_as_user",
+    "run_as_user_identifier",
+    "run_as_user_via",
+    "commit_id",
+    "author",
+    "timestamp",
+    "added_files",
+    "added_lines",
+    "removed_files",
+    "removed_lines",
+    "changed_files"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -52,7 +93,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "commits",
+      "originLabel": "jobs",
       "index": 1
     },
     {
@@ -60,19 +101,296 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "jobs",
+      "originLabel": "scenario_runs",
       "index": 2
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "scenario_runs",
+      "preFilter": {},
+      "originLabel": "commits_cached",
       "index": 3
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "connection",
+            "comment": "Type of connection used, e.g., database name.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "task_type",
+            "comment": "Type of task executed, e.g., SQL operation.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_key",
+            "comment": "Identifier for the associated project.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONObjectMeaning",
+            "name": "task_data",
+            "comment": "JSON object with job and activity details.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "user",
+            "comment": "User who initiated the task.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "start_time",
+            "comment": "Timestamp when the task started.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "end_time",
+            "comment": "Timestamp when the task ended.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "job_project_key",
+            "comment": "Unique identifier for the job project.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "job_id",
+            "comment": "Unique identifier for each job execution.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Date",
+            "name": "time_start",
+            "comment": "Timestamp when the job started.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Date",
+            "name": "time_end",
+            "comment": "Timestamp when the job ended.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "stable_state",
+            "comment": "Indicates if the job reached a stable state.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "state",
+            "comment": "Current state of the job execution.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "warnings_count",
+            "comment": "Number of warnings generated during the job.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "scenario_project_key",
+            "comment": "Identifier for the scenario project.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "scenario_id",
+            "comment": "Unique identifier for the scenario.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "scenario_run_id",
+            "comment": "Identifier for the scenario run instance.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "step_id",
+            "comment": "Identifier for the specific job step.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "step_run_id",
+            "comment": "Identifier for the step run instance.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "job_def_type",
+            "comment": "Type of job definition executed.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "job_def_trigger_type",
+            "comment": "Trigger type that initiated the job.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "job_def_initiator",
+            "comment": "Person who initiated the job.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Date",
+            "name": "job_def_initiated",
+            "comment": "Timestamp when the job was initiated.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "job_def_refresh_metastore",
+            "comment": "Indicates if metastore was refreshed.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "job_def_outputs",
+            "comment": "JSON array of job output datasets.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "outcome",
+            "comment": "Result of scenario run, indicates success or failure.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "scenario_name",
+            "comment": "Descriptive name of scenario, provides context.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "trigger_name",
+            "comment": "Name of trigger initiating run, indicates start condition.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "scenario_run_as_user",
+            "comment": "User executing scenario, identifies responsible party.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "run_as_user_identifier",
+            "comment": "Identifier for user executing run, tracks user.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "run_as_user_via",
+            "comment": "Method or context of user execution, indicates access method.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "commit_id",
+            "comment": "Unique identifier for each commit.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "author",
+            "comment": "Name or identifier of the commit author.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Date",
+            "name": "timestamp",
+            "comment": "Time when the commit was made, in milliseconds.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "added_files",
+            "comment": "Number of files added in the commit.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "added_lines",
+            "comment": "Number of lines added in the commit.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "removed_files",
+            "comment": "Number of files removed in the commit.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "removed_lines",
+            "comment": "Number of lines removed in the commit.",
+            "type": "int"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "LongMeaning",
+            "name": "changed_files",
+            "comment": "Number of files changed in the commit.",
+            "type": "int"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
