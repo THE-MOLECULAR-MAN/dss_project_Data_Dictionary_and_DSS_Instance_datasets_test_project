@@ -20,11 +20,7 @@
       },
       {
         "d": true,
-        "name": "end_time"
-      },
-      {
-        "d": true,
-        "name": "state"
+        "name": "error"
       },
       {
         "d": true,
@@ -177,7 +173,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -197,6 +193,49 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "error",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "FAILED",
+            "to": "1"
+          },
+          {
+            "from": "SUCCESS",
+            "to": "0"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "state"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "state",
+          "end_time"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
@@ -258,15 +297,18 @@
   },
   "columnWidthsByName": {
     "duration_seconds": 135,
-    "start_time": 183,
     "age_days": 100,
-    "event_type": 100,
     "project_key": 300,
     "end_time": 106,
     "warnings_count": 120,
+    "error": 100,
+    "scenario_id": 176,
+    "start_time": 183,
+    "event_type": 100,
     "state": 100,
     "user": 113,
-    "scenario_id": 176
+    "errors": 100,
+    "run_errors": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
