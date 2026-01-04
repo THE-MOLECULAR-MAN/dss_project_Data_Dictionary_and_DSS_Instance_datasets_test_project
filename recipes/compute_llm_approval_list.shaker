@@ -16,7 +16,7 @@
       },
       {
         "d": true,
-        "name": "llmId"
+        "name": "llmId_basic"
       },
       {
         "d": true,
@@ -271,12 +271,12 @@
       "disabled": false,
       "type": "ColumnsConcat",
       "params": {
-        "outputColumn": "llmId",
+        "outputColumn": "llmId_basic",
         "columns": [
           "connection_type",
           "llm_name"
         ],
-        "join": ":"
+        "join": "|"
       },
       "alwaysShowComment": false
     }
@@ -314,6 +314,7 @@
     "connection_type": 128,
     "llm_enabled": 100,
     "llm_name_simplified": 158,
+    "llmId_basic": 300,
     "llmId": 410
   },
   "sorting": [
