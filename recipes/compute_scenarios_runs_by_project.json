@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "scenario_runs_cached",
+          "ref": "scenario_runs_prepared",
           "deps": []
         }
       ]
