@@ -24,35 +24,11 @@
       },
       {
         "d": true,
-        "name": "time_end"
-      },
-      {
-        "d": true,
         "name": "outcome"
       },
       {
         "d": true,
         "name": "warnings_count"
-      },
-      {
-        "d": true,
-        "name": "scenario_name"
-      },
-      {
-        "d": true,
-        "name": "trigger_name"
-      },
-      {
-        "d": true,
-        "name": "scenario_run_as_user"
-      },
-      {
-        "d": true,
-        "name": "run_as_user_identifier"
-      },
-      {
-        "d": true,
-        "name": "run_as_user_via"
       }
     ]
   },
@@ -109,7 +85,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateDifference",
@@ -124,6 +100,36 @@
         "timezone_id": "use_preferred_timezone",
         "compareTo": "COLUMN",
         "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "DateTruncate",
+      "params": {
+        "inCol": "time_start",
+        "datePart": "DAY"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "run_as_user_via",
+          "time_end",
+          "trigger_name",
+          "scenario_name",
+          "run_as_user_identifier",
+          "scenario_run_as_user"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
