@@ -143,6 +143,10 @@
           {
             "name": "user",
             "type": "string"
+          },
+          {
+            "name": "original_dataset",
+            "type": "string"
           }
         ],
         "userModified": false
@@ -151,5 +155,5 @@
     "distinct": false,
     "enabled": false
   },
-  "addOriginColumn": false
+  "addOriginColumn": true
 }
