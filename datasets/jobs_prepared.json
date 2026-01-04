@@ -62,11 +62,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project."},
-      {"name":"time_start","type":"date","comment":"Timestamp when the job started."},
-      {"name":"job_runtime_seconds","type":"bigint"},
-      {"name":"state","type":"string","comment":"Current state of the job execution."},
-      {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job."}
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"job_runtime_seconds","type":"bigint","meaning":"LongMeaning"},
+      {"name":"date_start","type":"date","meaning":"Date"},
+      {"name":"job_state","type":"string"},
+      {"name":"user","type":"string"}
     ],
     "userModified": true
   },
