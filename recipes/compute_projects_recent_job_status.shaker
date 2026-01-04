@@ -54,7 +54,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -62,6 +62,22 @@
         "expression": "if(\n\tisError(FAILED_count/(FAILED_count+DONE_count)),\n    0,\n    FAILED_count/(FAILED_count+DONE_count))",
         "column": "percentage_failure",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 2,
+        "columns": [
+          "percentage_failure"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
