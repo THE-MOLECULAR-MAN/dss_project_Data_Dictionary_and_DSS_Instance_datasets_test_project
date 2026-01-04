@@ -67,14 +67,8 @@
       {"name":"scenario_run_id","type":"string","comment":"Unique identifier for each scenario run, run key.","meaning":"Text","isColumnEdited":true},
       {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","meaning":"Date","isColumnEdited":true},
       {"name":"scenario_runtime_seconds","type":"bigint"},
-      {"name":"time_end","type":"date","comment":"Timestamp when the scenario run ended, end time.","meaning":"Date","isColumnEdited":true},
       {"name":"outcome","type":"string","comment":"Result of the scenario run, run outcome status.","meaning":"Text","isColumnEdited":true},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings during the run, warning count.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_name","type":"string","comment":"Descriptive name of the scenario, scenario title.","meaning":"Text","isColumnEdited":true},
-      {"name":"trigger_name","type":"string","comment":"Name of the trigger for the scenario, trigger identifier.","meaning":"Text","isColumnEdited":true},
-      {"name":"scenario_run_as_user","type":"string","comment":"User who executed the scenario, executing user.","meaning":"Text","isColumnEdited":true},
-      {"name":"run_as_user_identifier","type":"string","comment":"Identifier of the user who ran the scenario, user ID.","meaning":"Text","isColumnEdited":true},
-      {"name":"run_as_user_via","type":"string","comment":"Method or context of user execution, execution context.","meaning":"JSONArrayMeaning","isColumnEdited":true}
+      {"name":"warnings_count","type":"int","comment":"Number of warnings during the run, warning count.","meaning":"LongMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
