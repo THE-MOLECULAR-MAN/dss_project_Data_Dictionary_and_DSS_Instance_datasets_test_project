@@ -12,6 +12,14 @@
       },
       {
         "d": true,
+        "name": "scenario_run_id"
+      },
+      {
+        "d": true,
+        "name": "time_start"
+      },
+      {
+        "d": true,
         "name": "date_start"
       },
       {
@@ -20,11 +28,35 @@
       },
       {
         "d": true,
+        "name": "time_end"
+      },
+      {
+        "d": true,
         "name": "outcome"
       },
       {
         "d": true,
         "name": "warnings_count"
+      },
+      {
+        "d": true,
+        "name": "scenario_name"
+      },
+      {
+        "d": true,
+        "name": "trigger_name"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_as_user"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_identifier"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_via"
       }
     ]
   },
@@ -64,25 +96,6 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "scenario_project_key",
-          "scenario_id",
-          "time_end",
-          "time_start",
-          "outcome",
-          "warnings_count"
-        ],
-        "keep": true,
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateDifference",
       "params": {
@@ -112,22 +125,20 @@
       "alwaysShowComment": false
     },
     {
-      "preview": false,
+      "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "scenario_run_id",
-          "run_as_user_via",
-          "time_end",
-          "trigger_name",
-          "scenario_name",
-          "run_as_user_identifier",
-          "scenario_run_as_user",
-          "time_start"
+          "scenario_project_key",
+          "scenario_id",
+          "scenario_runtime_seconds",
+          "warnings_count",
+          "date_start",
+          "outcome"
         ],
-        "keep": false,
+        "keep": true,
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
