@@ -276,7 +276,7 @@
           "connection_type",
           "llm_name"
         ],
-        "join": "|"
+        "join": ":"
       },
       "alwaysShowComment": false
     }
