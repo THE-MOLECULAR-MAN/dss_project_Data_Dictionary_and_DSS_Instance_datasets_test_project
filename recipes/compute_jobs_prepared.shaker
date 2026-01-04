@@ -4,11 +4,7 @@
     "list": [
       {
         "d": true,
-        "name": "job_project_key"
-      },
-      {
-        "d": true,
-        "name": "time_start"
+        "name": "projectKey"
       },
       {
         "d": true,
@@ -16,11 +12,15 @@
       },
       {
         "d": true,
-        "name": "state"
+        "name": "date_start"
       },
       {
         "d": true,
-        "name": "job_def_initiator"
+        "name": "job_state"
+      },
+      {
+        "d": true,
+        "name": "user"
       }
     ]
   },
@@ -83,6 +83,18 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "DateTruncate",
+      "params": {
+        "inCol": "time_start",
+        "outCol": "date_start",
+        "datePart": "DAY"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "DateDifference",
       "params": {
         "output": "job_runtime_seconds",
@@ -106,13 +118,36 @@
       "params": {
         "columns": [
           "job_project_key",
-          "time_start",
+          "date_start",
           "job_runtime_seconds",
           "state",
           "job_def_initiator"
         ],
         "keep": true,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "job_def_initiator",
+            "to": "user"
+          },
+          {
+            "from": "job_project_key",
+            "to": "projectKey"
+          },
+          {
+            "from": "state",
+            "to": "job_state"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
@@ -151,9 +186,12 @@
     "job_def_trigger_type": 165,
     "step_id": 176,
     "job_def_refresh_metastore": 203,
+    "job_state": 100,
     "job_project_key": 300,
     "scenario_id": 176,
     "job_def_type": 197,
+    "date_start": 183,
+    "projectKey": 300,
     "job_runtime_seconds": 158,
     "job_id": 300,
     "scenario_run_id": 128,
@@ -162,7 +200,8 @@
     "time_end": 183,
     "state": 100,
     "job_def_initiator": 143,
-    "stable_state": 105
+    "stable_state": 105,
+    "user": 113
   },
   "sorting": [],
   "globalSearchQuery": "",
