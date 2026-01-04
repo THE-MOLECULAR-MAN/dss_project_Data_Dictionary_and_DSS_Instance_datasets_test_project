@@ -103,6 +103,12 @@
           "avg": false,
           "stddev": false,
           "first": false
+        },
+        {
+          "column": "start_time",
+          "count": true,
+          "type": "date",
+          "$agg": "count"
         }
       ]
     }
