@@ -15,6 +15,12 @@
           "string": "ABORTED",
           "$showList": false,
           "operator": "!\u003d [string]"
+        },
+        {
+          "input": "age_days",
+          "$showList": false,
+          "num": 90,
+          "operator": "\u003c\u003d [number]"
         }
       ]
     },
