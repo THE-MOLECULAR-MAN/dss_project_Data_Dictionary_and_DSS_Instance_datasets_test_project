@@ -128,7 +128,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FindReplace",
       "params": {
         "output": "",
@@ -279,6 +279,37 @@
         "join": "|"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "-",
+            "to": ""
+          },
+          {
+            "from": ".",
+            "to": ""
+          },
+          {
+            "from": " "
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "llmId_basic"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -319,8 +350,8 @@
   },
   "sorting": [
     {
-      "column": "connection_type",
-      "ascending": true
+      "column": "llmId_basic",
+      "ascending": false
     }
   ],
   "globalSearchQuery": "",
