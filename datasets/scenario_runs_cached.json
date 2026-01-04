@@ -46,7 +46,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "${projectKey}_scenario_runs_prepared",
+    "table": "${projectKey}_scenario_runs_cached",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
