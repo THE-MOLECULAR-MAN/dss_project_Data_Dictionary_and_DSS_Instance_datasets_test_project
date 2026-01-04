@@ -16,6 +16,10 @@
       },
       {
         "d": true,
+        "name": "age_days"
+      },
+      {
+        "d": true,
         "name": "job_state"
       },
       {
@@ -150,6 +154,24 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "age_days",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "outputUnit": "DAYS",
+        "input1": "date_start",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -181,6 +203,7 @@
   "columnWidthsByName": {
     "job_def_initiated": 183,
     "step_run_id": 100,
+    "age_days": 100,
     "time_start": 183,
     "warnings_count": 120,
     "job_def_trigger_type": 165,
