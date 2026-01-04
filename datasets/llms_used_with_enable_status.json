@@ -62,13 +62,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"dss_object_id","type":"string","meaning":"Text"},
-      {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"llmId_basic_deployed","type":"string"},
-      {"name":"connection_type","type":"string"},
       {"name":"llmId_basic_approval","type":"string"},
       {"name":"llm_enabled","type":"boolean"}
     ],
