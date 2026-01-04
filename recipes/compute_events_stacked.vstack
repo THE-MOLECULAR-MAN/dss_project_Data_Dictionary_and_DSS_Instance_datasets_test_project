@@ -1,6 +1,6 @@
 {
   "mode": "REMAP",
-  "originColumnName": "original_dataset",
+  "originColumnName": "event_type",
   "selectedColumns": [
     "project_key",
     "start_time",
@@ -53,7 +53,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "jobs",
+      "originLabel": "job_run",
       "index": 0,
       "columnsMatch": [
         "job_project_key",
@@ -70,7 +70,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "scenario_runs",
+      "originLabel": "scenario_run",
       "index": 1,
       "columnsMatch": [
         "scenario_project_key",
@@ -84,7 +84,7 @@
     },
     {
       "preFilter": {},
-      "originLabel": "commits_cached",
+      "originLabel": "commit",
       "index": 2,
       "columnsMatch": [
         "project_key",
@@ -98,7 +98,7 @@
     },
     {
       "preFilter": {},
-      "originLabel": "cluster_tasks_cached",
+      "originLabel": "cluster_task",
       "index": 3,
       "columnsMatch": [
         "project_key",
@@ -169,7 +169,7 @@
             "type": "string"
           },
           {
-            "name": "original_dataset",
+            "name": "event_type",
             "type": "string"
           }
         ],
