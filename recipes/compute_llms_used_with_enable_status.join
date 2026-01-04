@@ -117,6 +117,7 @@
       }
     }
   },
+  "engineType": "DSS",
   "virtualInputs": [
     {
       "outputColumnsSelectionMode": "MANUAL",
