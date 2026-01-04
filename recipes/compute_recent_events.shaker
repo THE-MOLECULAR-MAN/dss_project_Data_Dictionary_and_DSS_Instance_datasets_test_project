@@ -160,7 +160,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnNumericalRange",
@@ -173,6 +173,30 @@
         "action": "KEEP_ROW",
         "appliesTo": "SINGLE_COLUMN",
         "includeEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "DONE",
+            "to": "SUCCESS"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "state"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
     }
