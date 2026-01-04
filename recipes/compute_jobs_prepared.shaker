@@ -8,10 +8,6 @@
       },
       {
         "d": true,
-        "name": "job_id"
-      },
-      {
-        "d": true,
         "name": "time_start"
       },
       {
@@ -20,63 +16,11 @@
       },
       {
         "d": true,
-        "name": "time_end"
-      },
-      {
-        "d": true,
-        "name": "stable_state"
-      },
-      {
-        "d": true,
         "name": "state"
       },
       {
         "d": true,
-        "name": "warnings_count"
-      },
-      {
-        "d": true,
-        "name": "scenario_project_key"
-      },
-      {
-        "d": true,
-        "name": "scenario_id"
-      },
-      {
-        "d": true,
-        "name": "scenario_run_id"
-      },
-      {
-        "d": true,
-        "name": "step_id"
-      },
-      {
-        "d": true,
-        "name": "step_run_id"
-      },
-      {
-        "d": true,
-        "name": "job_def_type"
-      },
-      {
-        "d": true,
-        "name": "job_def_trigger_type"
-      },
-      {
-        "d": true,
         "name": "job_def_initiator"
-      },
-      {
-        "d": true,
-        "name": "job_def_initiated"
-      },
-      {
-        "d": true,
-        "name": "job_def_refresh_metastore"
-      },
-      {
-        "d": true,
-        "name": "job_def_outputs"
       }
     ]
   },
@@ -155,7 +99,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
@@ -164,11 +108,7 @@
           "job_project_key",
           "time_start",
           "job_runtime_seconds",
-          "stable_state",
           "state",
-          "scenario_project_key",
-          "step_id",
-          "step_run_id",
           "job_def_initiator"
         ],
         "keep": true,
