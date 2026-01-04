@@ -71,10 +71,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_llmusage_live",
       "objectType": "DATASET"
     },
@@ -84,14 +80,6 @@
     },
     {
       "objectId": "dss_llmusage_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_connections_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_connections_cached",
       "objectType": "DATASET"
     },
     {
