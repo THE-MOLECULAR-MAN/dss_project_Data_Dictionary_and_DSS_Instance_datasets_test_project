@@ -5,24 +5,39 @@
   },
   "keys": [
     {
-      "column": "projectKey"
+      "last": false,
+      "max": false,
+      "column": "projectKey",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "job_runtime_seconds",
       "count": false,
-      "sum": false,
+      "$idx": 0,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "median": false,
+      "median": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -32,8 +47,10 @@
       "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -49,8 +66,10 @@
       "firstLastNotNull": false,
       "column": "job_state",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,8 +85,10 @@
       "firstLastNotNull": false,
       "column": "user",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -117,8 +138,37 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "job_runtime_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "job_runtime_seconds_median",
+            "type": "double"
+          },
+          {
+            "name": "job_runtime_seconds_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
