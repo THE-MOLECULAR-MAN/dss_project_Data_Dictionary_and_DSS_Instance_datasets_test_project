@@ -196,7 +196,7 @@
             "type": "string"
           },
           {
-            "name": "llmId_basic",
+            "name": "llmId_basic_approval",
             "type": "string"
           },
           {
