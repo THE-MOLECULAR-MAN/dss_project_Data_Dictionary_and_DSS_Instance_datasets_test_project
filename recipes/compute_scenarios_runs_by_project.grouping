@@ -57,7 +57,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
@@ -205,6 +205,10 @@
           {
             "name": "scenario_id_distinct",
             "type": "bigint"
+          },
+          {
+            "name": "date_start_max",
+            "type": "date"
           },
           {
             "name": "scenario_runtime_seconds_max",
