@@ -63,6 +63,11 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time_max","type":"date"},
+      {"name":"duration_seconds_max","type":"bigint"},
+      {"name":"duration_seconds_median","type":"double"},
+      {"name":"duration_seconds_sum","type":"bigint"},
+      {"name":"user_distinct","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
