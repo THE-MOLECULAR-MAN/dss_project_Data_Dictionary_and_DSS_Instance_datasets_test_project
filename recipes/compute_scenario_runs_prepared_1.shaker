@@ -12,7 +12,7 @@
       },
       {
         "d": true,
-        "name": "time_start"
+        "name": "date_start"
       },
       {
         "d": true,
@@ -102,10 +102,11 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "DateTruncate",
       "params": {
         "inCol": "time_start",
+        "outCol": "date_start",
         "datePart": "DAY"
       },
       "alwaysShowComment": false
@@ -123,7 +124,8 @@
           "trigger_name",
           "scenario_name",
           "run_as_user_identifier",
-          "scenario_run_as_user"
+          "scenario_run_as_user",
+          "time_start"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
@@ -217,6 +219,7 @@
     "scenario_runtime_minutes": 195,
     "trigger_name": 218,
     "scenario_runtime_seconds": 195,
+    "date_start": 183,
     "scenario_run_id": 176,
     "scenario_project_key": 225,
     "time_end": 183,
