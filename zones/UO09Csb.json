@@ -113,6 +113,14 @@
     {
       "objectId": "project_commits",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_events_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "events_stacked",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
