@@ -59,7 +59,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "max(0,FAILED_count/(FAILED_count+DONE_count))",
+        "expression": "if(\n\tisError(FAILED_count/(FAILED_count+DONE_count)),\n    0,\n    FAILED_count/(FAILED_count+DONE_count))",
         "column": "percentage_failure",
         "errorColumn": ""
       },
