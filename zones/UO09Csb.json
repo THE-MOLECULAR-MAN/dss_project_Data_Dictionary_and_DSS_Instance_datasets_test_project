@@ -75,12 +75,12 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "scenario_runs_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_scenario_runs_prepared_1",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "scenario_runs_prepared2",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
