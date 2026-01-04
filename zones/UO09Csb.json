@@ -97,6 +97,14 @@
     {
       "objectId": "jobs_by_projectKey",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_jobs_by_status",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "jobs_by_status",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
