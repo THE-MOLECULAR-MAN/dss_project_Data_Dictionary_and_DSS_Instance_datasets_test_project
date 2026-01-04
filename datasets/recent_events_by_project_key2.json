@@ -61,8 +61,223 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"cluster_task_error_sum","type":"bigint"},
+      {"name":"cluster_task_warnings_count_sum","type":"int"},
+      {"name":"cluster_task_user_distinct","type":"bigint"},
+      {"name":"cluster_task_start_time_count","type":"bigint"},
+      {"name":"cluster_task_count","type":"bigint"},
+      {"name":"commit_error_sum","type":"bigint"},
+      {"name":"commit_warnings_count_sum","type":"int"},
+      {"name":"commit_user_distinct","type":"bigint"},
+      {"name":"commit_start_time_count","type":"bigint"},
+      {"name":"commit_count","type":"bigint"},
+      {"name":"job_run_error_sum","type":"bigint"},
+      {"name":"job_run_warnings_count_sum","type":"int"},
+      {"name":"job_run_user_distinct","type":"bigint"},
+      {"name":"job_run_start_time_count","type":"bigint"},
+      {"name":"job_run_count","type":"bigint"},
+      {"name":"scenario_run_error_sum","type":"bigint"},
+      {"name":"scenario_run_warnings_count_sum","type":"int"},
+      {"name":"scenario_run_user_distinct","type":"bigint"},
+      {"name":"scenario_run_start_time_count","type":"bigint"},
+      {"name":"scenario_run_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "event_type"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": [
+              {
+                "column": "error",
+                "type": "bigint",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": true,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "median": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              },
+              {
+                "column": "warnings_count",
+                "type": "int",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": true,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "median": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              },
+              {
+                "column": "user",
+                "type": "string",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": true,
+                "sum": false,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "median": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              },
+              {
+                "column": "start_time",
+                "type": "date",
+                "min": false,
+                "max": false,
+                "count": true,
+                "countDistinct": false,
+                "sum": false,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "median": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              }
+            ]
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "cluster_task"
+              ],
+              "name": "cluster_task",
+              "valueColumns": [
+                {
+                  "source": "start_time",
+                  "pivoted": "cluster_task_start_time"
+                },
+                {
+                  "source": "warnings_count",
+                  "pivoted": "cluster_task_warnings_count"
+                },
+                {
+                  "source": "error",
+                  "pivoted": "cluster_task_error"
+                },
+                {
+                  "source": "user",
+                  "pivoted": "cluster_task_user"
+                }
+              ],
+              "globalCountColumn": "cluster_task"
+            },
+            {
+              "keyValues": [
+                "commit"
+              ],
+              "name": "commit",
+              "valueColumns": [
+                {
+                  "source": "start_time",
+                  "pivoted": "commit_start_time"
+                },
+                {
+                  "source": "warnings_count",
+                  "pivoted": "commit_warnings_count"
+                },
+                {
+                  "source": "error",
+                  "pivoted": "commit_error"
+                },
+                {
+                  "source": "user",
+                  "pivoted": "commit_user"
+                }
+              ],
+              "globalCountColumn": "commit"
+            },
+            {
+              "keyValues": [
+                "job_run"
+              ],
+              "name": "job_run",
+              "valueColumns": [
+                {
+                  "source": "start_time",
+                  "pivoted": "job_run_start_time"
+                },
+                {
+                  "source": "warnings_count",
+                  "pivoted": "job_run_warnings_count"
+                },
+                {
+                  "source": "error",
+                  "pivoted": "job_run_error"
+                },
+                {
+                  "source": "user",
+                  "pivoted": "job_run_user"
+                }
+              ],
+              "globalCountColumn": "job_run"
+            },
+            {
+              "keyValues": [
+                "scenario_run"
+              ],
+              "name": "scenario_run",
+              "valueColumns": [
+                {
+                  "source": "start_time",
+                  "pivoted": "scenario_run_start_time"
+                },
+                {
+                  "source": "warnings_count",
+                  "pivoted": "scenario_run_warnings_count"
+                },
+                {
+                  "source": "error",
+                  "pivoted": "scenario_run_error"
+                },
+                {
+                  "source": "user",
+                  "pivoted": "scenario_run_user"
+                }
+              ],
+              "globalCountColumn": "scenario_run"
+            }
+          ]
+        }
+      ]
+    }
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
