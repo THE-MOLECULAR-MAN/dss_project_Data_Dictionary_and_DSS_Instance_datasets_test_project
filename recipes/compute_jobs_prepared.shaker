@@ -128,7 +128,7 @@
           "1970-01-01T00:00:00.000Z"
         ],
         "matchingMode": "FULL_STRING",
-        "action": "CLEAR_CELL",
+        "action": "REMOVE_ROW",
         "appliesTo": "SINGLE_COLUMN",
         "exclude": false,
         "processNullOrEmptyValues": false
@@ -151,6 +151,28 @@
         "timezone_id": "use_preferred_timezone",
         "compareTo": "COLUMN",
         "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "job_project_key",
+          "time_start",
+          "job_runtime_seconds",
+          "stable_state",
+          "state",
+          "scenario_project_key",
+          "step_id",
+          "step_run_id",
+          "job_def_initiator"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
