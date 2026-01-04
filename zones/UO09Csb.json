@@ -81,6 +81,14 @@
     {
       "objectId": "scenario_runs_prepared",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_jobs_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
