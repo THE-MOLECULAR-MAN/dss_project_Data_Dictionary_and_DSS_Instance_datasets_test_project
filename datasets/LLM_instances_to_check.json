@@ -70,6 +70,7 @@
       {"name":"connection_name","type":"string"},
       {"name":"llm_provider","type":"string"},
       {"name":"llm_model_name_version","type":"string"},
+      {"name":"llmId_basic","type":"string"},
       {"name":"name","type":"string","comment":"Descriptive name of the project, indicating its purpose.","meaning":"Text","isColumnEdited":true},
       {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
       {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
