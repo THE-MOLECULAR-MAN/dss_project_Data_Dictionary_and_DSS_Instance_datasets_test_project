@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "project_activities",
+          "ref": "project_commits",
           "appendMode": false
         }
       ]

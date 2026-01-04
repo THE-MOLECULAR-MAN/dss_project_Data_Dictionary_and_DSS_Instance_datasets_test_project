@@ -55,10 +55,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "project_activities",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_user_commit_activity_summary",
       "objectType": "RECIPE"
     },
@@ -112,6 +108,10 @@
     },
     {
       "objectId": "recent_jobs_by_projectKey",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "project_commits",
       "objectType": "DATASET"
     }
   ],
