@@ -71,10 +71,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "scenarios_runs_by_project",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_scenario_runs_prepared_1",
       "objectType": "RECIPE"
     },
@@ -113,6 +109,10 @@
     {
       "objectId": "compute_projects_recent_job_status",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_scenarios_runs_by_project",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

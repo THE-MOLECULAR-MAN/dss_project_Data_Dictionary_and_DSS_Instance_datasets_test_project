@@ -2,36 +2,21 @@
   "preFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
-      "$latestOperator": "\u0026\u0026",
-      "$filterOptions": "rules",
       "conditions": [
         {
           "input": "age_days",
-          "$showList": false,
-          "num": 90,
-          "operator": "\u003c\u003d [number]"
+          "num": 90.0,
+          "operator": "\u003c\u003d [number]",
+          "num2": 0.0
         }
       ]
     },
-    "$status": {},
     "distinct": false,
     "enabled": true
   },
   "keys": [
     {
-      "last": false,
-      "max": false,
-      "column": "scenario_project_key",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "median": false,
-      "stddev": false,
-      "first": false
+      "column": "scenario_project_key"
     }
   ],
   "values": [
@@ -41,7 +26,6 @@
       "firstLastNotNull": false,
       "column": "scenario_id",
       "count": false,
-      "$idx": 0,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -51,7 +35,6 @@
       "countDistinct": true,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -61,15 +44,15 @@
       "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
-      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "date",
-      "countDistinct": false,
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,12 +62,13 @@
       "firstLastNotNull": false,
       "column": "age_days",
       "count": false,
-      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "bigint",
-      "countDistinct": false,
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "median": false,
       "stddev": false,
@@ -96,15 +80,15 @@
       "firstLastNotNull": false,
       "column": "scenario_runtime_seconds",
       "count": false,
-      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "bigint",
-      "countDistinct": false,
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "median": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -114,7 +98,6 @@
       "firstLastNotNull": false,
       "column": "outcome",
       "count": false,
-      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -133,7 +116,6 @@
       "firstLastNotNull": false,
       "column": "warnings_count",
       "count": false,
-      "$idx": 5,
       "sum": false,
       "concat": false,
       "type": "int",
@@ -143,7 +125,6 @@
       "countDistinct": false,
       "avg": false,
       "median": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -192,48 +173,6 @@
   },
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "isColumnEdited": true,
-            "meaning": "Text",
-            "name": "scenario_project_key",
-            "comment": "Project identifier for the scenario, project key.",
-            "type": "string"
-          },
-          {
-            "name": "scenario_id_distinct",
-            "type": "bigint"
-          },
-          {
-            "name": "date_start_max",
-            "type": "date"
-          },
-          {
-            "name": "scenario_runtime_seconds_max",
-            "type": "bigint"
-          },
-          {
-            "name": "scenario_runtime_seconds_median",
-            "type": "double"
-          },
-          {
-            "name": "warnings_count_max",
-            "type": "int"
-          },
-          {
-            "name": "warnings_count_median",
-            "type": "double"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },

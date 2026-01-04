@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "scenarios_runs_by_project",
+          "ref": "recent_scenarios_runs_by_project",
           "appendMode": false
         }
       ]
