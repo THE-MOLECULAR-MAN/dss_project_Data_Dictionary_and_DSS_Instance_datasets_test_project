@@ -61,12 +61,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"llmId_basic_deployed","type":"string"},
-      {"name":"llmId_basic_approval","type":"string"},
-      {"name":"llm_enabled","type":"boolean"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
