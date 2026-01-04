@@ -63,24 +63,14 @@
   "schema": {
     "columns": [
       {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project."},
-      {"name":"job_id","type":"string","comment":"Unique identifier for each job execution."},
       {"name":"time_start","type":"date","comment":"Timestamp when the job started."},
       {"name":"job_runtime_seconds","type":"bigint"},
-      {"name":"time_end","type":"date","comment":"Timestamp when the job ended."},
       {"name":"stable_state","type":"boolean","comment":"Indicates if the job reached a stable state."},
       {"name":"state","type":"string","comment":"Current state of the job execution."},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job."},
       {"name":"scenario_project_key","type":"string","comment":"Identifier for the scenario project."},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario."},
-      {"name":"scenario_run_id","type":"string","comment":"Identifier for the scenario run instance."},
       {"name":"step_id","type":"string","comment":"Identifier for the specific job step."},
       {"name":"step_run_id","type":"string","comment":"Identifier for the step run instance."},
-      {"name":"job_def_type","type":"string","comment":"Type of job definition executed."},
-      {"name":"job_def_trigger_type","type":"string","comment":"Trigger type that initiated the job."},
-      {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job."},
-      {"name":"job_def_initiated","type":"date","comment":"Timestamp when the job was initiated."},
-      {"name":"job_def_refresh_metastore","type":"boolean","comment":"Indicates if metastore was refreshed."},
-      {"name":"job_def_outputs","type":"string","comment":"JSON array of job output datasets."}
+      {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job."}
     ],
     "userModified": true
   },
