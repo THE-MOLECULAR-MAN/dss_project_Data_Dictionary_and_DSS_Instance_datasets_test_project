@@ -12,23 +12,15 @@
       },
       {
         "d": true,
-        "name": "scenario_run_id"
-      },
-      {
-        "d": true,
-        "name": "time_start"
-      },
-      {
-        "d": true,
         "name": "date_start"
       },
       {
         "d": true,
-        "name": "scenario_runtime_seconds"
+        "name": "age_days"
       },
       {
         "d": true,
-        "name": "time_end"
+        "name": "scenario_runtime_seconds"
       },
       {
         "d": true,
@@ -37,26 +29,6 @@
       {
         "d": true,
         "name": "warnings_count"
-      },
-      {
-        "d": true,
-        "name": "scenario_name"
-      },
-      {
-        "d": true,
-        "name": "trigger_name"
-      },
-      {
-        "d": true,
-        "name": "scenario_run_as_user"
-      },
-      {
-        "d": true,
-        "name": "run_as_user_identifier"
-      },
-      {
-        "d": true,
-        "name": "run_as_user_via"
       }
     ]
   },
@@ -125,7 +97,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsSelector",
@@ -140,6 +112,24 @@
         ],
         "keep": true,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "age_days",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "outputUnit": "DAYS",
+        "input1": "date_start",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "NOW",
+        "reverse": false
       },
       "alwaysShowComment": false
     }
@@ -220,6 +210,7 @@
     }
   },
   "columnWidthsByName": {
+    "age_days": 100,
     "time_start": 183,
     "warnings_count": 120,
     "scenario_name": 246,
