@@ -64,9 +64,6 @@
     "columns": [
       {"name":"projectKey","type":"string","comment":"Project identifier for the scenario, project key.","meaning":"Text","isColumnEdited":true},
       {"name":"scenario_id_distinct","type":"bigint"},
-      {"name":"scenario_run_id_distinct","type":"bigint"},
-      {"name":"time_start_min","type":"date"},
-      {"name":"time_end_max","type":"date"},
       {"name":"warnings_count_max","type":"int"},
       {"name":"warnings_count_median","type":"double"},
       {"name":"count","type":"bigint"}
