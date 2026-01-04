@@ -11,6 +11,8 @@
       "conditions": [
         {
           "input": "job_state",
+          "col": "projectKey",
+          "string": "ABORTED",
           "$showList": false,
           "operator": "!\u003d [string]"
         }
