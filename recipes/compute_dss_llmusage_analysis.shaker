@@ -150,7 +150,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsConcat",
@@ -161,6 +161,35 @@
           "llm_model_name_version"
         ],
         "join": "|"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "-"
+          },
+          {
+            "from": "."
+          },
+          {
+            "from": " "
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "llmId_basic"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
       },
       "alwaysShowComment": false
     }
