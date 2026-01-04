@@ -65,7 +65,7 @@
       {"name":"connection_type","type":"string"},
       {"name":"connection_name","type":"string"},
       {"name":"llm_name","type":"string"},
-      {"name":"llmId","type":"string"},
+      {"name":"llmId_basic","type":"string"},
       {"name":"llm_enabled","type":"boolean"}
     ],
     "userModified": true
