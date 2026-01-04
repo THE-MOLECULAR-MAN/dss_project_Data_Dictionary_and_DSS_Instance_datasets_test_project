@@ -1,6 +1,84 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "job_project_key"
+      },
+      {
+        "d": true,
+        "name": "job_id"
+      },
+      {
+        "d": true,
+        "name": "time_start"
+      },
+      {
+        "d": true,
+        "name": "job_runtime_seconds"
+      },
+      {
+        "d": true,
+        "name": "time_end"
+      },
+      {
+        "d": true,
+        "name": "stable_state"
+      },
+      {
+        "d": true,
+        "name": "state"
+      },
+      {
+        "d": true,
+        "name": "warnings_count"
+      },
+      {
+        "d": true,
+        "name": "scenario_project_key"
+      },
+      {
+        "d": true,
+        "name": "scenario_id"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_id"
+      },
+      {
+        "d": true,
+        "name": "step_id"
+      },
+      {
+        "d": true,
+        "name": "step_run_id"
+      },
+      {
+        "d": true,
+        "name": "job_def_type"
+      },
+      {
+        "d": true,
+        "name": "job_def_trigger_type"
+      },
+      {
+        "d": true,
+        "name": "job_def_initiator"
+      },
+      {
+        "d": true,
+        "name": "job_def_initiated"
+      },
+      {
+        "d": true,
+        "name": "job_def_refresh_metastore"
+      },
+      {
+        "d": true,
+        "name": "job_def_outputs"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +108,53 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "time_end"
+        ],
+        "values": [
+          "1970-01-01T00:00:00.000Z"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "job_runtime_seconds",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "input2": "time_end",
+        "outputUnit": "SECONDS",
+        "input1": "time_start",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -58,7 +181,27 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "job_def_initiated": 183,
+    "step_run_id": 100,
+    "time_start": 183,
+    "warnings_count": 120,
+    "job_def_trigger_type": 165,
+    "step_id": 176,
+    "job_def_refresh_metastore": 203,
+    "job_project_key": 300,
+    "scenario_id": 176,
+    "job_def_type": 197,
+    "job_runtime_seconds": 158,
+    "job_id": 300,
+    "scenario_run_id": 128,
+    "job_def_outputs": 300,
+    "scenario_project_key": 165,
+    "time_end": 183,
+    "state": 100,
+    "job_def_initiator": 143,
+    "stable_state": 105
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
