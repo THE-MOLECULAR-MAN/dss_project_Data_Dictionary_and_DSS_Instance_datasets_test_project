@@ -177,7 +177,7 @@
       }
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   },
   "addOriginColumn": true
 }
