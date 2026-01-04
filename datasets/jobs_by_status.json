@@ -61,8 +61,13 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": true,
+    "columns": [
+      {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"ABORTED_count","type":"bigint"},
+      {"name":"DONE_count","type":"bigint"},
+      {"name":"FAILED_count","type":"bigint"}
+    ],
+    "userModified": false,
     "metadata": {
       "engineType": "SQL",
       "pivotElementsModalities": [
