@@ -299,6 +299,14 @@
           },
           {
             "from": " "
+          },
+          {
+            "from": "gemini20flash",
+            "to": "geminiflash20"
+          },
+          {
+            "from": "gemini25flash",
+            "to": "geminiflash25"
           }
         ],
         "normalization": "EXACT",
