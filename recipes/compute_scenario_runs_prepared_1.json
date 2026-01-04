@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "scenario_runs_prepared2",
+          "ref": "scenario_runs_prepared",
           "appendMode": false
         }
       ]
