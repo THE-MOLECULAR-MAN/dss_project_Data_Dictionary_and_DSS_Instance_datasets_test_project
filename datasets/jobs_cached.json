@@ -67,7 +67,7 @@
     "columns": [
       {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project.","meaning":"Text","isColumnEdited":true},
       {"name":"job_id","type":"string","comment":"Unique identifier for each job execution.","meaning":"Text","isColumnEdited":true},
-      {"name":"time_start","type":"date","comment":"Timestamp when the job started.","isColumnEdited":true},
+      {"name":"time_start","type":"date","comment":"Timestamp when the job started.","meaning":"Date","isColumnEdited":true},
       {"name":"time_end","type":"date","comment":"Timestamp when the job ended.","isColumnEdited":true},
       {"name":"stable_state","type":"boolean","comment":"Indicates if the job reached a stable state.","isColumnEdited":true},
       {"name":"state","type":"string","comment":"Current state of the job execution.","isColumnEdited":true},
