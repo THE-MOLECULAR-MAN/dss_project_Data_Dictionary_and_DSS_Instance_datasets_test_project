@@ -33,6 +33,10 @@
       {
         "d": true,
         "name": "llm_model_name_version"
+      },
+      {
+        "d": true,
+        "name": "llmId_basic"
       }
     ]
   },
@@ -144,6 +148,21 @@
         "value": "DELETED_LLM"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "llmId_basic",
+        "columns": [
+          "llm_provider",
+          "llm_model_name_version"
+        ],
+        "join": "|"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -199,6 +218,7 @@
     "projectKey": 300,
     "llm_model_name_version": 204,
     "llm_provider": 127,
+    "llmId_basic": 127,
     "dss_object_name": 300,
     "llmId": 300,
     "dss_object_id": 218
