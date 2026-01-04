@@ -61,17 +61,7 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"dss_object_id","type":"string","meaning":"Text"},
-      {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"Text"},
-      {"name":"connection_name","type":"string"},
-      {"name":"llm_provider","type":"string"},
-      {"name":"llm_model_name_version","type":"string"},
-      {"name":"llmId_basic","type":"string"}
-    ],
+    "columns": [],
     "userModified": true
   },
   "typeSystemVersion": "V2",
