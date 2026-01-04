@@ -122,9 +122,11 @@
           "date": "1970-01-01",
           "input": "end_time",
           "col": "project_key",
+          "time2": "00:00",
           "unit": "days",
           "$showList": false,
           "time": "00:00",
+          "date2": "2026-01-04",
           "items": [
             {
               "date": "1970-01-01",
@@ -133,7 +135,7 @@
               "time": "00:00"
             }
           ],
-          "operator": "not in [date]"
+          "operator": "not empty string"
         }
       ]
     },
