@@ -65,6 +65,7 @@
       {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project."},
       {"name":"job_id","type":"string","comment":"Unique identifier for each job execution."},
       {"name":"time_start","type":"date","comment":"Timestamp when the job started."},
+      {"name":"job_runtime_seconds","type":"bigint"},
       {"name":"time_end","type":"date","comment":"Timestamp when the job ended."},
       {"name":"stable_state","type":"boolean","comment":"Indicates if the job reached a stable state."},
       {"name":"state","type":"string","comment":"Current state of the job execution."},
