@@ -89,6 +89,14 @@
     {
       "objectId": "compute_jobs_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_jobs_by_projectKey",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "jobs_by_projectKey",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
