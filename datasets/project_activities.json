@@ -63,6 +63,10 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Unique identifier for the software project.","meaning":"Text","isColumnEdited":true},
+      {"name":"commit_id_distinct","type":"bigint"},
+      {"name":"author_distinct","type":"bigint"},
+      {"name":"timestamp_min","type":"date"},
+      {"name":"timestamp_max","type":"date"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
