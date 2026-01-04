@@ -71,7 +71,7 @@
       {"name":"time_end","type":"date","comment":"Timestamp when the job ended.","meaning":"Date","isColumnEdited":true},
       {"name":"stable_state","type":"boolean","comment":"Indicates if the job reached a stable state.","meaning":"Boolean","isColumnEdited":true},
       {"name":"state","type":"string","comment":"Current state of the job execution.","meaning":"Text","isColumnEdited":true},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"scenario_project_key","type":"string","comment":"Identifier for the scenario project.","isColumnEdited":true},
       {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","isColumnEdited":true},
       {"name":"scenario_run_id","type":"string","comment":"Identifier for the scenario run instance.","isColumnEdited":true},
