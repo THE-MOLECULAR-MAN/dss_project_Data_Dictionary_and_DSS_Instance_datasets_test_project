@@ -64,7 +64,8 @@
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"DONE_count","type":"bigint"},
-      {"name":"FAILED_count","type":"bigint"}
+      {"name":"FAILED_count","type":"bigint"},
+      {"name":"percentage_failure","type":"double"}
     ],
     "userModified": true
   },
