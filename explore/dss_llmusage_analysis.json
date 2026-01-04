@@ -36,6 +36,10 @@
         {
           "name": "llm_model_name_version",
           "d": true
+        },
+        {
+          "name": "llmId_basic",
+          "d": true
         }
       ]
     },
@@ -48,7 +52,8 @@
       "llmId": 300,
       "connection_name": 183,
       "llm_provider": 127,
-      "llm_model_name_version": 204
+      "llm_model_name_version": 204,
+      "llmId_basic": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -60,8 +65,8 @@
     },
     "sorting": [
       {
-        "column": "llmId",
-        "ascending": true
+        "column": "llmId_basic",
+        "ascending": false
       }
     ],
     "analysisColumnData": {},
