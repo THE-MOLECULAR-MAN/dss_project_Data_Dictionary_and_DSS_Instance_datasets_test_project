@@ -63,6 +63,9 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","meaning":"Text"},
+      {"name":"job_runtime_seconds_max","type":"bigint"},
+      {"name":"job_runtime_seconds_median","type":"double"},
+      {"name":"job_runtime_seconds_sum","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
