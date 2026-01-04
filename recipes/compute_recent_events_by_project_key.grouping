@@ -5,41 +5,59 @@
   },
   "keys": [
     {
-      "column": "project_key"
+      "last": false,
+      "max": false,
+      "column": "project_key",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "start_time",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
-      "sum": false,
+      "$idx": 1,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "median": false,
+      "median": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -49,8 +67,10 @@
       "firstLastNotNull": false,
       "column": "age_days",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,8 +86,10 @@
       "firstLastNotNull": false,
       "column": "end_time",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -83,8 +105,10 @@
       "firstLastNotNull": false,
       "column": "state",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -100,8 +124,10 @@
       "firstLastNotNull": false,
       "column": "warnings_count",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -117,8 +143,10 @@
       "firstLastNotNull": false,
       "column": "scenario_id",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -134,14 +162,17 @@
       "firstLastNotNull": false,
       "column": "user",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -151,8 +182,10 @@
       "firstLastNotNull": false,
       "column": "event_type",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -202,8 +235,47 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_key",
+            "comment": "Identifier for the associated project.",
+            "type": "string"
+          },
+          {
+            "name": "start_time_max",
+            "type": "date"
+          },
+          {
+            "name": "duration_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "duration_seconds_median",
+            "type": "double"
+          },
+          {
+            "name": "duration_seconds_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "user_distinct",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
