@@ -69,7 +69,8 @@
       {"name":"llmId","type":"string","meaning":"Text"},
       {"name":"connection_name","type":"string"},
       {"name":"llm_provider","type":"string"},
-      {"name":"llm_model_name_version","type":"string"}
+      {"name":"llm_model_name_version","type":"string"},
+      {"name":"llmId_basic","type":"string"}
     ],
     "userModified": true
   },
