@@ -121,6 +121,14 @@
     {
       "objectId": "events_stacked",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_events",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_events",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
