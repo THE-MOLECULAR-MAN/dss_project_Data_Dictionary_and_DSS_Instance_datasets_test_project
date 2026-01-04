@@ -65,11 +65,7 @@
       {"name":"job_project_key","type":"string","comment":"Unique identifier for the job project."},
       {"name":"time_start","type":"date","comment":"Timestamp when the job started."},
       {"name":"job_runtime_seconds","type":"bigint"},
-      {"name":"stable_state","type":"boolean","comment":"Indicates if the job reached a stable state."},
       {"name":"state","type":"string","comment":"Current state of the job execution."},
-      {"name":"scenario_project_key","type":"string","comment":"Identifier for the scenario project."},
-      {"name":"step_id","type":"string","comment":"Identifier for the specific job step."},
-      {"name":"step_run_id","type":"string","comment":"Identifier for the step run instance."},
       {"name":"job_def_initiator","type":"string","comment":"Person who initiated the job."}
     ],
     "userModified": true
