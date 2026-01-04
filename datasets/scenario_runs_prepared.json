@@ -64,8 +64,8 @@
     "columns": [
       {"name":"scenario_project_key","type":"string","comment":"Project identifier for the scenario, project key.","meaning":"Text","isColumnEdited":true},
       {"name":"scenario_id","type":"string","comment":"Unique identifier for each scenario, scenario key.","meaning":"Text","isColumnEdited":true},
-      {"name":"time_start","type":"date","comment":"Timestamp when the scenario run started, start time.","meaning":"Date","isColumnEdited":true},
-      {"name":"scenario_runtime_seconds","type":"bigint"},
+      {"name":"date_start","type":"date","meaning":"Date"},
+      {"name":"scenario_runtime_seconds","type":"bigint","meaning":"LongMeaning"},
       {"name":"outcome","type":"string","comment":"Result of the scenario run, run outcome status.","meaning":"Text","isColumnEdited":true},
       {"name":"warnings_count","type":"int","comment":"Number of warnings during the run, warning count.","meaning":"LongMeaning","isColumnEdited":true}
     ],
