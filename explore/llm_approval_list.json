@@ -18,7 +18,7 @@
           "d": true
         },
         {
-          "name": "llmId",
+          "name": "llmId_basic",
           "d": true
         },
         {
@@ -33,7 +33,8 @@
       "connection_name": 197,
       "llm_name": 162,
       "llmId": 300,
-      "llm_enabled": 100
+      "llm_enabled": 100,
+      "llmId_basic": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -45,7 +46,7 @@
     },
     "sorting": [
       {
-        "column": "llmId",
+        "column": "llmId_basic",
         "ascending": true
       }
     ],
