@@ -44,6 +44,7 @@
     {
       "last": false,
       "max": false,
+      "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
       "$idx": 1,
@@ -54,12 +55,14 @@
       "min": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
+      "firstLastNotNull": false,
       "column": "scenario_runtime_seconds",
       "count": false,
       "$idx": 2,
@@ -69,7 +72,8 @@
       "countDistinct": false,
       "min": false,
       "avg": false,
-      "median": false,
+      "median": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -172,16 +176,12 @@
             "type": "bigint"
           },
           {
-            "name": "scenario_run_id_distinct",
+            "name": "scenario_runtime_seconds_max",
             "type": "bigint"
           },
           {
-            "name": "time_start_min",
-            "type": "date"
-          },
-          {
-            "name": "time_end_max",
-            "type": "date"
+            "name": "scenario_runtime_seconds_median",
+            "type": "double"
           },
           {
             "name": "warnings_count_max",
