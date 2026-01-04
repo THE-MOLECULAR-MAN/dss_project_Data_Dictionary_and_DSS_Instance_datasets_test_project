@@ -1,6 +1,60 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "scenario_project_key"
+      },
+      {
+        "d": true,
+        "name": "scenario_id"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_id"
+      },
+      {
+        "d": true,
+        "name": "time_start"
+      },
+      {
+        "d": true,
+        "name": "scenario_runtime_seconds"
+      },
+      {
+        "d": true,
+        "name": "time_end"
+      },
+      {
+        "d": true,
+        "name": "outcome"
+      },
+      {
+        "d": true,
+        "name": "warnings_count"
+      },
+      {
+        "d": true,
+        "name": "scenario_name"
+      },
+      {
+        "d": true,
+        "name": "trigger_name"
+      },
+      {
+        "d": true,
+        "name": "scenario_run_as_user"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_identifier"
+      },
+      {
+        "d": true,
+        "name": "run_as_user_via"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +84,50 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "scenario_project_key",
+          "scenario_id",
+          "time_end",
+          "time_start",
+          "outcome",
+          "warnings_count"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "scenario_runtime_seconds",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "input2": "time_end",
+        "outputUnit": "SECONDS",
+        "input1": "time_start",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -107,7 +203,22 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "time_start": 183,
+    "warnings_count": 120,
+    "scenario_name": 246,
+    "scenario_run_as_user": 165,
+    "run_as_user_identifier": 180,
+    "run_as_user_via": 190,
+    "scenario_id": 239,
+    "scenario_runtime_minutes": 195,
+    "trigger_name": 218,
+    "scenario_runtime_seconds": 195,
+    "scenario_run_id": 176,
+    "scenario_project_key": 225,
+    "time_end": 183,
+    "outcome": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
