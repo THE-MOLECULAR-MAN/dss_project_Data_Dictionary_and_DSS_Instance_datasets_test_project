@@ -43,7 +43,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
@@ -57,6 +57,7 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -138,7 +139,10 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "count": "job_count",
+    "date_start_max": "last_job_run_date"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
@@ -160,6 +164,10 @@
           {
             "name": "job_runtime_seconds_sum",
             "type": "bigint"
+          },
+          {
+            "name": "date_start_max",
+            "type": "date"
           },
           {
             "name": "count",
