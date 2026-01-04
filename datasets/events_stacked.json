@@ -63,7 +63,7 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
       {"name":"end_time","type":"date","comment":"Timestamp when the task ended.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"state","type":"string","comment":"Current state of the job execution.","meaning":"Text","isColumnEdited":true},
       {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
