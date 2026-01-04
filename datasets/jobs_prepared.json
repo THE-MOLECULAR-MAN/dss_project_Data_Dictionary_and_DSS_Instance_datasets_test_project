@@ -65,6 +65,7 @@
       {"name":"projectKey","type":"string","meaning":"Text"},
       {"name":"job_runtime_seconds","type":"bigint","meaning":"LongMeaning"},
       {"name":"date_start","type":"date","meaning":"Date"},
+      {"name":"age_days","type":"bigint"},
       {"name":"job_state","type":"string"},
       {"name":"user","type":"string"}
     ],
