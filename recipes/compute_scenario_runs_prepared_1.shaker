@@ -1,0 +1,120 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "exploreUIParams": {},
+  "steps": [],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "trigger_name": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "time_start": {
+      "isColumnEdited": true,
+      "meaning": "Date"
+    },
+    "scenario_run_id": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "warnings_count": {
+      "isColumnEdited": true,
+      "meaning": "LongMeaning"
+    },
+    "scenario_name": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "scenario_run_as_user": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "run_as_user_identifier": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "scenario_project_key": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "run_as_user_via": {
+      "isColumnEdited": true,
+      "meaning": "JSONArrayMeaning"
+    },
+    "time_end": {
+      "isColumnEdited": true,
+      "meaning": "Date"
+    },
+    "scenario_id": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    },
+    "outcome": {
+      "isColumnEdited": true,
+      "meaning": "Text"
+    }
+  },
+  "columnWidthsByName": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}
