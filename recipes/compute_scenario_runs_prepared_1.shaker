@@ -12,10 +12,6 @@
       },
       {
         "d": true,
-        "name": "scenario_run_id"
-      },
-      {
-        "d": true,
         "name": "time_start"
       },
       {
@@ -121,6 +117,7 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "scenario_run_id",
           "run_as_user_via",
           "time_end",
           "trigger_name",
