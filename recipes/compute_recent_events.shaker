@@ -1,6 +1,48 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "project_key"
+      },
+      {
+        "d": true,
+        "name": "start_time"
+      },
+      {
+        "d": true,
+        "name": "duration_seconds"
+      },
+      {
+        "d": true,
+        "name": "age_days"
+      },
+      {
+        "d": true,
+        "name": "end_time"
+      },
+      {
+        "d": true,
+        "name": "state"
+      },
+      {
+        "d": true,
+        "name": "warnings_count"
+      },
+      {
+        "d": true,
+        "name": "scenario_id"
+      },
+      {
+        "d": true,
+        "name": "user"
+      },
+      {
+        "d": true,
+        "name": "event_type"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +72,72 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "end_time"
+        ],
+        "values": [
+          "1970-01-01T00:00:00.000Z"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "age_days",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "input2": "end_time",
+        "outputUnit": "DAYS",
+        "input1": "start_time",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "duration_seconds",
+        "excludeHolidays": false,
+        "excludeWeekends": false,
+        "calendar_id": "FR",
+        "input2": "end_time",
+        "outputUnit": "SECONDS",
+        "input1": "start_time",
+        "timezone_id": "use_preferred_timezone",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -87,7 +193,18 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "duration_seconds": 135,
+    "start_time": 183,
+    "age_days": 100,
+    "event_type": 100,
+    "project_key": 300,
+    "end_time": 106,
+    "warnings_count": 120,
+    "state": 100,
+    "user": 113,
+    "scenario_id": 176
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
