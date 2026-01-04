@@ -61,57 +61,8 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"ABORTED_count","type":"bigint"},
-      {"name":"DONE_count","type":"bigint"},
-      {"name":"FAILED_count","type":"bigint"}
-    ],
-    "userModified": false,
-    "metadata": {
-      "engineType": "SQL",
-      "pivotElementsModalities": [
-        {
-          "pivotElement": {
-            "keyColumns": [
-              "job_state"
-            ],
-            "valueLimit": "TOP_N",
-            "topnLimit": 20,
-            "minOccLimit": 0,
-            "explicitValues": [],
-            "globalCount": true,
-            "valueColumns": []
-          },
-          "pivotedModalities": [
-            {
-              "keyValues": [
-                "ABORTED"
-              ],
-              "name": "ABORTED",
-              "valueColumns": [],
-              "globalCountColumn": "ABORTED"
-            },
-            {
-              "keyValues": [
-                "DONE"
-              ],
-              "name": "DONE",
-              "valueColumns": [],
-              "globalCountColumn": "DONE"
-            },
-            {
-              "keyValues": [
-                "FAILED"
-              ],
-              "name": "FAILED",
-              "valueColumns": [],
-              "globalCountColumn": "FAILED"
-            }
-          ]
-        }
-      ]
-    }
+    "columns": [],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
