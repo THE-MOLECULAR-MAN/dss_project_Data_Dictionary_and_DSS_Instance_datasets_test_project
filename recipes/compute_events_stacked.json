@@ -13,10 +13,6 @@
     "main": {
       "items": [
         {
-          "ref": "cluster_tasks",
-          "deps": []
-        },
-        {
           "ref": "jobs",
           "deps": []
         },
@@ -26,6 +22,10 @@
         },
         {
           "ref": "commits_cached",
+          "deps": []
+        },
+        {
+          "ref": "cluster_tasks_cached",
           "deps": []
         }
       ]
