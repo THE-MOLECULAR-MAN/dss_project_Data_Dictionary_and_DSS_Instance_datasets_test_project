@@ -1,6 +1,24 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "projectKey"
+      },
+      {
+        "d": true,
+        "name": "DONE_count"
+      },
+      {
+        "d": true,
+        "name": "FAILED_count"
+      },
+      {
+        "d": true,
+        "name": "percentage_failure"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +48,24 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "max(0,FAILED_count/(FAILED_count+DONE_count))",
+        "column": "percentage_failure",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -63,7 +97,12 @@
       "meaning": "Text"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "projectKey": 246,
+    "percentage_failure": 150,
+    "FAILED_count": 105,
+    "DONE_count": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
