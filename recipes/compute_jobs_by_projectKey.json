@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "jobs_by_projectKey",
+          "ref": "recent_jobs_by_projectKey",
           "appendMode": false
         }
       ]

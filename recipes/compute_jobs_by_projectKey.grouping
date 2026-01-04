@@ -2,37 +2,22 @@
   "preFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
-      "$latestOperator": "\u0026\u0026",
-      "$filterOptions": "rules",
       "conditions": [
         {
           "input": "age_days",
           "col": "job_runtime_seconds",
-          "$showList": false,
-          "num": 90,
-          "operator": "\u003c\u003d [number]"
+          "num": 90.0,
+          "operator": "\u003c\u003d [number]",
+          "num2": 0.0
         }
       ]
     },
-    "$status": {},
     "distinct": false,
     "enabled": true
   },
   "keys": [
     {
-      "last": false,
-      "max": false,
-      "column": "projectKey",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "median": false,
-      "stddev": false,
-      "first": false
+      "column": "projectKey"
     }
   ],
   "values": [
@@ -42,7 +27,6 @@
       "firstLastNotNull": false,
       "column": "job_runtime_seconds",
       "count": false,
-      "$idx": 0,
       "sum": true,
       "concat": false,
       "type": "bigint",
@@ -52,7 +36,6 @@
       "countDistinct": false,
       "avg": false,
       "median": true,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -62,7 +45,6 @@
       "firstLastNotNull": false,
       "column": "date_start",
       "count": false,
-      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "date",
@@ -72,7 +54,6 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -82,12 +63,13 @@
       "firstLastNotNull": false,
       "column": "age_days",
       "count": false,
-      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "bigint",
-      "countDistinct": false,
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "median": false,
       "stddev": false,
@@ -99,7 +81,6 @@
       "firstLastNotNull": false,
       "column": "job_state",
       "count": false,
-      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -118,7 +99,6 @@
       "firstLastNotNull": false,
       "column": "user",
       "count": false,
-      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -177,38 +157,6 @@
   },
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "meaning": "Text",
-            "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "name": "job_runtime_seconds_max",
-            "type": "bigint"
-          },
-          {
-            "name": "job_runtime_seconds_median",
-            "type": "double"
-          },
-          {
-            "name": "job_runtime_seconds_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "date_start_max",
-            "type": "date"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
