@@ -10,13 +10,13 @@
       "on": [
         {
           "column1": {
-            "name": "llmId",
+            "name": "llmId_basic",
             "table": 0
           },
           "dateDiffUnit": "DAY",
           "windowFrom": 0,
           "column2": {
-            "name": "llmId",
+            "name": "llmId_basic",
             "table": 1
           },
           "maxMatches": 1,
