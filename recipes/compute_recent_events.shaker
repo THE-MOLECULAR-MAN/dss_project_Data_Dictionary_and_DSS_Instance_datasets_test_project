@@ -158,6 +158,23 @@
         "processNullOrEmptyValues": false
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "max": 90.0,
+        "booleanMode": "AND",
+        "columns": [
+          "age_days"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "includeEmptyValues": false
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
