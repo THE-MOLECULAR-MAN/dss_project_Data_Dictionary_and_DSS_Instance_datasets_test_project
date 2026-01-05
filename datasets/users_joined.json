@@ -62,13 +62,6 @@
   },
   "schema": {
     "columns": [
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey_distinct","type":"bigint"},
-      {"name":"start_time_min","type":"date"},
-      {"name":"start_time_max","type":"date"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"age_days_max","type":"bigint"},
-      {"name":"count","type":"bigint"},
       {"name":"login","type":"string","meaning":"Text"},
       {"name":"displayName","type":"string","meaning":"Text"},
       {"name":"userProfile","type":"string","meaning":"Text"},
@@ -82,7 +75,17 @@
       {"name":"last_session_activity","type":"date","meaning":"Date"},
       {"name":"days_since_last_activity_or_login","type":"string"},
       {"name":"url","type":"string","meaning":"URL"},
-      {"name":"creationDate","type":"date"}
+      {"name":"creationDate","type":"date"},
+      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time_max","type":"date"},
+      {"name":"duration_seconds_max","type":"bigint"},
+      {"name":"duration_seconds_avg","type":"double"},
+      {"name":"age_days_min","type":"bigint"},
+      {"name":"error_avg","type":"double"},
+      {"name":"error_sum","type":"bigint"},
+      {"name":"warnings_count_avg","type":"double"},
+      {"name":"warnings_count_sum","type":"bigint"},
+      {"name":"count","type":"bigint"}
     ],
     "userModified": true
   },
