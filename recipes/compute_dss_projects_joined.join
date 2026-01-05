@@ -6,77 +6,189 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "projectKey",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "projectKey",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
+      "alias": "project_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "description",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ownerLogin",
+      "alias": "project_owner",
+      "type": "string",
       "table": 0
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 0
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 0
     },
     {
       "name": "last_modified_timestamp",
+      "type": "datetimenotz",
       "table": 0
     },
     {
       "name": "tutorialProject",
-      "table": 0
-    },
-    {
-      "name": "contributors",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
+      "alias": "project_url",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "start_time_min",
-      "table": 1
-    },
-    {
       "name": "start_time_max",
-      "table": 1
-    },
-    {
-      "name": "age_days_min",
+      "alias": "most_recent_commit",
+      "type": "date",
       "table": 1
     },
     {
       "name": "age_days_max",
+      "alias": "num_days_since_last_commit",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "user_distinct",
+      "alias": "num_unique_committing_users",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "count",
+      "alias": "num_commits",
+      "type": "bigint",
       "table": 1
+    },
+    {
+      "name": "start_time_max",
+      "alias": "most_recent_runtime",
+      "type": "date",
+      "table": 2
+    },
+    {
+      "name": "duration_seconds_max",
+      "alias": "longest_runtime_sec",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "duration_seconds_median",
+      "alias": "avg_runtime_sec",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "duration_seconds_sum",
+      "alias": "total_runtime_sec",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "error_avg",
+      "alias": "avg_num_errors",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "error_sum",
+      "alias": "total_errors",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "warnings_count_avg",
+      "alias": "avg_warnings",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "warnings_count_sum",
+      "alias": "total_warnings",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "count",
+      "alias": "num_jobs_and_scenarios",
+      "type": "bigint",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -119,7 +231,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -129,7 +241,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -137,7 +249,144 @@
       "originLabel": "recent_commits_by_projectKey",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {},
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectKey",
+            "comment": "Unique identifier for each project, essential for tracking.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_name",
+            "comment": "Descriptive name of the project, indicating its purpose.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "comment": "Brief description of the project, including creation details.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "description",
+            "comment": "Detailed project description, outlining objectives and processes.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_owner",
+            "comment": "Email or login of the project owner, indicating responsibility.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectStatus",
+            "comment": "Current status of the project, such as \u0027In production\u0027.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "comment": "Array of tags categorizing the project, indicating focus areas.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "DatetimeNoTz",
+            "name": "last_modified_timestamp",
+            "comment": "Timestamp of the last modification, showing recent updates.",
+            "type": "datetimenotz"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "comment": "Boolean indicating if the project is a tutorial, for learning.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "project_url",
+            "comment": "Direct URL to the project, for easy access and navigation.",
+            "type": "string"
+          },
+          {
+            "name": "most_recent_commit",
+            "type": "date"
+          },
+          {
+            "name": "num_days_since_last_commit",
+            "type": "bigint"
+          },
+          {
+            "name": "num_unique_committing_users",
+            "type": "bigint"
+          },
+          {
+            "name": "num_commits",
+            "type": "bigint"
+          },
+          {
+            "name": "most_recent_runtime",
+            "type": "date"
+          },
+          {
+            "name": "longest_runtime_sec",
+            "type": "bigint"
+          },
+          {
+            "name": "avg_runtime_sec",
+            "type": "double"
+          },
+          {
+            "name": "total_runtime_sec",
+            "type": "bigint"
+          },
+          {
+            "name": "avg_num_errors",
+            "type": "double"
+          },
+          {
+            "name": "total_errors",
+            "type": "bigint"
+          },
+          {
+            "name": "avg_warnings",
+            "type": "double"
+          },
+          {
+            "name": "total_warnings",
+            "type": "bigint"
+          },
+          {
+            "name": "num_jobs_and_scenarios",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

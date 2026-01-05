@@ -19,6 +19,10 @@
         {
           "ref": "recent_commits_by_projectKey",
           "deps": []
+        },
+        {
+          "ref": "recent_jobs_and_scenarios_by_project_key",
+          "deps": []
         }
       ]
     }
