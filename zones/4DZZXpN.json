@@ -9,6 +9,30 @@
     {
       "objectId": "projects_summary",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_commits_by_projectKey",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "commits_by_projectKey",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_and_scenarios_by_project_key",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_jobs_and_scenarios_by_project_key",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_cluster_tasks_by_projectKey",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "cluster_tasks_by_projectKey",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
