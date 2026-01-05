@@ -61,10 +61,6 @@
     {
       "objectId": "compute_recent_events_by_user",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recent_events_by_user",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
