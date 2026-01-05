@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_jobs_and_scenarios_by_project_key",
+          "ref": "jobs_and_scenarios_by_project_key",
           "appendMode": false
         }
       ]
