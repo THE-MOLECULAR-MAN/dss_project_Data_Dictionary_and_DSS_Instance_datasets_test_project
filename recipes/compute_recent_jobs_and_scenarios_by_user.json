@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_jobs_user",
+          "ref": "jobs_by_user",
           "appendMode": false
         }
       ]

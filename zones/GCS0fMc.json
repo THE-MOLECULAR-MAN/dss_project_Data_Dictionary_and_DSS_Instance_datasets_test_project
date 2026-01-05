@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_jobs_user",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recent_commits_by_user",
       "objectType": "RECIPE"
     },
@@ -44,6 +40,10 @@
     },
     {
       "objectId": "commits_by_user",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "jobs_by_user",
       "objectType": "DATASET"
     }
   ],
