@@ -71,7 +71,7 @@
       {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
       {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
       {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"bigint","meaning":"LongMeaning"},
+      {"name":"total_instances_of_code_env","type":"string","meaning":"LongMeaning"},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true},
       {"name":"reason_to_investigate","type":"string"}
     ],
