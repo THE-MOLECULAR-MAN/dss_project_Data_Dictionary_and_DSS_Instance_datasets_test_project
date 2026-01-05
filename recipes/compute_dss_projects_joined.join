@@ -1,0 +1,143 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "projectKey",
+      "table": 0
+    },
+    {
+      "name": "name",
+      "table": 0
+    },
+    {
+      "name": "shortDesc",
+      "table": 0
+    },
+    {
+      "name": "description",
+      "table": 0
+    },
+    {
+      "name": "ownerLogin",
+      "table": 0
+    },
+    {
+      "name": "projectStatus",
+      "table": 0
+    },
+    {
+      "name": "tags",
+      "table": 0
+    },
+    {
+      "name": "last_modified_timestamp",
+      "table": 0
+    },
+    {
+      "name": "tutorialProject",
+      "table": 0
+    },
+    {
+      "name": "contributors",
+      "table": 0
+    },
+    {
+      "name": "url",
+      "table": 0
+    },
+    {
+      "name": "start_time_min",
+      "table": 1
+    },
+    {
+      "name": "start_time_max",
+      "table": 1
+    },
+    {
+      "name": "age_days_min",
+      "table": 1
+    },
+    {
+      "name": "age_days_max",
+      "table": 1
+    },
+    {
+      "name": "user_distinct",
+      "table": 1
+    },
+    {
+      "name": "count",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "spark-k8s",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "dss_projects_cached",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "recent_commits_by_projectKey",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
