@@ -65,6 +65,10 @@
     {
       "objectId": "recent_commits",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_cluster_tasks",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
