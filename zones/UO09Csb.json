@@ -75,14 +75,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_recent_commits_by_user",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recent_commits_by_user",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_recent_commits_by_projectKey",
       "objectType": "RECIPE"
     },
@@ -96,14 +88,6 @@
     },
     {
       "objectId": "recent_cluster_tasks_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_recent_jobs_and_scenarios_by_user",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "recent_jobs_user",
       "objectType": "DATASET"
     }
   ],
