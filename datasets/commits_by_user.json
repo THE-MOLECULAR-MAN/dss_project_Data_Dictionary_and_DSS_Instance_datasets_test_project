@@ -148,7 +148,72 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "DeHPViu1",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "7rRVF5a6",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "projectKey_distinct",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "age_days_min",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "age_days_max",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "count",
+            "meaning": "LongMeaning"
+          }
+        ],
+        "thresholdType": "MIN_PERCENTAGE_VALID",
+        "considerEmptyAsValid": true,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 100.0,
+        "softMinimumEnabled": true,
+        "id": "MavAlrqw",
+        "displayName": "More than 100% of 4 columns is valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
