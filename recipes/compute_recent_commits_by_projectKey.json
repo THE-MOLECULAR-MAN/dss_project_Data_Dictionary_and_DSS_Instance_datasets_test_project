@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_commits_by_projectKey",
+          "ref": "commits_by_projectKey",
           "appendMode": false
         }
       ]
