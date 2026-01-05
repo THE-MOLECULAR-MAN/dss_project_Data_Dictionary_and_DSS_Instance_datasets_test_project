@@ -63,6 +63,15 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"duration_seconds_max","type":"bigint"},
+      {"name":"duration_seconds_median","type":"double"},
+      {"name":"duration_seconds_sum","type":"bigint"},
+      {"name":"age_days_min","type":"bigint"},
+      {"name":"error_avg","type":"double"},
+      {"name":"error_sum","type":"bigint"},
+      {"name":"warnings_count_avg","type":"double"},
+      {"name":"warnings_count_sum","type":"bigint"},
+      {"name":"user_distinct","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
