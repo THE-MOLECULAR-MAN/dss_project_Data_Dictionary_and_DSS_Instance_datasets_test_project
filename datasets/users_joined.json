@@ -78,7 +78,10 @@
       {"name":"error_avg","type":"double"},
       {"name":"error_sum","type":"bigint"},
       {"name":"warnings_count_avg","type":"double"},
-      {"name":"num_jobs_and_scenarios","type":"bigint"}
+      {"name":"num_jobs_and_scenarios","type":"bigint"},
+      {"name":"num_projects_committed_to","type":"bigint"},
+      {"name":"num_days_since_last_commit","type":"bigint"},
+      {"name":"all_time_commit_count","type":"bigint"}
     ],
     "userModified": true
   },
