@@ -25,27 +25,71 @@
   ],
   "selectedColumns": [
     {
-      "name": "user",
+      "name": "login",
+      "alias": "username",
       "type": "string",
-      "table": 1
+      "table": 0
+    },
+    {
+      "name": "displayName",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "userProfile",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "groups",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "sourceType",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "table": 0
+    },
+    {
+      "name": "created_timestamp",
+      "type": "datetimenotz",
+      "table": 0
+    },
+    {
+      "name": "days_since_last_activity_or_login",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "url",
+      "alias": "user_url",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "creationDate",
+      "type": "date",
+      "table": 0
     },
     {
       "name": "start_time_max",
+      "alias": "most_recent_job_time",
       "type": "date",
       "table": 1
     },
     {
-      "name": "duration_seconds_max",
-      "type": "bigint",
-      "table": 1
-    },
-    {
-      "name": "duration_seconds_avg",
-      "type": "double",
-      "table": 1
-    },
-    {
       "name": "age_days_min",
+      "alias": "days_since_last_job",
       "type": "bigint",
       "table": 1
     },
@@ -65,12 +109,8 @@
       "table": 1
     },
     {
-      "name": "warnings_count_sum",
-      "type": "bigint",
-      "table": 1
-    },
-    {
       "name": "count",
+      "alias": "num_jobs_and_scenarios",
       "type": "bigint",
       "table": 1
     }
@@ -115,12 +155,12 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {},
       "index": 0
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {},
       "index": 1
     }
@@ -132,7 +172,7 @@
         "columns": [
           {
             "meaning": "Text",
-            "name": "login",
+            "name": "username",
             "type": "string"
           },
           {
@@ -166,24 +206,9 @@
             "type": "boolean"
           },
           {
-            "meaning": "Text",
-            "name": "resultingUserProfile",
-            "type": "string"
-          },
-          {
             "meaning": "DatetimeNoTz",
             "name": "created_timestamp",
             "type": "datetimenotz"
-          },
-          {
-            "meaning": "Date",
-            "name": "last_successful_login",
-            "type": "date"
-          },
-          {
-            "meaning": "Date",
-            "name": "last_session_activity",
-            "type": "date"
           },
           {
             "name": "days_since_last_activity_or_login",
@@ -191,7 +216,7 @@
           },
           {
             "meaning": "URL",
-            "name": "url",
+            "name": "user_url",
             "type": "string"
           },
           {
@@ -199,26 +224,11 @@
             "type": "date"
           },
           {
-            "isColumnEdited": true,
-            "meaning": "Text",
-            "name": "user",
-            "comment": "User who initiated the task.",
-            "type": "string"
-          },
-          {
-            "name": "start_time_max",
+            "name": "most_recent_job_time",
             "type": "date"
           },
           {
-            "name": "duration_seconds_max",
-            "type": "bigint"
-          },
-          {
-            "name": "duration_seconds_avg",
-            "type": "double"
-          },
-          {
-            "name": "age_days_min",
+            "name": "days_since_last_job",
             "type": "bigint"
           },
           {
@@ -234,11 +244,7 @@
             "type": "double"
           },
           {
-            "name": "warnings_count_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "count",
+            "name": "num_jobs_and_scenarios",
             "type": "bigint"
           }
         ],
