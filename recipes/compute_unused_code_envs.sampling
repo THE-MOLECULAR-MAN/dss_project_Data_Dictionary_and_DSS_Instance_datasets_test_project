@@ -14,9 +14,11 @@
       },
       {
         "input": "total_instances_of_code_env",
+        "col": "code_env_name",
+        "string": "0",
         "$showList": false,
         "num": 0,
-        "operator": "\u003d\u003d [number]"
+        "operator": "\u003d\u003d [string]"
       }
     ]
   },
