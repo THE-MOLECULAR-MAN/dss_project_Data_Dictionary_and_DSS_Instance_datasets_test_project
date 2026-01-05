@@ -5,10 +5,6 @@
     {
       "objectId": "compute_user_commit_activity_summary",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "user_commit_activity_summary",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
