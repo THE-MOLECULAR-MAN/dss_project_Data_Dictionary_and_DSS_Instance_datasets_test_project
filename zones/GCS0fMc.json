@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_commits_by_user",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_jobs_user",
       "objectType": "DATASET"
     },
@@ -44,6 +40,10 @@
     },
     {
       "objectId": "users_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits_by_user",
       "objectType": "DATASET"
     }
   ],
