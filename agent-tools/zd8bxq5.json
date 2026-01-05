@@ -2,7 +2,12 @@
   "name": "JIRA_Agent_Tool_Test1",
   "type": "Custom_agent_tool_jira_create-issue",
   "params": {
-    "config": {},
+    "config": {
+      "access_type": "token_access",
+      "token_access": {
+        "mode": "NONE"
+      }
+    },
     "containerExecSelection": {
       "containerMode": "INHERIT"
     }
