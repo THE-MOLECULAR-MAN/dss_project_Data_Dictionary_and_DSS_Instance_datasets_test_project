@@ -66,12 +66,12 @@
       {"name":"deployment_mode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED, DSS_INTERNAL.","meaning":"Text","isColumnEdited":true},
       {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
       {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"bigint","meaning":"LongMeaning"},
+      {"name":"total_instances_of_code_env","type":"string","meaning":"LongMeaning"},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true},
       {"name":"plugin_id","type":"string","comment":"Unique identifier for each plugin, essential reference.","meaning":"Text","isColumnEdited":true},
       {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"plugin_total_usages","type":"bigint","meaning":"LongMeaning"},
-      {"name":"plugin_is_built_in_plugin","type":"boolean","meaning":"Boolean"}
+      {"name":"plugin_total_usages","type":"string","meaning":"LongMeaning"},
+      {"name":"plugin_is_built_in_plugin","type":"string","meaning":"Boolean"}
     ],
     "userModified": true
   },
