@@ -4,7 +4,7 @@
     "list": [
       {
         "d": true,
-        "name": "project_key"
+        "name": "projectKey"
       },
       {
         "d": true,
@@ -238,6 +238,21 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "project_key",
+            "to": "projectKey"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -304,6 +319,7 @@
     "error": 100,
     "scenario_id": 176,
     "start_time": 183,
+    "projectKey": 300,
     "event_type": 100,
     "state": 100,
     "user": 113,
