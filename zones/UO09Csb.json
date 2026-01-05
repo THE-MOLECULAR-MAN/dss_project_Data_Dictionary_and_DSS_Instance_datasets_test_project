@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_project_activities",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_user_commit_activity_summary",
       "objectType": "RECIPE"
     },
