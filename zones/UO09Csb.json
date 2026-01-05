@@ -67,10 +67,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_cluster_tasks_by_projectKey",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "cluster_tasks_prepared",
       "objectType": "DATASET"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "commits_by_projectKey",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "cluster_tasks_by_projectKey",
       "objectType": "DATASET"
     }
   ],

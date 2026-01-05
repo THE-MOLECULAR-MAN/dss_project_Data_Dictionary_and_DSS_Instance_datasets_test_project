@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_cluster_tasks_by_projectKey",
+          "ref": "cluster_tasks_by_projectKey",
           "appendMode": false
         }
       ]
