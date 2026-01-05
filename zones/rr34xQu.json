@@ -43,23 +43,11 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_agents_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_webapps_cached",
       "objectType": "RECIPE"
     },
     {
       "objectId": "dss_webapps_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_agents_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_agents_cached",
       "objectType": "DATASET"
     },
     {
@@ -72,18 +60,6 @@
     },
     {
       "objectId": "dss_meanings_cached",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "dss_agenttools_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_agenttools_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_agenttools_cached",
       "objectType": "DATASET"
     },
     {
