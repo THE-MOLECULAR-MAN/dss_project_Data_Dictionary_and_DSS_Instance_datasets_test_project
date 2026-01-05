@@ -75,10 +75,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "projects_recent_job_status",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "recent_scenarios_runs_by_project",
       "objectType": "DATASET"
     },
