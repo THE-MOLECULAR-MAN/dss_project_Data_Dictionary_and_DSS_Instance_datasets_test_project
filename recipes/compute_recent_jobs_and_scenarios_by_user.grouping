@@ -56,7 +56,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "start_time",
       "count": false,
@@ -70,12 +70,13 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
@@ -87,8 +88,9 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -104,10 +106,11 @@
       "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -118,15 +121,16 @@
       "column": "error",
       "count": false,
       "$idx": 4,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -137,15 +141,16 @@
       "column": "warnings_count",
       "count": false,
       "$idx": 5,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -239,6 +244,38 @@
             "name": "user",
             "comment": "User who initiated the task.",
             "type": "string"
+          },
+          {
+            "name": "start_time_max",
+            "type": "date"
+          },
+          {
+            "name": "duration_seconds_max",
+            "type": "bigint"
+          },
+          {
+            "name": "duration_seconds_avg",
+            "type": "double"
+          },
+          {
+            "name": "age_days_min",
+            "type": "bigint"
+          },
+          {
+            "name": "error_avg",
+            "type": "double"
+          },
+          {
+            "name": "error_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "warnings_count_avg",
+            "type": "double"
+          },
+          {
+            "name": "warnings_count_sum",
+            "type": "bigint"
           },
           {
             "name": "count",
