@@ -58,7 +58,7 @@
       {"name":"path","type":"string","meaning":"Text"},
       {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
       {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"bigint","meaning":"LongMeaning"},
+      {"name":"total_instances_of_code_env","type":"bigint","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
