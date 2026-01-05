@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
+  "defaultOutputIndex": -1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
-  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -19,13 +19,13 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50
+      "share": 50.0
     }
   ],
   "computedColumns": [],
@@ -40,14 +40,17 @@
     },
     {
       "outputIndex": 1,
+      "caseSensitive": false,
       "value": "commit"
     },
     {
       "outputIndex": 0,
+      "caseSensitive": false,
       "value": "scenario_run"
     },
     {
       "outputIndex": 2,
+      "caseSensitive": false,
       "value": "cluster_task"
     }
   ],
@@ -107,63 +110,6 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
-        },
-        "$status": {
-          "schema": {
-            "columns": [
-              {
-                "isColumnEdited": true,
-                "meaning": "Text",
-                "name": "project_key",
-                "comment": "Identifier for the associated project.",
-                "type": "string"
-              },
-              {
-                "isColumnEdited": true,
-                "meaning": "Date",
-                "name": "start_time",
-                "comment": "Timestamp when the task started.",
-                "type": "date"
-              },
-              {
-                "name": "duration_seconds",
-                "type": "bigint"
-              },
-              {
-                "name": "age_days",
-                "type": "bigint"
-              },
-              {
-                "name": "error",
-                "type": "bigint"
-              },
-              {
-                "isColumnEdited": true,
-                "meaning": "LongMeaning",
-                "name": "warnings_count",
-                "comment": "Number of warnings generated during the job.",
-                "type": "int"
-              },
-              {
-                "isColumnEdited": true,
-                "meaning": "Text",
-                "name": "scenario_id",
-                "comment": "Unique identifier for the scenario.",
-                "type": "string"
-              },
-              {
-                "isColumnEdited": true,
-                "meaning": "Text",
-                "name": "user",
-                "comment": "User who initiated the task.",
-                "type": "string"
-              },
-              {
-                "name": "event_type",
-                "type": "string"
-              }
-            ]
-          }
         },
         "distinct": false,
         "enabled": true

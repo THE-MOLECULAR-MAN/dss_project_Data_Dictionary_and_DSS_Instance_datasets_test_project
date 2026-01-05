@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_cluster_tasks",
+          "ref": "cluster_tasks_prepared",
           "deps": []
         }
       ]
