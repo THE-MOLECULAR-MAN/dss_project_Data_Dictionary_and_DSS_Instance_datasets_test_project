@@ -1,12 +1,7 @@
 {
   "name": "Users",
   "color": "#4B8021",
-  "items": [
-    {
-      "objectId": "compute_user_commit_activity_summary",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
