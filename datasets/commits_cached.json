@@ -152,7 +152,80 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 5.0,
+        "softMinimumEnabled": true,
+        "softMaximum": 100000.0,
+        "softMaximumEnabled": true,
+        "id": "jyajZhdG",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "jVIfGXGQ",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnMeaningValidityRule",
+        "columnSpecs": [
+          {
+            "column": "added_files",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "added_lines",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "removed_files",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "removed_lines",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "changed_files",
+            "meaning": "LongMeaning"
+          },
+          {
+            "column": "timestamp",
+            "meaning": "Date"
+          }
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "considerEmptyAsValid": true,
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "rFJXLtrj",
+        "displayName": "All values of 6 columns are valid",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
