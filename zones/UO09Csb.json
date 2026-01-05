@@ -73,6 +73,10 @@
     {
       "objectId": "split_recent_events",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "leftovers",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
