@@ -33,6 +33,10 @@
         {
           "ref": "recent_cluster_tasks",
           "appendMode": false
+        },
+        {
+          "ref": "leftovers",
+          "appendMode": false
         }
       ]
     }
