@@ -31,7 +31,7 @@
     "main": {
       "items": [
         {
-          "ref": "dss_projects_joined",
+          "ref": "projects_summary",
           "appendMode": false
         }
       ]

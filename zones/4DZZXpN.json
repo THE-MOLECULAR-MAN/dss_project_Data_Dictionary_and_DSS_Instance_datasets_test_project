@@ -3,12 +3,12 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "dss_projects_joined",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_projects_joined",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "projects_summary",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
