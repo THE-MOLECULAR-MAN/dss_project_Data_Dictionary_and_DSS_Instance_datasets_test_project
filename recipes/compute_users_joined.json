@@ -19,6 +19,10 @@
         {
           "ref": "jobs_by_user",
           "deps": []
+        },
+        {
+          "ref": "commits_by_user",
+          "deps": []
         }
       ]
     }
