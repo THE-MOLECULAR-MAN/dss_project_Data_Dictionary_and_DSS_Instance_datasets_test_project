@@ -61,7 +61,17 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint"},
+      {"name":"age_days","type":"bigint"},
+      {"name":"error","type":"bigint"},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
