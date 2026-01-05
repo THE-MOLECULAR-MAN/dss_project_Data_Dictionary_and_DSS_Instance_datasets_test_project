@@ -59,7 +59,7 @@
       {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
       {"name":"isDev","type":"boolean","meaning":"Text"},
       {"name":"total_usages","type":"bigint","meaning":"LongMeaning"},
-      {"name":"is_built_in_plugin","type":"boolean","meaning":"Boolean"},
+      {"name":"is_built_in_plugin","type":"boolean","meaning":"Text"},
       {"name":"url","type":"string","meaning":"URL"}
     ],
     "userModified": true
