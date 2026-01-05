@@ -1,11 +1,37 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "event_type",
+          "string": "job_log",
+          "$showList": false,
+          "operator": "\u003d\u003d [string]"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
-      "column": "user"
+      "last": false,
+      "max": false,
+      "column": "user",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +41,10 @@
       "firstLastNotNull": false,
       "column": "projectKey",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -32,8 +60,10 @@
       "firstLastNotNull": false,
       "column": "start_time",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -49,8 +79,10 @@
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,8 +98,10 @@
       "firstLastNotNull": false,
       "column": "age_days",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -83,8 +117,10 @@
       "firstLastNotNull": false,
       "column": "error",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -100,8 +136,10 @@
       "firstLastNotNull": false,
       "column": "warnings_count",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -117,8 +155,10 @@
       "firstLastNotNull": false,
       "column": "scenario_id",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -134,8 +174,10 @@
       "firstLastNotNull": false,
       "column": "event_type",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -185,8 +227,27 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "user",
+            "comment": "User who initiated the task.",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
