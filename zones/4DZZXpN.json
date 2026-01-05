@@ -1,7 +1,16 @@
 {
   "name": "Analysis by Project",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_projects_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_projects_joined",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
