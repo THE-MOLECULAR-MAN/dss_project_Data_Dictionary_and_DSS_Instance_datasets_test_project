@@ -99,18 +99,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_knowledgebanks_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_knowledgebanks_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_knowledgebanks_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_connections_cached",
       "objectType": "DATASET"
     },
