@@ -213,14 +213,14 @@
             "meaning": "Date"
           }
         ],
-        "thresholdType": "ENTIRE_COLUMN",
+        "thresholdType": "MIN_PERCENTAGE_VALID",
         "considerEmptyAsValid": true,
         "minimum": 0.0,
         "minimumEnabled": false,
-        "softMinimum": 0.0,
-        "softMinimumEnabled": false,
+        "softMinimum": 100.0,
+        "softMinimumEnabled": true,
         "id": "rFJXLtrj",
-        "displayName": "All values of 6 columns are valid",
+        "displayName": "More than 100% of 6 columns is valid",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
