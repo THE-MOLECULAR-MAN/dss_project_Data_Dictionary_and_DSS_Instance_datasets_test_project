@@ -103,7 +103,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "recent_jobs_and_scenarios_by_user",
+      "objectId": "recent_jobs_user",
       "objectType": "DATASET"
     }
   ],

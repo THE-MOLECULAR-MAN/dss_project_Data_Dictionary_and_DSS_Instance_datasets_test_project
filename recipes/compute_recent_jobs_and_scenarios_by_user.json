@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_jobs_and_scenarios_by_user",
+          "ref": "recent_jobs_user",
           "appendMode": false
         }
       ]
