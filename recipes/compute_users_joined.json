@@ -31,7 +31,7 @@
     "main": {
       "items": [
         {
-          "ref": "users_joined",
+          "ref": "user_activity_summary",
           "appendMode": false
         }
       ]

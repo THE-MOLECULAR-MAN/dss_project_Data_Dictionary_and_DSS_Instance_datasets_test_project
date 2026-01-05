@@ -37,7 +37,11 @@
       "table2": 2,
       "table1": 0,
       "conditionsMode": "AND",
-      "rightLimit": {},
+      "rightLimit": {
+        "maxMatches": 1,
+        "strict": false,
+        "enabled": false
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -47,11 +51,18 @@
             "table": 0
           },
           "dateDiffUnit": "SECOND",
+          "windowFrom": 0,
           "column2": {
             "name": "user",
             "table": 2
           },
-          "type": "EQ"
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
         }
       ]
     }
@@ -60,109 +71,89 @@
     {
       "name": "login",
       "alias": "username",
-      "type": "string",
       "table": 0
     },
     {
       "name": "displayName",
-      "type": "string",
       "table": 0
     },
     {
       "name": "userProfile",
-      "type": "string",
       "table": 0
     },
     {
       "name": "groups",
-      "type": "string",
       "table": 0
     },
     {
       "name": "sourceType",
-      "type": "string",
       "table": 0
     },
     {
       "name": "email",
-      "type": "string",
       "table": 0
     },
     {
       "name": "enabled",
-      "type": "boolean",
       "table": 0
     },
     {
       "name": "created_timestamp",
-      "type": "datetimenotz",
       "table": 0
     },
     {
       "name": "days_since_last_activity_or_login",
-      "type": "string",
       "table": 0
     },
     {
       "name": "url",
       "alias": "user_url",
-      "type": "string",
       "table": 0
     },
     {
       "name": "creationDate",
-      "type": "date",
       "table": 0
     },
     {
       "name": "start_time_max",
       "alias": "most_recent_job_time",
-      "type": "date",
       "table": 1
     },
     {
       "name": "age_days_min",
       "alias": "days_since_last_job",
-      "type": "bigint",
       "table": 1
     },
     {
       "name": "error_avg",
-      "type": "double",
       "table": 1
     },
     {
       "name": "error_sum",
-      "type": "bigint",
       "table": 1
     },
     {
       "name": "warnings_count_avg",
-      "type": "double",
       "table": 1
     },
     {
       "name": "count",
       "alias": "num_jobs_and_scenarios",
-      "type": "bigint",
       "table": 1
     },
     {
       "name": "projectKey_distinct",
       "alias": "num_projects_committed_to",
-      "type": "bigint",
       "table": 2
     },
     {
       "name": "age_days_min",
       "alias": "num_days_since_last_commit",
-      "type": "bigint",
       "table": 2
     },
     {
       "name": "count",
       "alias": "all_time_commit_count",
-      "type": "bigint",
       "table": 2
     }
   ],
@@ -223,107 +214,14 @@
     },
     {
       "outputColumnsSelectionMode": "MANUAL",
-      "preFilter": {},
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
       "index": 2
     }
   ],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "meaning": "Text",
-            "name": "username",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "displayName",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "userProfile",
-            "type": "string"
-          },
-          {
-            "meaning": "JSONArrayMeaning",
-            "name": "groups",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "sourceType",
-            "type": "string"
-          },
-          {
-            "meaning": "Text",
-            "name": "email",
-            "type": "string"
-          },
-          {
-            "meaning": "Boolean",
-            "name": "enabled",
-            "type": "boolean"
-          },
-          {
-            "meaning": "DatetimeNoTz",
-            "name": "created_timestamp",
-            "type": "datetimenotz"
-          },
-          {
-            "name": "days_since_last_activity_or_login",
-            "type": "string"
-          },
-          {
-            "meaning": "URL",
-            "name": "user_url",
-            "type": "string"
-          },
-          {
-            "name": "creationDate",
-            "type": "date"
-          },
-          {
-            "name": "most_recent_job_time",
-            "type": "date"
-          },
-          {
-            "name": "days_since_last_job",
-            "type": "bigint"
-          },
-          {
-            "name": "error_avg",
-            "type": "double"
-          },
-          {
-            "name": "error_sum",
-            "type": "bigint"
-          },
-          {
-            "name": "warnings_count_avg",
-            "type": "double"
-          },
-          {
-            "name": "num_jobs_and_scenarios",
-            "type": "bigint"
-          },
-          {
-            "name": "num_projects_committed_to",
-            "type": "bigint"
-          },
-          {
-            "name": "num_days_since_last_commit",
-            "type": "bigint"
-          },
-          {
-            "name": "all_time_commit_count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
