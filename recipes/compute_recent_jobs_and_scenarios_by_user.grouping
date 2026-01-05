@@ -7,7 +7,8 @@
       "conditions": [
         {
           "input": "event_type",
-          "string": "job_log",
+          "col": "projectKey",
+          "string": "job_run",
           "$showList": false,
           "operator": "\u003d\u003d [string]"
         }
