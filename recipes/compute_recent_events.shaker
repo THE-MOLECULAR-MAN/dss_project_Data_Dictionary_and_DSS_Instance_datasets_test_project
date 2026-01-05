@@ -158,7 +158,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnNumericalRange",
       "params": {
         "max": 90.0,
