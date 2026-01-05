@@ -26,7 +26,7 @@
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "start_time",
       "count": false,
@@ -36,10 +36,11 @@
       "type": "date",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -225,6 +226,14 @@
           {
             "name": "projectKey",
             "type": "string"
+          },
+          {
+            "name": "start_time_min",
+            "type": "date"
+          },
+          {
+            "name": "start_time_max",
+            "type": "date"
           },
           {
             "name": "duration_seconds_max",
