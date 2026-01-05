@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_commits",
+          "ref": "commits_prepared",
           "deps": []
         }
       ]

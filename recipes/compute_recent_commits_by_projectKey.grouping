@@ -5,19 +5,7 @@
   },
   "keys": [
     {
-      "last": false,
-      "max": false,
-      "column": "projectKey",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "countDistinct": false,
-      "min": false,
-      "avg": false,
-      "median": false,
-      "stddev": false,
-      "first": false
+      "column": "projectKey"
     }
   ],
   "values": [
@@ -27,7 +15,6 @@
       "firstLastNotNull": false,
       "column": "start_time",
       "count": false,
-      "$idx": 0,
       "sum": false,
       "concat": false,
       "type": "date",
@@ -37,7 +24,6 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,7 +33,6 @@
       "firstLastNotNull": false,
       "column": "duration_seconds",
       "count": false,
-      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -57,7 +42,6 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -67,7 +51,6 @@
       "firstLastNotNull": false,
       "column": "age_days",
       "count": false,
-      "$idx": 2,
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -77,7 +60,6 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -87,7 +69,6 @@
       "firstLastNotNull": false,
       "column": "error",
       "count": false,
-      "$idx": 3,
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -106,7 +87,6 @@
       "firstLastNotNull": false,
       "column": "warnings_count",
       "count": false,
-      "$idx": 4,
       "sum": false,
       "concat": false,
       "type": "int",
@@ -125,7 +105,6 @@
       "firstLastNotNull": false,
       "column": "scenario_id",
       "count": false,
-      "$idx": 5,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -144,7 +123,6 @@
       "firstLastNotNull": false,
       "column": "user",
       "count": false,
-      "$idx": 6,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -154,7 +132,6 @@
       "countDistinct": true,
       "avg": false,
       "median": false,
-      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -164,7 +141,6 @@
       "firstLastNotNull": false,
       "column": "event_type",
       "count": false,
-      "$idx": 7,
       "sum": false,
       "concat": false,
       "type": "string",
@@ -220,41 +196,6 @@
   "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "projectKey",
-            "type": "string"
-          },
-          {
-            "name": "start_time_min",
-            "type": "date"
-          },
-          {
-            "name": "start_time_max",
-            "type": "date"
-          },
-          {
-            "name": "age_days_min",
-            "type": "bigint"
-          },
-          {
-            "name": "age_days_max",
-            "type": "bigint"
-          },
-          {
-            "name": "user_distinct",
-            "type": "bigint"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },

@@ -27,7 +27,7 @@
           "appendMode": false
         },
         {
-          "ref": "recent_commits",
+          "ref": "commits_prepared",
           "appendMode": false
         },
         {

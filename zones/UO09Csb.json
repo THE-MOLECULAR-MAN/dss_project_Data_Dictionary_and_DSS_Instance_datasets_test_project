@@ -55,10 +55,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "recent_commits",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "split_recent_events",
       "objectType": "RECIPE"
     },
@@ -88,6 +84,10 @@
     },
     {
       "objectId": "cluster_tasks_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "commits_prepared",
       "objectType": "DATASET"
     }
   ],
