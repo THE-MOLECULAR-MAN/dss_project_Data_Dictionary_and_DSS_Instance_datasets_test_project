@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_scenario_runs_prepared_1",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_events_stacked",
       "objectType": "RECIPE"
     },
