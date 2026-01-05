@@ -13,11 +13,11 @@
     "main": {
       "items": [
         {
-          "ref": "recent_commits_by_user",
+          "ref": "users_prepared",
           "deps": []
         },
         {
-          "ref": "users_prepared",
+          "ref": "recent_jobs_user",
           "deps": []
         }
       ]
