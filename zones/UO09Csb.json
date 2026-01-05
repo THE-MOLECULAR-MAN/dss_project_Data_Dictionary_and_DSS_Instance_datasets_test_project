@@ -73,6 +73,14 @@
     {
       "objectId": "recent_jobs_and_scenarios_by_project_key",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recent_commits_by_user",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_commits_by_user",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
