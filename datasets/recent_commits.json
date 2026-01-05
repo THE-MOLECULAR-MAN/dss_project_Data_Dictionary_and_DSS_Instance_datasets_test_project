@@ -62,7 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string"},
       {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
       {"name":"duration_seconds","type":"bigint"},
       {"name":"age_days","type":"bigint"},
