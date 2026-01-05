@@ -69,6 +69,10 @@
     {
       "objectId": "recent_cluster_tasks",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_recent_events",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
