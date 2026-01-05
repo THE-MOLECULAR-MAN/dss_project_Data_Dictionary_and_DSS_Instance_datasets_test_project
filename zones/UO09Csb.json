@@ -61,6 +61,10 @@
     {
       "objectId": "recent_jobs_and_scenarios",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "recent_commits",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
