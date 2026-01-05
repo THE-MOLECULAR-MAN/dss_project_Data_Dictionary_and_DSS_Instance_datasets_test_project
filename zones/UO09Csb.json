@@ -71,14 +71,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "jobs_prepared",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_jobs_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_jobs_by_projectKey",
       "objectType": "RECIPE"
     },
