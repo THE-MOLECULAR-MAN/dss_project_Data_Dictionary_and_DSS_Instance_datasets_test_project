@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "recent_events",
+          "ref": "combined_events_prepared",
           "deps": []
         }
       ]
