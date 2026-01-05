@@ -51,10 +51,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_recent_events_by_project_key",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "recent_events_by_project_key",
       "objectType": "DATASET"
     },
