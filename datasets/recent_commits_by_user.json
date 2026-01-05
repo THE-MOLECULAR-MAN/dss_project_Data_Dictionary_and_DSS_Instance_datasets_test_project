@@ -63,6 +63,11 @@
   "schema": {
     "columns": [
       {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey_distinct","type":"bigint"},
+      {"name":"start_time_min","type":"date"},
+      {"name":"start_time_max","type":"date"},
+      {"name":"age_days_min","type":"bigint"},
+      {"name":"age_days_max","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
