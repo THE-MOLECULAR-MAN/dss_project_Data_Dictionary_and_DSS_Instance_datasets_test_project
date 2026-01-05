@@ -37,6 +37,14 @@
     {
       "objectId": "compute_recent_jobs_and_scenarios_by_user",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_users_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "users_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
