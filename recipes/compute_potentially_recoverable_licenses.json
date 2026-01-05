@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "potentially_recoverable_licenses",
+          "ref": "users_prepared",
           "appendMode": false
         }
       ]
