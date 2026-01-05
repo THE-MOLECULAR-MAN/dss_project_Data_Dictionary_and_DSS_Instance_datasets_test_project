@@ -65,6 +65,14 @@
     {
       "objectId": "split_recent_events",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_recent_jobs_and_scenarios_by_project_key",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recent_jobs_and_scenarios_by_project_key",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
