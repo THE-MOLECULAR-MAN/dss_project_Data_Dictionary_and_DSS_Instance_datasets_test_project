@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_scenarios_runs_by_project",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_scenario_runs_prepared_1",
       "objectType": "RECIPE"
     },
