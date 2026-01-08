@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027jobs_and_scenarios_by_project_key\u0027 dataset provides a comprehensive overview of various projects, focusing on job execution scenarios. It includes key metrics such as start times, durations, errors, and warnings, which are crucial for analyzing project performance and identifying potential issues. The dataset is particularly useful for project managers and data analysts who need to monitor and optimize project workflows. By examining the start and end times, users can assess the efficiency of job executions. The dataset also includes error and warning metrics, which help in identifying and troubleshooting problems. Additionally, the dataset tracks the number of distinct users involved in each project, providing insights into team collaboration. Overall, this dataset is a valuable resource for improving project management and ensuring successful project outcomes.",
+  "shortDesc": "Dataset of project job scenarios with time and error metrics.",
   "checklists": {
     "checklists": []
   },
@@ -62,19 +64,19 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time_min","type":"date"},
-      {"name":"start_time_max","type":"date"},
-      {"name":"duration_seconds_max","type":"bigint"},
-      {"name":"duration_seconds_median","type":"double"},
-      {"name":"duration_seconds_sum","type":"bigint"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"error_avg","type":"double"},
-      {"name":"error_sum","type":"bigint"},
-      {"name":"warnings_count_avg","type":"double"},
-      {"name":"warnings_count_sum","type":"bigint"},
-      {"name":"user_distinct","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for project identification.","isColumnEdited":true},
+      {"name":"start_time_min","type":"date","comment":"Earliest start time of a job, indicates job initiation.","isColumnEdited":true},
+      {"name":"start_time_max","type":"date","comment":"Latest start time of a job, indicates job initiation.","isColumnEdited":true},
+      {"name":"duration_seconds_max","type":"bigint","comment":"Maximum duration of a job in seconds, measures job length.","isColumnEdited":true},
+      {"name":"duration_seconds_median","type":"double","comment":"Median duration of a job in seconds, measures job length.","isColumnEdited":true},
+      {"name":"duration_seconds_sum","type":"bigint","comment":"Total duration of all jobs in seconds, measures job length.","isColumnEdited":true},
+      {"name":"age_days_min","type":"bigint","comment":"Minimum age of a job in days, indicates job recency.","isColumnEdited":true},
+      {"name":"error_avg","type":"double","comment":"Average number of errors per job, measures job reliability.","isColumnEdited":true},
+      {"name":"error_sum","type":"bigint","comment":"Total number of errors in jobs, measures job reliability.","isColumnEdited":true},
+      {"name":"warnings_count_avg","type":"double","comment":"Average number of warnings per job, measures job reliability.","isColumnEdited":true},
+      {"name":"warnings_count_sum","type":"bigint","comment":"Total number of warnings in jobs, measures job reliability.","isColumnEdited":true},
+      {"name":"user_distinct","type":"bigint","comment":"Number of distinct users involved, indicates team size.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Total number of jobs, measures project activity.","isColumnEdited":true}
     ],
     "userModified": true
   },
