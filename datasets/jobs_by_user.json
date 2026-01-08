@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027jobs_by_user\u0027 dataset provides a comprehensive overview of tasks initiated by users, capturing key metrics such as task durations, errors, and warnings. This dataset is particularly useful for analyzing user activity and performance in task execution environments. It includes information on the maximum start time of tasks, the maximum and average duration of tasks in seconds, and the minimum age of tasks in days. Additionally, it tracks the average and total number of errors and warnings encountered during task execution. The dataset also includes a count of tasks initiated by each user. This data can be instrumental in identifying patterns in user behavior, optimizing task management processes, and improving system reliability by addressing frequent errors and warnings. The dataset\u0027s structure allows for detailed analysis of user interactions with the system, making it valuable for administrators and analysts aiming to enhance operational efficiency and user experience.",
+  "shortDesc": "User job statistics with durations, errors, and warnings.",
   "checklists": {
     "checklists": []
   },
@@ -62,16 +64,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"start_time_max","type":"date"},
-      {"name":"duration_seconds_max","type":"bigint"},
-      {"name":"duration_seconds_avg","type":"double"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"error_avg","type":"double"},
-      {"name":"error_sum","type":"bigint"},
-      {"name":"warnings_count_avg","type":"double"},
-      {"name":"warnings_count_sum","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"user","type":"string","comment":"Email of the user who initiated the task.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time_max","type":"date","comment":"Latest start time of tasks by user.","isColumnEdited":true},
+      {"name":"duration_seconds_max","type":"bigint","comment":"Maximum duration of tasks in seconds.","isColumnEdited":true},
+      {"name":"duration_seconds_avg","type":"double","comment":"Average duration of tasks in seconds.","isColumnEdited":true},
+      {"name":"age_days_min","type":"bigint","comment":"Minimum age of tasks in days.","isColumnEdited":true},
+      {"name":"error_avg","type":"double","comment":"Average number of errors per task.","isColumnEdited":true},
+      {"name":"error_sum","type":"bigint","comment":"Total number of errors encountered.","isColumnEdited":true},
+      {"name":"warnings_count_avg","type":"double","comment":"Average number of warnings per task.","isColumnEdited":true},
+      {"name":"warnings_count_sum","type":"bigint","comment":"Total number of warnings encountered.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Total number of tasks initiated by user.","isColumnEdited":true}
     ],
     "userModified": true
   },
