@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027commits_prepared\u0027 dataset provides detailed information about commit events within a project management or version control system. It includes key data points such as the project key, start time of the task, duration, and user information. This dataset is particularly useful for analyzing the performance and efficiency of project tasks, tracking user activity, and identifying potential issues through error and warning counts. Each entry in the dataset represents a specific commit event, identified by a unique scenario ID, and includes the type of event, which is typically a commit. The dataset can be used by project managers and developers to monitor project progress, optimize workflows, and ensure timely completion of tasks. Additionally, the dataset\u0027s structure allows for easy integration with other project management tools for enhanced data analysis and reporting.",
+  "shortDesc": "Dataset of project commit events with timestamps and user details.",
   "checklists": {
     "checklists": []
   },
@@ -62,15 +64,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint"},
-      {"name":"age_days","type":"bigint"},
-      {"name":"error","type":"bigint"},
+      {"name":"projectKey","type":"string","comment":"Identifier for the project, e.g., \u0027DSS_Data_Plugin_Test\u0027.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started, e.g., \u00272026-01-05T03:43:16.000Z\u0027.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the task in days, e.g., \u00270\u0027.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Error count during the task.","isColumnEdited":true},
       {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string"}
+      {"name":"user","type":"string","comment":"User who initiated the task, e.g., \u0027demo\u0027.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, e.g., \u0027commit\u0027.","isColumnEdited":true}
     ],
     "userModified": true
   },
