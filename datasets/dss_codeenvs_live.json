@@ -38,7 +38,9 @@
     },
     "lastModifiedOn": 1762961228236
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "customConfig": {
       "compute_codeenv_disk_space_usage": true,
