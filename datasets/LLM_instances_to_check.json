@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The LLM_instances_to_check dataset is designed to manage and track various projects involving language learning models (LLMs). It provides a comprehensive overview of each project, including metadata such as project keys, object types, and identifiers. This dataset is particularly useful for organizations or teams working with LLMs, as it helps in organizing and categorizing projects based on their characteristics and status. Key features include detailed descriptions of project objectives and processes, which are crucial for understanding the scope and purpose of each project. The dataset also includes information about the LLM provider, model name, and version, which are essential for tracking the specific LLMs used in each project. Additionally, it captures the project\u0027s current status, owner information, and modification timestamps, providing a clear picture of the project\u0027s lifecycle and recent updates. The inclusion of tags and contributor lists further aids in categorizing and understanding the collaborative nature of the projects. Overall, this dataset serves as a valuable tool for managing LLM projects, offering insights into their development, deployment, and ongoing management.",
+  "shortDesc": "Dataset for managing LLM projects with metadata and descriptions.",
   "checklists": {
     "checklists": []
   },
@@ -62,15 +64,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"dss_object_id","type":"string","meaning":"Text"},
-      {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"Text"},
-      {"name":"connection_name","type":"string"},
-      {"name":"llm_provider","type":"string"},
-      {"name":"llm_model_name_version","type":"string"},
-      {"name":"llmId_basic","type":"string"},
+      {"name":"projectKey","type":"string","comment":"Unique identifier for the project, indicating its category.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_type","type":"string","comment":"Type of DSS object, such as LLM or dataset.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_id","type":"string","comment":"Unique identifier for the DSS object, ensuring traceability.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_name","type":"string","comment":"Name of the DSS object, for easy identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"llmId","type":"string","comment":"Identifier for the LLM, including provider and model.","meaning":"Text","isColumnEdited":true},
+      {"name":"connection_name","type":"string","comment":"Name of the connection used, indicating data source.","isColumnEdited":true},
+      {"name":"llm_provider","type":"string","comment":"Provider of the LLM, such as OpenAI.","isColumnEdited":true},
+      {"name":"llm_model_name_version","type":"string","comment":"Name and version of the LLM model used.","isColumnEdited":true},
+      {"name":"llmId_basic","type":"string","comment":"Basic identifier for the LLM, combining provider and model.","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Descriptive name of the project, indicating its purpose.","meaning":"Text","isColumnEdited":true},
       {"name":"shortDesc","type":"string","comment":"Brief description of the project, including creation details.","meaning":"FreeText","isColumnEdited":true},
       {"name":"description","type":"string","comment":"Detailed project description, outlining objectives and processes.","meaning":"FreeText","isColumnEdited":true},
