@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027combined_events_prepared\u0027 dataset is designed to track and analyze events related to various projects. It includes detailed information about each event, such as the project key, start time, and duration, which are crucial for understanding the timeline and efficiency of project tasks. The dataset also captures the number of warnings and errors, providing insights into potential issues that may have occurred during the execution of tasks. Additionally, it records the user who initiated the task and the type of event, which can be useful for auditing and accountability purposes. This dataset is particularly useful for project managers and data analysts who need to monitor project progress, identify bottlenecks, and ensure that tasks are completed efficiently. By analyzing this data, organizations can improve their project management processes and enhance overall productivity.",
+  "shortDesc": "Dataset of project events with timestamps and user details.",
   "checklists": {
     "checklists": []
   },
@@ -62,15 +64,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint"},
-      {"name":"age_days","type":"bigint"},
-      {"name":"error","type":"bigint"},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started; event timing.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds; task length.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the event in days; event recency.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Indicates if an error occurred; error status.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job; warning tally.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario; scenario key.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task; task initiator.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, e.g., job run; event category.","isColumnEdited":true}
     ],
     "userModified": true
   },
