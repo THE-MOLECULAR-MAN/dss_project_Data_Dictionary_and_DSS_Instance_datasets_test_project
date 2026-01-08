@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_retrieval_augmented_llms_cached\u0027 dataset provides comprehensive information about retrieval-augmented language models (LLMs) used in various projects. It includes details such as project identifiers, model versions, and associated metadata. This dataset is particularly useful for tracking and managing LLMs across different projects, facilitating the organization of model versions and their deployment. Key features include project keys, unique LLM identifiers, and URLs linking to specific model instances. Additionally, it captures metadata like creation and modification timestamps, user information, and retrieval sources, which are essential for auditing and version control. The dataset is valuable for data scientists and engineers involved in deploying and maintaining LLMs, as it provides a structured overview of model configurations and their evolution over time. It also supports the integration of LLMs with various retrieval sources, enhancing the models\u0027 ability to handle diverse data inputs. Overall, this dataset serves as a critical resource for managing the lifecycle of retrieval-augmented LLMs in a systematic and efficient manner.",
+  "shortDesc": "Dataset for retrieval-augmented LLMs with project and model details.",
   "checklists": {
     "checklists": []
   },
@@ -62,19 +64,19 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"rag_llm_id","type":"string","meaning":"Text"},
-      {"name":"activeVersion","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"Text"},
-      {"name":"kb_id","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"},
-      {"name":"retrievalColumns","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"retrievalSource","type":"string","meaning":"Text"},
-      {"name":"created_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"created_by_user","type":"string","meaning":"Text"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for project management.","meaning":"Text","isColumnEdited":true},
+      {"name":"rag_llm_id","type":"string","comment":"Unique identifier for retrieval-augmented LLM, key for model tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"activeVersion","type":"string","comment":"Current active version of the model, key for version control.","meaning":"Text","isColumnEdited":true},
+      {"name":"llmId","type":"string","comment":"Identifier for the language model, key for model identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"kb_id","type":"string","comment":"Knowledge base identifier, key for linking models to data.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL linking to the model instance, key for accessing models.","meaning":"URL","isColumnEdited":true},
+      {"name":"retrievalColumns","type":"string","comment":"Columns used for retrieval, key for data embedding.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"retrievalSource","type":"string","comment":"Source type for retrieval, key for data integration.","meaning":"Text","isColumnEdited":true},
+      {"name":"created_timestamp","type":"string","comment":"Timestamp of model creation, key for tracking creation date.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the model, key for user tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification, key for tracking changes.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the model, key for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the model, key for user identification.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
   },
