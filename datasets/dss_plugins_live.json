@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about various plugins available in a live environment. Each entry in the dataset represents a unique plugin, identified by a unique ID and a human-readable label. The dataset includes details such as the version number, which helps track updates and changes, and the author, providing information about the creator or contributors. Tags are used to categorize plugins, making it easier to search and filter them based on specific keywords. A detailed description of each plugin\u0027s functionality and use cases is provided, offering insights into how the plugin can be utilized. The dataset also indicates whether a plugin is still in development, which is crucial for understanding its current status. Additionally, a URL is provided for each plugin, linking to a summary page for more detailed information. This dataset is particularly useful for developers, project managers, and users who need to manage and utilize plugins effectively in their projects.",
-  "shortDesc": "Dataset of live plugins with details on version, author, and status.",
+  "description": "The \u0027dss_plugins_live\u0027 dataset provides comprehensive information about various plugins used within a data science platform. Each entry in the dataset represents a plugin, detailing its unique identifier, label, code environment, version, and author. The dataset also includes descriptive information about the plugin\u0027s functionality, associated tags, and the projects in which the plugin is utilized. Additionally, it indicates whether the plugin is in development, its total usage count, and if it is a built-in feature of the platform. This dataset is particularly useful for developers and data scientists who need to manage and track plugin usage, development status, and integration within projects. It can help in identifying popular plugins, understanding their application in different projects, and managing plugin updates or deprecations. The inclusion of URLs for each plugin allows for easy access to more detailed documentation or summaries, enhancing the dataset\u0027s utility for quick reference and decision-making.",
+  "shortDesc": "Dataset of live plugins with details on usage and development.",
   "checklists": {
     "checklists": []
   },
@@ -49,18 +49,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string","meaning":"Text"},
-      {"name":"label","type":"string","meaning":"Text"},
-      {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"version","type":"string","meaning":"Text"},
-      {"name":"author","type":"string","meaning":"Text"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"description","type":"string","meaning":"FreeText"},
-      {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"isDev","type":"boolean","meaning":"Text"},
-      {"name":"total_usages","type":"string","meaning":"Text"},
-      {"name":"is_built_in_plugin","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin, key for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin, aids recognition.","meaning":"Text","isColumnEdited":true},
+      {"name":"code_env_name","type":"string","comment":"Name of the code environment associated with the plugin.","meaning":"Text","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Current version of the plugin, important for updates.","meaning":"Text","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin, indicates responsibility.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords associated with the plugin, useful for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"plugin_used_in_projectkeys","type":"string","comment":"List of project keys where the plugin is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, boolean value.","meaning":"Text","isColumnEdited":true},
+      {"name":"total_usages","type":"string","comment":"Number of times the plugin has been used, usage metric.","meaning":"Text","isColumnEdited":true},
+      {"name":"is_built_in_plugin","type":"string","comment":"Indicates if the plugin is built-in, boolean value.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"Web link to the plugin\u0027s summary or documentation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
