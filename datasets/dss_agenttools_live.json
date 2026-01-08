@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_agenttools",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_agenttools_live\u0027 dataset provides detailed information about various agent tools used within Dataiku DSS projects. It includes metadata about each tool, such as its unique identifier, name, type, and a description tailored for large language models (LLMs). This dataset is particularly useful for managing and analyzing the tools used in data science workflows, allowing users to understand the capabilities and configurations of each tool. It also tracks the creation and modification details, including the user responsible and the timestamp of the last modification. Additionally, the dataset contains parameters for each tool, which are stored in a JSON format, providing insights into the tool\u0027s configuration and usage context. The dataset is valuable for administrators and data scientists who need to audit, optimize, or extend the functionality of their data science projects. By providing URLs to the tools, it facilitates easy access and management within the Dataiku platform. The inclusion of LLM identifiers and tags further enhances the dataset\u0027s utility in environments where AI and machine learning models are integrated into data processing workflows.",
-  "shortDesc": "Dataset of agent tools in Dataiku DSS projects.",
+  "description": "The \u0027dss_agenttools_live\u0027 dataset provides comprehensive information about agent tools used within Dataiku DSS projects. It includes metadata such as unique identifiers, names, types, and descriptions of each agent tool, which are essential for managing and utilizing these tools effectively. The dataset is particularly useful for developers and data scientists who work with Dataiku DSS, as it helps in tracking the creation and modification of agent tools, understanding their functionalities, and integrating them with large language models (LLMs). Each tool is associated with a project, and the dataset captures details like the user who created or last modified the tool, the timestamp of the last modification, and any associated tags. Additionally, it includes a JSON object of tool parameters, which provides configuration details necessary for tool execution. The dataset also links to the tools via URLs, facilitating easy access. This dataset is valuable for maintaining an organized and efficient workflow in Dataiku DSS environments, enabling users to leverage agent tools for various data processing and analysis tasks.",
+  "shortDesc": "Dataset of Dataiku DSS agent tools with metadata and descriptions.",
   "checklists": {
     "checklists": []
   },
@@ -46,18 +46,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku DSS project.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_type","type":"string","comment":"Type or category of the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description of the tool for LLMs.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"User who created the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLM_id","type":"string","comment":"Identifier for the large language model.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the agent tool.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL link to the agent tool.","meaning":"URL","isColumnEdited":true}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku DSS project, essential for project management.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool, crucial for tool tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool, important for identification and usage.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type or category of the agent tool, helps in classification.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description of the tool for LLMs, aids in understanding tool functionality.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the agent tool, useful for accountability.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification, tracks changes over time.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool, important for change tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters, contains configuration details.","meaning":"Text","isColumnEdited":true},
+      {"name":"LLM_id","type":"string","comment":"Identifier for the large language model, links tools to LLMs.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent tool, useful for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the agent tool, provides direct access.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
