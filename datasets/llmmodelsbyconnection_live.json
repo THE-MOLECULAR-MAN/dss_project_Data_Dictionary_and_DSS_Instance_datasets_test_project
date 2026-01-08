@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_llmmodelsbyconnection",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027llmmodelsbyconnection_live\u0027 dataset provides a comprehensive overview of various large language models (LLMs) categorized by their connection types and operational status. This dataset is particularly useful for organizations and researchers who are interested in understanding the distribution and availability of LLMs across different platforms and services. Each entry in the dataset includes the name of the connection, the type of connection, the specific LLM name, and whether the LLM is currently enabled. This information can be leveraged to analyze trends in LLM usage, assess the diversity of models available through different service providers, and make informed decisions about which models to deploy based on their availability and compatibility with existing systems. The dataset\u0027s unique feature is its focus on live connections, providing real-time insights into the operational status of LLMs, which is crucial for dynamic environments where model availability can impact decision-making processes.",
+  "shortDesc": "Dataset of LLM models by connection type and status.",
   "checklists": {
     "checklists": []
   },
@@ -44,10 +46,10 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection_name","type":"string","meaning":"Text"},
-      {"name":"connection_type","type":"string","meaning":"Text"},
-      {"name":"llm_name","type":"string","meaning":"Text"},
-      {"name":"llm_enabled","type":"boolean","meaning":"Boolean"}
+      {"name":"connection_name","type":"string","comment":"Name of the connection; identifies LLM source.","meaning":"Text","isColumnEdited":true},
+      {"name":"connection_type","type":"string","comment":"Type of connection; categorizes LLM provider.","meaning":"Text","isColumnEdited":true},
+      {"name":"llm_name","type":"string","comment":"Name of the LLM; specifies the model used.","meaning":"Text","isColumnEdited":true},
+      {"name":"llm_enabled","type":"boolean","comment":"Indicates if the LLM is currently active.","meaning":"Boolean","isColumnEdited":true}
     ],
     "userModified": true
   },
