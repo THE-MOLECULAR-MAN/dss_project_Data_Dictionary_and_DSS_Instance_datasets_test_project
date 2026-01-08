@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027plugins_and_their_code_env\u0027 dataset provides comprehensive information about various plugins and their associated code environments. It includes details such as the name and size of the code environment, deployment mode, and the projects where these environments are utilized. This dataset is particularly useful for managing and analyzing the deployment and usage of plugins within different projects. It helps in understanding the distribution and frequency of plugin usage, which can be critical for resource allocation and optimization. The dataset also includes URLs for direct access to the code environments, making it easier for users to navigate and manage these resources. Additionally, it provides unique identifiers for each plugin, ensuring precise tracking and management. This dataset is valuable for developers, project managers, and IT administrators who need to monitor and optimize the use of plugins and code environments in their systems.",
+  "shortDesc": "Dataset of plugins and their code environments, including deployment and usage details.",
   "checklists": {
     "checklists": []
   },
@@ -64,14 +66,14 @@
     "columns": [
       {"name":"code_env_name","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
       {"name":"deployment_mode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED, DSS_INTERNAL.","meaning":"Text","isColumnEdited":true},
-      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"string","meaning":"LongMeaning"},
+      {"name":"size_in_MB","type":"double","comment":"Size of the code environment in megabytes.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects where the code environment is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"total_instances_of_code_env","type":"string","comment":"Total instances of the code environment.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true},
       {"name":"plugin_id","type":"string","comment":"Unique identifier for each plugin, essential reference.","meaning":"Text","isColumnEdited":true},
-      {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"plugin_total_usages","type":"string","meaning":"LongMeaning"},
-      {"name":"plugin_is_built_in_plugin","type":"string","meaning":"Boolean"}
+      {"name":"plugin_used_in_projectkeys","type":"string","comment":"Projects where the plugin is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"plugin_total_usages","type":"string","comment":"Total number of times the plugin is used.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"plugin_is_built_in_plugin","type":"string","comment":"Indicates if the plugin is built-in.","meaning":"Boolean","isColumnEdited":true}
     ],
     "userModified": true
   },
