@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_knowledgebanks",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_knowledgebanks_live\u0027 dataset provides a comprehensive overview of various knowledge banks, capturing essential metadata and configuration details. This dataset is particularly useful for managing and analyzing knowledge banks within a project management or data science platform. Each entry in the dataset represents a unique knowledge bank, identified by a project key and a knowledge bank ID. The dataset includes information about the embedding models used, the type of retriever and vector store, and the environment configurations, which are crucial for understanding the setup and retrieval mechanisms of the knowledge banks. Additionally, it tracks the creation and modification details, including timestamps and user information, which are vital for auditing and version control. The dataset also includes URLs for direct access to the knowledge bank settings, facilitating easy navigation and management. This dataset is ideal for developers, data scientists, and project managers who need to maintain and optimize knowledge bank configurations and ensure efficient information retrieval and management.",
+  "shortDesc": "Dataset of knowledge banks with metadata and configuration details.",
   "checklists": {
     "checklists": []
   },
@@ -44,22 +46,22 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"kb_id","type":"string","meaning":"Text"},
-      {"name":"kb_name","type":"string","meaning":"Text"},
-      {"name":"kb_embeddingLLMId","type":"string","meaning":"Text"},
-      {"name":"retrieverType","type":"string","meaning":"Text"},
-      {"name":"kb_vectorStoreType","type":"string","meaning":"Text"},
-      {"name":"envSelection","type":"string","meaning":"JSONObjectMeaning"},
-      {"name":"created_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"last_modified_user","type":"string","meaning":"Text"},
-      {"name":"last_modified_timestamp","type":"string","meaning":"DatetimeNoTz"},
-      {"name":"tags","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"created_by_user","type":"string","meaning":"Text"},
-      {"name":"managedFolderId","type":"string","meaning":"Text"},
-      {"name":"multimodalColumn","type":"string","meaning":"Text"},
-      {"name":"rebuildBehavior","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, essential for project management.","meaning":"Text","isColumnEdited":true},
+      {"name":"kb_id","type":"string","comment":"Unique identifier for each knowledge bank, crucial for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"kb_name","type":"string","comment":"Name of the knowledge bank, important for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"kb_embeddingLLMId","type":"string","comment":"Identifier for the embedding model used, key for model tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"retrieverType","type":"string","comment":"Type of retriever used, important for retrieval method.","meaning":"Text","isColumnEdited":true},
+      {"name":"kb_vectorStoreType","type":"string","comment":"Type of vector store used, crucial for storage method.","meaning":"Text","isColumnEdited":true},
+      {"name":"envSelection","type":"string","comment":"Environment configuration details, key for setup management.","meaning":"JSONObjectMeaning","isColumnEdited":true},
+      {"name":"created_timestamp","type":"string","comment":"Timestamp of creation, important for tracking creation date.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the entry, crucial for auditing.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of last modification, important for version control.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the knowledge bank, useful for categorization.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the entry, important for tracking authorship.","meaning":"Text","isColumnEdited":true},
+      {"name":"managedFolderId","type":"string","comment":"Identifier for the managed folder, key for folder management.","meaning":"Text","isColumnEdited":true},
+      {"name":"multimodalColumn","type":"string","comment":"Column for multimodal content, important for content type.","meaning":"Text","isColumnEdited":true},
+      {"name":"rebuildBehavior","type":"string","comment":"Behavior setting for rebuilds, crucial for configuration.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access knowledge bank settings, essential for navigation.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
