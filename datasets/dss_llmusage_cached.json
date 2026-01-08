@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_llmusage_cached\u0027 dataset provides detailed information on the usage of large language models (LLMs) within various projects. It includes key identifiers and descriptions of objects related to LLMs, such as agents, recipes, and tools, used in different projects. This dataset is particularly useful for tracking and analyzing how LLMs are integrated and utilized across different projects, providing insights into the types of LLMs employed and their specific applications. Each entry in the dataset corresponds to a unique object within a project, identified by a project key, object type, and object ID. The dataset also includes the name of the object and a JSON array indicating the specific LLMs associated with it. This information can be used by data scientists and project managers to monitor LLM usage, optimize resource allocation, and enhance project outcomes by leveraging the capabilities of various LLMs. The dataset\u0027s structure allows for easy querying and analysis, making it a valuable resource for understanding the deployment and impact of LLMs in different contexts.",
+  "shortDesc": "Dataset on LLM usage in projects with object details.",
   "checklists": {
     "checklists": []
   },
@@ -62,11 +64,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"dss_object_id","type":"string","meaning":"Text"},
-      {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_type","type":"string","comment":"Type of DSS object, such as agent or recipe.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_id","type":"string","comment":"Unique identifier for each DSS object, key for identification.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_name","type":"string","comment":"Name of the DSS object, descriptive identifier.","meaning":"Text","isColumnEdited":true},
+      {"name":"llmId","type":"string","comment":"JSON array of LLM identifiers, details LLM usage.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
