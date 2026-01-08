@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027cluster_tasks_by_projectKey\u0027 dataset is designed to provide insights into task management and scheduling across various projects. Each entry in the dataset represents a unique project identified by the \u0027projectKey\u0027. The dataset includes temporal metrics such as the earliest and latest start times (\u0027start_time_min\u0027 and \u0027start_time_max\u0027), which help in understanding the scheduling and execution timeline of tasks within a project. Additionally, it provides duration metrics, including the maximum and average duration of tasks in seconds (\u0027duration_seconds_max\u0027 and \u0027duration_seconds_avg\u0027), offering insights into task efficiency and time management. The dataset also tracks the age of tasks in days, from minimum to maximum (\u0027age_days_min\u0027 and \u0027age_days_max\u0027), which can be useful for analyzing task lifecycle and project timelines. The \u0027count\u0027 column indicates the number of tasks associated with each project, providing a measure of project activity. This dataset is valuable for project managers and analysts looking to optimize task scheduling, improve time management, and gain a comprehensive view of project timelines and task durations.",
+  "shortDesc": "Project task clustering dataset with time and duration metrics.",
   "checklists": {
     "checklists": []
   },
@@ -62,14 +64,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time_min","type":"date"},
-      {"name":"start_time_max","type":"date"},
-      {"name":"duration_seconds_max","type":"bigint"},
-      {"name":"duration_seconds_avg","type":"double"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"age_days_max","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for clustering.","isColumnEdited":true},
+      {"name":"start_time_min","type":"date","comment":"Earliest start time of tasks in a project, indicates scheduling.","isColumnEdited":true},
+      {"name":"start_time_max","type":"date","comment":"Latest start time of tasks in a project, indicates scheduling.","isColumnEdited":true},
+      {"name":"duration_seconds_max","type":"bigint","comment":"Maximum duration of tasks in seconds, measures task length.","isColumnEdited":true},
+      {"name":"duration_seconds_avg","type":"double","comment":"Average duration of tasks in seconds, measures task efficiency.","isColumnEdited":true},
+      {"name":"age_days_min","type":"bigint","comment":"Minimum age of tasks in days, indicates task lifecycle.","isColumnEdited":true},
+      {"name":"age_days_max","type":"bigint","comment":"Maximum age of tasks in days, indicates task lifecycle.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Number of tasks in a project, measures project activity.","isColumnEdited":true}
     ],
     "userModified": true
   },
