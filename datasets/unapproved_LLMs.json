@@ -2,6 +2,8 @@
   "type": "Inline",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027unapproved_LLMs\u0027 dataset contains information about language models (LLMs) that have not been approved for use. This dataset is particularly useful for organizations and researchers who need to track and manage the usage of LLMs within their systems, ensuring compliance with internal or external regulations. The dataset consists of a single column that lists the names and versions of these unapproved models. This can help in identifying which models are not permitted, potentially due to security, ethical, or performance concerns. By maintaining a record of unapproved models, organizations can better control the deployment of AI technologies and mitigate risks associated with unauthorized or inappropriate use of language models. The dataset is straightforward, focusing solely on the identification of these models, making it a valuable resource for compliance and governance teams.",
+  "shortDesc": "Dataset of unapproved LLM model names and versions.",
   "formatType": "json",
   "checklists": {
     "checklists": []
@@ -54,7 +56,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"llm_model_name_version","type":"string"}
+      {"name":"llm_model_name_version","type":"string","comment":"Name and version of unapproved LLM models, key for tracking.","isColumnEdited":true}
     ],
     "userModified": true
   },
