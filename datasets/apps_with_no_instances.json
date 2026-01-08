@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027apps_with_no_instances\u0027 dataset provides detailed information about applications that currently have no active instances. This dataset is particularly useful for developers and project managers who need to track and manage applications within a software environment, such as Dataiku. Each entry in the dataset represents an application, identified by a unique \u0027appId\u0027, and includes metadata such as version, descriptive labels, and short descriptions. The dataset also includes boolean indicators for limited visibility, image presence, and usage as a recipe, which can help in understanding the application\u0027s deployment and usage status. Additionally, the dataset provides information about the application\u0027s origin, whether it is a project or a plugin, and the key of the originating project. Tags associated with each application are stored in a JSON array format, allowing for easy categorization and filtering. The \u0027instanceCount\u0027 column indicates the number of instances, which is zero for all entries in this dataset. This dataset can be used to audit applications, identify those that are not currently in use, and make decisions about resource allocation or application lifecycle management.",
+  "shortDesc": "Dataset of applications with no instances, detailing visibility and metadata.",
   "checklists": {
     "checklists": []
   },
