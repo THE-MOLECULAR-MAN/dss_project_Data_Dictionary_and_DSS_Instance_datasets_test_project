@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027cluster_tasks_prepared\u0027 dataset provides detailed information about tasks executed within a cluster environment. It includes key data points such as the project key, start time, and duration of each task, which are essential for tracking and analyzing task performance and efficiency. The dataset also captures the age of tasks in days, any errors encountered, and the number of warnings generated, which are crucial for debugging and improving task reliability. Additionally, it records the scenario ID, user who initiated the task, and the type of event, offering insights into user activity and task categorization. This dataset is particularly useful for system administrators and data engineers who need to monitor cluster operations, optimize task scheduling, and ensure system reliability. By analyzing this data, organizations can identify patterns, predict potential issues, and enhance overall system performance. The inclusion of user and scenario identifiers also allows for personalized analysis and reporting, making it a versatile tool for operational management.",
+  "shortDesc": "Dataset of cluster task details with timestamps and user information.",
   "checklists": {
     "checklists": []
   },
@@ -62,15 +64,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint"},
-      {"name":"age_days","type":"bigint"},
-      {"name":"error","type":"bigint"},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for task grouping.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started; crucial for tracking.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds; measures task length.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the task in days; indicates task recency.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Error code or message; indicates task failure.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job; indicates issues.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario; links to specific cases.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task; tracks user activity.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event; categorizes the task.","isColumnEdited":true}
     ],
     "userModified": true
   },
