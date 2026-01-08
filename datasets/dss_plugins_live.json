@@ -38,7 +38,9 @@
     },
     "lastModifiedOn": 1763992026815
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "customConfig": {
       "compute_disk_util": true,
