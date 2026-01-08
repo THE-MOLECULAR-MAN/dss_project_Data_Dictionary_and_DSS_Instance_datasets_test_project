@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_llmusage",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027dss_llmusage_live\u0027 dataset is designed to track and analyze the usage of large language models (LLMs) within various projects. It provides detailed information about the projects, the types of objects involved, and the specific LLMs utilized. This dataset is particularly useful for organizations looking to monitor and optimize their use of LLMs across different applications. By examining the data, users can gain insights into which LLMs are most frequently used, how they are integrated into different project components, and the diversity of object types interacting with these models. The dataset includes columns that identify the project key, the type and ID of the DSS object, the name of the DSS object, and the specific LLMs used, represented as JSON arrays. This structure allows for comprehensive analysis of LLM deployment and usage patterns, facilitating better resource allocation and strategic planning for AI-driven projects.",
+  "shortDesc": "Dataset tracking LLM usage in projects with object details.",
   "checklists": {
     "checklists": []
   },
@@ -44,11 +46,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","meaning":"Text"},
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"dss_object_id","type":"string","meaning":"Text"},
-      {"name":"dss_object_name","type":"string","meaning":"Text"},
-      {"name":"llmId","type":"string","meaning":"JSONArrayMeaning"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_type","type":"string","comment":"Type of DSS object, categorizes project components.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_id","type":"string","comment":"Unique ID for each DSS object, identifies components.","meaning":"Text","isColumnEdited":true},
+      {"name":"dss_object_name","type":"string","comment":"Name of the DSS object, descriptive identifier.","meaning":"Text","isColumnEdited":true},
+      {"name":"llmId","type":"string","comment":"List of LLMs used, identifies models in projects.","meaning":"JSONArrayMeaning","isColumnEdited":true}
     ],
     "userModified": true
   },
