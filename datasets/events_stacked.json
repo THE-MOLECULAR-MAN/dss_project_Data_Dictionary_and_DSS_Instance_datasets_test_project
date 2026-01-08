@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027events_stacked\u0027 dataset provides a comprehensive view of various project-related events, capturing essential details such as project identifiers, timestamps, and execution states. This dataset is particularly useful for tracking the progress and outcomes of tasks within projects, as it includes start and end times, the state of job execution, and any warnings generated. It also records the user who initiated the task and the type of event, which can be crucial for auditing and performance analysis. The dataset can be used in project management to monitor task execution, identify bottlenecks, and improve efficiency by analyzing the frequency and causes of warnings. Additionally, it can aid in user activity tracking and scenario analysis, providing insights into how different scenarios are executed and their outcomes. The inclusion of timestamps allows for precise time-based analysis, making it a valuable resource for time series analysis and reporting.",
+  "shortDesc": "Dataset of project events with timestamps and statuses.",
   "checklists": {
     "checklists": []
   },
@@ -62,14 +64,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"project_key","type":"string","comment":"Identifier for the associated project.","meaning":"Text","isColumnEdited":true},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
-      {"name":"end_time","type":"date","comment":"Timestamp when the task ended.","meaning":"Date","isColumnEdited":true},
-      {"name":"state","type":"string","comment":"Current state of the job execution.","meaning":"Text","isColumnEdited":true},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string"}
+      {"name":"project_key","type":"string","comment":"Identifier for the associated project, unique key.","meaning":"Text","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started, crucial for tracking.","meaning":"Date","isColumnEdited":true},
+      {"name":"end_time","type":"date","comment":"Timestamp when the task ended, marks completion.","meaning":"Date","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current state of the job execution, indicates status.","meaning":"Text","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job, error tracking.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario, scenario tracking.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task, user activity.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, categorizes the job run.","isColumnEdited":true}
     ],
     "userModified": true
   },
