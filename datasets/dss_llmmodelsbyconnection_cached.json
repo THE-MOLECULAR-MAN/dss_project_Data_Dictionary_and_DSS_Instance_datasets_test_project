@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027dss_llmmodelsbyconnection_cached\u0027 dataset provides a comprehensive overview of various large language models (LLMs) categorized by their connection types and statuses. This dataset is particularly useful for organizations and researchers who are interested in understanding the distribution and availability of different LLMs across various platforms and connection types. It includes information on the name of the connection, the type of connection, the specific LLM name, and whether the LLM is currently enabled. This dataset can be used to analyze trends in LLM usage, evaluate the availability of specific models, and optimize resource allocation for AI projects. The inclusion of both connection and model details allows for a nuanced analysis of how different LLMs are integrated and utilized within different technological environments. This dataset is valuable for data scientists, AI researchers, and IT professionals who need to manage and deploy LLMs effectively.",
+  "shortDesc": "Dataset of LLM models by connection type and status.",
   "checklists": {
     "checklists": []
   },
@@ -62,10 +64,10 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection_name","type":"string"},
-      {"name":"connection_type","type":"string"},
-      {"name":"llm_name","type":"string"},
-      {"name":"llm_enabled","type":"boolean"}
+      {"name":"connection_name","type":"string","comment":"Name of the connection; identifies LLM source.","isColumnEdited":true},
+      {"name":"connection_type","type":"string","comment":"Type of connection; categorizes LLM platform.","isColumnEdited":true},
+      {"name":"llm_name","type":"string","comment":"Name of the LLM; specifies the model used.","isColumnEdited":true},
+      {"name":"llm_enabled","type":"boolean","comment":"LLM status; indicates if the model is active.","isColumnEdited":true}
     ],
     "userModified": true
   },
