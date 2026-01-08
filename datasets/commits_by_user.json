@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027commits_by_user\u0027 dataset provides a comprehensive overview of user-initiated tasks within a project management or version control system. It includes detailed information about the users who initiated tasks, the number of distinct projects they are involved in, and the time range during which these tasks were started. This dataset is particularly useful for analyzing user activity, project involvement, and task timelines. It can be used to identify active users, understand project distribution among users, and analyze the duration and frequency of tasks. The dataset\u0027s unique features include the ability to track the minimum and maximum start times of tasks, as well as the age of tasks in days, providing insights into task longevity and user engagement over time. This information is valuable for project managers, team leads, and data analysts who need to monitor and optimize team performance and project timelines.",
+  "shortDesc": "Dataset of user-initiated commits with project and time details.",
   "checklists": {
     "checklists": []
   },
@@ -62,13 +64,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey_distinct","type":"bigint"},
-      {"name":"start_time_min","type":"date"},
-      {"name":"start_time_max","type":"date"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"age_days_max","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"user","type":"string","comment":"User who initiated the task, identifies task initiator.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey_distinct","type":"bigint","comment":"Number of distinct projects user is involved in.","isColumnEdited":true},
+      {"name":"start_time_min","type":"date","comment":"Earliest start time of user\u0027s tasks, tracks task initiation.","isColumnEdited":true},
+      {"name":"start_time_max","type":"date","comment":"Latest start time of user\u0027s tasks, tracks task initiation.","isColumnEdited":true},
+      {"name":"age_days_min","type":"bigint","comment":"Minimum age of tasks in days, measures task duration.","isColumnEdited":true},
+      {"name":"age_days_max","type":"bigint","comment":"Maximum age of tasks in days, measures task duration.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Total number of tasks initiated by user.","isColumnEdited":true}
     ],
     "userModified": true
   },
