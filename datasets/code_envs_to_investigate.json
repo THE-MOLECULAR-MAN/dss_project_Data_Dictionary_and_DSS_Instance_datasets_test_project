@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027code_envs_to_investigate\u0027 dataset is designed to facilitate the management and investigation of code environments within the Dataiku platform. It provides detailed information about various code environments, including their names, programming languages, deployment modes, and owners. This dataset is particularly useful for administrators and developers who need to monitor and optimize the use of code environments. Key features include the ability to track the Python interpreter version, core packages, and the file path of each environment. Additionally, it provides insights into the size of the environment, the projects utilizing it, and the total instances in use. The dataset also includes URLs for direct access and reasons for investigation, such as potential obsolescence or compatibility issues. This comprehensive dataset aids in ensuring efficient resource allocation and maintaining up-to-date environments, which is crucial for smooth operations and development within the Dataiku ecosystem.",
+  "shortDesc": "Dataset for investigating code environments in Dataiku platform.",
   "checklists": {
     "checklists": []
   },
@@ -69,11 +71,11 @@
       {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
       {"name":"core_packages_set","type":"string","comment":"Set of core packages, e.g., PANDAS10, AUTO.","meaning":"Text","isColumnEdited":true},
       {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
-      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"string","meaning":"LongMeaning"},
+      {"name":"size_in_MB","type":"double","comment":"Size of the code environment in megabytes.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects where the code environment is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"total_instances_of_code_env","type":"string","comment":"Total instances of the code environment in use.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true},
-      {"name":"reason_to_investigate","type":"string"}
+      {"name":"reason_to_investigate","type":"string","comment":"Reason for investigating the code environment.","isColumnEdited":true}
     ],
     "userModified": true
   },
