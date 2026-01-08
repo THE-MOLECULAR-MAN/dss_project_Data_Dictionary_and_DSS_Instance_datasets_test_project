@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027llms_used_with_enable_status\u0027 dataset provides insights into the usage and enablement status of large language models (LLMs) across different data science system (DSS) objects. This dataset is particularly useful for understanding how various LLMs are deployed and approved within different components such as agents, recipes, knowledge banks, and agent tools. It includes information on whether these LLMs are currently enabled, which can help in assessing their operational status and readiness for tasks. The dataset can be used by data scientists and system administrators to monitor and manage the deployment of LLMs, ensuring that the right models are active and approved for use. It also aids in compliance and governance by tracking which models are enabled and their approval status. This dataset is essential for organizations that rely on LLMs for various applications, providing a structured way to manage and audit their usage.",
+  "shortDesc": "Dataset on LLM usage and enable status in various DSS objects.",
   "checklists": {
     "checklists": []
   },
@@ -62,10 +64,10 @@
   },
   "schema": {
     "columns": [
-      {"name":"dss_object_type","type":"string","meaning":"Text"},
-      {"name":"llmId_basic_deployed","type":"string"},
-      {"name":"llmId_basic_approval","type":"string"},
-      {"name":"llm_enabled","type":"boolean"}
+      {"name":"dss_object_type","type":"string","comment":"Type of DSS object using LLM, e.g., agent, recipe.","meaning":"Text","isColumnEdited":true},
+      {"name":"llmId_basic_deployed","type":"string","comment":"Identifier of deployed LLM, includes provider and model name.","isColumnEdited":true},
+      {"name":"llmId_basic_approval","type":"string","comment":"Identifier of approved LLM, includes provider and model name.","isColumnEdited":true},
+      {"name":"llm_enabled","type":"boolean","comment":"Indicates if the LLM is currently enabled, true or false.","isColumnEdited":true}
     ],
     "userModified": true
   },
