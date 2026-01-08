@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027llm_approval_list\u0027 dataset provides a structured overview of various large language model (LLM) connections, detailing their types, names, and operational statuses. This dataset is particularly useful for organizations managing multiple LLM integrations, as it helps track which models are approved and active. Each entry in the dataset includes the type of connection, such as \u0027openai\u0027 or \u0027databricksllm\u0027, and the specific name of the connection, which often includes identifiers for shared or dummy setups. The dataset also specifies the name of the LLM, which can range from well-known models like \u0027gpt-5\u0027 to more specialized ones like \u0027llama3 1 405b-chat\u0027. Additionally, the \u0027llmId_basic\u0027 column provides a unique identifier for each LLM, combining the connection type and model name. The \u0027llm_enabled\u0027 column indicates whether a particular LLM is currently active, allowing for quick assessment of operational status. This dataset is essential for IT departments and data scientists who need to manage and monitor the deployment and usage of various LLMs within their systems.",
+  "shortDesc": "Dataset of LLM connection approvals with types and statuses.",
   "checklists": {
     "checklists": []
   },
@@ -62,11 +64,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection_type","type":"string"},
-      {"name":"connection_name","type":"string"},
-      {"name":"llm_name","type":"string"},
-      {"name":"llmId_basic","type":"string"},
-      {"name":"llm_enabled","type":"boolean"}
+      {"name":"connection_type","type":"string","comment":"Type of LLM connection, e.g., \u0027openai\u0027, \u0027databricksllm\u0027.","isColumnEdited":true},
+      {"name":"connection_name","type":"string","comment":"Specific name of the LLM connection, includes identifiers.","isColumnEdited":true},
+      {"name":"llm_name","type":"string","comment":"Name of the large language model, e.g., \u0027gpt-5\u0027.","isColumnEdited":true},
+      {"name":"llmId_basic","type":"string","comment":"Unique identifier for LLM, combines type and name.","isColumnEdited":true},
+      {"name":"llm_enabled","type":"boolean","comment":"Indicates if the LLM is currently active or not.","isColumnEdited":true}
     ],
     "userModified": true
   },
