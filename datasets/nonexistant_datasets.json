@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027nonexistant_datasets\u0027 dataset provides a comprehensive overview of datasets that are managed within a specific system, focusing on their identification, management, and access parameters. Each entry in the dataset is uniquely identified by an \u0027id\u0027 and \u0027name\u0027, which are crucial for dataset management and reference. The \u0027projectKey\u0027 links datasets to specific projects, facilitating organized data management. The dataset includes metadata such as \u0027type\u0027, \u0027shortDesc\u0027, and \u0027description\u0027 to provide insights into the storage type, key features, and detailed purpose of each dataset. The \u0027exists\u0027 column indicates whether a dataset is currently available, while \u0027formatType\u0027 specifies the file format. Access details are provided through \u0027params.connection\u0027, \u0027params.mode\u0027, and \u0027params.path\u0027, which describe how and where the data can be accessed. Management and modification details are tracked with \u0027managed\u0027, \u0027creationTag.lastModifiedBy.login\u0027, and \u0027creationTag.lastModifiedOn\u0027. Additional columns like \u0027tags\u0027, \u0027featureGroup\u0027, and \u0027num_metrics_checks\u0027 offer further categorization and quality insights. This dataset is essential for data administrators and analysts who need to manage, access, and analyze datasets efficiently, ensuring data integrity and accessibility.",
+  "shortDesc": "Dataset management with identifiers, descriptions, and access details.",
   "checklists": {
     "checklists": []
   },
