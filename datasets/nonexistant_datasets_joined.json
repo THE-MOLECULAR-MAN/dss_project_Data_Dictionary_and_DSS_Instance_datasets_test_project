@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027nonexistant_datasets_joined\u0027 dataset provides a comprehensive overview of datasets associated with various projects, focusing on their existence and accessibility. It is particularly useful for project managers and data analysts who need to track datasets across different projects, ensuring they are available and accessible for analysis. The dataset includes key information such as the dataset name, project identifier, existence status, access URL, and project owner. This allows users to quickly identify which datasets are currently available and who is responsible for them. The inclusion of URLs for dataset exploration facilitates easy access for further analysis, while the project owner\u0027s contact information ensures accountability and communication. This dataset is valuable for maintaining an organized data infrastructure, enabling efficient data management and project tracking.",
+  "shortDesc": "Dataset linking projects with datasets and their existence status.",
   "checklists": {
     "checklists": []
   },
@@ -62,10 +64,10 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","comment":"Name of the dataset, used for identification and reference.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey","type":"string","comment":"Project identifier, links datasets to specific projects.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the dataset for identification and reference.","meaning":"Text","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Project identifier linking datasets to specific projects.","meaning":"Text","isColumnEdited":true},
       {"name":"exists","type":"boolean","comment":"Indicates if the dataset currently exists, boolean value.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"dataset_url","type":"string","comment":"URL for accessing the dataset, used for exploration and analysis.","meaning":"URL","isColumnEdited":true},
+      {"name":"dataset_url","type":"string","comment":"URL for accessing the dataset for exploration and analysis.","meaning":"URL","isColumnEdited":true},
       {"name":"project_owner","type":"string","comment":"Email or login of the project owner, indicating responsibility.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
