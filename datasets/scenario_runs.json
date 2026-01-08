@@ -38,7 +38,9 @@
     },
     "lastModifiedOn": 1763991987588
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "view": "SCENARIO_RUNS",
     "orderByDate": false,
