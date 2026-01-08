@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027unused_plugins\u0027 dataset provides comprehensive information about plugins that are not currently in use within a system. This dataset is particularly useful for developers and project managers who need to track plugin usage, development status, and other metadata. Each entry in the dataset represents a unique plugin, identified by a unique ID and a human-readable label. The dataset includes details such as the version of the plugin, the author or contributors, and tags that categorize the plugin for easier searching and filtering. Additionally, it provides a description of the plugin\u0027s functionality and potential use cases. The dataset also indicates whether a plugin is still in development, its total usage count, and whether it is a built-in plugin. A URL is provided for each plugin, linking to a summary page for more detailed information. This dataset can be used to identify plugins that are underutilized or in development, helping to optimize resource allocation and improve project efficiency.",
+  "shortDesc": "Dataset of unused plugins with details on usage and development status.",
   "checklists": {
     "checklists": []
   },
@@ -64,15 +66,15 @@
     "columns": [
       {"name":"id","type":"string","comment":"Unique identifier for each plugin, essential reference.","meaning":"Text","isColumnEdited":true},
       {"name":"label","type":"string","comment":"Human-readable name of the plugin, useful identification.","meaning":"Text","isColumnEdited":true},
-      {"name":"code_env_name","type":"string","meaning":"Text"},
+      {"name":"code_env_name","type":"string","comment":"Environment name for the plugin, technical reference.","meaning":"Text","isColumnEdited":true},
       {"name":"version","type":"string","comment":"Version number of the plugin, indicating updates.","meaning":"Text","isColumnEdited":true},
       {"name":"author","type":"string","comment":"Creator or contributors of the plugin, authorship details.","meaning":"Text","isColumnEdited":true},
       {"name":"tags","type":"string","comment":"Keywords categorizing the plugin, aiding search filtering.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"description","type":"string","comment":"Detailed explanation of plugin\u0027s functionality, use cases.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"plugin_used_in_projectkeys","type":"string","meaning":"JSONArrayMeaning"},
+      {"name":"plugin_used_in_projectkeys","type":"string","comment":"Projects where the plugin is used, usage tracking.","meaning":"JSONArrayMeaning","isColumnEdited":true},
       {"name":"isDev","type":"boolean","comment":"Indicates if the plugin is in development, status tracking.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"total_usages","type":"string","meaning":"LongMeaning"},
-      {"name":"is_built_in_plugin","type":"string","meaning":"Boolean"},
+      {"name":"total_usages","type":"string","comment":"Number of times the plugin is used, usage metric.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"is_built_in_plugin","type":"string","comment":"Indicates if the plugin is built-in, classification.","meaning":"Boolean","isColumnEdited":true},
       {"name":"url","type":"string","comment":"Web link to plugin\u0027s summary page, more information.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
