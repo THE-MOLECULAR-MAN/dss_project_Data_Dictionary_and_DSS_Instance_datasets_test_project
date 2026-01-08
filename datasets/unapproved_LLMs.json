@@ -47,7 +47,9 @@
     },
     "lastModifiedOn": 1767216728093
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "keepTrackOfChanges": false,
     "notReadyIfEmpty": false,
