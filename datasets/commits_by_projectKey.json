@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027commits_by_projectKey\u0027 dataset provides a detailed overview of commit activities across various projects. It includes key information such as the project identifier, the time range of commits, the age of the commits in days, the number of distinct users contributing, and the total count of commits. This dataset is particularly useful for analyzing project activity over time, understanding user engagement, and tracking the lifecycle of project development. By examining the \u0027start_time_min\u0027 and \u0027start_time_max\u0027, users can determine the active periods of project development. The \u0027age_days_min\u0027 and \u0027age_days_max\u0027 columns offer insights into the longevity and recency of project activities. The \u0027user_distinct\u0027 column helps in identifying the diversity of contributors, while the \u0027count\u0027 column provides a quantitative measure of commit frequency. This dataset is valuable for project managers, data analysts, and software development teams aiming to optimize project workflows, assess team productivity, and plan future development cycles.",
+  "shortDesc": "Dataset of project commit statistics with timestamps and user data.",
   "checklists": {
     "checklists": []
   },
@@ -62,13 +64,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time_min","type":"date"},
-      {"name":"start_time_max","type":"date"},
-      {"name":"age_days_min","type":"bigint"},
-      {"name":"age_days_max","type":"bigint"},
-      {"name":"user_distinct","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
+      {"name":"start_time_min","type":"date","comment":"Earliest commit timestamp, indicates project start.","isColumnEdited":true},
+      {"name":"start_time_max","type":"date","comment":"Latest commit timestamp, indicates project end.","isColumnEdited":true},
+      {"name":"age_days_min","type":"bigint","comment":"Minimum age of commits in days, shows recency.","isColumnEdited":true},
+      {"name":"age_days_max","type":"bigint","comment":"Maximum age of commits in days, shows longevity.","isColumnEdited":true},
+      {"name":"user_distinct","type":"bigint","comment":"Number of distinct users contributing, indicates diversity.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Total number of commits, measures activity level.","isColumnEdited":true}
     ],
     "userModified": true
   },
