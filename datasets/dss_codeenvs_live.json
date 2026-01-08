@@ -2,8 +2,8 @@
   "type": "CustomPython_xzibit_codeenvs",
   "managed": false,
   "featureGroup": false,
-  "description": "The \u0027dss_codeenvs_live\u0027 dataset provides comprehensive information about various code environments used within a system, likely for data science or software development purposes. Each entry in the dataset represents a unique code environment, identified by its name. The dataset includes details such as the programming language used, which can be crucial for compatibility and functionality considerations. It also specifies the deployment mode, indicating how the environment is managed or integrated within the system. The owner\u0027s email is included to identify the person responsible for the environment, which is useful for management and accountability. Additionally, the dataset provides information on the Python interpreter version, which is important for ensuring compatibility with specific Python packages. The core packages set column indicates the default packages available in the environment, which can affect the environment\u0027s capabilities. The file path and URL columns provide direct access to the environment, facilitating easy navigation and management. This dataset is particularly useful for administrators and developers who need to manage and maintain multiple code environments efficiently, ensuring that each environment is properly configured and accessible.",
-  "shortDesc": "Dataset of code environments with details on language, deployment, and access.",
+  "description": "The \u0027dss_codeenvs_live\u0027 dataset provides comprehensive information about live code environments within the Dataiku Data Science Studio (DSS) platform. This dataset is crucial for managing and understanding the configurations, usage, and deployment of various code environments used in data science projects. Each entry in the dataset represents a specific code environment, detailing its name, language, deployment mode, and owner. Additionally, it includes technical specifications such as the Python interpreter version, core packages set, and the file path where the environment is stored. The dataset also tracks the size of each environment in megabytes, the projects where the environment is utilized, and the total number of instances. Furthermore, it provides URLs for direct access to these environments within the DSS platform. This dataset is particularly useful for administrators and data scientists who need to monitor and optimize the use of computational resources, ensure compatibility across projects, and manage access and ownership of code environments. It supports efficient resource allocation and helps in maintaining a streamlined workflow within the data science platform.",
+  "shortDesc": "Dataset of live code environments in Dataiku DSS, detailing configurations and usage.",
   "checklists": {
     "checklists": []
   },
@@ -49,17 +49,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"code_env_name","type":"string","meaning":"Text"},
-      {"name":"code_env_lang","type":"string","meaning":"Text"},
-      {"name":"deployment_mode","type":"string","meaning":"Text"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"python_interpreter","type":"string","meaning":"Text"},
-      {"name":"core_packages_set","type":"string","meaning":"Text"},
-      {"name":"path","type":"string","meaning":"Text"},
-      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"string","meaning":"Text"},
-      {"name":"url","type":"string","meaning":"URL"}
+      {"name":"code_env_name","type":"string","comment":"Name of the code environment, identifies environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"code_env_lang","type":"string","comment":"Programming language used, typically Python.","meaning":"Text","isColumnEdited":true},
+      {"name":"deployment_mode","type":"string","comment":"Mode of deployment, e.g., DESIGN_MANAGED.","meaning":"Text","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email or identifier, manages environment.","meaning":"Text","isColumnEdited":true},
+      {"name":"python_interpreter","type":"string","comment":"Python version used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
+      {"name":"core_packages_set","type":"string","comment":"Core packages configuration, e.g., PANDAS23.","meaning":"Text","isColumnEdited":true},
+      {"name":"path","type":"string","comment":"File path to code environment, storage location.","meaning":"Text","isColumnEdited":true},
+      {"name":"size_in_MB","type":"double","comment":"Size of environment in megabytes, storage size.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects using this environment, project identifiers.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"total_instances_of_code_env","type":"string","comment":"Number of instances of the environment, usage count.","meaning":"Text","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
