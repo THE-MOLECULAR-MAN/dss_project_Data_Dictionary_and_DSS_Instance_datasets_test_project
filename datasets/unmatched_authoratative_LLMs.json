@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027unmatched_authoratative_LLMs\u0027 dataset provides a comprehensive overview of various large language models (LLMs) and their connection details. It is particularly useful for understanding the types of connections available for different LLMs, their specific names, and whether they are currently enabled. This dataset can be instrumental for organizations and developers who manage multiple LLMs across different platforms, such as OpenAI, Databricks, Azure, and Stability AI. By analyzing this dataset, users can identify which LLMs are active, understand the naming conventions used for connections, and track the integration of LLMs across different services. The dataset\u0027s unique feature is its focus on unmatched authoritative LLMs, which may indicate models that are not yet fully integrated or operational within a given system. This can help in troubleshooting and optimizing the deployment of LLMs. The inclusion of both connection types and names, along with the LLM\u0027s basic ID and enabled status, provides a detailed view of the LLM landscape within an organization.",
+  "shortDesc": "Dataset of unmatched authoritative LLMs with connection details and status.",
   "checklists": {
     "checklists": []
   },
@@ -62,11 +64,11 @@
   },
   "schema": {
     "columns": [
-      {"name":"connection_type","type":"string"},
-      {"name":"connection_name","type":"string"},
-      {"name":"llm_name","type":"string"},
-      {"name":"llmId_basic","type":"string"},
-      {"name":"llm_enabled","type":"boolean"}
+      {"name":"connection_type","type":"string","comment":"Type of connection for LLM; key platforms.","isColumnEdited":true},
+      {"name":"connection_name","type":"string","comment":"Specific name of the LLM connection; unique identifier.","isColumnEdited":true},
+      {"name":"llm_name","type":"string","comment":"Name of the large language model; model identifier.","isColumnEdited":true},
+      {"name":"llmId_basic","type":"string","comment":"Basic ID of the LLM; platform and model info.","isColumnEdited":true},
+      {"name":"llm_enabled","type":"boolean","comment":"Indicates if the LLM is currently enabled; operational status.","isColumnEdited":true}
     ],
     "userModified": true
   },
