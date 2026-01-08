@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027jobs_and_scenarios\u0027 dataset provides a comprehensive overview of various job scenarios, capturing essential details such as project identifiers, start times, and user information. This dataset is particularly useful for analyzing job execution patterns, monitoring performance, and identifying potential issues through error and warning counts. Each entry in the dataset includes a unique project key, the start time of the task, and the duration in seconds, allowing for precise tracking of job execution. Additionally, the dataset records the age of the job in days, any errors encountered, and the number of warnings generated, which are crucial for debugging and improving job reliability. The inclusion of user information and scenario identifiers further enhances the dataset\u0027s utility by enabling user-specific analysis and scenario tracking. This dataset is ideal for IT departments, data analysts, and project managers who need to monitor and optimize job performance and troubleshoot issues effectively.",
+  "shortDesc": "Dataset of job scenarios with timestamps and user details.",
   "checklists": {
     "checklists": []
   },
@@ -62,15 +64,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint"},
-      {"name":"age_days","type":"bigint"},
-      {"name":"error","type":"bigint"},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique project identifier, essential for tracking.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started, crucial for scheduling.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds, measures execution time.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the job in days, indicates job recency.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Error indicator, shows if errors occurred.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job, indicates issues.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario, tracks specific cases.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task, identifies responsible party.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, categorizes the job action.","isColumnEdited":true}
     ],
     "userModified": true
   },
