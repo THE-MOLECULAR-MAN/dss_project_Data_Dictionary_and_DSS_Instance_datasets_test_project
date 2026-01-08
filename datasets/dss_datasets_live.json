@@ -38,7 +38,9 @@
     },
     "lastModifiedOn": 1763008478933
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "customConfig": {},
     "notReadyIfEmpty": false,
