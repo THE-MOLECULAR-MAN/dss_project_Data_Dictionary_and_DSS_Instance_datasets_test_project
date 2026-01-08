@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_agenttools_cached\u0027 dataset is designed to manage and track agent tools within Dataiku projects. It provides a comprehensive overview of various agent tools used in different projects, including their unique identifiers, names, types, and detailed descriptions. This dataset is particularly useful for project managers and data scientists who need to keep track of the tools used in their projects, understand their functionalities, and manage their configurations. Each tool is associated with a specific project, and the dataset includes information about the user who created or last modified the tool, as well as timestamps for these actions. Additionally, the dataset contains configuration parameters for each tool, which are essential for setting up and customizing the tools according to project needs. The inclusion of tags and URLs facilitates easy categorization and access to the tools within the Dataiku platform. This dataset is a valuable resource for ensuring efficient project management, tool utilization, and configuration within Dataiku environments.",
-  "shortDesc": "Dataiku agent tools dataset for project management and tool tracking.",
+  "description": "The \u0027dss_agenttools_cached\u0027 dataset provides a comprehensive overview of agent tools used within Dataiku DSS projects. Each entry in the dataset represents a unique agent tool, identified by a project key and an agent tool ID. The dataset includes detailed metadata such as the tool\u0027s name, type, and a description tailored for large language models (LLMs). Additionally, it records the user who created and last modified the tool, along with timestamps of these actions. The dataset also contains JSON-formatted parameters for each tool, an identifier for the associated LLM, and any relevant tags. A URL is provided for direct access to each tool. This dataset is particularly useful for managing and auditing agent tools within Dataiku DSS, facilitating easy access to tool configurations and their usage history. It can be leveraged for optimizing tool deployment, ensuring compliance with project standards, and enhancing collaboration among team members by providing clear documentation and traceability of tool modifications.",
+  "shortDesc": "Dataset of Dataiku DSS agent tools with metadata and descriptions.",
   "checklists": {
     "checklists": []
   },
@@ -64,18 +64,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku DSS project.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_type","type":"string","comment":"Type or category of the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description of the tool for LLMs.","meaning":"FreeText","isColumnEdited":true},
-      {"name":"created_by_user","type":"string","comment":"User who created the agent tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification.","meaning":"DatetimeNoTz","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool.","meaning":"Text","isColumnEdited":true},
-      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters.","meaning":"Text","isColumnEdited":true},
-      {"name":"LLM_id","type":"string","comment":"Identifier for the large language model.","meaning":"Text","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags associated with the agent tool.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL link to the agent tool.","meaning":"URL","isColumnEdited":true}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for Dataiku DSS project. Keywords: project, identifier, Dataiku.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_id","type":"string","comment":"Unique identifier for each agent tool. Keywords: tool, identifier, unique.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_name","type":"string","comment":"Name of the agent tool. Keywords: tool, name, agent.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_type","type":"string","comment":"Type or category of the agent tool. Keywords: tool, type, category.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_description_for_LLM","type":"string","comment":"Description of the tool for LLMs. Keywords: tool, description, LLM.","meaning":"FreeText","isColumnEdited":true},
+      {"name":"created_by_user","type":"string","comment":"User who created the agent tool. Keywords: user, creator, tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"last_modified_timestamp","type":"string","comment":"Timestamp of the last modification. Keywords: timestamp, modification, last.","meaning":"DatetimeNoTz","isColumnEdited":true},
+      {"name":"last_modified_user","type":"string","comment":"User who last modified the tool. Keywords: user, modified, tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"agent_tool_params","type":"string","comment":"JSON object of tool parameters. Keywords: JSON, parameters, tool.","meaning":"Text","isColumnEdited":true},
+      {"name":"LLM_id","type":"string","comment":"Identifier for the large language model. Keywords: LLM, identifier, model.","meaning":"Text","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the agent tool. Keywords: tags, tool, associated.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL link to the agent tool. Keywords: URL, link, tool.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
