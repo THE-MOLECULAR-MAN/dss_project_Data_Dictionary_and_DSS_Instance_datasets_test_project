@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides a comprehensive overview of various code environments used within a system, capturing essential details about each environment. This dataset is particularly useful for managing and auditing code environments, as it includes information on the environment\u0027s name, programming language, deployment mode, and owner. Additionally, it provides technical details such as the Python interpreter version and core packages set, which are crucial for ensuring compatibility and performance. The dataset also includes the file path and URL for accessing each environment, facilitating easy navigation and management. This dataset is valuable for system administrators, developers, and data scientists who need to maintain and optimize code environments, ensuring they are up-to-date and properly configured. It can also aid in troubleshooting and auditing by providing a clear record of the environments in use, their configurations, and responsible parties.",
-  "shortDesc": "Dataset of cached code environments with details on language, deployment, and access.",
+  "description": "The \u0027dss_codeenvs_cached\u0027 dataset provides comprehensive information about cached code environments used within a data science platform. Each entry in the dataset represents a specific code environment, detailing its name, programming language, deployment mode, and owner. This dataset is particularly useful for managing and auditing code environments, ensuring that they are properly configured and maintained. It includes information on the Python interpreter version and core packages set, which are crucial for compatibility and performance. The dataset also tracks the file path and size of each environment, aiding in storage management. Additionally, it records the projects where each code environment is used, the total instances of the environment, and provides a direct URL for access. This dataset is valuable for administrators and developers who need to monitor and optimize the use of code environments across various projects, ensuring efficient resource allocation and compliance with organizational standards.",
+  "shortDesc": "Dataset of cached code environments with details on language, owner, and deployment.",
   "checklists": {
     "checklists": []
   },
@@ -72,9 +72,9 @@
       {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
       {"name":"core_packages_set","type":"string","comment":"Set of core packages, e.g., PANDAS10, AUTO.","meaning":"Text","isColumnEdited":true},
       {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
-      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"string","meaning":"LongMeaning"},
+      {"name":"size_in_MB","type":"double","comment":"Size of the code environment in megabytes.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects where the code environment is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"total_instances_of_code_env","type":"string","comment":"Total instances of the code environment.","meaning":"LongMeaning","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
