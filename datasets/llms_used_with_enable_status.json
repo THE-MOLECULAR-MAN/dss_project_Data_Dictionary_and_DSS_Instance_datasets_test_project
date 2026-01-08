@@ -38,7 +38,9 @@
     },
     "lastModifiedOn": 1767382185553
   },
-  "tags": [],
+  "tags": [
+    "ai_generated_description"
+  ],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgres_localhost",
