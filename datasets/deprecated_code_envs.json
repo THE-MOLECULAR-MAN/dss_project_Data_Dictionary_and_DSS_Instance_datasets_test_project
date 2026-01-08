@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027deprecated_code_envs\u0027 dataset provides comprehensive information about code environments that are no longer actively maintained or used. This dataset is particularly useful for IT administrators and data scientists who need to manage and audit code environments within an organization. It includes details such as the name and programming language of the environment, deployment mode, and the owner responsible for the environment. Additionally, it provides technical specifications like the Python interpreter version, core packages set, and the file path where the environment is stored. The dataset also tracks the size of the environment in megabytes, the projects where the environment is used, and the total number of instances of the environment. A URL is provided for direct access to the environment. This dataset is valuable for understanding the legacy systems in place, planning migrations, and ensuring compliance with software management policies. It helps in identifying which environments can be decommissioned or need updates, thereby optimizing resource usage and maintaining system efficiency.",
+  "shortDesc": "Dataset of deprecated code environments with details on usage and configuration.",
   "checklists": {
     "checklists": []
   },
@@ -69,9 +71,9 @@
       {"name":"python_interpreter","type":"string","comment":"Version of Python interpreter used, e.g., PYTHON36.","meaning":"Text","isColumnEdited":true},
       {"name":"core_packages_set","type":"string","comment":"Set of core packages, e.g., PANDAS10, AUTO.","meaning":"Text","isColumnEdited":true},
       {"name":"path","type":"string","comment":"File path to the code environment, storage location.","meaning":"Text","isColumnEdited":true},
-      {"name":"size_in_MB","type":"double","meaning":"DoubleMeaning"},
-      {"name":"projectKeys_where_code_env_used","type":"string","meaning":"JSONArrayMeaning"},
-      {"name":"total_instances_of_code_env","type":"string","meaning":"Text"},
+      {"name":"size_in_MB","type":"double","comment":"Size of the code environment in megabytes.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"projectKeys_where_code_env_used","type":"string","comment":"Projects where the code environment is used.","meaning":"JSONArrayMeaning","isColumnEdited":true},
+      {"name":"total_instances_of_code_env","type":"string","comment":"Total number of instances of the code environment.","meaning":"Text","isColumnEdited":true},
       {"name":"url","type":"string","comment":"URL to access the code environment, direct link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
