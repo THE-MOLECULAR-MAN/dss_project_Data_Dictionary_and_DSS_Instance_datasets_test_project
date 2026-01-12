@@ -123,6 +123,25 @@
         "panelPosition": "TOP",
         "engineType": "LINO"
       }
+    },
+    {
+      "id": "y8RV4uq",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Clusters",
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#FFFFFF",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
     }
   ],
   "owner": "demo",
