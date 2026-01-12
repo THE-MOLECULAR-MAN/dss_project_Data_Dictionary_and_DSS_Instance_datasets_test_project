@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "Potential_problem_RAG_LLMs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "llmmodelsbyconnection_live",
       "objectType": "DATASET"
     },
