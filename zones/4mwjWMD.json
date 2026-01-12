@@ -67,10 +67,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_llmusage_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_llmusage_cached",
       "objectType": "RECIPE"
     },
