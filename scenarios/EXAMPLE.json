@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "example",
-  "active": true,
+  "active": false,
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,8 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [
-    "do_not_auto_disable_scenario"
+    "do_not_auto_disable_scenario",
+    "auto_disabled"
   ],
   "triggers": [],
   "reporters": [],
