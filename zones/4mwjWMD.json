@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "llms_used_with_enable_status",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "unmatched_LLMs_in_use",
       "objectType": "DATASET"
     },
