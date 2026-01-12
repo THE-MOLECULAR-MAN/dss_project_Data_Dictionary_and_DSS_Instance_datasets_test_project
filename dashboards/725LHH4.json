@@ -179,6 +179,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Project Summary",
               "fontColor": "#000000",
               "fontSize": 13
             },
