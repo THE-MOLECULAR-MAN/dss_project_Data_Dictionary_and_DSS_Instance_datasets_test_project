@@ -3,10 +3,6 @@
   "color": "#0F786B",
   "items": [
     {
-      "objectId": "llmmodelsbyconnection_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_llmmodelsbyconnection_cached",
       "objectType": "RECIPE"
     },
