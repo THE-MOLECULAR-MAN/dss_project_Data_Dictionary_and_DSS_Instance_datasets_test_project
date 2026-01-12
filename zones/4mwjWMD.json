@@ -7,10 +7,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_llmusage_analysis",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "llmmodelsbyconnection_live",
       "objectType": "DATASET"
     },
