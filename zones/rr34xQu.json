@@ -59,10 +59,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_meanings_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_recipes_live",
       "objectType": "DATASET"
     },
