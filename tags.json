@@ -18,6 +18,7 @@
     "ai_generated_description": {},
     "Upgrades": {},
     "Admin": {},
-    "auto_disabled": {}
+    "auto_disabled": {},
+    "do_not_auto_disable_scenario": {}
   }
 }

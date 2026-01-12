@@ -11,7 +11,7 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [
-    "auto_disabled"
+    "do_not_auto_disable_scenario"
   ],
   "triggers": [],
   "reporters": [],
