@@ -11,10 +11,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "LLM_instances_to_check",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "llmmodelsbyconnection_live",
       "objectType": "DATASET"
     },
