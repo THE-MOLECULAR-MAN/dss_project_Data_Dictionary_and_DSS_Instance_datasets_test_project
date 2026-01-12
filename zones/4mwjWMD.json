@@ -61,10 +61,6 @@
     {
       "objectId": "unmatched_authoratative_LLMs",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_retrieval_augmented_llms_cached",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
