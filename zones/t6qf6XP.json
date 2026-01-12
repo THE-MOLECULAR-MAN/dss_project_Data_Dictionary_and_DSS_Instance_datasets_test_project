@@ -3,10 +3,6 @@
   "color": "#D03713",
   "items": [
     {
-      "objectId": "compute_mcp_agent_tools",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "mcp_agent_tools",
       "objectType": "DATASET"
     }
