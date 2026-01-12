@@ -91,10 +91,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_knowledgebanks_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_agenttools_cached",
       "objectType": "DATASET"
     },
