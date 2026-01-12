@@ -95,10 +95,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_retrieval_augmented_llms_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_knowledgebanks_cached",
       "objectType": "DATASET"
     },
