@@ -77,10 +77,6 @@
     {
       "objectId": "compute_dss_retrieval_augmented_llms_cached",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_dss_agents_cached",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
