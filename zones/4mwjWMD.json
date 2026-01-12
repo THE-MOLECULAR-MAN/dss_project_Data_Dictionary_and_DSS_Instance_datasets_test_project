@@ -115,10 +115,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_agenttools_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_agents_cached",
       "objectType": "DATASET"
     },
