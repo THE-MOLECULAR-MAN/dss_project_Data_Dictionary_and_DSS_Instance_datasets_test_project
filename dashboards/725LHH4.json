@@ -61,6 +61,25 @@
         "panelPosition": "TOP",
         "engineType": "LINO"
       }
+    },
+    {
+      "id": "jbCBByz",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Jobs \u0026 Scenarios",
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#FFFFFF",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
     }
   ],
   "owner": "demo",
