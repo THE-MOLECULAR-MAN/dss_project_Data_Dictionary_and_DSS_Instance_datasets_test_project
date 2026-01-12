@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "unapproved_LLMs",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "agents_missing_LLM_config",
       "objectType": "DATASET"
     },
