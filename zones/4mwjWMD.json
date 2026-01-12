@@ -31,10 +31,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_llmusage_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "unmatched_LLMs_in_use",
       "objectType": "DATASET"
     },
