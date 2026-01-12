@@ -1,12 +1,7 @@
 {
   "name": "MCP Tools",
   "color": "#D03713",
-  "items": [
-    {
-      "objectId": "mcp_agent_tools",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {},
   "tags": [],
