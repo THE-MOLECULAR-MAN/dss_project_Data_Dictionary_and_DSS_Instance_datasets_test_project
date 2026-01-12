@@ -27,10 +27,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_llmusage_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "unmatched_LLMs_in_use",
       "objectType": "DATASET"
     },
