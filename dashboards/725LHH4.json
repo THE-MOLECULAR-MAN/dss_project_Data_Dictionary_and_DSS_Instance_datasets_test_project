@@ -206,6 +206,25 @@
         "panelPosition": "TOP",
         "engineType": "LINO"
       }
+    },
+    {
+      "id": "mDXSTuX",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Users",
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#FFFFFF",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
     }
   ],
   "owner": "demo",
