@@ -107,10 +107,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_knowledgebanks_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_agenttools_cached",
       "objectType": "DATASET"
     },
