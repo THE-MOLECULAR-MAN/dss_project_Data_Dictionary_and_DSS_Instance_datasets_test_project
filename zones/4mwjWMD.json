@@ -79,10 +79,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "dss_agents_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_dss_agents_cached",
       "objectType": "RECIPE"
     }
