@@ -21,10 +21,6 @@
     {
       "objectId": "llm_approval_list",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "unmatched_LLMs_in_use",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
