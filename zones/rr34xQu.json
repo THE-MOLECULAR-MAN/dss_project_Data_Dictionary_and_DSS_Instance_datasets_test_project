@@ -51,10 +51,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_meanings_live",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_recipes_live",
       "objectType": "DATASET"
     },
