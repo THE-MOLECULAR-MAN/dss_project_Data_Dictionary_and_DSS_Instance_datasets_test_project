@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "example",
-  "active": true,
+  "active": false,
   "checklists": {
     "checklists": []
   },
@@ -10,7 +10,9 @@
     "squashDelayedTriggers": true,
     "suppressTriggersWhileRunning": true
   },
-  "tags": [],
+  "tags": [
+    "auto_disabled"
+  ],
   "triggers": [],
   "reporters": [],
   "params": {
