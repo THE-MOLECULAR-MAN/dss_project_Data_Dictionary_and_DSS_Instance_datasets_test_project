@@ -23,3 +23,6 @@ Once that finishes, the plugin should be ready to use.
 8) In the dropdown menu on the right, select the PostgreSQL connection you want to use.
 9) Click the blue Import button
 10) You may see a warning about other plugins that were installed - you can ignore this.
+
+# Using the project
+Open the project and visit its Wiki page for instructions on how to build the dashboards.
