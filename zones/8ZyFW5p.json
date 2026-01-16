@@ -1,0 +1,40 @@
+{
+  "name": "Finding datasets with problems",
+  "color": "#087ABF",
+  "items": [
+    {
+      "objectId": "compute_nonexistant_datasets",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "nonexistant_datasets",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_nonexistant_datasets_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_datasets_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_datasets_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_datasets_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "nonexistant_datasets_with_projects",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

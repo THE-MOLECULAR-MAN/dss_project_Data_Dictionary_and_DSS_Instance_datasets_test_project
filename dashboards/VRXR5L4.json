@@ -1,0 +1,131 @@
+{
+  "pages": [
+    {
+      "id": "m5jU3Dt",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 36,
+              "height": 15
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "viewKind": "EXPLORE",
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "title": "Deprecated Python versions used in code env",
+            "insightId": "i21XTJs",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE",
+            "borderColor": "#D9D9D9",
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "title": "Deprecated Python versions used in code env"
+            }
+          }
+        ]
+      },
+      "title": "Deprecated Python versions used in code env",
+      "showTitle": true,
+      "backgroundColor": "#FFFFFF",
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      }
+    },
+    {
+      "id": "SCGddWY",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 30,
+              "height": 9
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "viewKind": "EXPLORE",
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Instances of deprecated plugins",
+            "insightId": "2IqLxka",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE",
+            "borderColor": "#D9D9D9",
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Instances of deprecated plugins"
+            }
+          }
+        ]
+      },
+      "title": "Instances of deprecated plugins",
+      "showTitle": true,
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      }
+    }
+  ],
+  "owner": "demo",
+  "listed": false,
+  "name": "Some issues that need to be addressed for upgrades",
+  "showGrid": false,
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1768577130472,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767218356177,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  },
+  "columnNumber": 36
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Plugins and Code Env (very slow)",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "compute_unused_code_envs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unused_code_envs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "deprecated_code_envs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_code_envs",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_plugins_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_plugins_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_codeenvs_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_codeenvs_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_codeenvs_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_with_deprecation_mentioned",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_with_deprecation_mentioned",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "live_plugin_usages",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_usages_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_usages_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deprecated_plugin_instances",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "deprecated_plugin_instances",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
