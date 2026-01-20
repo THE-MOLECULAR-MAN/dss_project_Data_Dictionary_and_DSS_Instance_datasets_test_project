@@ -101,6 +101,14 @@
     {
       "objectId": "compute_dss_apiservices_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_bundles_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_bundles_cached",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
