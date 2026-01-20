@@ -63,7 +63,7 @@
   "schema": {
     "columns": [
       {"name":"project_key","type":"string"},
-      {"name":"count","type":"bigint"}
+      {"name":"num_deployments","type":"bigint"}
     ],
     "userModified": true
   },
