@@ -109,6 +109,18 @@
     {
       "objectId": "compute_dss_bundles_cached",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_deployments_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_deployments_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_deployments_cached",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
