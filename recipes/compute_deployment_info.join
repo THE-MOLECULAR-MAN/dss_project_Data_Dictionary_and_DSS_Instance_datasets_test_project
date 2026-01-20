@@ -4,7 +4,7 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "INNER",
+      "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
         {
@@ -33,7 +33,7 @@
       "table1": 0,
       "conditionsMode": "AND",
       "rightLimit": {},
-      "type": "INNER",
+      "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
         {
