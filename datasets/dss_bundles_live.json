@@ -45,7 +45,10 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string"},
-      {"name":"url","type":"string"}
+      {"name":"url","type":"string"},
+      {"name":"bundleId","type":"string"},
+      {"name":"bundle_creator","type":"string"},
+      {"name":"created","type":"string"}
     ],
     "userModified": true
   },
