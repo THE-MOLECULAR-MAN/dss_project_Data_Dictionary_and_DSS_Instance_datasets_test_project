@@ -68,11 +68,6 @@
       "name": "num_deployments",
       "type": "bigint",
       "table": 0
-    },
-    {
-      "name": "count",
-      "type": "bigint",
-      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -154,7 +149,11 @@
             "type": "bigint"
           },
           {
-            "name": "count",
+            "name": "num_bundles",
+            "type": "bigint"
+          },
+          {
+            "name": "num_api_services",
             "type": "bigint"
           }
         ],
