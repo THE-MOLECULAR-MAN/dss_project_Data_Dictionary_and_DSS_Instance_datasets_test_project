@@ -23,6 +23,10 @@
         {
           "ref": "jobs_and_scenarios_by_project_key",
           "deps": []
+        },
+        {
+          "ref": "deployment_info",
+          "deps": []
         }
       ]
     }

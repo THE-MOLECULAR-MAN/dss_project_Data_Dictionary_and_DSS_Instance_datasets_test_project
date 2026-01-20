@@ -60,116 +60,181 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 3,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "project_key",
+            "table": 3
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "projectKey",
+      "type": "string",
       "table": 0
     },
     {
       "name": "name",
       "alias": "project_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "shortDesc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "description",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ownerLogin",
       "alias": "project_owner",
+      "type": "string",
       "table": 0
     },
     {
       "name": "projectStatus",
+      "type": "string",
       "table": 0
     },
     {
       "name": "tags",
+      "type": "string",
       "table": 0
     },
     {
       "name": "last_modified_timestamp",
+      "type": "datetimenotz",
       "table": 0
     },
     {
       "name": "tutorialProject",
+      "type": "boolean",
       "table": 0
     },
     {
       "name": "url",
       "alias": "project_url",
+      "type": "string",
       "table": 0
     },
     {
       "name": "start_time_max",
       "alias": "most_recent_commit",
+      "type": "date",
       "table": 1
     },
     {
       "name": "age_days_max",
       "alias": "num_days_since_last_commit",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "user_distinct",
       "alias": "num_unique_committing_users",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "count",
       "alias": "num_commits",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "start_time_max",
       "alias": "most_recent_runtime",
+      "type": "date",
       "table": 2
     },
     {
       "name": "duration_seconds_max",
       "alias": "longest_runtime_sec",
+      "type": "bigint",
       "table": 2
     },
     {
       "name": "duration_seconds_median",
       "alias": "avg_runtime_sec",
+      "type": "double",
       "table": 2
     },
     {
       "name": "duration_seconds_sum",
       "alias": "total_runtime_sec",
+      "type": "bigint",
       "table": 2
     },
     {
       "name": "error_avg",
       "alias": "avg_num_errors",
+      "type": "double",
       "table": 2
     },
     {
       "name": "error_sum",
       "alias": "total_errors",
+      "type": "bigint",
       "table": 2
     },
     {
       "name": "warnings_count_avg",
       "alias": "avg_warnings",
+      "type": "double",
       "table": 2
     },
     {
       "name": "warnings_count_sum",
       "alias": "total_warnings",
+      "type": "bigint",
       "table": 2
     },
     {
       "name": "count",
       "alias": "num_jobs_and_scenarios",
+      "type": "bigint",
       "table": 2
+    },
+    {
+      "name": "project_key",
+      "type": "string",
+      "table": 3
+    },
+    {
+      "name": "num_deployments",
+      "type": "bigint",
+      "table": 3
+    },
+    {
+      "name": "num_bundles",
+      "type": "bigint",
+      "table": 3
+    },
+    {
+      "name": "num_api_services",
+      "type": "bigint",
+      "table": 3
     }
   ],
   "resolvedSelectedColumns": [],
@@ -238,9 +303,185 @@
         "enabled": false
       },
       "index": 2
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 3
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectKey",
+            "comment": "Unique identifier for each project, essential for tracking.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_name",
+            "comment": "Descriptive name of the project, indicating its purpose.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "shortDesc",
+            "comment": "Brief description of the project, including creation details.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "FreeText",
+            "name": "description",
+            "comment": "Detailed project description, outlining objectives and processes.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "project_owner",
+            "comment": "Email or login of the project owner, indicating responsibility.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "projectStatus",
+            "comment": "Current status of the project, such as \u0027In production\u0027.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "JSONArrayMeaning",
+            "name": "tags",
+            "comment": "Array of tags categorizing the project, indicating focus areas.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "DatetimeNoTz",
+            "name": "last_modified_timestamp",
+            "comment": "Timestamp of the last modification, showing recent updates.",
+            "type": "datetimenotz"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "Boolean",
+            "name": "tutorialProject",
+            "comment": "Boolean indicating if the project is a tutorial, for learning.",
+            "type": "boolean"
+          },
+          {
+            "isColumnEdited": true,
+            "meaning": "URL",
+            "name": "project_url",
+            "comment": "Direct URL to the project, for easy access and navigation.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "most_recent_commit",
+            "comment": "Latest commit timestamp, indicates project end.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "num_days_since_last_commit",
+            "comment": "Maximum age of commits in days, shows longevity.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "num_unique_committing_users",
+            "comment": "Number of distinct users contributing, indicates diversity.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "num_commits",
+            "comment": "Total number of commits, measures activity level.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "most_recent_runtime",
+            "comment": "Latest start time of a job, indicates job initiation.",
+            "type": "date"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "longest_runtime_sec",
+            "comment": "Maximum duration of a job in seconds, measures job length.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "avg_runtime_sec",
+            "comment": "Median duration of a job in seconds, measures job length.",
+            "type": "double"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "total_runtime_sec",
+            "comment": "Total duration of all jobs in seconds, measures job length.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "avg_num_errors",
+            "comment": "Average number of errors per job, measures job reliability.",
+            "type": "double"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "total_errors",
+            "comment": "Total number of errors in jobs, measures job reliability.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "avg_warnings",
+            "comment": "Average number of warnings per job, measures job reliability.",
+            "type": "double"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "total_warnings",
+            "comment": "Total number of warnings in jobs, measures job reliability.",
+            "type": "bigint"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "num_jobs_and_scenarios",
+            "comment": "Total number of jobs, measures project activity.",
+            "type": "bigint"
+          },
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "num_deployments",
+            "type": "bigint"
+          },
+          {
+            "name": "num_bundles",
+            "type": "bigint"
+          },
+          {
+            "name": "num_api_services",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
