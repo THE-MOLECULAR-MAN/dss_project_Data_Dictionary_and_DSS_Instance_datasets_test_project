@@ -37,6 +37,14 @@
     {
       "objectId": "dss_deployments_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_deployments_by_project_key",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_deployments_by_project_key",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
