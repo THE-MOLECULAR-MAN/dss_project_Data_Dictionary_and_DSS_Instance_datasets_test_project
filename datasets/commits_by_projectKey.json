@@ -66,7 +66,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for the project, e.g., \u0027DSS_Data_Plugin_Test\u0027.","isColumnEdited":true},
       {"name":"start_time_min","type":"date","comment":"Earliest commit timestamp, indicates project start.","isColumnEdited":true},
       {"name":"start_time_max","type":"date","comment":"Latest commit timestamp, indicates project end.","isColumnEdited":true},
       {"name":"age_days_min","type":"bigint","comment":"Minimum age of commits in days, shows recency.","isColumnEdited":true},
