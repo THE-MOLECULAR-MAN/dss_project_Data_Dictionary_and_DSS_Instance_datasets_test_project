@@ -5,7 +5,19 @@
   },
   "keys": [
     {
-      "column": "project_key"
+      "last": false,
+      "max": false,
+      "column": "project_key",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +27,10 @@
       "firstLastNotNull": false,
       "column": "api_service_id",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -32,8 +46,10 @@
       "firstLastNotNull": false,
       "column": "url",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -49,8 +65,10 @@
       "firstLastNotNull": false,
       "column": "num_versions",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,8 +84,10 @@
       "firstLastNotNull": false,
       "column": "last_modified_timestamp",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -83,8 +103,10 @@
       "firstLastNotNull": false,
       "column": "last_modified_by_user",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -100,8 +122,10 @@
       "firstLastNotNull": false,
       "column": "num_endpoints",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -117,8 +141,10 @@
       "firstLastNotNull": false,
       "column": "tags",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -134,8 +160,10 @@
       "firstLastNotNull": false,
       "column": "name",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -185,8 +213,24 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "project_key",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
