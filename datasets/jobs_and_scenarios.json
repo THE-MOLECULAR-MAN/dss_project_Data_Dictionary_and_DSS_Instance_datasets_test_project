@@ -66,15 +66,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique project identifier, essential for tracking.","isColumnEdited":true},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started, crucial for scheduling.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds, measures execution time.","isColumnEdited":true},
-      {"name":"age_days","type":"bigint","comment":"Age of the job in days, indicates job recency.","isColumnEdited":true},
-      {"name":"error","type":"bigint","comment":"Error indicator, shows if errors occurred.","isColumnEdited":true},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job, indicates issues.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario, tracks specific cases.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task, identifies responsible party.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string","comment":"Type of event, categorizes the job action.","isColumnEdited":true}
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started; event timing.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds; task length.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the event in days; event recency.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Indicates if an error occurred; error status.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job; warning tally.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario; scenario key.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task; task initiator.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, e.g., job run; event category.","isColumnEdited":true}
     ],
     "userModified": true
   },
