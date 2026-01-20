@@ -232,7 +232,9 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "count": "num_deployments"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
