@@ -105,6 +105,10 @@
     {
       "objectId": "dss_bundles_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_bundles_cached",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
