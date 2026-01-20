@@ -49,6 +49,8 @@
       {"name":"project_key","type":"string"},
       {"name":"infrastructure_id","type":"string"},
       {"name":"deployment_type","type":"string"},
+      {"name":"last_modified_timestamp","type":"string"},
+      {"name":"last_modified_user","type":"string"},
       {"name":"health","type":"string"},
       {"name":"highest_governance_severity","type":"string"},
       {"name":"url","type":"string"}
