@@ -19,6 +19,10 @@
         {
           "ref": "dss_bundles_by_project_key",
           "deps": []
+        },
+        {
+          "ref": "dss_apiservices_by_project_key",
+          "deps": []
         }
       ]
     }
