@@ -67,7 +67,7 @@
       {"name":"bundle_id","type":"string"},
       {"name":"state","type":"string"},
       {"name":"exported_by_user","type":"string"},
-      {"name":"exported_timestamp","type":"date"},
+      {"name":"exported_timestamp","type":"string"},
       {"name":"generated_with_dss_version","type":"string"},
       {"name":"exported_on_design_node_id","type":"string"}
     ],
