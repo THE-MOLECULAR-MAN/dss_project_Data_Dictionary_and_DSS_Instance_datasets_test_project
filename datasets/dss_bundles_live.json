@@ -44,11 +44,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
+      {"name":"project_key","type":"string"},
       {"name":"url","type":"string"},
-      {"name":"bundleId","type":"string"},
-      {"name":"bundle_creator","type":"string"},
-      {"name":"created","type":"string"}
+      {"name":"bundle_id","type":"string"},
+      {"name":"state","type":"string"},
+      {"name":"exported_by_user","type":"string"},
+      {"name":"exported_timestamp","type":"string"},
+      {"name":"generated_with_dss_version","type":"string"},
+      {"name":"exported_on_design_node_id","type":"string"}
     ],
     "userModified": true
   },
