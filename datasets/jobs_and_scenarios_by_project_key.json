@@ -66,7 +66,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Unique project identifier, essential for tracking.","isColumnEdited":true},
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events.","isColumnEdited":true},
       {"name":"start_time_min","type":"date","comment":"Earliest start time of a job, indicates job initiation.","isColumnEdited":true},
       {"name":"start_time_max","type":"date","comment":"Latest start time of a job, indicates job initiation.","isColumnEdited":true},
       {"name":"duration_seconds_max","type":"bigint","comment":"Maximum duration of a job in seconds, measures job length.","isColumnEdited":true},
