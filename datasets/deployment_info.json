@@ -64,7 +64,8 @@
     "columns": [
       {"name":"project_key","type":"string"},
       {"name":"num_deployments","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"num_bundles","type":"bigint"},
+      {"name":"num_api_services","type":"bigint"}
     ],
     "userModified": true
   },
