@@ -66,15 +66,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string","comment":"Identifier for the project, e.g., \u0027DSS_Data_Plugin_Test\u0027.","isColumnEdited":true},
-      {"name":"start_time","type":"date","comment":"Timestamp when the task started, e.g., \u00272026-01-05T03:43:16.000Z\u0027.","meaning":"Date","isColumnEdited":true},
-      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds.","isColumnEdited":true},
-      {"name":"age_days","type":"bigint","comment":"Age of the task in days, e.g., \u00270\u0027.","isColumnEdited":true},
-      {"name":"error","type":"bigint","comment":"Error count during the task.","isColumnEdited":true},
-      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job.","meaning":"LongMeaning","isColumnEdited":true},
-      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario.","meaning":"Text","isColumnEdited":true},
-      {"name":"user","type":"string","comment":"User who initiated the task, e.g., \u0027demo\u0027.","meaning":"Text","isColumnEdited":true},
-      {"name":"event_type","type":"string","comment":"Type of event, e.g., \u0027commit\u0027.","isColumnEdited":true}
+      {"name":"projectKey","type":"string","comment":"Identifier for the project; key for project events.","isColumnEdited":true},
+      {"name":"start_time","type":"date","comment":"Timestamp when the task started; event timing.","meaning":"Date","isColumnEdited":true},
+      {"name":"duration_seconds","type":"bigint","comment":"Duration of the task in seconds; task length.","isColumnEdited":true},
+      {"name":"age_days","type":"bigint","comment":"Age of the event in days; event recency.","isColumnEdited":true},
+      {"name":"error","type":"bigint","comment":"Indicates if an error occurred; error status.","isColumnEdited":true},
+      {"name":"warnings_count","type":"int","comment":"Number of warnings generated during the job; warning tally.","meaning":"LongMeaning","isColumnEdited":true},
+      {"name":"scenario_id","type":"string","comment":"Unique identifier for the scenario; scenario key.","meaning":"Text","isColumnEdited":true},
+      {"name":"user","type":"string","comment":"User who initiated the task; task initiator.","meaning":"Text","isColumnEdited":true},
+      {"name":"event_type","type":"string","comment":"Type of event, e.g., job run; event category.","isColumnEdited":true}
     ],
     "userModified": true
   },
