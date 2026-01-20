@@ -194,7 +194,9 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "count": "num_bundles"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
