@@ -85,6 +85,10 @@
     {
       "objectId": "dss_connections_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_bundles_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
