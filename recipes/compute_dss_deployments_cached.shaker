@@ -1,6 +1,48 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "deployment_id"
+      },
+      {
+        "d": true,
+        "name": "bundle_id"
+      },
+      {
+        "d": true,
+        "name": "project_key"
+      },
+      {
+        "d": true,
+        "name": "infrastructure_id"
+      },
+      {
+        "d": true,
+        "name": "deployment_type"
+      },
+      {
+        "d": true,
+        "name": "last_modified_timestamp"
+      },
+      {
+        "d": true,
+        "name": "last_modified_user"
+      },
+      {
+        "d": true,
+        "name": "health"
+      },
+      {
+        "d": true,
+        "name": "highest_governance_severity"
+      },
+      {
+        "d": true,
+        "name": "url"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +72,23 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "milliseconds": true,
+        "inCol": "last_modified_timestamp"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +116,18 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "deployment_type": 155,
+    "last_modified_user": 150,
+    "project_key": 218,
+    "bundle_id": 120,
+    "last_modified_timestamp": 211,
+    "health": 100,
+    "highest_governance_severity": 218,
+    "deployment_id": 300,
+    "infrastructure_id": 169,
+    "url": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
