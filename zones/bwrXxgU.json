@@ -1,7 +1,44 @@
 {
   "name": "Running in Prod",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_apiservices_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_apiservices_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_apiservices_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_bundles_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_bundles_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_bundles_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_deployments_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_deployments_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_deployments_live",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
