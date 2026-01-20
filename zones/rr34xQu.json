@@ -89,6 +89,10 @@
     {
       "objectId": "dss_bundles_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_apiservices_live",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
