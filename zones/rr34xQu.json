@@ -93,6 +93,14 @@
     {
       "objectId": "dss_apiservices_live",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_apiservices_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_apiservices_cached",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
