@@ -213,7 +213,9 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "count": "num_api_services"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
