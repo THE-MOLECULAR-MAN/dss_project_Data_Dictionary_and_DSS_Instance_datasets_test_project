@@ -115,10 +115,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_dss_deployments_cached",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "dss_deployments_cached",
       "objectType": "DATASET"
     }
