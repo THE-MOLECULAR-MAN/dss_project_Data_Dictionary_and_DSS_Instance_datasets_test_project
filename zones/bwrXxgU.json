@@ -45,6 +45,14 @@
     {
       "objectId": "dss_deployments_by_project_key",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_bundles_by_project_key",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_bundles_by_project_key",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
