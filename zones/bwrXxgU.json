@@ -61,6 +61,14 @@
     {
       "objectId": "dss_apiservices_by_project_key",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_deployment_info",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "deployment_info",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
