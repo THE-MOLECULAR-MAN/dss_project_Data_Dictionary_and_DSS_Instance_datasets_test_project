@@ -67,23 +67,23 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string","comment":"Connection name, identifies the data source.","meaning":"Text","isColumnEdited":true},
-      {"name":"type","type":"string","comment":"Type of connection, specifies the data source.","meaning":"Text","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Connection name, identifies the connection.","meaning":"Text","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Connection type, specifies the technology used.","meaning":"Text","isColumnEdited":true},
       {"name":"credentialsMode","type":"string","comment":"Mode of credentials, defines access level.","meaning":"Text","isColumnEdited":true},
       {"name":"connection_test_status","type":"string","comment":"Status of connection test, indicates success or failure.","meaning":"Text","isColumnEdited":true},
       {"name":"connection_test_error_msg","type":"string","comment":"Error message from connection test, details issues.","meaning":"Text","isColumnEdited":true},
       {"name":"usableBy","type":"string","comment":"Who can use the connection, defines access.","meaning":"Text","isColumnEdited":true},
       {"name":"params.credentialsMode","type":"string","comment":"Credentials mode in parameters, specifies access method.","meaning":"Text","isColumnEdited":true},
       {"name":"params.authType","type":"string","comment":"Authentication type in parameters, defines auth method.","meaning":"Text","isColumnEdited":true},
-      {"name":"params.scopes","type":"string","comment":"Scopes in parameters, specifies access permissions.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.scopes","type":"string","comment":"Scopes in parameters, specifies access URLs.","meaning":"Text","isColumnEdited":true},
       {"name":"params.scope","type":"string","comment":"Scope in parameters, defines access level.","meaning":"Text","isColumnEdited":true},
-      {"name":"params.warehouse","type":"string","comment":"Warehouse in parameters, specifies data storage.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.warehouse","type":"string","comment":"Warehouse in parameters, specifies data warehouse.","meaning":"Text","isColumnEdited":true},
       {"name":"params.defaultSchema","type":"string","comment":"Default schema in parameters, defines data structure.","meaning":"Text","isColumnEdited":true},
-      {"name":"params.role","type":"string","comment":"Role in parameters, specifies user permissions.","meaning":"Text","isColumnEdited":true},
-      {"name":"params.db","type":"string","comment":"Database in parameters, identifies data source.","meaning":"Text","isColumnEdited":true},
-      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Last modified by, tracks user changes.","meaning":"Text","isColumnEdited":true},
-      {"name":"allowWrite","type":"boolean","comment":"Permission to write, indicates write access.","meaning":"Boolean","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"URL of connection, provides access link.","meaning":"URL","isColumnEdited":true}
+      {"name":"params.role","type":"string","comment":"Role in parameters, specifies user role.","meaning":"Text","isColumnEdited":true},
+      {"name":"params.db","type":"string","comment":"Database in parameters, specifies database name.","meaning":"Text","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Last modified by, email of the user.","meaning":"Text","isColumnEdited":true},
+      {"name":"allowWrite","type":"boolean","comment":"Permission to write, indicates if writing is allowed.","meaning":"Boolean","isColumnEdited":true},
+      {"name":"url","type":"string","comment":"URL of the connection, provides access link.","meaning":"URL","isColumnEdited":true}
     ],
     "userModified": true
   },
