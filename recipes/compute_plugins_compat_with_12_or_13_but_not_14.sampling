@@ -1,4 +1,18 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "major_version_min",
+        "$showList": false,
+        "num": 12,
+        "operator": "\u003e\u003d [number]"
+      }
+    ]
+  },
+  "$status": {},
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
