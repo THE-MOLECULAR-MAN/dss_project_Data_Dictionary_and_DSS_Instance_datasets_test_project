@@ -85,6 +85,14 @@
     {
       "objectId": "plugin_compat_version_range",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_not_compat_with_dss_14",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_not_compat_with_dss_14",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
