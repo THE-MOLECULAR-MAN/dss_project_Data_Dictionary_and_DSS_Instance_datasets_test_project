@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "plugins_not_compat_with_dss_14_simple",
+          "ref": "plugins_not_compat_with_dss_14_exportable",
           "appendMode": false
         }
       ]
