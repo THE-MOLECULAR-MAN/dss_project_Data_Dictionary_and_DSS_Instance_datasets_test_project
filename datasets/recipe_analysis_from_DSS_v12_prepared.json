@@ -63,7 +63,7 @@
   "schema": {
     "columns": [
       {"name":"recipe_type","type":"string"},
-      {"name":"recipe_upgrade_status","type":"string"}
+      {"name":"DSS_v12_status","type":"string"}
     ],
     "userModified": true
   },
