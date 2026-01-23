@@ -12,10 +12,6 @@
       },
       {
         "d": true,
-        "name": "new"
-      },
-      {
-        "d": true,
         "name": "last_modified"
       }
     ]
@@ -82,7 +78,7 @@
       "disabled": false,
       "type": "FindReplace",
       "params": {
-        "output": "new",
+        "output": "",
         "useDatasetForMapping": false,
         "mapping": [
           {
