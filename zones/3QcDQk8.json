@@ -29,6 +29,14 @@
     {
       "objectId": "compute_plugin_compat",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_not_compat_with_dss_14_simple",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_not_compat_with_dss_14_simple",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
