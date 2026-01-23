@@ -62,11 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"plugin-id","type":"string"},
-      {"name":"dss-version-number_min","type":"double"},
-      {"name":"dss-version-number_max","type":"double"},
-      {"name":"major_version_min","type":"tinyint"},
-      {"name":"major_version_max","type":"tinyint"}
+      {"name":"plugin_id","type":"string"}
     ],
     "userModified": true
   },
