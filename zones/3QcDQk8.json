@@ -37,6 +37,14 @@
     {
       "objectId": "plugins_not_compat_with_dss_14_exportable",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_compat_with_12_or_13_but_not_14",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugins_compat_with_12_or_13_but_not_14",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
