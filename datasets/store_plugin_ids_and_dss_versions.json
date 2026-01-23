@@ -86,8 +86,12 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"plugin-id","type":"string"},
+      {"name":"dss-version-number","type":"string"},
+      {"name":"last_modified","type":"datetimenotz"}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
