@@ -85,10 +85,6 @@
     {
       "objectId": "dss_connections_live",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "store_plugin_ids_and_dss_versions",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

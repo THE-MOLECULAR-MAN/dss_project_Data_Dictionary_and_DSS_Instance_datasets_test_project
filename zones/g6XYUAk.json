@@ -65,6 +65,10 @@
     {
       "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "store_plugin_ids_and_dss_versions",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
