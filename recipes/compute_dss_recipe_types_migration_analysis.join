@@ -32,10 +32,13 @@
   "selectedColumns": [
     {
       "name": "recipe_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "recipe_upgrade_status",
+      "alias": "DSS_v12_recipe_status",
+      "type": "string",
       "table": 1
     }
   ],
@@ -89,7 +92,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -100,6 +103,28 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "recipe_type",
+            "comment": "Type of recipe, e.g., Python, NLP, sampling.",
+            "type": "string"
+          },
+          {
+            "name": "DSS_v14_recipe_status",
+            "type": "string"
+          },
+          {
+            "name": "DSS_v12_recipe_status",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
