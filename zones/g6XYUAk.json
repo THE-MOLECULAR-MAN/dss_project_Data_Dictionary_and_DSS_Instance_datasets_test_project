@@ -69,6 +69,14 @@
     {
       "objectId": "store_plugin_ids_and_dss_versions",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "plugin_compat",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_compat",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
