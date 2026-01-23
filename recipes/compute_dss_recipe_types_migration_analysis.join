@@ -6,16 +6,38 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "recipe_type",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "recipe_type",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "recipe_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "recipe_upgrade_status",
+      "type": "string",
       "table": 1
     }
   ],
@@ -79,5 +101,26 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "recipe_type",
+            "comment": "Type of recipe, e.g., Python, NLP, sampling.",
+            "type": "string"
+          },
+          {
+            "name": "recipe_upgrade_status",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
