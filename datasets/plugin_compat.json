@@ -63,7 +63,7 @@
   "schema": {
     "columns": [
       {"name":"plugin-id","type":"string"},
-      {"name":"dss-version-number","type":"double"},
+      {"name":"dss-version-number","type":"double","meaning":"DoubleMeaning"},
       {"name":"major_version","type":"tinyint","meaning":"LongMeaning"},
       {"name":"last_modified","type":"datetimenotz","meaning":"DatetimeNoTz"}
     ],
