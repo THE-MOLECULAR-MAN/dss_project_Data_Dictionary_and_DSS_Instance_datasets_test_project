@@ -4,7 +4,7 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "INNER",
+      "type": "FULL",
       "outerJoinOnTheLeft": true,
       "on": [
         {
@@ -133,7 +133,7 @@
       }
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   },
   "computedColumns": [],
   "enableAutoCastInJoinConditions": false
