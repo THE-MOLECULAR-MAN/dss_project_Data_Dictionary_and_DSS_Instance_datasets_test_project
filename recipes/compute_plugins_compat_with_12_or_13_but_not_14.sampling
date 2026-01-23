@@ -5,7 +5,7 @@
     "$filterOptions": "rules",
     "conditions": [
       {
-        "input": "major_version_min",
+        "input": "major_version_max",
         "$showList": false,
         "num": 12,
         "operator": "\u003e\u003d [number]"
