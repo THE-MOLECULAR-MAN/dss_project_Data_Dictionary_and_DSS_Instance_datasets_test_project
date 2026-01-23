@@ -66,8 +66,7 @@
       {"name":"dss-version-number_min","type":"string"},
       {"name":"dss-version-number_max","type":"string"},
       {"name":"major_version_min","type":"tinyint"},
-      {"name":"major_version_max","type":"tinyint"},
-      {"name":"count","type":"bigint"}
+      {"name":"major_version_max","type":"tinyint"}
     ],
     "userModified": true
   },
