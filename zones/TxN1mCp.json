@@ -1,7 +1,28 @@
 {
   "name": "Recipes",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dss_recipes_live",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipes_cached",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_recipe_counts_by_type",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipes_cached",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_recipe_counts_by_type",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],

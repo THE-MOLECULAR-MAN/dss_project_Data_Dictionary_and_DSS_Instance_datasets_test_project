@@ -63,18 +63,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "dss_recipes_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_recipes_cached",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_recipes_cached",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "dss_connections_cached",
       "objectType": "DATASET"
     },
@@ -84,14 +72,6 @@
     },
     {
       "objectId": "dss_connections_live",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_dss_recipe_counts_by_type",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "dss_recipe_counts_by_type",
       "objectType": "DATASET"
     }
   ],
