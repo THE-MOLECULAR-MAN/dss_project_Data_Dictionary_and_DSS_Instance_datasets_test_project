@@ -1,6 +1,6 @@
 {
   "type": "PostgreSQL",
-  "managed": false,
+  "managed": true,
   "featureGroup": false,
   "checklists": {
     "checklists": []
