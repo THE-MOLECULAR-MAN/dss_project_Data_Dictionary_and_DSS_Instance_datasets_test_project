@@ -34,12 +34,6 @@
       "name": "recipe_type",
       "type": "string",
       "table": 0
-    },
-    {
-      "name": "recipe_upgrade_status",
-      "alias": "DSS_v12_recipe_status",
-      "type": "string",
-      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -92,12 +86,12 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "MANUAL",
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
       "preFilter": {
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "recipe_analysis_from_DSS_v12",
+      "originLabel": "recipe_analysis_from_DSS_v12_prepared",
       "index": 1,
       "computedColumns": []
     }
@@ -118,7 +112,7 @@
             "type": "string"
           },
           {
-            "name": "DSS_v12_recipe_status",
+            "name": "DSS_v12_status",
             "type": "string"
           }
         ],

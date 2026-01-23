@@ -17,7 +17,7 @@
           "deps": []
         },
         {
-          "ref": "recipe_analysis_from_DSS_v12_sql",
+          "ref": "recipe_analysis_from_DSS_v12_prepared",
           "deps": []
         }
       ]
