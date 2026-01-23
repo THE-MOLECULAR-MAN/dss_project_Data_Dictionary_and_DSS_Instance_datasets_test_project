@@ -64,6 +64,7 @@
     "columns": [
       {"name":"plugin-id","type":"string"},
       {"name":"dss-version-number","type":"string"},
+      {"name":"major_version","type":"tinyint","meaning":"LongMeaning"},
       {"name":"last_modified","type":"datetimenotz"}
     ],
     "userModified": true
