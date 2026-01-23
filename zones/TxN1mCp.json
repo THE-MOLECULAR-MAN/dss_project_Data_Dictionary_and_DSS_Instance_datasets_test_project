@@ -21,6 +21,14 @@
     {
       "objectId": "compute_dss_recipe_counts_by_type",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_v14_safe_recipes",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_v14_safe_recipes",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
