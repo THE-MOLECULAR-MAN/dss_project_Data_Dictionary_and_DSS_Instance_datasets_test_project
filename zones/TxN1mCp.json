@@ -65,6 +65,14 @@
     {
       "objectId": "recipe_analysis_from_DSS_v12_sql",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_v14_safe_recipes_distinct_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_v14_safe_recipes_distinct_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

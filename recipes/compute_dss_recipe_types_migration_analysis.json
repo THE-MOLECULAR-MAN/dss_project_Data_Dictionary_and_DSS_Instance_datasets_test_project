@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "dss_v14_safe_recipes_distinct",
+          "ref": "dss_v14_safe_recipes_distinct_prepared",
           "deps": []
         },
         {
