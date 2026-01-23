@@ -69,6 +69,14 @@
     {
       "objectId": "compute_dss_v14_safe_recipes_distinct_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "recipe_analysis_from_DSS_v12_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_recipe_analysis_from_DSS_v12_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
