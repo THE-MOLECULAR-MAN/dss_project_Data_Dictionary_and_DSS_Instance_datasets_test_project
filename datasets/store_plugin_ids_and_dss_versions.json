@@ -44,6 +44,7 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
+    "table": "store_plugin_ids_and_dss_versions",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeDescriptionsAsSQLComment": false,
