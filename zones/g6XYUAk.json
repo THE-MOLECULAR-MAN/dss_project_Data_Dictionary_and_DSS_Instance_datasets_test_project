@@ -77,6 +77,14 @@
     {
       "objectId": "compute_plugin_compat",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_plugin_compat_version_range",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_compat_version_range",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
