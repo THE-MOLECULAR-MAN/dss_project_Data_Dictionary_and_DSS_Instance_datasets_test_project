@@ -97,6 +97,19 @@
     }
   ],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "recipe_type",
+          "col": "DSS_v14_recipe_status",
+          "$showList": false,
+          "operator": "not empty"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -120,7 +133,7 @@
       }
     },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "computedColumns": [],
   "enableAutoCastInJoinConditions": false
