@@ -1,6 +1,24 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "plugin-id"
+      },
+      {
+        "d": true,
+        "name": "dss-version-number"
+      },
+      {
+        "d": true,
+        "name": "new"
+      },
+      {
+        "d": true,
+        "name": "last_modified"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +48,58 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "dss-"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "dss-version-number"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "new",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "(?\u003c\u003d^\\d{1,2})\\.0$"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "dss-version-number"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +127,12 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "new": 134,
+    "dss-version-number": 150,
+    "plugin-id": 197,
+    "last_modified": 176
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
