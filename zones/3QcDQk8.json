@@ -1,7 +1,36 @@
 {
   "name": "Determine Plugin Compat",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "store_plugin_ids_and_dss_versions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "plugins_not_compat_with_dss_14",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugins_not_compat_with_dss_14",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_compat_version_range",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_compat_version_range",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "plugin_compat",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_plugin_compat",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],

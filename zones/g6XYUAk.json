@@ -65,34 +65,6 @@
     {
       "objectId": "dss_codeenvs_cached",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "store_plugin_ids_and_dss_versions",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "plugin_compat",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_plugin_compat",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_plugin_compat_version_range",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "plugin_compat_version_range",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_plugins_not_compat_with_dss_14",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "plugins_not_compat_with_dss_14",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
