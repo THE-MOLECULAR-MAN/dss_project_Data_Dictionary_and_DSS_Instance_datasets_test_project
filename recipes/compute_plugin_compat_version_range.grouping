@@ -5,41 +5,59 @@
   },
   "keys": [
     {
-      "column": "plugin-id"
+      "last": false,
+      "max": false,
+      "column": "plugin-id",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "dss-version-number",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "major_version",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "tinyint",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -49,8 +67,10 @@
       "firstLastNotNull": false,
       "column": "last_modified",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "datetimenotz",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -100,8 +120,40 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "plugin-id",
+            "type": "string"
+          },
+          {
+            "name": "dss-version-number_min",
+            "type": "string"
+          },
+          {
+            "name": "dss-version-number_max",
+            "type": "string"
+          },
+          {
+            "name": "major_version_min",
+            "type": "tinyint"
+          },
+          {
+            "name": "major_version_max",
+            "type": "tinyint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
