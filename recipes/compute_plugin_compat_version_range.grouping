@@ -81,7 +81,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -145,10 +145,6 @@
           {
             "name": "major_version_max",
             "type": "tinyint"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
           }
         ],
         "userModified": false
