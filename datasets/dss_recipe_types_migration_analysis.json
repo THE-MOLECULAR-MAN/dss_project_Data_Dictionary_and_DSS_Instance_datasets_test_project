@@ -63,6 +63,7 @@
   "schema": {
     "columns": [
       {"name":"recipe_type","type":"string","comment":"Type of recipe, e.g., Python, NLP, sampling.","meaning":"Text","isColumnEdited":true},
+      {"name":"DSS_v14_recipe_status","type":"string"},
       {"name":"recipe_upgrade_status","type":"string"}
     ],
     "userModified": true
