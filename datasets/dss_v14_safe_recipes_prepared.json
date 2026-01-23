@@ -62,16 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"recipe_id","type":"string","comment":"Unique identifier for each recipe, descriptive name.","meaning":"Text","isColumnEdited":true},
-      {"name":"recipe_name","type":"string","comment":"Descriptive name of the recipe, matches ID.","meaning":"Text","isColumnEdited":true},
-      {"name":"projectKey","type":"string","comment":"Identifier for the project associated with the recipe.","meaning":"Text","isColumnEdited":true},
-      {"name":"recipe_type","type":"string","comment":"Type of recipe, e.g., Python, NLP, sampling.","meaning":"Text","isColumnEdited":true},
-      {"name":"input_datasets","type":"string","comment":"List of datasets used as input for the recipe.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"output_datasets","type":"string","comment":"List of datasets produced as output by the recipe.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Tags for categorizing and retrieving recipes.","meaning":"JSONArrayMeaning","isColumnEdited":true},
-      {"name":"engine_parameters","type":"string","comment":"Configuration settings for recipe execution engines.","meaning":"JSONObjectMeaning","isColumnEdited":true},
-      {"name":"last_modified_user","type":"string","comment":"User who last modified the recipe, email or name.","meaning":"Text","isColumnEdited":true},
-      {"name":"url","type":"string","comment":"Direct URL to access the recipe in the platform.","meaning":"URL","isColumnEdited":true}
+      {"name":"recipe_type","type":"string","comment":"Type of recipe, e.g., Python, NLP, sampling.","meaning":"Text","isColumnEdited":true}
     ],
     "userModified": true
   },
