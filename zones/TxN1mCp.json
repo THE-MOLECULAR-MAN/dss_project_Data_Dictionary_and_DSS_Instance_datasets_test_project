@@ -49,6 +49,14 @@
     {
       "objectId": "recipe_analysis_from_DSS_v12",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_recipe_types_migration_analysis",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_recipe_types_migration_analysis",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
