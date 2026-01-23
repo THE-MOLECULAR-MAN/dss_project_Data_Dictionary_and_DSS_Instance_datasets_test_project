@@ -1,6 +1,48 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "recipe_id"
+      },
+      {
+        "d": true,
+        "name": "recipe_name"
+      },
+      {
+        "d": true,
+        "name": "projectKey"
+      },
+      {
+        "d": true,
+        "name": "recipe_type"
+      },
+      {
+        "d": true,
+        "name": "input_datasets"
+      },
+      {
+        "d": true,
+        "name": "output_datasets"
+      },
+      {
+        "d": true,
+        "name": "tags"
+      },
+      {
+        "d": true,
+        "name": "engine_parameters"
+      },
+      {
+        "d": true,
+        "name": "last_modified_user"
+      },
+      {
+        "d": true,
+        "name": "url"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +72,26 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "recipe_type"
+        ],
+        "keep": true,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -100,7 +160,18 @@
     }
   },
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "projectKey": 225,
+    "last_modified_user": 150,
+    "recipe_id": 300,
+    "recipe_type": 225,
+    "output_datasets": 300,
+    "recipe_name": 300,
+    "engine_parameters": 300,
+    "url": 300,
+    "input_datasets": 281,
+    "tags": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
