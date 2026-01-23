@@ -1,7 +1,20 @@
 {
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "recipe_type",
+          "$showList": false,
+          "operator": "not empty"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "keys": [
     {
@@ -49,6 +62,20 @@
   "outputColumnNameOverrides": {},
   "selectAllColumns": false,
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "meaning": "Text",
+            "name": "recipe_type",
+            "comment": "Type of recipe, e.g., Python, NLP, sampling.",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
