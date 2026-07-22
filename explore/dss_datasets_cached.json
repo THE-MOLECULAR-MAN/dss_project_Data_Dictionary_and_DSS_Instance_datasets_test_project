@@ -149,7 +149,12 @@
       "valueColoringMode": "HASH",
       "coloringGroups": []
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "column_names",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
